@@ -1,11 +1,9 @@
 ---
-title: "About"
----
----
 title: "OutbreakTools"
 about:
   template: jolla
   image: images/outbreaktools.png
+  image-width: 10em
   links:
     - icon: github
       text: Github
