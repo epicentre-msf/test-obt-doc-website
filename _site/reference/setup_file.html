@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dictionary: define linelist tables and their variables – OutbreakTools documentation</title>
+<title>Setup reference – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../reference/exports_sheet.html" rel="next">
-<link href="../reference/custom_formulas.html" rel="prev">
+<link href="../reference/translations_sheet.html" rel="next">
+<link href="../reference/exports_sheet.html" rel="prev">
 <link href="../images/icon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/dictionary_sheet.html">Dictionary: define linelist tables and their variables</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/setup_file.html">Setup reference</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link active">
+  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
   </div>
 </li>
@@ -294,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/setup_file.html" class="sidebar-item-text sidebar-link">
+  <a href="../reference/setup_file.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Setup reference</span></a>
   </div>
 </li>
@@ -316,49 +316,38 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#variable-names-and-labels" id="toc-variable-names-and-labels" class="nav-link active" data-scroll-target="#variable-names-and-labels">Variable names and labels</a>
+  <li><a href="#the-setup-file" id="toc-the-setup-file" class="nav-link active" data-scroll-target="#the-setup-file">The setup file</a>
   <ul class="collapse">
   <li><a href="#variable-name" id="toc-variable-name" class="nav-link" data-scroll-target="#variable-name">Variable Name</a></li>
-  <li><a href="#main-label" id="toc-main-label" class="nav-link" data-scroll-target="#main-label">Main Label</a></li>
-  <li><a href="#dev-comment" id="toc-dev-comment" class="nav-link" data-scroll-target="#dev-comment">Dev Comment</a></li>
-  <li><a href="#editable-label" id="toc-editable-label" class="nav-link" data-scroll-target="#editable-label">Editable Label</a></li>
   <li><a href="#sub-label" id="toc-sub-label" class="nav-link" data-scroll-target="#sub-label">Sub Label</a></li>
-  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
   <li><a href="#sheets-and-sections" id="toc-sheets-and-sections" class="nav-link" data-scroll-target="#sheets-and-sections">Sheets and sections</a>
   <ul class="collapse">
   <li><a href="#sheet-name" id="toc-sheet-name" class="nav-link" data-scroll-target="#sheet-name">Sheet Name</a></li>
-  <li><a href="#sheet-types" id="toc-sheet-types" class="nav-link" data-scroll-target="#sheet-types">Sheet Type</a></li>
   <li><a href="#main-section" id="toc-main-section" class="nav-link" data-scroll-target="#main-section">Main Section</a></li>
-  <li><a href="#sub-section" id="toc-sub-section" class="nav-link" data-scroll-target="#sub-section">Sub Section</a></li>
   <li><a href="#sheet-sections-example" id="toc-sheet-sections-example" class="nav-link" data-scroll-target="#sheet-sections-example">Example</a></li>
   </ul></li>
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a>
   <ul class="collapse">
   <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
-  <li><a href="#register-book" id="toc-register-book" class="nav-link" data-scroll-target="#register-book">Register Book</a></li>
   <li><a href="#personal-identifier" id="toc-personal-identifier" class="nav-link" data-scroll-target="#personal-identifier">Personal Identifier</a></li>
   <li><a href="#thinking-about-variables" id="toc-thinking-about-variables" class="nav-link" data-scroll-target="#thinking-about-variables">Thinking about variables</a></li>
   <li><a href="#var-type" id="toc-var-type" class="nav-link" data-scroll-target="#var-type">Variable Type</a></li>
   <li><a href="#var-format" id="toc-var-format" class="nav-link" data-scroll-target="#var-format">Variable Format</a></li>
   <li><a href="#var-control" id="toc-var-control" class="nav-link" data-scroll-target="#var-control">Control</a></li>
   <li><a href="#var-control-details" id="toc-var-control-details" class="nav-link" data-scroll-target="#var-control-details">Control details</a></li>
-  <li><a href="#unique" id="toc-unique" class="nav-link" data-scroll-target="#unique">Unique</a></li>
   </ul></li>
-  <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports">Data exports</a></li>
-  <li><a href="#data-validation" id="toc-data-validation" class="nav-link" data-scroll-target="#data-validation">Data validation</a>
+  <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports">Data exports</a>
   <ul class="collapse">
   <li><a href="#min" id="toc-min" class="nav-link" data-scroll-target="#min">Min</a></li>
   <li><a href="#max" id="toc-max" class="nav-link" data-scroll-target="#max">Max</a></li>
   <li><a href="#alert" id="toc-alert" class="nav-link" data-scroll-target="#alert">Alert</a></li>
-  <li><a href="#message" id="toc-message" class="nav-link" data-scroll-target="#message">Message</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul></li>
   <li><a href="#conditional-formatting" id="toc-conditional-formatting" class="nav-link" data-scroll-target="#conditional-formatting">Conditional Formatting</a>
   <ul class="collapse">
   <li><a href="#formatting-condition" id="toc-formatting-condition" class="nav-link" data-scroll-target="#formatting-condition">Formatting condition</a></li>
-  <li><a href="#formatting-values" id="toc-formatting-values" class="nav-link" data-scroll-target="#formatting-values">Formatting values</a></li>
   <li><a href="#lock-cells" id="toc-lock-cells" class="nav-link" data-scroll-target="#lock-cells">Lock cells</a></li>
   <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example</a></li>
   </ul></li>
@@ -368,9 +357,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/dictionary_sheet.html">Dictionary: define linelist tables and their variables</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/setup_file.html">Setup reference</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Dictionary: define linelist tables and their variables</h1>
+<h1 class="title">Setup reference</h1>
 </div>
 
 
@@ -387,58 +376,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="the-setup-file" class="level2">
+<h2 class="anchored" data-anchor-id="the-setup-file">The setup file</h2>
 <p>The dictionary is stored in an Excel table divided into several sections, which define the different sheets that will be part of the Excel linelist produced.</p>
 <p><strong>Each line corresponds to a variable</strong> and includes most the characteristics of that variable.</p>
 <p>The dictionary is divided into the following sections:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 83%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Section</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Variable name and labels</td>
-<td>Lists the variables to be collected by defining their main characteristics</td>
-</tr>
-<tr class="even">
-<td>Sheets and Sections</td>
-<td>Allows you to organise variables by sheets, section and sub-section, and define the table orientation</td>
-</tr>
-<tr class="odd">
-<td>Properties</td>
-<td>Allows you to assign different properties to variables, in particular defining dropdown menus, formulas or format.</td>
-</tr>
-<tr class="even">
-<td>Data exports</td>
-<td>Selects and order the variables to be exported</td>
-</tr>
-<tr class="odd">
-<td>Data validation</td>
-<td>Allows you to define accepted MIN and MAX values, and the corresponding alert or error when an input is outside the defined limits.</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When compiling the setup, make sure that all the columns from this sheet are unhidden.</p>
-</div>
-</div>
-<section id="variable-names-and-labels" class="level2">
-<h2 class="anchored" data-anchor-id="variable-names-and-labels">Variable names and labels</h2>
+<p>+————————–+————————————————————————————————————————————-+ | Section | Description | +==========================+=====================================================================================================================================+ | Variable name and labels | Lists the variables to be collected by defining their main characteristics | +————————–+————————————————————————————————————————————-+ | Sheets and Sections | Allows you to organise variables by sheets, section and sub-section, and define the table orientation | +————————–+————————————————————————————————————————————-+ | Properties | Allows you to assign different properties to variables, in particular defining dropdown menus, formulas or format. | +————————–+————————————————————————————————————————————-+ | Data exports | Selects and order the variables to be exported | +————————–+————————————————————————————————————————————-+ | Data validation | Allows you to define accepted MIN and MAX values, and the corresponding alert or error when an input is outside the defined limits. | +————————–+————————————————————————————————————————————-+</p>
+<p>::: callout-warning When compiling the setup, make sure that all the columns from this sheet are unhidden. :::</p>
+<p>## Variable names and labels</p>
 <p>This first part lists all the variables you want to have in the final linelist.</p>
 <p><img src="../images/im-003-variable-names-and-labels.png" class="img-fluid"></p>
 <section id="variable-name" class="level3">
@@ -464,35 +409,9 @@ Tip
 <p>As a general advice, try to create short but explicit names.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To ensure that variable names are unique, you can add the name of the sheet in which the variable will appear as a prefix, or use numbers.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We recommend that you do not leave any blanks in the variable name. Instead, replace them with “<em>_</em>”.</p>
-</div>
-</div>
-</section>
-<section id="main-label" class="level3">
-<h3 class="anchored" data-anchor-id="main-label">Main Label</h3>
+<p>::: callout-tip To ensure that variable names are unique, you can add the name of the sheet in which the variable will appear as a prefix, or use numbers. :::</p>
+<p>::: callout-tip We recommend that you do not leave any blanks in the variable name. Instead, replace them with “<em>_</em>”. :::</p>
+<p>### Main Label</p>
 <p><img src="../images/im-005-main-label.png" class="img-fluid"></p>
 <p>This is a free text field that defines the variable label. Labels can be more descriptive and longer than names, but we recommend to keep it moderately short for legibility reasons. The main label appears in black and bold in the <strong>linelist file</strong>.</p>
 <p>It cannot be modified by the end user (with one exception, see the “Editable section” below).</p>
@@ -509,9 +428,7 @@ Note
 <p>To add more details, you can use the following fields: “Sub Label” and “Note” (see below).</p>
 </div>
 </div>
-</section>
-<section id="dev-comment" class="level3">
-<h3 class="anchored" data-anchor-id="dev-comment">Dev Comment</h3>
+<p>### Dev Comment</p>
 <p><img src="../images/im-006-dev-comment.png" class="img-fluid"></p>
 <p>This free text column is for the sole benefit of the <strong>setup file</strong> creator (in all probability, you), to add purely technical or practical information. It is not read by the designer and does not affect the generated file.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -534,9 +451,7 @@ Note
 </div>
 </div>
 <p>Feel free to use this column in a way that helps you work!</p>
-</section>
-<section id="editable-label" class="level3">
-<h3 class="anchored" data-anchor-id="editable-label">Editable Label</h3>
+<p>### Editable Label</p>
 <p><img src="../images/im-007-editable-label.png" class="img-fluid"></p>
 <p>This is a <em>yes/no</em> column. If the value is “<em>yes</em>”, the label of the variable in the linelist can be modified by the user. If the value is “<em>no</em>” or if the field remains empty, the variable label in the linelist will be protected.</p>
 </section>
@@ -558,28 +473,14 @@ Note
 <p>The sublabels “<em>Calculated</em>” and “<em>Custom label</em>” are added automatically, no need to add them manually.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Common sublabels include the following:</p>
+<p>::: callout-tip Common sublabels include the following:</p>
 <ul>
 <li>Yes / No</li>
 <li>Yes / No / Unk.</li>
 <li>Free text</li>
-<li>The format of your date (ex: DD/MM/YYYY)</li>
+<li>The format of your date (ex: DD/MM/YYYY) :::</li>
 </ul>
-</div>
-</div>
-</section>
-<section id="note" class="level3">
-<h3 class="anchored" data-anchor-id="note">Note</h3>
+<p>### Note</p>
 <p><img src="../images/im-009-note.png" class="img-fluid"></p>
 <p>This is a free text field which content is added to the linelist as a <em>comment</em> on the corresponding cell. The comment in the linelist can be read by hovering the cursor over the cell. It cannot be modified by the end user.</p>
 </section>
@@ -614,9 +515,7 @@ Note
 <p>More sheets can be created, either automatically (such as the “Instruction” sheet), or by defining analyses in other parts of the <strong>setup file</strong>.</p>
 </div>
 </div>
-</section>
-<section id="sheet-types" class="level3">
-<h3 class="anchored" data-anchor-id="sheet-types">Sheet Type</h3>
+<p>### Sheet Type {#sheet-types}</p>
 <p><img src="../images/im-014-sheet-type.png" class="img-fluid"></p>
 <p>This is a drop-down menu field used to define the <em>type of table</em> contained in the sheet. There are 2 options:</p>
 <ul>
@@ -643,9 +542,7 @@ Tip
 <p>To make the dictionary easier to read, we recommend that you group (write one below another) the variables of a same sheet and a same section.</p>
 </div>
 </div>
-</section>
-<section id="sub-section" class="level3">
-<h3 class="anchored" data-anchor-id="sub-section">Sub Section</h3>
+<p>### Sub Section</p>
 <p><img src="../images/im-017-sub-section.png" class="img-fluid"></p>
 <p>This is a free text field that allows you to further refine the organisation of variables in the table by creating a second level of grouping.</p>
 <p>In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in <strong>?@sec-sheet-sections-example</strong>). They cannot be modified by the end user.</p>
@@ -709,12 +606,10 @@ Note
 <p><strong>4</strong> <img src="../images/im-029-example.png" class="img-fluid"></p>
 </div>
 </div>
-</section>
-</section>
-<section id="register-book" class="level3">
-<h3 class="anchored" data-anchor-id="register-book">Register Book</h3>
+<p>### Register Book</p>
 <p><img src="../images/im-030-register-book.png" class="img-fluid"></p>
 <p>This is a <em>yes/no</em> drop-down menu field used to predefine the variables to be included in the register to be printed. This is not mandatory and can be managed later, directly in the <strong>linelist file</strong>.</p>
+</section>
 </section>
 <section id="personal-identifier" class="level3">
 <h3 class="anchored" data-anchor-id="personal-identifier">Personal Identifier</h3>
@@ -1248,12 +1143,10 @@ Note
 <p>The information about the more generalist “formula” control are also valid here.</p>
 </div>
 </div>
-</section>
-</section>
-</section>
-<section id="unique" class="level3">
-<h3 class="anchored" data-anchor-id="unique">Unique</h3>
+<p>### Unique</p>
 <p>This is a <em>yes/no</em> drop-down menu field. It has no direct impact on the linelist, but the information can be used in the data cleaning phase.</p>
+</section>
+</section>
 </section>
 </section>
 <section id="data-exports" class="level2">
@@ -1274,35 +1167,9 @@ Important
 <p>Variables with <strong>any values</strong> entered in the Export columns will be exported. If you want to <strong>not</strong> export a variable, you need to keep the cells <strong>empty</strong>.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If two variables have the same number in the same export columns, they will be exported in the order they are defined in the setup (from top to bottom).</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you wish to create an anonymous export, i.e.&nbsp;one containing no personal identifier, you can filter the “personal identifier” column to ‘yes’ and check that the column corresponding to the anonymous export is empty.</p>
-</div>
-</div>
-</section>
-<section id="data-validation" class="level2">
-<h2 class="anchored" data-anchor-id="data-validation">Data validation</h2>
+<p>::: callout-note If two variables have the same number in the same export columns, they will be exported in the order they are defined in the setup (from top to bottom). :::</p>
+<p>::: callout-tip If you wish to create an anonymous export, i.e.&nbsp;one containing no personal identifier, you can filter the “personal identifier” column to ‘yes’ and check that the column corresponding to the anonymous export is empty. :::</p>
+<p>## Data validation</p>
 <p><img src="../images/im-043-data-validation.png" class="img-fluid"></p>
 <p>To improve the quality of the data entered, it is possible to alert or block the user if they attempt to enter unvalid data.</p>
 <p>For continuous variables, you need to specify the min and or max values (see below), but for dropdown menu variables, go directly to the “Alert” column.</p>
@@ -1367,9 +1234,7 @@ Note
 <p>You can add error and warnings to columns with dropdown menus, the messages will appear if the user tries to enter a value not from the dropdown menu.</p>
 </div>
 </div>
-</section>
-<section id="message" class="level3">
-<h3 class="anchored" data-anchor-id="message">Message</h3>
+<p>### Message</p>
 <p>This is a free text field used to give the end user an indication of why their entry is invalid.</p>
 </section>
 <section id="examples" class="level3">
@@ -1422,9 +1287,7 @@ Tip
 <p>you can give special names to these calculated columns to easily identify them.</p>
 </div>
 </div>
-</section>
-<section id="formatting-values" class="level3">
-<h3 class="anchored" data-anchor-id="formatting-values">Formatting values</h3>
+<p>### Formatting values</p>
 <p>This is a free text column, but what matters is not the text entered in it but the formatting applied to it, which is read and applied to the cells in the <strong>linelist file</strong>, if the formatting condition is met.</p>
 </section>
 <section id="lock-cells" class="level3">
@@ -1877,13 +1740,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../reference/custom_formulas.html" class="pagination-link" aria-label="Custom formulas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Custom formulas</span>
+      <a href="../reference/exports_sheet.html" class="pagination-link" aria-label="Define exports">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Define exports</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../reference/exports_sheet.html" class="pagination-link" aria-label="Define exports">
-        <span class="nav-page-text">Define exports</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../reference/translations_sheet.html" class="pagination-link" aria-label="Generate linelist in several languages">
+        <span class="nav-page-text">Generate linelist in several languages</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
