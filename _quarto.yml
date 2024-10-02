@@ -28,7 +28,7 @@ website:
           - text: General workflow
             href: getting_started/workflow.qmd
           
-          - text: Fill the setup file
+          - text: Prepare a linelist setup
             href: getting_started/create_dic.qmd
           
           - text: Compile a linelist
