@@ -1,5 +1,5 @@
 ---
-title: Dictionary: define linelist tables and their variables
+title: "Dictionary: define linelist tables and their variables"
 ---
 
 The dictionary is stored in an Excel table divided into several sections, which define the different sheets that will be part of the Excel linelist produced.
@@ -153,7 +153,7 @@ In general, your linelists will contain at least a data entry sheet, and a metad
 More sheets can be created, either automatically (such as the "Instruction" sheet), or by defining analyses in other parts of the **setup file**.
 :::
 
-### Sheet Type {#sec-sheet-types}
+### Sheet Type {#sheet-types}
 
 ![](imgs/im-014-sheet-type.png)
 
@@ -189,7 +189,7 @@ This is a free text field that allows you to further refine the organisation of 
 
 In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in @sec-sheet-sections-example). They cannot be modified by the end user.
 
-### Example {#sec-sheet-sections-example}
+### Example {#sheet-sections-example}
 
 #### vlist1D
 
@@ -295,7 +295,7 @@ Finally, many software allow the user to set the way the data is displayed, whic
 Learn more about format in @sec-var-format
 
 
-### Variable Type {#sec-var-type}
+### Variable Type {#var-type}
 
 ![](imgs/im-032-variable-type.png)
 
@@ -312,7 +312,7 @@ This column proposes a drop-down menu field containing four options for defining
 ![](imgs/im-127-var-types.png)
 
 
-### Variable Format {#sec-var-format}
+### Variable Format {#var-format}
 
 ![](imgs/im-033-variable-format.png)
 
@@ -327,7 +327,7 @@ Example: for an integer to appear with at least 2 characters, enter the format: 
 Note that the default data format is *jj-mmm-aaaa*.
 
 
-### Control {#sec-var-control}
+### Control {#var-control}
 
 ![](imgs/im-035-control.png)
 
@@ -407,7 +407,7 @@ While by default the dropdown menu created is empty, it is possible to prefill i
 :::
 
 
-##### List_auto {#sec-list-auto}
+##### List_auto {#list-auto}
 
 This control also creates a **dynamic dropdown menu**, but the values come from the data entered in another column.
 
@@ -528,7 +528,7 @@ Columns generated with this control can be used in univariate or bivariate table
 Read more about writing the formula in the [Control details column](#sec-var-control-details) of the dictionary.
 
 
-### Control details {#sec-var-control-details}
+### Control details {#var-control-details}
 
 This is a free text field, which accepts three types of values: 
 - the name of a *list* (defined in the *Choices* sheet), 
@@ -559,7 +559,7 @@ For more information on the definition of drop-down menus, see the *Choices* she
 In the case of "list auto" variables, you only need to provide the name of another variable in the "Control details" column. In the linelist, the values present in the referred variables will be automatically used to populate the dropdown menu.
 
 
-#### Formulas {#sec-formulas}
+#### Formulas {#formulas}
 
 If you have selected "formula", "choice_formula" or "case_when" in the ["Control" column](#sec-var-control), you need to provide the formula to be applied in this column. 
 
@@ -567,7 +567,7 @@ If you have selected "formula", "choice_formula" or "case_when" in the ["Control
 The information given in the [Formula control](#sec-formula-control) section below are also valid for "choice_formula" and "case_when" controls as these, while based on custom functions, are still formulas.
 :::
 
-##### Formula control {#sec-formula-control}
+##### Formula control {#formula-control}
 
 The formula is written **in English**, **without an "=" sign**. The formulas are automatically translated into the Excel language defined on the computer used to generate the linelist.
 
@@ -584,7 +584,7 @@ If your Excel is not usually in English, pay special attention to the following:
 
 ::: callout-tip
 In Excel, you can use ALT+ENTRY to insert a carriage return and go to the next line. This does not affect the execution of your formulas, but greatly increases the readability. The same goes for inserting spaces around operators. Contrast these two formulas:
-
+:::
 
 ![](imgs/im-129-formula-style.png)
 
