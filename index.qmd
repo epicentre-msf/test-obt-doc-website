@@ -1,7 +1,7 @@
 ---
 pagetitle: "About OutbreakTools"
 title: "OutbreakTools"
-subtitle: "Generate robust linelists from a dictionaty without fancy VBA skills"
+subtitle: "Generate robust linelists from a dictionary without fancy VBA skills"
 image: image/outbreaktools.png
 ---
 
