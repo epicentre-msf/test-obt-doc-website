@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Create a dictionary</span></a>
+ <span class="dropdown-text">Fill the setup file</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
@@ -326,8 +326,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#download-the-outbreaktools-archive" id="toc-download-the-outbreaktools-archive" class="nav-link active" data-scroll-target="#download-the-outbreaktools-archive">Download the OutbreakTools archive</a></li>
+  <li><a href="#download" id="toc-download" class="nav-link active" data-scroll-target="#download">Download the OutbreakTools archive</a></li>
   <li><a href="#install-the-oubreaktools-files" id="toc-install-the-oubreaktools-files" class="nav-link" data-scroll-target="#install-the-oubreaktools-files">Install the OubreakTools files?</a></li>
+  <li><a href="#update-to-a-new-version-of-outbreaktools" id="toc-update-to-a-new-version-of-outbreaktools" class="nav-link" data-scroll-target="#update-to-a-new-version-of-outbreaktools">Update to a new version of OutbreakTools</a></li>
   </ul>
 </nav>
     </div>
@@ -353,8 +354,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="download-the-outbreaktools-archive" class="level2">
-<h2 class="anchored" data-anchor-id="download-the-outbreaktools-archive">Download the OutbreakTools archive</h2>
+<section id="download" class="level2">
+<h2 class="anchored" data-anchor-id="download">Download the OutbreakTools archive</h2>
 <p>Go to the <a href="https://github.com/epicentre-msf/outbreak-tools">OutbreakTools github repo</a>, scroll down to the README and click on the yellow button to donload <code>.zip</code> archive that contains the file you need.</p>
 <p><img src="images/img-001-download.png" class="img-fluid"></p>
 <p>Save the archive locally on your computer and unzip it.</p>
@@ -365,11 +366,28 @@ ul.task-list li input[type="checkbox"] {
 <p>You should however <a href="https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6">authorise VBA macros in Excel</a> so that the files work as expected (or at all, in fact).</p>
 <p>The archive contains several timestamped files:</p>
 <ul>
-<li>setup-YYYY-MM-DD.xlsb: an empty setup file</li>
-<li>designer_main-YYYY-MM-DD.xlsb: the designer file that is used to compile the setup</li>
-<li>_ribbontemplate_main-YYYY-MM-DD.xlsb: a template file containing information used during compilation</li>
-<li>run_designer_on_windows.R and rundesigner.vbs: files that can be used to compile from R (experimental and yet undocumented)</li>
+<li>`setup-YYYY-MM-DD.xlsb`: an empty <strong>setup file</strong></li>
+<li>`designer_main-YYYY-MM-DD.xlsb`: the <strong>designer file</strong> that is used to compile the setup</li>
+<li>`_ribbontemplate_main-YYYY-MM-DD.xlsb`: a template file containing information used during compilation</li>
+<li>`run_designer_on_windows.R` and `rundesigner.vbs`: files that can be used to compile from R (experimental and yet undocumented)</li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The excel files are in the `.xlsb` format, a compressed, more efficient Excel format that allows VBA macros.</p>
+</div>
+</div>
+</section>
+<section id="update-to-a-new-version-of-outbreaktools" class="level2">
+<h2 class="anchored" data-anchor-id="update-to-a-new-version-of-outbreaktools">Update to a new version of OutbreakTools</h2>
+<p>The OutbreakTools solution is in active development, so there are regular updates to the files, to add new functionalities or correct bugs. To upgrade, just <a href="https://github.com/epicentre-msf/outbreak-tools">dowload the tools</a> again and use the new <strong>setup</strong> and <strong>designer</strong>. If you already have a working setup for a linelist, it is possible to migrate its content to a new empty <strong>setup file</strong>.</p>
 
 
 </section>
