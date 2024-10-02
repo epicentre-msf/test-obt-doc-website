@@ -38,3 +38,12 @@ Most of the work developping a linelist is spent filling a **setup file** templa
 The **designer** is another excel file, that contains the code to build a linelist from a **setup file**.
 
 When the **setup file** is ready (or at least a first draft is), you load it into a **designer**, fill a couple of fields^[What is the name of the created linelist, where to save it, should it be password protected and if yes, which password etc.] and let the designer build the linelist.
+
+
+## Linelist
+
+The linelists created from a compiled **setup file** will contain several sheets:  
+
+- Data entry sheets 
+- Analysis and graph sheets  
+- Customisation sheets for custom drop-down menus and the geographic base
