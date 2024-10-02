@@ -1,5 +1,5 @@
 ---
-title: "Create linelists with more than one entry sheet"
+title: "Create linelists with more than one entry sheets"
 ---
 
 You want the linelist to contain several data entry sheets. The important thing to think about is how the tables should be linked, if at all.
