@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dictionary: define linelist tables and their variables – OutbreakTools documentation</title>
+<title>Dictionary sheet: define linelist tables and their variables – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Dictionary: define linelist tables and their variables</h1>
+<h1 class="title">Dictionary sheet: define linelist tables and their variables</h1>
 </div>
 
 
@@ -255,13 +255,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The dictionary is stored in an Excel table divided into several sections, which define the different sheets that will be part of the Excel linelist produced.</p>
-<p><strong>Each line corresponds to a variable</strong> and includes most the characteristics of that variable.</p>
-<p>The dictionary is divided into the following sections:</p>
+<p>The metadata about linelist variable, which is commonly called the <em>variable dictionary</em> is stored in two of the <strong>setup file</strong> sheets, the <em>Dictionary</em> sheet and the <a href="../reference/choices_sheet.html"><em>Choices</em> sheet</a>. Most of the variable attributes/metadata are stored in the <em>Dictionary</em> sheet, while only the categories of categorical variables are stored in the <em>Choices</em> sheet.</p>
+<p>Variable metadata on the <em>Dictionary</em> sheet are organised in one (big) table in which <strong>one line corresponds to one variable</strong>. This table is divided in sections:</p>
 <table class="caption-top table">
+<caption>Sections of variable metadata</caption>
 <colgroup>
-<col style="width: 16%">
-<col style="width: 83%">
+<col style="width: 23%">
+<col style="width: 73%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -271,16 +271,16 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Variable name and labels</td>
-<td>Lists the variables to be collected by defining their main characteristics</td>
+<td>Variable names and labels</td>
+<td>List the variables to be collected by defining their main characteristics</td>
 </tr>
 <tr class="even">
 <td>Sheets and Sections</td>
-<td>Allows you to organise variables by sheets, section and sub-section, and define the table orientation</td>
+<td>Define sheets and table structure; organise variables in sheets, sections and sub-sections</td>
 </tr>
 <tr class="odd">
 <td>Properties</td>
-<td>Allows you to assign different properties to variables, in particular defining dropdown menus, formulas or format.</td>
+<td>Define variable specs: visibility, type, format, formulas…</td>
 </tr>
 <tr class="even">
 <td>Data exports</td>
@@ -288,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Data validation</td>
-<td>Allows you to define accepted MIN and MAX values, and the corresponding alert or error when an input is outside the defined limits.</td>
+<td>Define accepted MIN and MAX values, and alert or error when an input is outside the rules.</td>
 </tr>
 </tbody>
 </table>
@@ -307,18 +307,44 @@ Warning
 </div>
 <section id="variable-names-and-labels" class="level2">
 <h2 class="anchored" data-anchor-id="variable-names-and-labels">Variable names and labels</h2>
-<p>This first part lists all the variables you want to have in the final linelist.</p>
-<p><img src="../images/im-003-variable-names-and-labels.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-003-variable-names-and-labels.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <section id="variable-name" class="level3">
 <h3 class="anchored" data-anchor-id="variable-name">Variable Name</h3>
-<p><img src="../images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
-<p>This is a free text field used to identify the variable. This name can be used to refer to this variable in formulas or in the <em>Analyses</em> sheet.</p>
-<p>After you generate the <strong>linelist file</strong>, the variable name info will be found in the formula bar in the grey cells from the eigth row of the linelist sheet, or in the cell name zone for cells of the <em>Info</em> sheet.</p>
-<p>Variable names rules:<br>
-- Names must be unique in the <strong>setup file</strong>, even if the variables are on different sheets. If two or more variables were to have the same name, the second occurrence will automatically be suffixed with the value “1”; if there is a third, it will be suffixed with the value “2”, and so on.<br>
-- Names must be <strong>at least 4 characters long</strong> to be valid.<br>
-- Names should not contain special characters (except for “<em>_</em>”).<br>
-- Names will be automatically converted to lowercase during compilation.</p>
+<p>This is a free text field used to <strong>uniquely identify the variables</strong>. The name can be used to refer to the variable in formulas or in the <a href="../reference/analyses_sheet.html"><em>Analyses</em> sheet</a>.</p>
+<p>After you build the linelist, the variable name can be found in the formula bar of the grey cells from the eight-th row (of the linelist sheet)for 2-dimensions tables like patient data), or in the cell name zone for cells of a 1-dimension table (like the <em>Info</em> sheet).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The variable name is what allows the scripts to uniquely identify variable, in any language the linelist is built in. By opposition, variable labels can change or be translated.</p>
+<p>Variable names are used to migrate data from one linelist file to the other: changing the variable name of a variable in the setup is equivalent to creating a new variable: the migration script will not be able to match the variables.</p>
+</div>
+</div>
+<p>Variable names rules:</p>
+<ul>
+<li>Names must be unique in the <strong>setup file</strong>, even if the variables are on different sheets.<br>
+</li>
+<li>Names must be <strong>at least 4 characters long</strong> to be valid.<br>
+</li>
+<li>Names should not contain special characters (except for “<em>_</em>”).<br>
+</li>
+<li>Names will be automatically converted to lowercase during compilation.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -329,7 +355,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>As a general advice, try to create short but explicit names.</p>
+<p>As a general advice, try to create short but explicit names (easier said than done).</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -343,6 +369,7 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>To ensure that variable names are unique, you can add the name of the sheet in which the variable will appear as a prefix, or use numbers.</p>
+<p>If by error two or more variables have the same name, the second occurrence will automatically be suffixed with the value “1”; if there is a third, it will be suffixed with the value “2”, and so on.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -361,9 +388,9 @@ Tip
 </section>
 <section id="main-label" class="level3">
 <h3 class="anchored" data-anchor-id="main-label">Main Label</h3>
-<p><img src="../images/im-005-main-label.png" class="img-fluid"></p>
-<p>This is a free text field that defines the variable label. Labels can be more descriptive and longer than names, but we recommend to keep it moderately short for legibility reasons. The main label appears in black and bold in the <strong>linelist file</strong>.</p>
-<p>It cannot be modified by the end user (with one exception, see the “Editable section” below).</p>
+<p>This is a free text field that defines the variable label. Labels are quick descriptions of the variable that the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.</p>
+<p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see <strong>?@sec-editable-label</strong>).</p>
+<p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -380,8 +407,7 @@ Note
 </section>
 <section id="dev-comment" class="level3">
 <h3 class="anchored" data-anchor-id="dev-comment">Dev Comment</h3>
-<p><img src="../images/im-006-dev-comment.png" class="img-fluid"></p>
-<p>This free text column is for the sole benefit of the <strong>setup file</strong> creator (in all probability, you), to add purely technical or practical information. It is not read by the designer and does not affect the generated file.</p>
+<p>This free text column is for the sole benefit of the <strong>setup file</strong> developer (in all probability, you), to add technical or practical information. <strong>It is not read by the designer and does not affect the generated file.</strong></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -642,9 +668,9 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <p>These options can be broadly classified in three sorts of variables to be created:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 38%">
-<col style="width: 25%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -677,38 +703,40 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <p>This table summarises the different options:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 18%">
-<col style="width: 25%">
-<col style="width: 45%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 33%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2"><h1 id="control">Control</h1>
-<p>choice_manual</p></td>
-<td rowspan="2"><h1 id="how-to-populate-the-dropdown-menu">How to populate the dropdown menu?</h1>
+<td><h1 id="control">Control</h1>
+<p>cho ice_manual</p></td>
+<td><h1 id="how">How</h1>
+<p>to populat e the drop down menu?</p>
 <p>Predefined values</p></td>
-<td rowspan="2"><h1 id="where-are-values-defined">Where are values defined?</h1>
+<td><h1 id="whe">Whe</h1>
+<p>re are valu es defined?</p>
 <p><strong>Setup file</strong>, in the “<em>Choice</em>” sheet</p></td>
-<td rowspan="2">Data entry in the linelist | =====================================================================================+ <strong>One value</strong> selected from a dropdown menu |</td>
+<td>Data entry in the linelist | =========== ==== ===================== ==== ===================== ==== ====================+ <strong>One value</strong> selected from a dropdown menu |</td>
 </tr>
 <tr class="even">
-</tr>
-<tr class="odd">
-<td>choice_multiple</td>
+<td>choic e_multiple</td>
 <td>Predefined values</td>
 <td><strong>Setup file</strong>, in the “<em>Choice</em>” sheet</td>
 <td><strong>Several values</strong> selected from a dropdown menu |</td>
 </tr>
-<tr class="even">
-<td>choice_custom</td>
-<td>User-defined values (but see details)</td>
+<tr class="odd">
+<td>cho ice_custom</td>
+<td>Us er-defined values (but see details)</td>
 <td><strong>Linelist file</strong>, in the “<em>Custom dropdown</em>” sheet</td>
 <td><strong>One value</strong> selected from a dropdown menu |</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>list_auto</td>
-<td colspan="3">User-defined values but from another data column | <strong>Linelist file</strong>, in another column | <strong>One value</strong>, selected from a dropdown populated by the values of another variable</td>
+<td>Us er-defined values but from another data column | <strong>Linelist file</strong>, in another column | <strong>One value</strong>, selected from a dropdown populated by the values of another variable</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -844,11 +872,11 @@ Note
 <p>Three controls allow the creation of calculated columns. In general, the user can define a column by providing an Excel <em>formula</em> [^<em>i.e.</em> a combination of Excel <em>functions</em>], but the setup file also provides two custom functions, CASE_WHEN and CHOICE_FORMULA to simplify formula syntax.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 30%">
-<col style="width: 12%">
-<col style="width: 24%">
-<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -862,22 +890,22 @@ Note
 <tbody>
 <tr class="odd">
 <td>formula</td>
-<td>Any combination of Excel functions (in English)</td>
+<td>Any c ombination of Excel functions (in English)</td>
 <td>Anything</td>
 <td></td>
 <td style="text-align: center;"><p>Continuous variables: yes</p>
-<p>Categorical variables: no</p></td>
+<p>C ategorical variables: no</p></td>
 </tr>
 <tr class="even">
 <td>case_when</td>
-<td><strong>CASE_WHEN</strong> (Excel functions optional)</td>
+<td><strong>C ASE_WHEN</strong> (Excel functions optional)</td>
 <td>Replaces nested IF</td>
 <td>Empty cell; user can modify it</td>
 <td style="text-align: center;">no</td>
 </tr>
 <tr class="odd">
-<td>choice_formula</td>
-<td><strong>CHOICE_FORMULA</strong> (Excel functions optional)</td>
+<td>choi ce_formula</td>
+<td>**CH OICE _FORMULA** (Excel functions optional)</td>
 <td>Replaces nested IF</td>
 <td>Empty character; user cannot modify it</td>
 <td style="text-align: center;">yes</td>
@@ -947,29 +975,31 @@ Note
 <p>This is a free text field, which accepts three types of values: - the name of a <em>list</em> (defined in the <em>Choices</em> sheet), - the name or a <em>variable</em> (defined in the <em>Dictionary</em> sheet) - a <em>formula</em>.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
-<col style="width: 23%">
-<col style="width: 59%">
-<col style="width: 4%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 41%">
+<col style="width: 16%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2"><h1 id="control-type">Control type</h1>
+<td><h1 id="cont">Cont</h1>
+<p>rol type</p>
 <p>Static dropdown menu</p></td>
-<td rowspan="2"><h1 id="control-column">Control column</h1>
-<p>choice_manual, choice_custom, choice_multiple</p></td>
-<td colspan="2" rowspan="2">Value expected in the “Control details” column | ========================================================================================================================+ The name of a <em>list</em> that contains the authorised values, defined in the <em>Choice</em> sheet (“List Name” column) |</td>
+<td><h1 id="contro">Contro</h1>
+<p>l column</p>
+<p>choice _manual, choice <em>custom, choice</em> multiple</p></td>
+<td>Value expected in the “Control details” column | ====================== ====== =========================== ====== =========================== ====== ==========================+ The name of a <em>list</em> that contains the authorised values, defined in the <em>Choice</em> sheet (“List Name” column) |</td>
+<td></td>
 </tr>
 <tr class="even">
-</tr>
-<tr class="odd">
+<td></td>
 <td>Dynamic dropdown menu</td>
 <td>list_auto</td>
-<td colspan="2">The name of an existing <em>variable</em></td>
+<td>The name of an existing <em>v ariable</em></td>
 </tr>
-<tr class="even">
-<td>Calculated</td>
-<td>formula, choice_formula, case_when</td>
+<tr class="odd">
+<td>Ca lculated</td>
+<td>formula, choice_ formula, c ase_when</td>
 <td>An Excel formula (that can contain one or more functions, including the custom functions CASE_WHEN and CHOICE_FORMULA)</td>
 <td></td>
 </tr>
