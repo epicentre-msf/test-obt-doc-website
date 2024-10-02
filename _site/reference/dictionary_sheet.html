@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>dictionary – OutbreakTools documentation</title>
+<title>Dictionary: define linelist tables and their variables – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../reference/Exports.html" rel="next">
+<link href="../reference/exports_sheet.html" rel="next">
 <link href="../reference/custom_formulas.html" rel="prev">
 <link href="../images/icon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Create a dictionary</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../compile.qmd">
+    <a class="dropdown-item" href="../getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
   </li>  
     </ul>
@@ -128,8 +128,24 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../getting_started/Dictionary.qmd">
+    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/choices_sheet.html">
+ <span class="dropdown-text">Choice sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+ <span class="dropdown-text">Analyses sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/exports_sheet.html">
+ <span class="dropdown-text">Export sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/translations_sheet.html">
+ <span class="dropdown-text">Translation sheet</span></a>
   </li>  
     </ul>
   </li>
@@ -147,12 +163,16 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
  <span class="dropdown-text">Export subset of geo columns</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/link_tables.html">
+ <span class="dropdown-text">Create two data entry tables</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://code.com" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/epicentre-msf/outbreak-tools" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -161,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/Analysis.html">Index</a></li><li class="breadcrumb-item"><a href="../reference/Dictionary.html">Variable names and labels</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/dictionary_sheet.html">Dictionary: define linelist tables and their variables</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -238,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../how_to/link_tables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create linelits with more than one entry sheet</span></a>
+ <span class="menu-text">Create linelists with more than one entry sheet</span></a>
   </div>
 </li>
       </ul>
@@ -246,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Index</span></a>
+ <span class="menu-text">Reference</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -254,14 +274,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Global Summary</span></a>
+  <a href="../reference/analyses_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define basic analyses</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Choices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">List Name</span></a>
+  <a href="../reference/choices_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define variable categories</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -272,20 +292,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Dictionary.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Variable names and labels</span></a>
+  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Exports.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Export number</span></a>
+  <a href="../reference/exports_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define exports</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Translations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Translations</span></a>
+  <a href="../reference/translations_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generate linelist in several languages</span></a>
   </div>
 </li>
       </ul>
@@ -313,10 +333,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sheets-and-sections" id="toc-sheets-and-sections" class="nav-link" data-scroll-target="#sheets-and-sections">Sheets and sections</a>
   <ul class="collapse">
   <li><a href="#sheet-name" id="toc-sheet-name" class="nav-link" data-scroll-target="#sheet-name">Sheet Name</a></li>
-  <li><a href="#sec-sheet-types" id="toc-sec-sheet-types" class="nav-link" data-scroll-target="#sec-sheet-types">Sheet Type</a></li>
+  <li><a href="#sheet-types" id="toc-sheet-types" class="nav-link" data-scroll-target="#sheet-types">Sheet Type</a></li>
   <li><a href="#main-section" id="toc-main-section" class="nav-link" data-scroll-target="#main-section">Main Section</a></li>
   <li><a href="#sub-section" id="toc-sub-section" class="nav-link" data-scroll-target="#sub-section">Sub Section</a></li>
-  <li><a href="#sec-sheet-sections-example" id="toc-sec-sheet-sections-example" class="nav-link" data-scroll-target="#sec-sheet-sections-example">Example</a></li>
+  <li><a href="#sheet-sections-example" id="toc-sheet-sections-example" class="nav-link" data-scroll-target="#sheet-sections-example">Example</a></li>
   </ul></li>
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a>
   <ul class="collapse">
@@ -324,10 +344,27 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#register-book" id="toc-register-book" class="nav-link" data-scroll-target="#register-book">Register Book</a></li>
   <li><a href="#personal-identifier" id="toc-personal-identifier" class="nav-link" data-scroll-target="#personal-identifier">Personal Identifier</a></li>
   <li><a href="#thinking-about-variables" id="toc-thinking-about-variables" class="nav-link" data-scroll-target="#thinking-about-variables">Thinking about variables</a></li>
-  <li><a href="#sec-var-type" id="toc-sec-var-type" class="nav-link" data-scroll-target="#sec-var-type">Variable Type</a></li>
-  <li><a href="#sec-var-format" id="toc-sec-var-format" class="nav-link" data-scroll-target="#sec-var-format">Variable Format</a></li>
-  <li><a href="#sec-var-control" id="toc-sec-var-control" class="nav-link" data-scroll-target="#sec-var-control">Control</a></li>
-  <li><a href="#sec-var-control-details" id="toc-sec-var-control-details" class="nav-link" data-scroll-target="#sec-var-control-details">Control details</a></li>
+  <li><a href="#var-type" id="toc-var-type" class="nav-link" data-scroll-target="#var-type">Variable Type</a></li>
+  <li><a href="#var-format" id="toc-var-format" class="nav-link" data-scroll-target="#var-format">Variable Format</a></li>
+  <li><a href="#var-control" id="toc-var-control" class="nav-link" data-scroll-target="#var-control">Control</a></li>
+  <li><a href="#var-control-details" id="toc-var-control-details" class="nav-link" data-scroll-target="#var-control-details">Control details</a></li>
+  <li><a href="#unique" id="toc-unique" class="nav-link" data-scroll-target="#unique">Unique</a></li>
+  </ul></li>
+  <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports">Data exports</a></li>
+  <li><a href="#data-validation" id="toc-data-validation" class="nav-link" data-scroll-target="#data-validation">Data validation</a>
+  <ul class="collapse">
+  <li><a href="#min" id="toc-min" class="nav-link" data-scroll-target="#min">Min</a></li>
+  <li><a href="#max" id="toc-max" class="nav-link" data-scroll-target="#max">Max</a></li>
+  <li><a href="#alert" id="toc-alert" class="nav-link" data-scroll-target="#alert">Alert</a></li>
+  <li><a href="#message" id="toc-message" class="nav-link" data-scroll-target="#message">Message</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
+  <li><a href="#conditional-formatting" id="toc-conditional-formatting" class="nav-link" data-scroll-target="#conditional-formatting">Conditional Formatting</a>
+  <ul class="collapse">
+  <li><a href="#formatting-condition" id="toc-formatting-condition" class="nav-link" data-scroll-target="#formatting-condition">Formatting condition</a></li>
+  <li><a href="#formatting-values" id="toc-formatting-values" class="nav-link" data-scroll-target="#formatting-values">Formatting values</a></li>
+  <li><a href="#lock-cells" id="toc-lock-cells" class="nav-link" data-scroll-target="#lock-cells">Lock cells</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -335,7 +372,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/dictionary_sheet.html">Dictionary: define linelist tables and their variables</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Dictionary: define linelist tables and their variables</h1>
+</div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p>The dictionary is stored in an Excel table divided into several sections, which define the different sheets that will be part of the Excel linelist produced.</p>
@@ -566,8 +619,8 @@ Note
 </div>
 </div>
 </section>
-<section id="sec-sheet-types" class="level3">
-<h3 class="anchored" data-anchor-id="sec-sheet-types">Sheet Type</h3>
+<section id="sheet-types" class="level3">
+<h3 class="anchored" data-anchor-id="sheet-types">Sheet Type</h3>
 <p><img src="imgs/im-014-sheet-type.png" class="img-fluid"></p>
 <p>This is a drop-down menu field used to define the <em>type of table</em> contained in the sheet. There are 2 options:</p>
 <ul>
@@ -580,7 +633,7 @@ Note
 <h3 class="anchored" data-anchor-id="main-section">Main Section</h3>
 <p><img src="imgs/im-016-main-section.png" class="img-fluid"></p>
 <p>This is a free text field used to define the <em>name</em> of the main section in which the variable is located. This makes it possible to organise variables by theme to make data entry and navigation easier.</p>
-<p>In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in <a href="#sec-sheet-sections-example" class="quarto-xref">Section&nbsp;0.2.5</a>). They cannot be modified by the end user.</p>
+<p>In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in <strong>?@sec-sheet-sections-example</strong>). They cannot be modified by the end user.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -599,10 +652,10 @@ Tip
 <h3 class="anchored" data-anchor-id="sub-section">Sub Section</h3>
 <p><img src="imgs/im-017-sub-section.png" class="img-fluid"></p>
 <p>This is a free text field that allows you to further refine the organisation of variables in the table by creating a second level of grouping.</p>
-<p>In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in <a href="#sec-sheet-sections-example" class="quarto-xref">Section&nbsp;0.2.5</a>). They cannot be modified by the end user.</p>
+<p>In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in <strong>?@sec-sheet-sections-example</strong>). They cannot be modified by the end user.</p>
 </section>
-<section id="sec-sheet-sections-example" class="level3">
-<h3 class="anchored" data-anchor-id="sec-sheet-sections-example">Example</h3>
+<section id="sheet-sections-example" class="level3">
+<h3 class="anchored" data-anchor-id="sheet-sections-example">Example</h3>
 <section id="vlist1d" class="level4">
 <h4 class="anchored" data-anchor-id="vlist1d">vlist1D</h4>
 <p>Definition in the <strong>setup file</strong>:</p>
@@ -678,28 +731,28 @@ Note
 <h3 class="anchored" data-anchor-id="thinking-about-variables">Thinking about variables</h3>
 <p>There are many ways of thinking about variables and of classifying them.</p>
 <p>In general we can distinguished between <em>input</em> variables, where the user enters raw data, and <em>calculated</em> (or derived) variables, which require no input. Both of them can be created in OutbreakTools.</p>
-<p>Independently of this distinction, a variety of <strong>variables types</strong> can exist, containing numbers or text in various forms. In Excel, we will often use the types <em>integer</em>, <em>decimals</em>, <em>dates</em> and <em>text</em>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. See the section on <a href="#sec-var-type" class="quarto-xref">Section&nbsp;0.3.5</a> for more information.</p>
-<p>For input variables, you could think of two ways of entering data: a “free” approach, where user can enter the value of their choice, and a controlled (constrained) approach, where the values the user can enter are limited. In Excel, this is generally implemented through <em>dropdown menus</em> from which the data encoder selects a value. In OutbreakTools, there have several ways of building dropdown menus, depending on whether you know the categories in advance or not. This is what we call “variable control”. Learn more about it in the <a href="#sec-var-control" class="quarto-xref">Section&nbsp;0.3.7</a>.</p>
+<p>Independently of this distinction, a variety of <strong>variables types</strong> can exist, containing numbers or text in various forms. In Excel, we will often use the types <em>integer</em>, <em>decimals</em>, <em>dates</em> and <em>text</em>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. See the section on <strong>?@sec-var-type</strong> for more information.</p>
+<p>For input variables, you could think of two ways of entering data: a “free” approach, where user can enter the value of their choice, and a controlled (constrained) approach, where the values the user can enter are limited. In Excel, this is generally implemented through <em>dropdown menus</em> from which the data encoder selects a value. In OutbreakTools, there have several ways of building dropdown menus, depending on whether you know the categories in advance or not. This is what we call “variable control”. Learn more about it in the <strong>?@sec-var-control</strong>.</p>
 <p>Finally, many software allow the user to set the way the data is displayed, which we here call <strong>format</strong>. For example:<br>
 - The date first of January of 2023 can be displayed as “01/01/2024”, or “1/1/24” or 1-Jan-24” etc.<br>
 - The number “1” could be displayed as “1” simply, or “001”<br>
 - The number 0.01 could be displayed with different levels of rounding, or even as “10%” if the column contains proportions that can be displayed as percentages.<br>
-Learn more about format in <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a></p>
+Learn more about format in <strong>?@sec-var-format</strong></p>
 </section>
-<section id="sec-var-type" class="level3">
-<h3 class="anchored" data-anchor-id="sec-var-type">Variable Type</h3>
+<section id="var-type" class="level3">
+<h3 class="anchored" data-anchor-id="var-type">Variable Type</h3>
 <p><img src="imgs/im-032-variable-type.png" class="img-fluid"></p>
 <p>This column proposes a drop-down menu field containing four options for defining the type [^which is sometimes called <em>class</em> in some softwares] of each variable:</p>
 <ul>
-<li><p><strong>Text</strong>: creates a column of text [^also called character string in some softwares]. The entry of the text may be free or constrained by a dropdown menu, see the <a href="#sec-var-control" class="quarto-xref">Section&nbsp;0.3.7</a> section below.</p></li>
-<li><p><strong>Date</strong>: creates a date column, whose exact format is defined in the next column, <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a>. The default format is <em>jj-mmm-aaaa</em>.</p></li>
+<li><p><strong>Text</strong>: creates a column of text [^also called character string in some softwares]. The entry of the text may be free or constrained by a dropdown menu, see the <strong>?@sec-var-control</strong> section below.</p></li>
+<li><p><strong>Date</strong>: creates a date column, whose exact format is defined in the next column, <strong>?@sec-var-format</strong>. The default format is <em>jj-mmm-aaaa</em>.</p></li>
 <li><p><strong>Integer</strong>: creates an integer column</p></li>
-<li><p><strong>Decimal</strong>: creates a column with decimal numbers. The number of digits after the decimal point is defined in the following <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a> column.</p></li>
+<li><p><strong>Decimal</strong>: creates a column with decimal numbers. The number of digits after the decimal point is defined in the following <strong>?@sec-var-format</strong> column.</p></li>
 </ul>
 <p><img src="imgs/im-127-var-types.png" class="img-fluid"></p>
 </section>
-<section id="sec-var-format" class="level3">
-<h3 class="anchored" data-anchor-id="sec-var-format">Variable Format</h3>
+<section id="var-format" class="level3">
+<h3 class="anchored" data-anchor-id="var-format">Variable Format</h3>
 <p><img src="imgs/im-033-variable-format.png" class="img-fluid"></p>
 <p>This field is used to specify the <strong>format</strong> of the variable (which depends on its <strong>type</strong>).</p>
 <p>There is a predefined drop-down list with common options, but you can enter any format by hand, as long as it is written in Excel syntax.</p>
@@ -707,8 +760,8 @@ Learn more about format in <a href="#sec-var-format" class="quarto-xref">Section
 <p>Example: for an integer to appear with at least 2 characters, enter the format: # #00</p>
 <p>Note that the default data format is <em>jj-mmm-aaaa</em>.</p>
 </section>
-<section id="sec-var-control" class="level3">
-<h3 class="anchored" data-anchor-id="sec-var-control">Control</h3>
+<section id="var-control" class="level3">
+<h3 class="anchored" data-anchor-id="var-control">Control</h3>
 <p><img src="imgs/im-035-control.png" class="img-fluid"></p>
 <p>This is a dropdown field containing nine options for defining variables that are not simple free entry variables:</p>
 <ul>
@@ -798,7 +851,7 @@ Learn more about format in <a href="#sec-var-format" class="quarto-xref">Section
 <section id="choice_manual" class="level5">
 <h5 class="anchored" data-anchor-id="choice_manual">Choice_manual</h5>
 <p>This control creates a categorical variable with a <strong>static dropdown menu</strong> in the linelist, from which <strong>one value</strong> can be selected. The authorised values from the dropdown menu are <strong>defined in advance in the setup</strong> and cannot be modified by the users of the linelist (hence the “static”).</p>
-<p>In the <strong>setup file</strong>, we define these values in a list stored in the <em>“Choices”</em> sheet, and fill the name of that list in the column “Control details” column (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section).</p>
+<p>In the <strong>setup file</strong>, we define these values in a list stored in the <em>“Choices”</em> sheet, and fill the name of that list in the column “Control details” column (see <strong>?@sec-var-control-details</strong> section).</p>
 </section>
 <section id="choice_multiple" class="level5">
 <h5 class="anchored" data-anchor-id="choice_multiple">Choice_multiple</h5>
@@ -834,17 +887,17 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>While by default the dropdown menu created is empty, it is possible to prefill it by filling the “Control Details” column with a list of choices, like for the other types of dropdowns menus (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section). The table in the “<em>Custom dropdown</em>” sheet of the linelist will still created and future users will be able to modify/grow it.</p>
+<p>While by default the dropdown menu created is empty, it is possible to prefill it by filling the “Control Details” column with a list of choices, like for the other types of dropdowns menus (see <strong>?@sec-var-control-details</strong> section). The table in the “<em>Custom dropdown</em>” sheet of the linelist will still created and future users will be able to modify/grow it.</p>
 </div>
 </div>
 </section>
-<section id="sec-list-auto" class="level5">
-<h5 class="anchored" data-anchor-id="sec-list-auto">List_auto</h5>
+<section id="list-auto" class="level5">
+<h5 class="anchored" data-anchor-id="list-auto">List_auto</h5>
 <p>This control also creates a <strong>dynamic dropdown menu</strong>, but the values come from the data entered in another column.</p>
 <p><strong>Example</strong>: a linelist contains two data-entry sheets: - the first data entry sheet contains patient data<br>
 - a second data entry sheet contains more variables for a subset of re-admitted patients.</p>
 <p>The list_auto control allows to create a column on the second sheet with a drop-down menu populated dynamically with the patient IDs from the first sheet.</p>
-<p>In the setup, the <strong>variable</strong> used to populate the drop-down menu is defined in the “Control Details” column of the <em>Dictionary</em> sheet (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section).</p>
+<p>In the setup, the <strong>variable</strong> used to populate the drop-down menu is defined in the “Control Details” column of the <em>Dictionary</em> sheet (see <strong>?@sec-var-control-details</strong> section).</p>
 </section>
 </section>
 <section id="special-case-of-amdinistrative-levels-and-health-facilities" class="level4">
@@ -1025,8 +1078,8 @@ Note
 </section>
 </section>
 </section>
-<section id="sec-var-control-details" class="level3">
-<h3 class="anchored">Control details</h3>
+<section id="var-control-details" class="level3">
+<h3 class="anchored" data-anchor-id="var-control-details">Control details</h3>
 <p>This is a free text field, which accepts three types of values: - the name of a <em>list</em> (defined in the <em>Choices</em> sheet), - the name or a <em>variable</em> (defined in the <em>Dictionary</em> sheet) - a <em>formula</em>.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1077,8 +1130,8 @@ Note
 </div>
 <p>In the case of “list auto” variables, you only need to provide the name of another variable in the “Control details” column. In the linelist, the values present in the referred variables will be automatically used to populate the dropdown menu.</p>
 </section>
-<section id="sec-formulas" class="level4">
-<h4 class="anchored">Formulas</h4>
+<section id="formulas" class="level4">
+<h4 class="anchored" data-anchor-id="formulas">Formulas</h4>
 <p>If you have selected “formula”, “choice_formula” or “case_when” in the <a href="#sec-var-control">“Control” column</a>, you need to provide the formula to be applied in this column.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1093,8 +1146,8 @@ Note
 <p>The information given in the <a href="#sec-formula-control">Formula control</a> section below are also valid for “choice_formula” and “case_when” controls as these, while based on custom functions, are still formulas.</p>
 </div>
 </div>
-<section id="sec-formula-control" class="level5">
-<h5 class="anchored">Formula control</h5>
+<section id="formula-control" class="level5">
+<h5 class="anchored" data-anchor-id="formula-control">Formula control</h5>
 <p>The formula is written <strong>in English</strong>, <strong>without an “=” sign</strong>. The formulas are automatically translated into the Excel language defined on the computer used to generate the linelist.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1125,6 +1178,8 @@ Tip
 </div>
 <div class="callout-body-container callout-body">
 <p>In Excel, you can use ALT+ENTRY to insert a carriage return and go to the next line. This does not affect the execution of your formulas, but greatly increases the readability. The same goes for inserting spaces around operators. Contrast these two formulas:</p>
+</div>
+</div>
 <p><img src="imgs/im-129-formula-style.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1139,6 +1194,7 @@ Important
 <p>When writing a formula, make sure that it returns an empty value for rows without an ID, as all the rows with non-null values in it will be counted in the <em>Analyses</em> sheets. If your graphs show a lot of “Missing” values that do not reflect how well a column is filled, check that a calculated column is not responsible for it.</p>
 </div>
 </div>
+</section>
 <section id="case_when-control" class="level5">
 <h5 class="anchored" data-anchor-id="case_when-control">Case_when control</h5>
 <p>Use the CASE_WHEN function to replace nested IF (therefore limiting the risk of error when writing the formula), in this form:</p>
@@ -1197,9 +1253,12 @@ Note
 </div>
 </div>
 </section>
+</section>
+</section>
 <section id="unique" class="level3">
 <h3 class="anchored" data-anchor-id="unique">Unique</h3>
 <p>This is a <em>yes/no</em> drop-down menu field. It has no direct impact on the linelist, but the information can be used in the data cleaning phase.</p>
+</section>
 </section>
 <section id="data-exports" class="level2">
 <h2 class="anchored" data-anchor-id="data-exports">Data exports</h2>
@@ -1386,12 +1445,6 @@ Tip
 <p>Note that the hospitalised_format columns is completely hidden because it is of no interest to the user, just needed internally to know where to apply formatting.</p>
 
 
-</section>
-</section>
-</div>
-</div>
-</section>
-</section>
 </section>
 </section>
 
@@ -1833,8 +1886,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../reference/Exports.html" class="pagination-link" aria-label="Export number">
-        <span class="nav-page-text">Export number</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../reference/exports_sheet.html" class="pagination-link" aria-label="Define exports">
+        <span class="nav-page-text">Define exports</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

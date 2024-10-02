@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>miscellaneous – OutbreakTools documentation</title>
+<title>options – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Options.html" rel="next">
+<link href="./getting_started/compile.html" rel="next">
 <link href="./about.html" rel="prev">
 <link href="./images/icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Create a dictionary</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./compile.qmd">
+    <a class="dropdown-item" href="./getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
   </li>  
     </ul>
@@ -128,8 +128,24 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="./getting_started/Dictionary.qmd">
+    <a class="dropdown-item" href="./reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./reference/choices_sheet.html">
+ <span class="dropdown-text">Choice sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./reference/analyses_sheet.html">
+ <span class="dropdown-text">Analyses sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./reference/exports_sheet.html">
+ <span class="dropdown-text">Export sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./reference/translations_sheet.html">
+ <span class="dropdown-text">Translation sheet</span></a>
   </li>  
     </ul>
   </li>
@@ -147,12 +163,16 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./how_to/export_subset_geo.html">
  <span class="dropdown-text">Export subset of geo columns</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./how_to/link_tables.html">
+ <span class="dropdown-text">Create two data entry tables</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://code.com" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/epicentre-msf/outbreak-tools" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -161,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Miscellaneous.html">Miscellaneous</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Options.html">Tables Management</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -181,13 +201,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Miscellaneous.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Miscellaneous</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Options.html" class="sidebar-item-text sidebar-link">
+  <a href="./Options.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tables Management</span></a>
   </div>
 </li>
@@ -244,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./how_to/link_tables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create linelits with more than one entry sheet</span></a>
+ <span class="menu-text">Create linelists with more than one entry sheet</span></a>
   </div>
 </li>
       </ul>
@@ -252,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Index</span></a>
+ <span class="menu-text">Reference</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -260,14 +274,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reference/Analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Global Summary</span></a>
+  <a href="./reference/analyses_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define basic analyses</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reference/Choices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">List Name</span></a>
+  <a href="./reference/choices_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define variable categories</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -278,20 +292,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reference/Dictionary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Variable names and labels</span></a>
+  <a href="./reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reference/Exports.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Export number</span></a>
+  <a href="./reference/exports_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define exports</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reference/Translations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Translations</span></a>
+  <a href="./reference/translations_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generate linelist in several languages</span></a>
   </div>
 </li>
       </ul>
@@ -301,8 +315,31 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tables-management" id="toc-tables-management" class="nav-link active" data-scroll-target="#tables-management">Tables Management</a>
+  <ul class="collapse">
+  <li><a href="#add-rows-to-tables-in-current-sheet" id="toc-add-rows-to-tables-in-current-sheet" class="nav-link" data-scroll-target="#add-rows-to-tables-in-current-sheet">Add rows to tables in current sheet</a></li>
+  <li><a href="#resize-tables-in-current-sheet" id="toc-resize-tables-in-current-sheet" class="nav-link" data-scroll-target="#resize-tables-in-current-sheet">Resize tables in current sheet</a></li>
+  <li><a href="#remove-all-filters" id="toc-remove-all-filters" class="nav-link" data-scroll-target="#remove-all-filters">Remove all filters</a></li>
+  </ul></li>
+  <li><a href="#translations" id="toc-translations" class="nav-link" data-scroll-target="#translations">Translations</a></li>
+  <li><a href="#import" id="toc-import" class="nav-link" data-scroll-target="#import">Import</a>
+  <ul class="collapse">
+  <li><a href="#import-data-from-another-setup" id="toc-import-data-from-another-setup" class="nav-link" data-scroll-target="#import-data-from-another-setup">Import data from another setup</a></li>
+  <li><a href="#import-data-from-disease" id="toc-import-data-from-disease" class="nav-link" data-scroll-target="#import-data-from-disease">Import data from disease</a></li>
+  </ul></li>
+  <li><a href="#advanced" id="toc-advanced" class="nav-link" data-scroll-target="#advanced">Advanced</a>
+  <ul class="collapse">
+  <li><a href="#check-current-setup-for-errors" id="toc-check-current-setup-for-errors" class="nav-link" data-scroll-target="#check-current-setup-for-errors">Check current setup for errors</a></li>
+  <li><a href="#clear-data-in-current-setup" id="toc-clear-data-in-current-setup" class="nav-link" data-scroll-target="#clear-data-in-current-setup">Clear data in current setup</a></li>
+  </ul></li>
+  <li><a href="#dev" id="toc-dev" class="nav-link" data-scroll-target="#dev">Dev</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -310,10 +347,126 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>A <em>‘Setup Options’</em> menu has been specially created in the top ribbon, bringing together all the functions specific to the <strong>setup file</strong>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-113-setup-options-ribbon.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="tables-management" class="level2">
+<h2 class="anchored" data-anchor-id="tables-management">Tables Management</h2>
+<section id="add-rows-to-tables-in-current-sheet" class="level3">
+<h3 class="anchored" data-anchor-id="add-rows-to-tables-in-current-sheet">Add rows to tables in current sheet</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-114-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>If you need more rows to define the linelist, choices or analyses, use the “<em>Add rows to tables in current sheet</em>” button.</p>
+<p>When this functionality is used in the analysis definition page, you can use the drop-down menu in cell A1 to choose whether you want to apply the functionality to all tables or just one in particular.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-115-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="resize-tables-in-current-sheet" class="level3">
+<h3 class="anchored" data-anchor-id="resize-tables-in-current-sheet">Resize tables in current sheet</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-116-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>To ensure that there are no empty rows in a table, click on the “<em>Resize tables in current sheet</em>” button.</p>
+<p>When this functionality is used in the analysis definition page, you can use the drop-down menu in cell A1 to choose whether you want to apply the functionality to all tables or just one in particular.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-117-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="remove-all-filters" class="level3">
+<h3 class="anchored" data-anchor-id="remove-all-filters">Remove all filters</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-118-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>If you have used filters and want to display everything again, you can use the “<em>Remove all filters</em>” button. This will return the table to its initial state.</p>
+</section>
+</section>
+<section id="translations" class="level2">
+<h2 class="anchored" data-anchor-id="translations">Translations</h2>
+<p>See the <a href="#translations-sheet">Translations</a> section above.</p>
+</section>
+<section id="import" class="level2">
+<h2 class="anchored" data-anchor-id="import">Import</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-119-import.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="import-data-from-another-setup" class="level3">
+<h3 class="anchored" data-anchor-id="import-data-from-another-setup">Import data from another setup</h3>
+<p>You can import data from an older <strong>setup file</strong> into a new blank file. This can be useful if a file is broken or corrupted, or if the setup template has been upgraded (new column, new function, debugged, etc).</p>
+</section>
+<section id="import-data-from-disease" class="level3">
+<h3 class="anchored" data-anchor-id="import-data-from-disease">Import data from disease</h3>
+<p>This button is used to import a disease from a disease <strong>Master file</strong>. This file is being piloted for Epinetwork discussions.</p>
+</section>
+</section>
+<section id="advanced" class="level2">
+<h2 class="anchored" data-anchor-id="advanced">Advanced</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-120-advanced.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="check-current-setup-for-errors" class="level3">
+<h3 class="anchored" data-anchor-id="check-current-setup-for-errors">Check current setup for errors</h3>
+<p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you can (should) click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
+<p>There is a table for each sheet or section (in the case of analyses), with the following three columns:</p>
+<ul>
+<li><p>“<strong>Incoherences Type</strong>” preceded by the name of the sheet,</p></li>
+<li><p>“<strong>Where?</strong>”, which shows the name of the sheet or section and the line where the incoherence is located,</p></li>
+<li><p>“<strong>Details</strong>”, which gives details of the incoherence.</p></li>
+</ul>
+<p>There are several types information that could appear in the Incoherence column:</p>
+<ul>
+<li><p><strong>Info</strong> (in grey): this is not strictly speaking an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.</p></li>
+<li><p><strong>Warning</strong> (in yellow): these are problems that need to be fixed because there is a real inconsistency. It could be an error in a formula, for example.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p><strong>Note</strong> (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-121-check-current-setup-for-errors.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="clear-data-in-current-setup" class="level3">
+<h3 class="anchored" data-anchor-id="clear-data-in-current-setup">Clear data in current setup</h3>
+<p>This feature allows you to delete all the data entered in the <strong>setup file</strong>.</p>
+</section>
+</section>
+<section id="dev" class="level2">
+<h2 class="anchored" data-anchor-id="dev">Dev</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-122-dev.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>These functions are for the use of developers only, you can ignore them.</p>
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated colums after compilation!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -741,8 +894,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Options.html" class="pagination-link" aria-label="Tables Management">
-        <span class="nav-page-text">Tables Management</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./getting_started/compile.html" class="pagination-link" aria-label="Compile a linelist">
+        <span class="nav-page-text">Compile a linelist</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

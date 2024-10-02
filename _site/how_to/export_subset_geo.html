@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Create a dictionary</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../compile.qmd">
+    <a class="dropdown-item" href="../getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
   </li>  
     </ul>
@@ -128,8 +128,24 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../getting_started/Dictionary.qmd">
+    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/choices_sheet.html">
+ <span class="dropdown-text">Choice sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+ <span class="dropdown-text">Analyses sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/exports_sheet.html">
+ <span class="dropdown-text">Export sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/translations_sheet.html">
+ <span class="dropdown-text">Translation sheet</span></a>
   </li>  
     </ul>
   </li>
@@ -147,12 +163,16 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
  <span class="dropdown-text">Export subset of geo columns</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/link_tables.html">
+ <span class="dropdown-text">Create two data entry tables</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://code.com" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/epicentre-msf/outbreak-tools" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -238,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../how_to/link_tables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create linelits with more than one entry sheet</span></a>
+ <span class="menu-text">Create linelists with more than one entry sheet</span></a>
   </div>
 </li>
       </ul>
@@ -246,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Index</span></a>
+ <span class="menu-text">Reference</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -254,14 +274,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Global Summary</span></a>
+  <a href="../reference/analyses_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define basic analyses</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Choices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">List Name</span></a>
+  <a href="../reference/choices_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define variable categories</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -272,20 +292,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Dictionary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Variable names and labels</span></a>
+  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Exports.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Export number</span></a>
+  <a href="../reference/exports_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Define exports</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/Translations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Translations</span></a>
+  <a href="../reference/translations_sheet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generate linelist in several languages</span></a>
   </div>
 </li>
       </ul>
@@ -768,8 +788,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../how_to/link_tables.html" class="pagination-link" aria-label="Create linelits with more than one entry sheet">
-        <span class="nav-page-text">Create linelits with more than one entry sheet</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../how_to/link_tables.html" class="pagination-link" aria-label="Create linelists with more than one entry sheet">
+        <span class="nav-page-text">Create linelists with more than one entry sheet</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
