@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Create a dictionary</span></a>
+ <span class="dropdown-text">Fill the setup file</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
@@ -329,6 +329,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#workflow" id="toc-workflow" class="nav-link active" data-scroll-target="#workflow">Workflow</a></li>
   <li><a href="#setup-file" id="toc-setup-file" class="nav-link" data-scroll-target="#setup-file">Setup file</a></li>
   <li><a href="#designer-file" id="toc-designer-file" class="nav-link" data-scroll-target="#designer-file">Designer file</a></li>
+  <li><a href="#linelist" id="toc-linelist" class="nav-link" data-scroll-target="#linelist">Linelist</a></li>
   </ul>
 </nav>
     </div>
@@ -371,17 +372,18 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>the structure of the data entry sheets of the linelist</li>
 <li>the variables for all data entry tables</li>
-<li>the basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)<br>
-</li>
+<li>the basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)</li>
 <li>personalised exports</li>
 <li>translations to create linelists in several languages</li>
 </ul>
-<p>Most of the work developping a linelist is spent filling a <strong>setup file</strong> template to define all the aspects of the linelist you want to create.</p>
+<p>Most of the work developing a linelist is spent filling a <strong>setup file</strong> template to define all the aspects of the linelist you want to create.</p>
+<p>The setup file contains the following sheets:</p>
 <table class="caption-top table">
+<caption>Sheets in the <strong>setup file</strong> and their uses.</caption>
 <colgroup>
-<col style="width: 19%">
-<col style="width: 61%">
-<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 52%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -418,11 +420,35 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>The <strong>setup file</strong> also has a dedicated OutbreakTools section in the top option ribbon from Excel:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-002-ribbon-linelist.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools ribbon in the <strong>setup file</strong></figcaption>
+</figure>
+</div>
 </section>
 <section id="designer-file" class="level2">
 <h2 class="anchored" data-anchor-id="designer-file">Designer file</h2>
 <p>The <strong>designer</strong> is another excel file, that contains the code to build a linelist from a <strong>setup file</strong>.</p>
 <p>When the <strong>setup file</strong> is ready (or at least a first draft is), you load it into a <strong>designer</strong>, fill a couple of fields<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and let the designer build the linelist.</p>
+</section>
+<section id="linelist" class="level2">
+<h2 class="anchored" data-anchor-id="linelist">Linelist</h2>
+<p>The linelists created from a compiled <strong>setup file</strong> will contain several sheets:</p>
+<ul>
+<li>Data entry sheets</li>
+<li>Analysis and graph sheets<br>
+</li>
+<li>Customisation sheets for custom drop-down menus and the geographic base</li>
+</ul>
+<p>In addition to that, the OBT linelists also have a dedicated <strong>OutbreakTools ribbon</strong> in addition to the other excel options in the top ribbon.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-002-ribbon-linelist.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools ribbon in the created linelist files</figcaption>
+</figure>
+</div>
 
 
 </section>
@@ -526,7 +552,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/epicentre-msf\.github\.io\/test-obt-doc-website\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
