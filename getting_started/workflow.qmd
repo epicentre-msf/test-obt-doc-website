@@ -27,7 +27,7 @@ Most of the work developing a linelist is spent filling a **setup file** templat
 The setup file contains the following sheets:
 
 | Setup file sheet | Description                                                                                                                                                                                  | Correspondence in linelist file                                   |
-|-----------------|--------------------------------------|-----------------|
+|------------------|-------------------------------------|------------------|
 | Dictionary       | Describes all the variables to be collected, their format, etc.                                                                                                                              | Data entry sheets (typically, *Info sheet* and *Linelist* sheets) |
 | Choices          | Defines the categories/levels accepted for categorical variables, in the form of a list                                                                                                      | Dropdown menus in linelist sheets                                 |
 | Exports          | Defines the characteristics of exports, such as protection, choice of variables or sheets to export and export names                                                                         | Export button in the OutbreakTools ribbon                         |
@@ -38,7 +38,7 @@ The setup file contains the following sheets:
 
 The **setup file** also has a dedicated OutbreakTools section in the top option ribbon from Excel:
 
-![OutbreakTools ribbon in the **setup file**](images/img-002-ribbon-linelist.png){alt="OutbreakTools ribbon in th" fig-align="center"}
+![OutbreakTools ribbon in the **setup file**](images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
 
 ## Designer file
 
