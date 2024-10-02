@@ -1,0 +1,14 @@
+---
+title: "Custom formulas"
+---
+
+
+## Custom formulas
+
+*EPIWEEK*: returns the week number.
+
+*N*: count the number of lines, mostly used in the analyses
+
+*DATE_RANGE*: range of a date column, mostly used in the global summary table
+
+![](imgs/im-125-custom-formulas.png){fig-align="center"}

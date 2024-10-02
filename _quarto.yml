@@ -1,0 +1,80 @@
+project:
+  type: website
+
+website:
+  title: "OutbreakTools documentation"
+  favicon: images/icon.png
+  page-navigation: true
+  back-to-top-navigation: true
+  # repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  
+  navbar:
+    search: true
+    logo: images/icon.png
+    left:
+     - text: About
+       href: about.qmd
+        
+    right: 
+      - text: Getting started
+        menu: 
+          - text: Download the tools
+            href: getting_started/download.qmd
+          
+          - text: Install the tools
+            href: getting_started/install.qmd
+          
+          - text: Create a dictionary
+            href: getting_started/create_dic.qmd
+          
+          - text: Compile a linelist
+            href: getting_started/compile.qmd
+            
+      
+      - text: Setup file reference
+        menu: 
+          - text: Dictionary sheet
+            href: reference/dictionary_sheet.qmd
+            
+          - text: Choice sheet
+            href: reference/choices_sheet.qmd
+          
+          - text: Analyses sheet
+            href: reference/analyses_sheet.qmd
+          
+          - text: Export sheet
+            href: reference/exports_sheet.qmd
+          
+          - text: Translation sheet
+            href: reference/translations_sheet.qmd
+            
+
+      - text: Tutoriels
+
+      - text: How to
+        menu: 
+          - text: Export subset of geo columns
+            href: how_to/export_subset_geo.qmd
+            
+          - text: Create two data entry tables
+            href: how_to/link_tables.qmd
+            
+    tools:
+      - icon: github
+        text: Source Code
+        href: https://github.com/epicentre-msf/outbreak-tools
+
+  sidebar:
+    contents: auto
+
+  page-footer:
+    left: Developed by [Epicentre](https://epicentre.msf.org/)
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    citations-hover: true
+    footnotes-hover: true
