@@ -3,9 +3,9 @@ title: "Create dictionary"
 ---
 
 
+## Get the tools ready
 
-Take an empty setup file
-
+[Download](../getting_started/download.qmd#download) the files from github to get the most updated files. Take the empty **setup file**.
 
 
 1.  **Create the data dictionary**: go back and forth, filling the *Dictionary* and *Choices* sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)

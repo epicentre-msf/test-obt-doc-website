@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Create a dictionary</span></a>
+ <span class="dropdown-text">Fill the setup file</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
@@ -321,8 +321,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#get-the-tools-ready" id="toc-get-the-tools-ready" class="nav-link active" data-scroll-target="#get-the-tools-ready">Get the tools ready</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -346,8 +352,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="get-the-tools-ready" class="level2">
+<h2 class="anchored" data-anchor-id="get-the-tools-ready">Get the tools ready</h2>
+<p><a href="../getting_started/download.html#download">Download</a> the files from github to get the most updated files. Take the empty <strong>setup file</strong>.</p>
+<ol type="1">
+<li><strong>Create the data dictionary</strong>: go back and forth, filling the <em>Dictionary</em> and <em>Choices</em> sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)</li>
+<li><strong>Define the exports</strong>: define the number of exports you want and their metadata on the <em>Exports</em> sheet, and fill the dedicated Export columns in the <em>Dictionary</em> sheet</li>
+<li><strong>Define the analyses</strong> in the <em>Analysis</em> sheet</li>
+<li><strong>Add new translations</strong> if you wish to, in the <em>Translations</em> sheet</li>
+</ol>
+<p>You can check for errors between any of these steps (see the “OutbreakTools” ribbon section of this document)</p>
+<ol start="5" type="1">
+<li>Generate the linelist thanks to the <strong>designer file</strong>. Test it.</li>
+<li>Repeat steps 1 to 5 until the linelist works as expected. The rest of this guide will walk you through the sheets, the tables in it and the ribbon buttons.</li>
+</ol>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

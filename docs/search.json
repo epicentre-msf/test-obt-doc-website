@@ -393,7 +393,7 @@
     "href": "getting_started/create_dic.html",
     "title": "Create dictionary",
     "section": "",
-    "text": "Back to top",
+    "text": "Download the files from github to get the most updated files. Take the empty setup file.\n\nCreate the data dictionary: go back and forth, filling the Dictionary and Choices sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)\nDefine the exports: define the number of exports you want and their metadata on the Exports sheet, and fill the dedicated Export columns in the Dictionary sheet\nDefine the analyses in the Analysis sheet\nAdd new translations if you wish to, in the Translations sheet\n\nYou can check for errors between any of these steps (see the “OutbreakTools” ribbon section of this document)\n\nGenerate the linelist thanks to the designer file. Test it.\nRepeat steps 1 to 5 until the linelist works as expected. The rest of this guide will walk you through the sheets, the tables in it and the ribbon buttons.",
     "crumbs": [
       "About",
       "Getting Started",
@@ -823,6 +823,18 @@
       "About",
       "Reference",
       "Setup reference"
+    ]
+  },
+  {
+    "objectID": "getting_started/create_dic.html#get-the-tools-ready",
+    "href": "getting_started/create_dic.html#get-the-tools-ready",
+    "title": "Create dictionary",
+    "section": "",
+    "text": "Download the files from github to get the most updated files. Take the empty setup file.\n\nCreate the data dictionary: go back and forth, filling the Dictionary and Choices sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)\nDefine the exports: define the number of exports you want and their metadata on the Exports sheet, and fill the dedicated Export columns in the Dictionary sheet\nDefine the analyses in the Analysis sheet\nAdd new translations if you wish to, in the Translations sheet\n\nYou can check for errors between any of these steps (see the “OutbreakTools” ribbon section of this document)\n\nGenerate the linelist thanks to the designer file. Test it.\nRepeat steps 1 to 5 until the linelist works as expected. The rest of this guide will walk you through the sheets, the tables in it and the ribbon buttons.",
+    "crumbs": [
+      "About",
+      "Getting Started",
+      "Create dictionary"
     ]
   }
 ]
