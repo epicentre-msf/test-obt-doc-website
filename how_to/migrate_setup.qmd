@@ -1,0 +1,5 @@
+---
+title: "Migrate setup data"
+---
+
+Explain how to migrate one setup to a new version
