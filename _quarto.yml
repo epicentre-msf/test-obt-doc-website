@@ -68,11 +68,11 @@ website:
         text: Source Code
         href: https://github.com/epicentre-msf/outbreak-tools
 
-  sidebar:
-    contents: auto
+  # sidebar:
+  #   contents: auto
 
   page-footer:
-    left: Developed by [Epicentre](https://epicentre.msf.org/)
+    left: Developed by [![](images/epicentre.png){fig-alt="Epicentre logo" width=65px}](https://epicentre.msf.org/)
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     
 
