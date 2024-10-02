@@ -428,7 +428,7 @@ Two controls allow us to enter geographic information, or information about heal
 OutbreakTool linelists all have a button to import a geobase, a standardised file containing lists of administrative levels to describe places. Once the geobase successfully imported, the values from its lists will populate specific dropdown menus (see the linelist documentation on how to import a geobase).
 
 
-##### Geo
+##### Geo {#geo-variable}
 
 The "geo" control indicates that geographic data is expected. In the linelist, this results in the creation of **4 columns**, one for each administrative level, which will be populated by values imported from a geobase. 
 The user can enter data by using the *GeoHelper* button in the linelist or by selecting values from the cascading dropdown menus in the linelist.
