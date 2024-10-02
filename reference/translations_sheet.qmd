@@ -1,5 +1,5 @@
 ---
-title: Translations
+title: "Generate linelist in several languages"
 ---
 The **setup** file has functionalities to create linelists in different languages from the same dictionary, which makes maintenance much easier.
 

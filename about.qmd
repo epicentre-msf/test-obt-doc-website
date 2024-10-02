@@ -1,5 +1,5 @@
 ---
-title: About
+title: "About"
 ---
 
 Outbreak Tools is a set of solutions designed to provide a rapid response to epidemics. It comprises several packages, divided as follows:

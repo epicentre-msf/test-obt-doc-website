@@ -1,5 +1,5 @@
 ---
-title: Define variable categories
+title: "Define variable categories"
 ---
 
 This sheet is used to define the **drop-down menus categories** to be inserted in certain variables, or the possible values for "choice_formula" type variables. 
