@@ -1,7 +1,7 @@
 ---
 pagetitle: "About OutbreakTools"
 title: "OutbreakTools"
-subtitle: "Generating linelists from a dictionaty with OutbreakTools"
+subtitle: "Generate robust linelists from a dictionaty without fancy VBA skills"
 # image: assets/img/JR-logo-circle.webp
 # image-alt: "Cat with tail shaped as the letter J next to last name initial R"
 ---
@@ -10,4 +10,4 @@ subtitle: "Generating linelists from a dictionaty with OutbreakTools"
 **OutbreakTools** is a set of solutions designed by [Epicentre](https://epicentre.msf.org/) [EpiDS team](https://apps.epicentre-msf.org/public/) to quickly create linelists to collect field data during outbreaks. These linelists have a number of functionalities including descriptive analyses, buttons to migrate data to or from the linelist, or to import geographic data to better describe locations.
 
 
-OutbreakTools allow you to quickly develop these linelists without the need for advanced Excel skills or ad-hoc development, by creating a dictionary and compiling it. If you have ever built a Kobo or a Redcap database from a dictionary, this might sound familiar.
+**OutbreakTools** allow you to quickly develop these linelists without the need for advanced Excel skills or ad-hoc development, by creating a (glorified) dictionary and compiling it. If you have ever built a Kobo form or a Redcap database from a dictionary, this might sound familiar.
