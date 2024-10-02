@@ -6,3 +6,11 @@ Now it is time to use the **designer**
 
 TODO
 
+
+
+
+## To put somewhere (getting started or reference)
+
+::: callout-warning
+When compiling the setup, make sure that all the columns from this sheet are unhidden.
+:::
