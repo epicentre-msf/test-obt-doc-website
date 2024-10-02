@@ -11,4 +11,4 @@ title: "Custom formulas"
 
 *DATE_RANGE*: range of a date column, mostly used in the global summary table
 
-![](imgs/im-125-custom-formulas.png){fig-align="center"}
+![](../images/im-125-custom-formulas.png){fig-align="center"}

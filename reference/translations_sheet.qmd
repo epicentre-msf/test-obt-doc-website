@@ -13,47 +13,47 @@ Click on the button *"update translation table"* from the *Setup Options* ribbon
 
 To add a language to the table, use the *Setup Options* ribbon.
 
-![](imgs/im-103-translations-sheet.png)
+![](../images/im-103-translations-sheet.png)
 
 In the "Translation" block, in the "Add language" field, enter the name of the language you want to add, then press the "Enter" key on your keyboard.
 
 The new language is added to the table:
 
-![](imgs/im-104-translations-sheet.png){fig-align="center"}
+![](../images/im-104-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-105-translations-sheet.png){fig-align="center"}
+![](../images/im-105-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-106-translations-sheet.png){fig-align="center"}
+![](../images/im-106-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-107-translations-sheet.png){fig-align="center"}
+![](../images/im-107-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-108-translations-sheet.png){fig-align="center"}
+![](../images/im-108-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-109-translations-sheet.png){fig-align="center"}
+![](../images/im-109-translations-sheet.png){fig-align="center"}
 
 You can then fill in your translations.
 
 If you are making changes to the set-up and want to ensure that all the translatable fields are correctly listed, click Update translation table. A message will then inform you of the number of missing fields per language.
 
-![](imgs/im-110-translations-sheet.png){fig-align="center"}
+![](../images/im-110-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-111-translations-sheet.png){fig-align="center"}
+![](../images/im-111-translations-sheet.png){fig-align="center"}
 
-![](imgs/fleche.png){fig-align="center"}
+![](../images/fleche.png){fig-align="center"}
 
-![](imgs/im-112-translations-sheet.png){fig-align="center"}
+![](../images/im-112-translations-sheet.png){fig-align="center"}
 
 ::: callout-note
 Please note that there is no control or intelligence behind the notions of default language and other languages, *i.e*. if you name the first column "French" and the second "English", even though you have used English in the **setup file**, it is the column named first column named "French" that will contain the values in English.
