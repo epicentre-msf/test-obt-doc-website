@@ -431,12 +431,7 @@
     "href": "getting_started/compile.html",
     "title": "Compile a linelist",
     "section": "",
-    "text": "Now it is time to use the designer\n\n\n\n Back to top",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "Compile a linelist"
-    ]
+    "text": "Now it is time to use the designer\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -450,96 +445,56 @@
     "href": "getting_started/create_dic.html",
     "title": "Create dictionary",
     "section": "",
-    "text": "Download the files from github to get the most updated files. Take the empty setup file.\n\nCreate the data dictionary: go back and forth, filling the Dictionary and Choices sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)\nDefine the exports: define the number of exports you want and their metadata on the Exports sheet, and fill the dedicated Export columns in the Dictionary sheet\nDefine the analyses in the Analysis sheet\nAdd new translations if you wish to, in the Translations sheet\n\nYou can check for errors between any of these steps (see the “OutbreakTools” ribbon section of this document)\n\nGenerate the linelist thanks to the designer file. Test it.\nRepeat steps 1 to 5 until the linelist works as expected. The rest of this guide will walk you through the sheets, the tables in it and the ribbon buttons.",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "Create dictionary"
-    ]
+    "text": "Download the files from github to get the most updated versions and unzip it.\nSave the empty setup file in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).\n\nOneDrive and macro-enabled Excel files do not work well together in general. To avoid random file corruption, we advise that you work in a non synchronise folder, or that you disable OneDrive while you are writting the setup file."
   },
   {
     "objectID": "getting_started/create_dic.html#get-the-tools-ready",
     "href": "getting_started/create_dic.html#get-the-tools-ready",
     "title": "Create dictionary",
     "section": "",
-    "text": "Download the files from github to get the most updated files. Take the empty setup file.\n\nCreate the data dictionary: go back and forth, filling the Dictionary and Choices sheets to define the data entry sheets of the linelist (at minima a metadata sheet and a main linelist sheet)\nDefine the exports: define the number of exports you want and their metadata on the Exports sheet, and fill the dedicated Export columns in the Dictionary sheet\nDefine the analyses in the Analysis sheet\nAdd new translations if you wish to, in the Translations sheet\n\nYou can check for errors between any of these steps (see the “OutbreakTools” ribbon section of this document)\n\nGenerate the linelist thanks to the designer file. Test it.\nRepeat steps 1 to 5 until the linelist works as expected. The rest of this guide will walk you through the sheets, the tables in it and the ribbon buttons.",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "Create dictionary"
-    ]
+    "text": "Download the files from github to get the most updated versions and unzip it.\nSave the empty setup file in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).\n\nOneDrive and macro-enabled Excel files do not work well together in general. To avoid random file corruption, we advise that you work in a non synchronise folder, or that you disable OneDrive while you are writting the setup file."
   },
   {
     "objectID": "getting_started/workflow.html",
     "href": "getting_started/workflow.html",
     "title": "General workflow and files",
     "section": "",
-    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRince and repeat until the linelist is functional",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRince and repeat until the linelist is functional"
   },
   {
     "objectID": "getting_started/workflow.html#workflow",
     "href": "getting_started/workflow.html#workflow",
     "title": "General workflow and files",
     "section": "",
-    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRince and repeat until the linelist is functional",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRince and repeat until the linelist is functional"
   },
   {
     "objectID": "getting_started/workflow.html#setup-file",
     "href": "getting_started/workflow.html#setup-file",
     "title": "General workflow and files",
     "section": "Setup file",
-    "text": "Setup file\nThe setup file is an excel file that describes the various sheets of the linelist to be created, in a predefined and standardised format. It allows you to specify:\n\nthe structure of the data entry sheets of the linelist\nthe variables for all data entry tables\nthe basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)\npersonalised exports\ntranslations to create linelists in several languages\n\nMost of the work developing a linelist is spent filling a setup file template to define all the aspects of the linelist you want to create.\nThe setup file contains the following sheets:\n\nSheets in the setup file and their uses.\n\n\n\n\n\n\n\nSetup file sheet\nDescription\nCorrespondence in linelist file\n\n\n\n\nDictionary\nDescribes all the variables to be collected, their format, etc.\nData entry sheets (typically, Info sheet and Linelist sheets)\n\n\nChoices\nDefines the categories/levels accepted for categorical variables, in the form of a list\nDropdown menus in linelist sheets\n\n\nExports\nDefines the characteristics of exports, such as protection, choice of variables or sheets to export and export names\nExport button in the OutbreakTools ribbon\n\n\nAnalysis\nDescribes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied\nAnalysis sheets\n\n\nTranslation\nAutomatically displays the list of strings of text/fields to be translated and adds new columns where the user can provide translated text in a desired language (one column = one language)\nChoice of linelist language when created (designer)\n\n\n\nThe setup file also has a dedicated OutbreakTools section in the top option ribbon from Excel:\n\n\n\nOutbreakTools ribbon in the setup file",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Setup file\nThe setup file is an excel file that describes the various sheets of the linelist to be created, in a predefined and standardised format. It allows you to specify:\n\nthe structure of the data entry sheets of the linelist\nthe variables for all data entry tables\nthe basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)\npersonalised exports\ntranslations to create linelists in several languages\n\nMost of the work developing a linelist is spent filling a setup file template to define all the aspects of the linelist you want to create.\nThe setup file contains the following sheets:\n\nSheets in the setup file and their uses.\n\n\n\n\n\n\n\nSetup file sheet\nDescription\nCorrespondence in linelist file\n\n\n\n\nDictionary\nDescribes all the variables to be collected, their format, etc.\nData entry sheets (typically, Info sheet and Linelist sheets)\n\n\nChoices\nDefines the categories/levels accepted for categorical variables, in the form of a list\nDropdown menus in linelist sheets\n\n\nExports\nDefines the characteristics of exports, such as protection, choice of variables or sheets to export and export names\nExport button in the OutbreakTools ribbon\n\n\nAnalysis\nDescribes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied\nAnalysis sheets\n\n\nTranslation\nAutomatically displays the list of strings of text/fields to be translated and adds new columns where the user can provide translated text in a desired language (one column = one language)\nChoice of linelist language when created (designer)\n\n\n\nThe setup file also has a dedicated OutbreakTools section in the top option ribbon from Excel:\n\n\n\n\n\n\nFigure 1: OutbreakTools ribbon in the setup file"
   },
   {
     "objectID": "getting_started/workflow.html#designer-file",
     "href": "getting_started/workflow.html#designer-file",
     "title": "General workflow and files",
     "section": "Designer file",
-    "text": "Designer file\nThe designer is another excel file, that contains the code to build a linelist from a setup file.\nWhen the setup file is ready (or at least a first draft is), you load it into a designer, fill a couple of fields1 and let the designer build the linelist.",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Designer file\nThe designer is another excel file, that contains the code to build a linelist from a setup file.\nWhen the setup file is ready (or at least a first draft is), you load it into a designer, fill a couple of fields1 and let the designer build the linelist."
   },
   {
     "objectID": "getting_started/workflow.html#linelist",
     "href": "getting_started/workflow.html#linelist",
     "title": "General workflow and files",
     "section": "Linelist",
-    "text": "Linelist\nThe linelists created from a compiled setup file will contain several sheets:\n\nData entry sheets\nAnalysis and graph sheets\n\nCustomisation sheets for custom drop-down menus and the geographic base\n\nIn addition to that, the OBT linelists also have a dedicated OutbreakTools ribbon in addition to the other excel options in the top ribbon.\n\n\n\nOutbreakTools ribbon in the created linelist files",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Linelist\nThe linelists created from a compiled setup file will contain several sheets:\n\nData entry sheets\nAnalysis and graph sheets\n\nCustomisation sheets for custom drop-down menus and the geographic base\n\nIn addition to that, the OBT linelists also have a dedicated OutbreakTools ribbon in addition to the other excel options in the top ribbon.\n\n\n\nOutbreakTools ribbon in the created linelist files"
   },
   {
     "objectID": "getting_started/workflow.html#footnotes",
     "href": "getting_started/workflow.html#footnotes",
     "title": "General workflow and files",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nWhat is the name of the created linelist, where to save it, should it be password protected and if yes, which password etc.↩︎",
-    "crumbs": [
-      "About",
-      "Getting Started",
-      "General workflow and files"
-    ]
+    "text": "Footnotes\n\n\nWhat is the name of the created linelist, where to save it, should it be password protected and if yes, which password etc.↩︎"
   },
   {
     "objectID": "how_to/link_tables.html",
@@ -917,5 +872,12 @@
       "Reference",
       "Setup reference"
     ]
+  },
+  {
+    "objectID": "getting_started/create_dic.html#grow-your-setup-file",
+    "href": "getting_started/create_dic.html#grow-your-setup-file",
+    "title": "Create dictionary",
+    "section": "Grow your setup file 🌱",
+    "text": "Grow your setup file 🌱\nThe first step is to create the variable dictionary. The other steps are optional, and can be completed if and when needed.\n\nCreate the variable dictionary 📘\nAka fill the Dictionary and Choices sheets. The first sheet is a database about all the variables present in the linelist you want to create. The Choices sheet contains the categories for categorical variables.\nThe different sections of the Dictionary sheet will define, for each variable:\n\nname, label, sublabel, notes\nsheet, section, subsection, hence also defining the structure of the linelist sheets and tables\nvariable visibility\nvariable type (e.g. a date or a decimal), format (e.g. the number of decimals in a case of a decimal), control (is it free text, a dropdown menu, a formula, a fancy geo section etc.)\nexport status: should the variable be exported in one or more exports\ndata validation rules: define min and max values, as well as error messages for values that do not respect rules\nwhether to apply special formatting and how\nand more!\n\nWhen you have first draft of your dictionary, go to the OutbreakTools ribbon and click on the button “Check current setup for errors”. This will run a couple of automatic checks on the setup and raise warnings and errors.\n\n\nFill other sheets as needed\nFill the Exports sheet to define one or more personalised exports: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.\nFill the Analysis sheet to define basic analyses to include in the linelist:\n\nuni and bivariate analyses (figures and tables)\n\ntemporal analyses (epicurves and corresponding tables)\n\nspatial analyses: top X location with… (most case, most deceased, most…)\n\nspatio-temporal analyses: temporal analyses but for a couple of user-specified places\n\nFill the Translations sheet to translate strings of text so that the linelist can automatically be built in other languages than the one in the setup.\nAs for when defining the dictionary, check for errors regularly with the “Check current setup for errors”.\n\n\nBuild the linelist and stress-test it ✔\nAfter correcting errors and checking warnings, you can go to the next step and compile the setup to build the linelist using the designer file. This will create the linelist.\nTest you linelist! Enter false data and check your variables:\n\nis the format of the variable correct?\nare the formulas working as expected?\nis the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?\ndo the analyses work as expected?\n\nIn all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug to get a working linelist, do not despair!\n\n\n\n\n\n\nTip\n\n\n\nDon’t hesitate to manually unhide all columns in the created linelist to check hidden columns formulas, you have the user rights to do it.\nReverse to the original state by going to the “Advanced” section of the OutbreakTools ribbon, and click on the “Restore state of hidden columns”\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it.\nTo do that, go to the “Advanced” section of the OutbreakTools ribbon and click on the “Export for migration” button. This will create a data export, that can be later imported in a new empty linelist by clicking on the “Import data” button."
   }
 ]
