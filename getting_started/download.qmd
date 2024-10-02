@@ -29,4 +29,4 @@ The excel files are in the \`.xlsb\` format, a compressed, more efficient Excel 
 
 ## Update to a new version of OutbreakTools
 
-The OutbreakTools solution is in active development, so there are regular updates to the files, to add new functionalities or correct bugs. To upgrade, just [dowload the tools](https://github.com/epicentre-msf/outbreak-tools) again and use the new **setup** and **designer**. If you already have a working setup for a linelist, it is possible to migrate its content to a new empty **setup file**.
+The OutbreakTools solution is in active development, so there are regular updates to the files, to add new functionalities or correct bugs. To upgrade, just [dowload the tools](https://github.com/epicentre-msf/outbreak-tools) again and use the new **setup** and **designer**. If you already have a working setup for a linelist, it is possible to [migrate](../how_to/migrate_setup.qmd) its content to a new empty **setup file**.
