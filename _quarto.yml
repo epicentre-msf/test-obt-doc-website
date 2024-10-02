@@ -1,5 +1,9 @@
 project:
   type: website
+  output-dir: docs
+  
+execute:
+  freeze: auto
 
 website:
   title: "OutbreakTools documentation"
@@ -24,7 +28,7 @@ website:
           - text: General workflow
             href: getting_started/workflow.qmd
           
-          - text: Create a dictionary
+          - text: Fill the setup file
             href: getting_started/create_dic.qmd
           
           - text: Compile a linelist

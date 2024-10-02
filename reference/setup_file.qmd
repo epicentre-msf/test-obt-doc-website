@@ -25,13 +25,13 @@ The dictionary is divided into the following sections:
   | Data validation          | Allows you to define accepted MIN and MAX values, and the corresponding alert or error when an input is outside the defined limits. |
   +--------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
   
-  ::: callout-warning
+::: callout-warning
 When compiling the setup, make sure that all the columns from this sheet are unhidden.
 :::
   
-  ## Variable names and labels
+## Variable names and labels
   
-  This first part lists all the variables you want to have in the final linelist.
+This first part lists all the variables you want to have in the final linelist.
 
 ![](../images/im-003-variable-names-and-labels.png)
 
