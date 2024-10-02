@@ -18,11 +18,11 @@ website:
     right: 
       - text: Getting started
         menu: 
-          - text: Download the tools
+          - text: Download and prepare the tools
             href: getting_started/download.qmd
           
-          - text: Install the tools
-            href: getting_started/install.qmd
+          - text: General workflow
+            href: getting_started/workflow.qmd
           
           - text: Create a dictionary
             href: getting_started/create_dic.qmd
