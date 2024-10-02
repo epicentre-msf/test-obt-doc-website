@@ -30,11 +30,11 @@ When compiling the setup, make sure that all the columns from this sheet are unh
 
 This first part lists all the variables you want to have in the final linelist.
 
-![](imgs/im-003-variable-names-and-labels.png)
+![](../images/im-003-variable-names-and-labels.png)
 
 ### Variable Name
 
-![](imgs/im-004-variable-names-and-labels.png)
+![](../images/im-004-variable-names-and-labels.png)
 
 This is a free text field used to identify the variable. This name can be used to refer to this variable in formulas or in the *Analyses* sheet.
 
@@ -60,7 +60,7 @@ We recommend that you do not leave any blanks in the variable name. Instead, rep
 
 ### Main Label
 
-![](imgs/im-005-main-label.png)
+![](../images/im-005-main-label.png)
 
 This is a free text field that defines the variable label. Labels can be more descriptive and longer than names, but we recommend to keep it moderately short for legibility reasons. The main label appears in black and bold in the **linelist file**.
 
@@ -72,7 +72,7 @@ To add more details, you can use the following fields: "Sub Label" and "Note" (s
 
 ### Dev Comment
 
-![](imgs/im-006-dev-comment.png)
+![](../images/im-006-dev-comment.png)
 
 This free text column is for the sole benefit of the **setup file** creator (in all probability, you), to add purely technical or practical information. It is not read by the designer and does not affect the generated file.
 
@@ -92,13 +92,13 @@ Feel free to use this column in a way that helps you work!
 
 ### Editable Label
 
-![](imgs/im-007-editable-label.png)
+![](../images/im-007-editable-label.png)
 
 This is a *yes/no* column. If the value is "*yes*", the label of the variable in the linelist can be modified by the user. If the value is "*no*" or if the field remains empty, the variable label in the linelist will be protected.
 
 ### Sub Label
 
-![](imgs/im-008-sub-label.png)
+![](../images/im-008-sub-label.png)
 
 This is a free text field used to add a brief description under the variable label, such as the format in which a date is expected, a unit, or any other information to help with filling the variable in.
 
@@ -119,7 +119,7 @@ Common sublabels include the following:
 
 ### Note
 
-![](imgs/im-009-note.png)
+![](../images/im-009-note.png)
 
 This is a free text field which content is added to the linelist as a *comment* on the corresponding cell. The comment in the linelist can be read by hovering the cursor over the cell. It cannot be modified by the end user.
 
@@ -127,15 +127,15 @@ This is a free text field which content is added to the linelist as a *comment* 
 
 Definition in the **setup file**:
 
-![](imgs/im-010-example.png)
+![](../images/im-010-example.png)
 
 Display in the **linelistfile**:
 
-![](imgs/im-011-example.png)
+![](../images/im-011-example.png)
 
 ## Sheets and sections
 
-![](imgs/im-012-sheets-and-sections.png)
+![](../images/im-012-sheets-and-sections.png)
 
 This section of the dictionary organises variables within **sheets and tables**, and thus creates part of the structure of the linelist.
 
@@ -143,7 +143,7 @@ As a general rule, there is one table per data entry sheet created, but the stru
 
 ### Sheet Name
 
-![](imgs/im-013-shhet-name.png)
+![](../images/im-013-shhet-name.png)
 
 This is a free text field that contains the *name of the sheet* in which the variable will appear.
 
@@ -155,7 +155,7 @@ More sheets can be created, either automatically (such as the "Instruction" shee
 
 ### Sheet Type {#sheet-types}
 
-![](imgs/im-014-sheet-type.png)
+![](../images/im-014-sheet-type.png)
 
 This is a drop-down menu field used to define the *type of table* contained in the sheet. There are 2 options:
 
@@ -167,11 +167,11 @@ This is a drop-down menu field used to define the *type of table* contained in t
 
 [^dictionary-2]: hlist = horizontal list
 
-![](imgs/im-015-sheet-type.png)
+![](../images/im-015-sheet-type.png)
 
 ### Main Section
 
-![](imgs/im-016-main-section.png)
+![](../images/im-016-main-section.png)
 
 This is a free text field used to define the *name* of the main section in which the variable is located. This makes it possible to organise variables by theme to make data entry and navigation easier.
 
@@ -183,7 +183,7 @@ To make the dictionary easier to read, we recommend that you group (write one be
 
 ### Sub Section
 
-![](imgs/im-017-sub-section.png)
+![](../images/im-017-sub-section.png)
 
 This is a free text field that allows you to further refine the organisation of variables in the table by creating a second level of grouping.
 
@@ -195,27 +195,27 @@ In the linelist file, the sub-sections appear in a lighter colour in the row or 
 
 Definition in the **setup file**:
 
-![](imgs/im-018-vlist1d.png)
+![](../images/im-018-vlist1d.png)
 
 Display in the **linelist file**:
 
-![](imgs/im-019-vlist1d.png)
+![](../images/im-019-vlist1d.png)
 
 #### hlist2D
 
 Definition in the **setup file**:
 
-![](imgs/im-020-hlist2d.png)
+![](../images/im-020-hlist2d.png)
 
 Display in the **linelist file**:
 
-![](imgs/im-021-hlist2d.png)
+![](../images/im-021-hlist2d.png)
 
 ## Properties
 
 The properties section is as follows: 
 
-![](imgs/im-023-status.png)
+![](../images/im-023-status.png)
 
 
 ### Status
@@ -236,22 +236,22 @@ Variables can be shown or hidden using the *Show/Hide* button in the **linelist 
 
 Definition in the **setup file**:
 
-![](imgs/im-024-example.png)
+![](../images/im-024-example.png)
 
 Display in the **linelist file**:
 
-![](imgs/im-025-example.png)
+![](../images/im-025-example.png)
 
-![](imgs/im-026-example.png)
+![](../images/im-026-example.png)
 
 ::: callout-note
 "Mandatory" variables in the **setup file** appear as "Mandatory" in the "Show/Hide" pop up, and cannot be hidden.
 
 **1**
 
-The "optional, hidden" variables in the **setup file** appear as "Hidden" (by default). However, the user can change the status by choosing "Show", in which case the column will become visible. ![](imgs/im-027-example.png)
+The "optional, hidden" variables in the **setup file** appear as "Hidden" (by default). However, the user can change the status by choosing "Show", in which case the column will become visible. ![](../images/im-027-example.png)
 
-**2** ![](imgs/im-028-example.png)
+**2** ![](../images/im-028-example.png)
 
 **3**
 
@@ -259,18 +259,18 @@ The "Notification year" variable does not appear in the list of variables becaus
 
 The "optional, visible" variables in the **setup file** appear as "Displayed" (by default). However, you can change the status by choosing "Hide", in which case the column will no longer be visible.
 
-**4** ![](imgs/im-029-example.png)
+**4** ![](../images/im-029-example.png)
 :::
 
 ### Register Book
 
-![](imgs/im-030-register-book.png)
+![](../images/im-030-register-book.png)
 
 This is a *yes/no* drop-down menu field used to predefine the variables to be included in the register to be printed. This is not mandatory and can be managed later, directly in the **linelist file**.
 
 ### Personal Identifier
 
-![](imgs/im-031-personal-identifier.png)
+![](../images/im-031-personal-identifier.png)
 
 This is a *yes/no* drop-down menu field that indicates that the variable contains personal data (such as names, phone numbers etc.).
 
@@ -297,7 +297,7 @@ Learn more about format in @sec-var-format
 
 ### Variable Type {#var-type}
 
-![](imgs/im-032-variable-type.png)
+![](../images/im-032-variable-type.png)
 
 This column proposes a drop-down menu field containing four options for defining the type [^which is sometimes called *class* in some softwares] of each variable:
 
@@ -309,18 +309,18 @@ This column proposes a drop-down menu field containing four options for defining
 
 -   **Decimal**: creates a column with decimal numbers. The number of digits after the decimal point is defined in the following @sec-var-format column.
 
-![](imgs/im-127-var-types.png)
+![](../images/im-127-var-types.png)
 
 
 ### Variable Format {#var-format}
 
-![](imgs/im-033-variable-format.png)
+![](../images/im-033-variable-format.png)
 
 This field is used to specify the **format** of the variable (which depends on its **type**).
 
 There is a predefined drop-down list with common options, but you can enter any format by hand, as long as it is written in Excel syntax.
 
-![](imgs/im-034-variable-format.png)
+![](../images/im-034-variable-format.png)
 
 Example: for an integer to appear with at least 2 characters, enter the format: \# #00
 
@@ -329,7 +329,7 @@ Note that the default data format is *jj-mmm-aaaa*.
 
 ### Control {#var-control}
 
-![](imgs/im-035-control.png)
+![](../images/im-035-control.png)
 
 This is a dropdown field containing nine options for defining variables that are not simple free entry variables:
 
@@ -356,7 +356,7 @@ These options can be broadly classified in three sorts of variables to be create
 +-----------------------------------------------------+----------------------------------------------------------+---------------------------------------+
 
 
-![](imgs/im-128-var-control.png)
+![](../images/im-128-var-control.png)
 
 
 
@@ -444,11 +444,11 @@ In the linelist, the variable labels appear in an **orange cell**, which means t
 
 Definition in the **setup file**:
 
-![](imgs/im-037-example.png)
+![](../images/im-037-example.png)
 
 Display in the **linelist file**:
 
-![](imgs/im-038-example.png)
+![](../images/im-038-example.png)
 
 
 ##### HF
@@ -468,11 +468,11 @@ The variable label appears in an orange cell, which means that the *GeoHelper* b
 
 Definition in the **setup file**:
 
-![](imgs/im-039-example-hf.png)
+![](../images/im-039-example-hf.png)
 
 Display in the linelist :
 
-![](imgs/im-040-example-hf.png)
+![](../images/im-040-example-hf.png)
 
 #### Calculated variables
 
@@ -550,7 +550,7 @@ This is a free text field, which accepts three types of values:
 
 When the controls "choice_manual", "choice_multiple" and "choice_custom" (optional) are selected in the ["Control" column](#sec-var-control), you need to define the values the dropdown menu will contain. These values are entered on another sheet, the *Choices* sheet. Categories for a same variable are bundled into *lists*. The name of the list is entered in the "Control details" column.
 
-![](imgs/im-041-choices.png)
+![](../images/im-041-choices.png)
 
 ::: callout-note
 For more information on the definition of drop-down menus, see the *Choices* sheet page.
@@ -586,7 +586,7 @@ If your Excel is not usually in English, pay special attention to the following:
 In Excel, you can use ALT+ENTRY to insert a carriage return and go to the next line. This does not affect the execution of your formulas, but greatly increases the readability. The same goes for inserting spaces around operators. Contrast these two formulas:
 :::
 
-![](imgs/im-129-formula-style.png)
+![](../images/im-129-formula-style.png)
 
 
 ::: callout-important
@@ -669,7 +669,7 @@ This is a *yes/no* drop-down menu field. It has no direct impact on the linelist
 
 ## Data exports
 
-![](imgs/im-042-data-exports.png)
+![](../images/im-042-data-exports.png)
 
 This section lets you **choose the variables you want to have in each export**. The rest is defined in the *"Exports"* sheet (see the 'Data exports' page).
 
@@ -691,7 +691,7 @@ If you wish to create an anonymous export, i.e. one containing no personal ident
 
 ## Data validation
 
-![](imgs/im-043-data-validation.png)
+![](../images/im-043-data-validation.png)
 
 To improve the quality of the data entered, it is possible to alert or block the user if they attempt to enter unvalid data.
 
@@ -752,26 +752,26 @@ This is a free text field used to give the end user an indication of why their e
 
 Definition in the **setup file**:
 
-![](imgs/im-044-patients-age.png)
+![](../images/im-044-patients-age.png)
 
 How it is encoded in the data validation system of the **linelist file**:
 
-![](imgs/im-045-patients-age.png)
+![](../images/im-045-patients-age.png)
 
 Warning box appearing when the user attempts to enter invalid data:
 
-![](imgs/im-046-warnings.png)
+![](../images/im-046-warnings.png)
 
 
 #### A categorical variable: age unit
 
 Definition in the **setup file**:
 
-![](imgs/im-047-age-unit.png)
+![](../images/im-047-age-unit.png)
 
 Display in the linelist:
 
-![](imgs/im-048-age-unit.png)
+![](../images/im-048-age-unit.png)
 
 
 
@@ -779,22 +779,22 @@ Display in the linelist:
 
 Definition in the **setup file**:
 
-![](imgs/im-049-date.png)
+![](../images/im-049-date.png)
 
 How it is encoded in the data validation system of the **linelist file**:
 
-![](imgs/im-050-date.png)
+![](../images/im-050-date.png)
 
 Warning box appearing when the user attempts to enter invalid data:
 
-![](imgs/im-051-warning.png)
+![](../images/im-051-warning.png)
 
 
 
 
 ## Conditional Formatting
 
-![](imgs/im-052-conditional-formatting.png)
+![](../images/im-052-conditional-formatting.png)
 
 This section is used to define conditional formatting rules.
 
@@ -821,12 +821,12 @@ The 'Lock Cells' section is not currently available.
 
 Definition in the **setup file**:
 
-![](imgs/im-053-example-lock-cells.png)
+![](../images/im-053-example-lock-cells.png)
 
-![](imgs/im-054-example-lock-cells.png)
+![](../images/im-054-example-lock-cells.png)
 
 Display in the **linelist file**:
 
-![](imgs/im-055-example-lock-cells.png)
+![](../images/im-055-example-lock-cells.png)
 
 Note that the hospitalised_format columns is completely hidden because it is of no interest to the user, just needed internally to know where to apply formatting.
