@@ -321,8 +321,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -346,27 +354,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The need: you need to create a MoH export with only the admin 3 and 4 columns.</p>
-<p>The problem: in the <strong>set-up file</strong> <em>Dictionary</em> sheet, geographic columns are represented by one <em>“geo” variable</em>, that is translated in 4 columns in the generated <strong>linelist file</strong> (admin 1, 2, 3 and 4) with cascading dropdown menus. In the <strong>set-up file</strong>, if you indicate that this “geo” variable should be exported for a given export, the linelist export will contain the 4 admin levels columns (more if you choose to export p-codes, see the “<em>Exports</em>” sheet options in the <strong>set-up file</strong>).</p>
-<p>The solution: you need to derive individual columns from the automatically created “<em>geo</em>” columns, and exports these only to your MoH export.</p>
-<p>How does it works? The “<em>geo</em>” variable <strong>name</strong> is used to automatically name the 4 level columns in the linelist. For example, if the “<em>geo</em>” variable in the <strong>set-up file</strong> is called “<em>origin</em>”, four columns will be created in the linelist: adm1_<em>origin</em>, adm2_<em>origin</em>, adm3_<em>origin</em>, adm4_<em>origin</em>.</p>
-<p><strong>Even though these columns do not appear in the setup file, they will be created in the linelist!</strong> This means that you can reference them and use them in formulas in other parts of the <em>Dictionary</em> sheet, like you would do for any other variable defined in that sheet.</p>
-<p>An example, with a column named “residence”: the green variable is the “geo” variable. It triggers the creation of 4 columns in the linelist. You will export it for a MSF export, but maybe you don’t need to export all the fours columns in an MoH export. The blue variables are calculated variables (formula control) that refer to the geo columns that are automatically created. You can decide for each of these individually to export them or not in a given export.</p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.</p>
+<p>But in the <strong>setup file</strong> geographic columns are represented by <a href="../reference/dictionary_sheet.html#geo-variable">one <em>“geo”</em> variable</a>, which is translated in 4 columns in the generated linelist<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In the <strong>setup file</strong>, if you indicate that this “<em>geo</em>” variable should be exported for a given export, the linelist export will contain the four admin levels columns<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+</section>
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
+<p><strong>The solution</strong>: derive calculated columns from the automatically created “<em>geo</em>” variables, and exports these individually to the MoH export, in the order of your choice.</p>
+<p><strong>How does it works</strong>? The “<em>geo</em>” variable <strong>name</strong> is used to automatically create the four columns in the linelist. For example, if the “<em>geo</em>” variable in the <strong>setup file</strong> is called “<em>origin</em>”, four columns will be created in the linelist: -</p>
+<ul>
+<li><p>adm1_<em>origin</em>,</p></li>
+<li><p>adm2_<em>origin</em>,</p></li>
+<li><p>adm3_<em>origin</em>,</p></li>
+<li><p>adm4_<em>origin</em>.</p></li>
+</ul>
+<p><strong>Even though these columns do not appear in the setup file, they are created in the linelist!</strong> This means that you can reference them and use them in formulas in other parts of the <em>Dictionary</em> sheet, like you would do for any other variable defined in that sheet.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>You specify a <em>geo</em> variable named “residence” in the <strong>setup file</strong> (in green below), which triggers the creation of four columns in the linelist.</p>
+<p>The blue variables are <em>calculated</em> variables that refer to the <em>geo</em> columns that are automatically created. You can decide for each of these whether to export them or not in a given export.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imgs/im-123-export-a-subset-of-geographic-columns.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/im-123-export-a-subset-of-geographic-columns.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Because the variable do not appear in the <strong>setup file</strong>, the <em>checkRep</em> <em>check</em> will raise a warning, saying that the formula will fail (because it references a variable that seem not to exist), but in this specific instance, it is wrong, <strong>the columns will be created</strong>, and the formula will thus work in the linelist.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because the “geo” variables 1 to 4 do not appear in the <strong>setup file</strong>, the <em>checkRep</em> <em>check</em> will raise a warning, saying that the formulas will fail (because it references a variable that seem not to exist). In this specific instance, it is wrong: <strong><em>the columns will be created</em></strong>, and the formula will thus work in the linelist.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imgs/im-124-export-a-subset-of-geographic-columns.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/im-124-export-a-subset-of-geographic-columns.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
+</div>
+</div>
 </div>
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Admins levels 1, 2, 3 and 4, with cascading dropdown menus<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p> And more if you choose to export p-codes, see the “<em>Exports</em>” sheet options in the <strong>setup file</strong><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -459,7 +502,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/epicentre-msf\.github\.io\/test-obt-doc-website\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
