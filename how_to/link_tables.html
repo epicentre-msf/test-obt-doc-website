@@ -239,8 +239,8 @@ Note
 <p>Sometimes you need to refer to data from another table, whether it is to use in a formula, to copy data or to populate a dropdown menu.</p>
 <section id="refer-to-a-single-value-in-a-formula" class="level3">
 <h3 class="anchored" data-anchor-id="refer-to-a-single-value-in-a-formula">Refer to a single value in a formula</h3>
-<p>It is straightforward to use the values of <strong>vlist1D</strong> variable in a formula: just use the name of the variable in another formula<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-<p>Example: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:</p>
+<p>It is straightforward to use the values of <strong>vlist1D</strong> variable in a formula: just use the name of the variable in the formula<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p><strong>Example</strong>: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:</p>
 <blockquote class="blockquote">
 <p>IF(ISBLANK(case_id), ““, info_facility_name)</p>
 </blockquote>

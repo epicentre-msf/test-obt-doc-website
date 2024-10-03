@@ -218,15 +218,27 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="get-the-tools-ready" class="level2">
 <h2 class="anchored" data-anchor-id="get-the-tools-ready">Get the tools ready 🛠</h2>
-<p><a href="../getting_started/download.html#download">Download</a> the files from github to get the most updated versions and unzip it.</p>
-<p>Save the empty <strong>setup file</strong> in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).</p>
-<div class="{callout-warning}">
+<ol type="1">
+<li><p><a href="../getting_started/download.html#download">Download</a> the files from github to get the most updated versions and unzip it.</p></li>
+<li><p>Save the empty <strong>setup file</strong> in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).</p></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>OneDrive and macro-enabled Excel files <a href="https://stackoverflow.com/questions/69282968/onedrive-corrupts-macro-enabled-files">do not work well together in general</a>. To avoid random file corruption, we advise that you work in a non synchronise folder, or that you disable OneDrive while you are writting the <strong>setup file</strong>.</p>
+</div>
 </div>
 </section>
 <section id="grow-your-setup-file" class="level2">
 <h2 class="anchored" data-anchor-id="grow-your-setup-file">Grow your setup file 🌱</h2>
-<p>The first step is to create the <strong>variable dictionary</strong>. The other steps are optional, and can be completed if and when needed.</p>
+<p>The first step is to create the <strong>variable dictionary</strong>. The other steps are optional and can be completed if and when needed.</p>
 <section id="create-the-variable-dictionary" class="level3">
 <h3 class="anchored" data-anchor-id="create-the-variable-dictionary">Create the variable dictionary 📘</h3>
 <p>Aka fill the <em>Dictionary</em> and <em>Choices</em> sheets. The first sheet is a database about all the <em>variables</em> present in the linelist you want to create. The <em>Choices</em> sheet contains the categories for categorical variables.</p>
@@ -256,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>spatio-temporal analyses: temporal analyses but for a couple of user-specified places</li>
 </ul>
-<p>Fill the <strong>Translations</strong> sheet to translate strings of text so that the <strong>linelist can automatically be built in other languages</strong> than the one in the setup.</p>
+<p>Fill the <em>Translations</em> sheet to translate strings of text so that the <strong>linelist can automatically be built in other languages</strong> than the one in the setup.</p>
 <p>As for when defining the dictionary, check for errors regularly with the “Check current setup for errors”.</p>
 </section>
 <section id="build-the-linelist-and-stress-test-it" class="level3">
@@ -269,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <li>is the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?</li>
 <li>do the analyses work as expected?</li>
 </ul>
-<p>In all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug to get a working linelist, do not despair!</p>
+<p>In all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug” to get a working linelist, do not despair!</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
