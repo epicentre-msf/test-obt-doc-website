@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#variable-name" id="toc-variable-name" class="nav-link" data-scroll-target="#variable-name">Variable Name</a></li>
   <li><a href="#main-label" id="toc-main-label" class="nav-link" data-scroll-target="#main-label">Main Label</a></li>
   <li><a href="#dev-comment" id="toc-dev-comment" class="nav-link" data-scroll-target="#dev-comment">Dev Comment</a></li>
-  <li><a href="#editable-label" id="toc-editable-label" class="nav-link" data-scroll-target="#editable-label">Editable Label</a></li>
+  <li><a href="#sec-editable-label" id="toc-sec-editable-label" class="nav-link" data-scroll-target="#sec-editable-label">Editable Label</a></li>
   <li><a href="#sub-label" id="toc-sub-label" class="nav-link" data-scroll-target="#sub-label">Sub Label</a></li>
   <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
@@ -197,10 +197,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sheets-and-sections" id="toc-sheets-and-sections" class="nav-link" data-scroll-target="#sheets-and-sections">Sheets and sections</a>
   <ul class="collapse">
   <li><a href="#sheet-name" id="toc-sheet-name" class="nav-link" data-scroll-target="#sheet-name">Sheet Name</a></li>
-  <li><a href="#sheet-types" id="toc-sheet-types" class="nav-link" data-scroll-target="#sheet-types">Sheet Type</a></li>
-  <li><a href="#main-section" id="toc-main-section" class="nav-link" data-scroll-target="#main-section">Main Section</a></li>
+  <li><a href="#sec-sheet-types" id="toc-sec-sheet-types" class="nav-link" data-scroll-target="#sec-sheet-types">Sheet Type</a></li>
+  <li><a href="#sec-main-section" id="toc-sec-main-section" class="nav-link" data-scroll-target="#sec-main-section">Main Section</a></li>
   <li><a href="#sub-section" id="toc-sub-section" class="nav-link" data-scroll-target="#sub-section">Sub Section</a></li>
-  <li><a href="#sheet-sections-example" id="toc-sheet-sections-example" class="nav-link" data-scroll-target="#sheet-sections-example">Example</a></li>
+  <li><a href="#sec-sheet-sections-example" id="toc-sec-sheet-sections-example" class="nav-link" data-scroll-target="#sec-sheet-sections-example">Example</a></li>
   </ul></li>
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a>
   <ul class="collapse">
@@ -208,10 +208,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#register-book" id="toc-register-book" class="nav-link" data-scroll-target="#register-book">Register Book</a></li>
   <li><a href="#personal-identifier" id="toc-personal-identifier" class="nav-link" data-scroll-target="#personal-identifier">Personal Identifier</a></li>
   <li><a href="#thinking-about-variables" id="toc-thinking-about-variables" class="nav-link" data-scroll-target="#thinking-about-variables">Thinking about variables</a></li>
-  <li><a href="#var-type" id="toc-var-type" class="nav-link" data-scroll-target="#var-type">Variable Type</a></li>
-  <li><a href="#var-format" id="toc-var-format" class="nav-link" data-scroll-target="#var-format">Variable Format</a></li>
-  <li><a href="#var-control" id="toc-var-control" class="nav-link" data-scroll-target="#var-control">Control</a></li>
-  <li><a href="#var-control-details" id="toc-var-control-details" class="nav-link" data-scroll-target="#var-control-details">Control details</a></li>
+  <li><a href="#sec-var-type" id="toc-sec-var-type" class="nav-link" data-scroll-target="#sec-var-type">Variable Type</a></li>
+  <li><a href="#sec-var-format" id="toc-sec-var-format" class="nav-link" data-scroll-target="#sec-var-format">Variable Format</a></li>
+  <li><a href="#sec-var-control" id="toc-sec-var-control" class="nav-link" data-scroll-target="#sec-var-control">Control</a></li>
+  <li><a href="#sec-var-control-details" id="toc-sec-var-control-details" class="nav-link" data-scroll-target="#sec-var-control-details">Control details</a></li>
   <li><a href="#unique" id="toc-unique" class="nav-link" data-scroll-target="#unique">Unique</a></li>
   </ul></li>
   <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports">Data exports</a></li>
@@ -223,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#message" id="toc-message" class="nav-link" data-scroll-target="#message">Message</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul></li>
-  <li><a href="#conditional-formatting" id="toc-conditional-formatting" class="nav-link" data-scroll-target="#conditional-formatting">Conditional Formatting</a>
+  <li><a href="#sec-conditional-formating" id="toc-sec-conditional-formating" class="nav-link" data-scroll-target="#sec-conditional-formating">Conditional Formatting</a>
   <ul class="collapse">
   <li><a href="#formatting-condition" id="toc-formatting-condition" class="nav-link" data-scroll-target="#formatting-condition">Formatting condition</a></li>
   <li><a href="#formatting-values" id="toc-formatting-values" class="nav-link" data-scroll-target="#formatting-values">Formatting values</a></li>
@@ -261,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <caption>Sections of variable metadata</caption>
 <colgroup>
 <col style="width: 23%">
-<col style="width: 73%">
+<col style="width: 69%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -315,12 +315,12 @@ Warning
 <section id="variable-name" class="level3">
 <h3 class="anchored" data-anchor-id="variable-name">Variable Name</h3>
 <p>This is a free text field used to <strong>uniquely identify the variables</strong>. The name can be used to refer to the variable in formulas or in the <a href="../reference/analyses_sheet.html"><em>Analyses</em> sheet</a>.</p>
-<p>After you build the linelist, the variable name can be found in the formula bar of the grey cells from the eight-th row (of the linelist sheet)for 2-dimensions tables like patient data), or in the cell name zone for cells of a 1-dimension table (like the <em>Info</em> sheet).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<p>After you build the linelist, the variable name can be found in the formula bar of the grey cells from the eight-th row (of the linelist sheet)for 2-dimensions tables like patient data), or in the cell name zone for cells of a 1-dimension table (like the <em>Info</em> sheet).</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -343,7 +343,7 @@ Warning
 </li>
 <li>Names should not contain special characters (except for “<em>_</em>”).<br>
 </li>
-<li>Names will be automatically converted to lowercase during compilation.</li>
+<li>Names will be automatically converted to lower-case during compilation.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -388,8 +388,8 @@ Tip
 </section>
 <section id="main-label" class="level3">
 <h3 class="anchored" data-anchor-id="main-label">Main Label</h3>
-<p>This is a free text field that defines the variable label. Labels are quick descriptions of the variable that the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.</p>
-<p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see <strong>?@sec-editable-label</strong>).</p>
+<p>This is a free text field that defines the variables labels, which are quick descriptions of the variables, which the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.</p>
+<p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see <a href="#sec-editable-label" class="quarto-xref">Section&nbsp;0.1.4</a>).</p>
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -418,25 +418,36 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>One of the author of this wiki uses these tags:</p>
+<p>One of the author of this doc uses these tags:</p>
 <ul>
-<li><p><strong>Format</strong>: calculated columns created solely for applying conditional formatting (see section on “Conditional formatting” below). These columns are very specific, and pure format. Tagging them helps to quickly make sure that they are never exported</p></li>
-<li><p><strong>MoH</strong>: columns created when a general setup is adapted to a specific country, by adding exports to a specific MoH format. Usually, we need to create some calculated columns that match the MoH export (recoding levels, or perhaps merging information of several variables…). I like to keep track of which columns are from the general setup and which are specific adaptations.</p></li>
+<li><p><strong>Format</strong>: calculated columns created for applying conditional formatting (see <a href="#sec-conditional-formating" class="quarto-xref">Section&nbsp;5.3</a>). These columns are very specific, and pure format. Tagging them helps to quickly make sure that they are never exported</p></li>
+<li><p><strong>MoH</strong>: columns created when a general setup is adapted to a specific MoH format by adding a dedicated export for that format. Usually, we need to create some calculated columns that match the MoH export (recoding levels, or perhaps merging information of several variables…). I like to keep track of which columns are from the general setup and which are specific adaptations.</p></li>
 <li><p><strong>WHO/Epinetwork</strong>: sometimes I want to keep the information that a column is here because it comes from the Epinetwork or the WHO CRF, and should probably not be modified.</p></li>
-<li><p><strong>Boilerplate</strong>: calculated columns that are needed for graphs, or because the information is important (such as epiweeks). These columns are often hidden, but not necessarily.</p></li>
+<li><p><strong>Boilerplate</strong>: calculated columns that are needed for graphs, or because the information is important (such as epiweeks). These columns are often hidden, but not necessarily, and they sometimes can be exported too.</p></li>
 </ul>
 </div>
 </div>
-<p>Feel free to use this column in a way that helps you work!</p>
+<p>Feel free to use this column in a ways that helps you work, or ignore it!</p>
 </section>
-<section id="editable-label" class="level3">
-<h3 class="anchored" data-anchor-id="editable-label">Editable Label</h3>
-<p><img src="../images/im-007-editable-label.png" class="img-fluid"></p>
-<p>This is a <em>yes/no</em> column. If the value is “<em>yes</em>”, the label of the variable in the linelist can be modified by the user. If the value is “<em>no</em>” or if the field remains empty, the variable label in the linelist will be protected.</p>
+<section id="sec-editable-label" class="level3">
+<h3 class="anchored" data-anchor-id="sec-editable-label">Editable Label</h3>
+<p>This is a <em>yes/no</em> column. If the value is “<em>yes</em>”, the label of the variable in the linelist can be modified by its user. If the value is “<em>no</em>” or if the field remains empty, the variable label in the linelist is protected.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is often desirable to add a couple of columns with editable labels at the end of the linelist, in case the user want to collect some extra information. It gives some freedom to users to collect some site specific data without needing an update of the setup. When I do that, I usually provide a couple of free text variables, and a couple of customisable dropdonws variables (see <a href="#sec-custom-dropdowns" class="quarto-xref">Section&nbsp;3.0.0.0.3</a>)</p>
+</div>
+</div>
 </section>
 <section id="sub-label" class="level3">
 <h3 class="anchored" data-anchor-id="sub-label">Sub Label</h3>
-<p><img src="../images/im-008-sub-label.png" class="img-fluid"></p>
 <p>This is a free text field used to add a brief description under the variable label, such as the format in which a date is expected, a unit, or any other information to help with filling the variable in.</p>
 <p>In the linelist, the sub-label appears just below the main label, in blue and slightly smaller font. It cannot be modified by the end user.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -449,7 +460,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The sublabels “<em>Calculated</em>” and “<em>Custom label</em>” are added automatically, no need to add them manually.</p>
+<p>The sub-labels “<em>Calculated</em>” and “<em>Custom dropdown</em>” are added automatically, no need to add them manually.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -462,7 +473,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Common sublabels include the following:</p>
+<p>Common sub-labels include the following:</p>
 <ul>
 <li>Yes / No</li>
 <li>Yes / No / Unk.</li>
@@ -474,27 +485,34 @@ Tip
 </section>
 <section id="note" class="level3">
 <h3 class="anchored" data-anchor-id="note">Note</h3>
-<p><img src="../images/im-009-note.png" class="img-fluid"></p>
 <p>This is a free text field which content is added to the linelist as a <em>comment</em> on the corresponding cell. The comment in the linelist can be read by hovering the cursor over the cell. It cannot be modified by the end user.</p>
 </section>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-010-example.png" class="img-fluid"></p>
-<p>Display in the <strong>linelistfile</strong>:</p>
-<p><img src="../images/im-011-example.png" class="img-fluid"></p>
+<p>Definitions in the <strong>setup file</strong>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-010-example-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Display in the <strong>linelist file</strong>:</p>
+<p><img src="images/im-011-example-en.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="sheets-and-sections" class="level2">
 <h2 class="anchored" data-anchor-id="sheets-and-sections">Sheets and sections</h2>
-<p><img src="../images/im-012-sheets-and-sections.png" class="img-fluid"></p>
-<p>This section of the dictionary organises variables within <strong>sheets and tables</strong>, and thus creates part of the structure of the linelist.</p>
-<p>As a general rule, there is one table per data entry sheet created, but the structure of the table (<em>i.e</em>. the organisation of the variables) can vary.</p>
+<p>This section of the table organises variables within <strong>sheets</strong> and <strong>tables</strong>, and thus defines the <em>structure</em> of the linelist (at least for data-entry sheets).</p>
+<p><strong>One data entry sheet can contain only one table</strong> but the structure of the table (<em>i.e</em>. the organisation of the variables) can vary.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-012-sheets-and-sections-en.png" class="img-fluid figure-img"></p>
+<figcaption>Sheet and sections in the **setup file**</figcaption>
+</figure>
+</div>
 <section id="sheet-name" class="level3">
 <h3 class="anchored" data-anchor-id="sheet-name">Sheet Name</h3>
-<p><img src="../images/im-013-shhet-name.png" class="img-fluid"></p>
 <p>This is a free text field that contains the <em>name of the sheet</em> in which the variable will appear.</p>
-<p>In general, your linelists will contain at least a data entry sheet, and a metadata/general information data sheet.</p>
+<p>In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -505,25 +523,27 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>More sheets can be created, either automatically (such as the “Instruction” sheet), or by defining analyses in other parts of the <strong>setup file</strong>.</p>
+<p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an “Instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include analyses.</p>
 </div>
 </div>
 </section>
-<section id="sheet-types" class="level3">
-<h3 class="anchored" data-anchor-id="sheet-types">Sheet Type</h3>
-<p><img src="../images/im-014-sheet-type.png" class="img-fluid"></p>
-<p>This is a drop-down menu field used to define the <em>type of table</em> contained in the sheet. There are 2 options:</p>
+<section id="sec-sheet-types" class="level3">
+<h3 class="anchored" data-anchor-id="sec-sheet-types">Sheet Type</h3>
+<p>This is a dropdown menu field used to define the <em>type of table</em> contained in the sheet. There are two options:</p>
 <ul>
-<li><p><strong>vlist1D</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>: corresponds to a table built vertically, so the variables <em>labels</em> appear in columns, and <strong>only one entry is expected for each variable</strong>. This type of sheet is used to collect general information about the facilities or data collection.</p></li>
-<li><p><strong>hlist2D</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: corresponds to a horizontally constructed table, so the variables labels appear in a row, and <strong>several entries are possible for each variable</strong>. This type of sheet is used to collect patient data.</p></li>
+<li><p><strong>vlist1D</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>: corresponds to a table built <em>vertically</em>, so the variables labels are in the same column, and <strong>only one entry is expected for each variable</strong>. This structure of data is well adapted to collect metadata about the health structure, the project or the data collection itself.</p></li>
+<li><p><strong>hlist2D</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: corresponds to a horizontally constructed table, so the variables labels appear in the same row, and <strong>several entries are possible for each variable</strong>. This type of sheet is used to collect patient data.</p></li>
 </ul>
-<p><img src="../images/im-015-sheet-type.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-015-sheet-type.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 </section>
-<section id="main-section" class="level3">
-<h3 class="anchored" data-anchor-id="main-section">Main Section</h3>
-<p><img src="../images/im-016-main-section.png" class="img-fluid"></p>
-<p>This is a free text field used to define the <em>name</em> of the main section in which the variable is located. This makes it possible to organise variables by theme to make data entry and navigation easier.</p>
-<p>In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in <strong>?@sec-sheet-sections-example</strong>). They cannot be modified by the end user.</p>
+<section id="sec-main-section" class="level3">
+<h3 class="anchored" data-anchor-id="sec-main-section">Main Section</h3>
+<p>This is a free text field used to define the <em>name</em> of the main section in which the variable is located. This makes it possible to group variables by theme to make data entry and navigation easier.</p>
+<p>In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in <a href="#sec-sheet-sections-example" class="quarto-xref">Section&nbsp;0.2.5</a>). They cannot be modified by the end user.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -540,12 +560,11 @@ Tip
 </section>
 <section id="sub-section" class="level3">
 <h3 class="anchored" data-anchor-id="sub-section">Sub Section</h3>
-<p><img src="../images/im-017-sub-section.png" class="img-fluid"></p>
 <p>This is a free text field that allows you to further refine the organisation of variables in the table by creating a second level of grouping.</p>
-<p>In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in <strong>?@sec-sheet-sections-example</strong>). They cannot be modified by the end user.</p>
+<p>In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in <a href="#sec-sheet-sections-example" class="quarto-xref">Section&nbsp;0.2.5</a>). They cannot be modified by the end user.</p>
 </section>
-<section id="sheet-sections-example" class="level3">
-<h3 class="anchored" data-anchor-id="sheet-sections-example">Example</h3>
+<section id="sec-sheet-sections-example" class="level3">
+<h3 class="anchored" data-anchor-id="sec-sheet-sections-example">Example</h3>
 <section id="vlist1d" class="level4">
 <h4 class="anchored" data-anchor-id="vlist1d">vlist1D</h4>
 <p>Definition in the <strong>setup file</strong>:</p>
@@ -564,35 +583,29 @@ Tip
 </section>
 <section id="properties" class="level2">
 <h2 class="anchored" data-anchor-id="properties">Properties</h2>
-<p>The properties section is as follows:</p>
-<p><img src="../images/im-023-status.png" class="img-fluid"></p>
+<p>The properties section of the table controls variable visibility, uniqueness, and the type and format of the variable (what it contains, in which form, and in which display).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im-022-properties-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <section id="status" class="level3">
 <h3 class="anchored" data-anchor-id="status">Status</h3>
-<p>This is a drop-down field that contains four options for defining the <strong>visibility</strong> of the variable:</p>
+<p>This is a dropdown field that contains four options for defining the <strong>visibility</strong> of the variable. The linelist has a functionality to show or hide optional variables depending on the data needs on the field.</p>
 <ul>
-<li><p><strong>“mandatory”</strong>: variable displayed by default, it cannot be hidden in the linelist</p></li>
-<li><p><strong>“optional, visible”</strong>: variable displayed by default, it can be displayed or hidden by the linelist user</p></li>
-<li><p><strong>“optional, hidden”</strong>: variable hidden by default, it can be displayed or hidden by the linelist user</p></li>
-<li><p><strong>“hidden”</strong>: variable hidden by default, it cannot be displayed in the linelist</p></li>
+<li><p><em>mandatory</em>: variable displayed by default, <strong>it cannot be hidden</strong> in the linelist</p></li>
+<li><p><em>optional, visible</em>: variable displayed by default, it can be displayed or hidden by the linelist user</p></li>
+<li><p><em>optional, hidden</em>: variable hidden by default, it can be displayed or hidden by the linelist user</p></li>
+<li><p><em>hidden</em>: variable hidden by default, it cannot be displayed in the linelist^[Technically, the linelist user can force the columns to unhide, which is actually very usefull to test and debug your nascent linelist. This visibility setting will however not be migrated.]</p></li>
 </ul>
 <p>Variables can be shown or hidden using the <em>Show/Hide</em> button in the <strong>linelist file</strong>.</p>
 <section id="example-1" class="level4">
-<h4 class="anchored" data-anchor-id="example-1"><strong>Example</strong></h4>
+<h4 class="anchored" data-anchor-id="example-1">Example</h4>
 <p>Definition in the <strong>setup file</strong>:</p>
 <p><img src="../images/im-024-example.png" class="img-fluid"></p>
 <p>Display in the <strong>linelist file</strong>:</p>
 <p><img src="../images/im-025-example.png" class="img-fluid"></p>
 <p><img src="../images/im-026-example.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
 <p>“Mandatory” variables in the <strong>setup file</strong> appear as “Mandatory” in the “Show/Hide” pop up, and cannot be hidden.</p>
 <p><strong>1</strong></p>
 <p>The “optional, hidden” variables in the <strong>setup file</strong> appear as “Hidden” (by default). However, the user can change the status by choosing “Show”, in which case the column will become visible. <img src="../images/im-027-example.png" class="img-fluid"></p>
@@ -601,57 +614,57 @@ Note
 <p>The “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the <strong>setup file</strong>.</p>
 <p>The “optional, visible” variables in the <strong>setup file</strong> appear as “Displayed” (by default). However, you can change the status by choosing “Hide”, in which case the column will no longer be visible.</p>
 <p><strong>4</strong> <img src="../images/im-029-example.png" class="img-fluid"></p>
-</div>
-</div>
 </section>
 </section>
 <section id="register-book" class="level3">
 <h3 class="anchored" data-anchor-id="register-book">Register Book</h3>
-<p><img src="../images/im-030-register-book.png" class="img-fluid"></p>
-<p>This is a <em>yes/no</em> drop-down menu field used to predefine the variables to be included in the register to be printed. This is not mandatory and can be managed later, directly in the <strong>linelist file</strong>.</p>
+<p>This is a <em>yes/no</em> dropdown menu field used to predefine the variables to be included in the register to be printed. This step is not mandatory and can be managed later, directly in the <strong>linelist file</strong>.</p>
 </section>
 <section id="personal-identifier" class="level3">
 <h3 class="anchored" data-anchor-id="personal-identifier">Personal Identifier</h3>
-<p><img src="../images/im-031-personal-identifier.png" class="img-fluid"></p>
-<p>This is a <em>yes/no</em> drop-down menu field that indicates that the variable contains personal data (such as names, phone numbers etc.).</p>
-<p>This column has to uses: - it allows the setup developer to quickly identify variables containing personal data in its dictionary<br>
-- it is used to remove variables automatically from the exports if such a behaviour is needed (see the <em>Exports</em> sheet).</p>
+<p>This is a <em>yes/no</em> dropdown menu field that indicates that the variable contains personal data (such as names, phone numbers etc.).</p>
+<p>This column has to uses:</p>
+<ul>
+<li>it allows the setup developer to quickly identify variables containing personal data in its dictionary<br>
+</li>
+<li>it is used to remove variables automatically from the exports if such a behaviour is needed (see the <a href="../">Exports</a> sheet).</li>
+</ul>
 </section>
 <section id="thinking-about-variables" class="level3">
 <h3 class="anchored" data-anchor-id="thinking-about-variables">Thinking about variables</h3>
 <p>There are many ways of thinking about variables and of classifying them.</p>
 <p>In general we can distinguished between <em>input</em> variables, where the user enters raw data, and <em>calculated</em> (or derived) variables, which require no input. Both of them can be created in OutbreakTools.</p>
-<p>Independently of this distinction, a variety of <strong>variables types</strong> can exist, containing numbers or text in various forms. In Excel, we will often use the types <em>integer</em>, <em>decimals</em>, <em>dates</em> and <em>text</em>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. See the section on <strong>?@sec-var-type</strong> for more information.</p>
-<p>For input variables, you could think of two ways of entering data: a “free” approach, where user can enter the value of their choice, and a controlled (constrained) approach, where the values the user can enter are limited. In Excel, this is generally implemented through <em>dropdown menus</em> from which the data encoder selects a value. In OutbreakTools, there have several ways of building dropdown menus, depending on whether you know the categories in advance or not. This is what we call “variable control”. Learn more about it in the <strong>?@sec-var-control</strong>.</p>
+<p>Independently of this distinction, a variety of <strong>variables types</strong> can exist, containing numbers or text in various forms. In Excel, we will often use the types <em>integer</em>, <em>decimals</em>, <em>dates</em> and <em>text</em>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. See the section on <a href="#sec-var-type" class="quarto-xref">Section&nbsp;0.3.5</a> for more information.</p>
+<p>For input variables, you could think of two ways of entering data: a “free” approach, where user can enter the value of their choice, and a controlled (constrained) approach, where the values the user can enter are limited. In Excel, this is generally implemented through <em>dropdown menus</em> from which the data encoder selects a value. In OutbreakTools, there have several ways of building dropdown menus, depending on whether you know the categories in advance or not. This is what we call “variable control”. Learn more about it in the <a href="#sec-var-control" class="quarto-xref">Section&nbsp;0.3.7</a>.</p>
 <p>Finally, many software allow the user to set the way the data is displayed, which we here call <strong>format</strong>. For example:<br>
 - The date first of January of 2023 can be displayed as “01/01/2024”, or “1/1/24” or 1-Jan-24” etc.<br>
 - The number “1” could be displayed as “1” simply, or “001”<br>
 - The number 0.01 could be displayed with different levels of rounding, or even as “10%” if the column contains proportions that can be displayed as percentages.<br>
-Learn more about format in <strong>?@sec-var-format</strong></p>
+Learn more about format in <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a></p>
 </section>
-<section id="var-type" class="level3">
-<h3 class="anchored" data-anchor-id="var-type">Variable Type</h3>
+<section id="sec-var-type" class="level3">
+<h3 class="anchored" data-anchor-id="sec-var-type">Variable Type</h3>
 <p><img src="../images/im-032-variable-type.png" class="img-fluid"></p>
-<p>This column proposes a drop-down menu field containing four options for defining the type [^which is sometimes called <em>class</em> in some softwares] of each variable:</p>
+<p>This column proposes a dropdown menu field containing four options for defining the type [^which is sometimes called <em>class</em> in some softwares] of each variable:</p>
 <ul>
-<li><p><strong>Text</strong>: creates a column of text [^also called character string in some softwares]. The entry of the text may be free or constrained by a dropdown menu, see the <strong>?@sec-var-control</strong> section below.</p></li>
-<li><p><strong>Date</strong>: creates a date column, whose exact format is defined in the next column, <strong>?@sec-var-format</strong>. The default format is <em>jj-mmm-aaaa</em>.</p></li>
+<li><p><strong>Text</strong>: creates a column of text [^also called character string in some softwares]. The entry of the text may be free or constrained by a dropdown menu, see the <a href="#sec-var-control" class="quarto-xref">Section&nbsp;0.3.7</a> section below.</p></li>
+<li><p><strong>Date</strong>: creates a date column, whose exact format is defined in the next column, <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a>. The default format is <em>jj-mmm-aaaa</em>.</p></li>
 <li><p><strong>Integer</strong>: creates an integer column</p></li>
-<li><p><strong>Decimal</strong>: creates a column with decimal numbers. The number of digits after the decimal point is defined in the following <strong>?@sec-var-format</strong> column.</p></li>
+<li><p><strong>Decimal</strong>: creates a column with decimal numbers. The number of digits after the decimal point is defined in the following <a href="#sec-var-format" class="quarto-xref">Section&nbsp;0.3.6</a> column.</p></li>
 </ul>
 <p><img src="../images/im-127-var-types.png" class="img-fluid"></p>
 </section>
-<section id="var-format" class="level3">
-<h3 class="anchored" data-anchor-id="var-format">Variable Format</h3>
+<section id="sec-var-format" class="level3">
+<h3 class="anchored" data-anchor-id="sec-var-format">Variable Format</h3>
 <p><img src="../images/im-033-variable-format.png" class="img-fluid"></p>
 <p>This field is used to specify the <strong>format</strong> of the variable (which depends on its <strong>type</strong>).</p>
-<p>There is a predefined drop-down list with common options, but you can enter any format by hand, as long as it is written in Excel syntax.</p>
+<p>There is a predefined dropdown list with common options, but you can enter any format by hand, as long as it is written in Excel syntax.</p>
 <p><img src="../images/im-034-variable-format.png" class="img-fluid"></p>
 <p>Example: for an integer to appear with at least 2 characters, enter the format: # #00</p>
 <p>Note that the default data format is <em>jj-mmm-aaaa</em>.</p>
 </section>
-<section id="var-control" class="level3">
-<h3 class="anchored" data-anchor-id="var-control">Control</h3>
+<section id="sec-var-control" class="level3">
+<h3 class="anchored" data-anchor-id="sec-var-control">Control</h3>
 <p><img src="../images/im-035-control.png" class="img-fluid"></p>
 <p>This is a dropdown field containing nine options for defining variables that are not simple free entry variables:</p>
 <ul>
@@ -668,8 +681,8 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <p>These options can be broadly classified in three sorts of variables to be created:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 36%">
+<col style="width: 29%">
+<col style="width: 31%">
 <col style="width: 23%">
 </colgroup>
 <thead>
@@ -706,7 +719,7 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <col style="width: 19%">
 <col style="width: 19%">
 <col style="width: 19%">
-<col style="width: 33%">
+<col style="width: 19%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -718,7 +731,7 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <td><h1 id="whe">Whe</h1>
 <p>re are valu es defined?</p>
 <p><strong>Setup file</strong>, in the “<em>Choice</em>” sheet</p></td>
-<td>Data entry in the linelist | =========== ==== ===================== ==== ===================== ==== ====================+ <strong>One value</strong> selected from a dropdown menu |</td>
+<td>Data entry in the linelist | =========== ==== ==== ==== == =========== ==== ==== ==== == =========== ==== ==== ==== == ==========+ <strong>One value</strong> selected from a dropdown menu |</td>
 </tr>
 <tr class="even">
 <td>choic e_multiple</td>
@@ -743,11 +756,11 @@ Learn more about format in <strong>?@sec-var-format</strong></p>
 <section id="choice_manual" class="level5">
 <h5 class="anchored" data-anchor-id="choice_manual">Choice_manual</h5>
 <p>This control creates a categorical variable with a <strong>static dropdown menu</strong> in the linelist, from which <strong>one value</strong> can be selected. The authorised values from the dropdown menu are <strong>defined in advance in the setup</strong> and cannot be modified by the users of the linelist (hence the “static”).</p>
-<p>In the <strong>setup file</strong>, we define these values in a list stored in the <em>“Choices”</em> sheet, and fill the name of that list in the column “Control details” column (see <strong>?@sec-var-control-details</strong> section).</p>
+<p>In the <strong>setup file</strong>, we define these values in a list stored in the <em>“Choices”</em> sheet, and fill the name of that list in the column “Control details” column (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section).</p>
 </section>
 <section id="choice_multiple" class="level5">
 <h5 class="anchored" data-anchor-id="choice_multiple">Choice_multiple</h5>
-<p>This control is similar to the choice manual, in that it creates a <strong>static drop-down menu</strong> in the linelist from <strong>predefined values</strong> entered in the setup.</p>
+<p>This control is similar to the choice manual, in that it creates a <strong>static dropdown menu</strong> in the linelist from <strong>predefined values</strong> entered in the setup.</p>
 <p>The difference is that in the created <strong>linelist file</strong>, the user can use the dropdown menu several times to select <strong>multiple values</strong>. These values will be concatenated and stored as a chain of character. By default, the separator is a coma (“,”), but you can modify this in the control column. For example, entering <em>choice_multiple(“_”)</em> would use the character “_” to separate values instead of “,”.</p>
 <p><strong>Example</strong>: if the user select “Azythromicin”, then “Ampicilin” from a dropdown menu, the value “Azythromicin, Ampicilin” will be stored in the cell.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -764,11 +777,11 @@ Note
 </div>
 </div>
 </section>
-<section id="choice_custom" class="level5">
-<h5 class="anchored" data-anchor-id="choice_custom">Choice_custom</h5>
+<section id="sec-custom-dropdowns" class="level5">
+<h5 class="anchored" data-anchor-id="sec-custom-dropdowns">Choice_custom</h5>
 <p>This control creates a <strong>dynamic dropdown menu</strong> in the linelist, but contrary to the previous controls, the values are not (necessarily) predefined in the setup, but instead <strong>defined by the user</strong>. This control is useful for variables where one would like to enforce standardization of values, but the values to encode are not known in advance.</p>
 <p><strong>Example</strong>: you wish to create a column containing the name of facilities patients can be transferred to. The names of these facilities is site dependent, thus unknown in advance.</p>
-<p>Using the choice_custom control will create a table in the “<em>Custom dropdown</em>” sheet in the linelist where the user can fill-in values to populate the <strong>dynamic, customised drop-down menu</strong>.</p>
+<p>Using the choice_custom control will create a table in the “<em>Custom dropdown</em>” sheet in the linelist where the user can fill-in values to populate the <strong>dynamic, customised dropdown menu</strong>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -779,25 +792,25 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>While by default the dropdown menu created is empty, it is possible to prefill it by filling the “Control Details” column with a list of choices, like for the other types of dropdowns menus (see <strong>?@sec-var-control-details</strong> section). The table in the “<em>Custom dropdown</em>” sheet of the linelist will still created and future users will be able to modify/grow it.</p>
+<p>While by default the dropdown menu created is empty, it is possible to prefill it by filling the “Control Details” column with a list of choices, like for the other types of dropdowns menus (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section). The table in the “<em>Custom dropdown</em>” sheet of the linelist will still created and future users will be able to modify/grow it.</p>
 </div>
 </div>
 </section>
-<section id="list-auto" class="level5">
-<h5 class="anchored" data-anchor-id="list-auto">List_auto</h5>
+<section id="sec-list-auto" class="level5">
+<h5 class="anchored" data-anchor-id="sec-list-auto">List_auto</h5>
 <p>This control also creates a <strong>dynamic dropdown menu</strong>, but the values come from the data entered in another column.</p>
 <p><strong>Example</strong>: a linelist contains two data-entry sheets: - the first data entry sheet contains patient data<br>
 - a second data entry sheet contains more variables for a subset of re-admitted patients.</p>
-<p>The list_auto control allows to create a column on the second sheet with a drop-down menu populated dynamically with the patient IDs from the first sheet.</p>
-<p>In the setup, the <strong>variable</strong> used to populate the drop-down menu is defined in the “Control Details” column of the <em>Dictionary</em> sheet (see <strong>?@sec-var-control-details</strong> section).</p>
+<p>The list_auto control allows to create a column on the second sheet with a dropdown menu populated dynamically with the patient IDs from the first sheet.</p>
+<p>In the setup, the <strong>variable</strong> used to populate the dropdown menu is defined in the “Control Details” column of the <em>Dictionary</em> sheet (see <a href="#sec-var-control-details" class="quarto-xref">Section&nbsp;3.0.1</a> section).</p>
 </section>
 </section>
 <section id="special-case-of-amdinistrative-levels-and-health-facilities" class="level4">
 <h4 class="anchored" data-anchor-id="special-case-of-amdinistrative-levels-and-health-facilities">Special case of amdinistrative levels and health facilities</h4>
 <p>Two controls allow us to enter geographic information, or information about health facilities. While the created variables will technically contain dropdown menus, they are treated as a special type of variables in OubtbreakTools linelists, with dedicated tools and analyses.</p>
 <p>OutbreakTool linelists all have a button to import a geobase, a standardised file containing lists of administrative levels to describe places. Once the geobase successfully imported, the values from its lists will populate specific dropdown menus (see the linelist documentation on how to import a geobase).</p>
-<section id="geo-variable" class="level5">
-<h5 class="anchored" data-anchor-id="geo-variable">Geo</h5>
+<section id="sec-geo-variable" class="level5">
+<h5 class="anchored" data-anchor-id="sec-geo-variable">Geo</h5>
 <p>The “geo” control indicates that geographic data is expected. In the linelist, this results in the creation of <strong>4 columns</strong>, one for each administrative level, which will be populated by values imported from a geobase. The user can enter data by using the <em>GeoHelper</em> button in the linelist or by selecting values from the cascading dropdown menus in the linelist.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -872,42 +885,42 @@ Note
 <p>Three controls allow the creation of calculated columns. In general, the user can define a column by providing an Excel <em>formula</em> [^<em>i.e.</em> a combination of Excel <em>functions</em>], but the setup file also provides two custom functions, CASE_WHEN and CHOICE_FORMULA to simplify formula syntax.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Control</th>
-<th>Functions</th>
+<th>F u nctions</th>
 <th>Use</th>
 <th>Default value</th>
-<th style="text-align: center;">Can be used in analyses tables</th>
+<th style="text-align: center;">Can be used in a nalyses tables</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>formula</td>
-<td>Any c ombination of Excel functions (in English)</td>
-<td>Anything</td>
+<td>Any c o m b ination of Excel f u nctions (in E nglish)</td>
+<td>A nything</td>
 <td></td>
-<td style="text-align: center;"><p>Continuous variables: yes</p>
-<p>C ategorical variables: no</p></td>
+<td style="text-align: center;"><p>C o n tinuous v a r iables: yes</p>
+<p>C a t e gorical v a r iables: no</p></td>
 </tr>
 <tr class="even">
-<td>case_when</td>
-<td><strong>C ASE_WHEN</strong> (Excel functions optional)</td>
-<td>Replaces nested IF</td>
+<td>c a se_when</td>
+<td>**C A S E _WHEN** (Excel f u nctions o p tional)</td>
+<td>R eplaces nested IF</td>
 <td>Empty cell; user can modify it</td>
 <td style="text-align: center;">no</td>
 </tr>
 <tr class="odd">
-<td>choi ce_formula</td>
-<td>**CH OICE _FORMULA** (Excel functions optional)</td>
-<td>Replaces nested IF</td>
-<td>Empty character; user cannot modify it</td>
+<td>choi c e _ formula</td>
+<td>**CH OICE _FO R M ULA** (Excel f u nctions o p tional)</td>
+<td>R eplaces nested IF</td>
+<td>Empty c h a racter; user cannot modify it</td>
 <td style="text-align: center;">yes</td>
 </tr>
 </tbody>
@@ -970,15 +983,15 @@ Note
 </section>
 </section>
 </section>
-<section id="var-control-details" class="level3">
-<h3 class="anchored" data-anchor-id="var-control-details">Control details</h3>
+<section id="sec-var-control-details" class="level3">
+<h3 class="anchored" data-anchor-id="sec-var-control-details">Control details</h3>
 <p>This is a free text field, which accepts three types of values: - the name of a <em>list</em> (defined in the <em>Choices</em> sheet), - the name or a <em>variable</em> (defined in the <em>Dictionary</em> sheet) - a <em>formula</em>.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 41%">
-<col style="width: 16%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 19%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -988,7 +1001,7 @@ Note
 <td><h1 id="contro">Contro</h1>
 <p>l column</p>
 <p>choice _manual, choice <em>custom, choice</em> multiple</p></td>
-<td>Value expected in the “Control details” column | ====================== ====== =========================== ====== =========================== ====== ==========================+ The name of a <em>list</em> that contains the authorised values, defined in the <em>Choice</em> sheet (“List Name” column) |</td>
+<td>Value expected in the “Control details” column | ==== ==== ============== ====== ===== ==== ==== ============== ====== ===== ==== ==== ============== ====== ===== ==== ==== =============+ The name of a <em>list</em> that contains the authorised values, defined in the <em>Choice</em> sheet (“List Name” column) |</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -1000,7 +1013,7 @@ Note
 <tr class="odd">
 <td>Ca lculated</td>
 <td>formula, choice_ formula, c ase_when</td>
-<td>An Excel formula (that can contain one or more functions, including the custom functions CASE_WHEN and CHOICE_FORMULA)</td>
+<td>An Excel formula (that can contain one or more functions, including the custom functions CASE_WHEN and C HOICE_FORMULA)</td>
 <td></td>
 </tr>
 </tbody>
@@ -1019,13 +1032,13 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For more information on the definition of drop-down menus, see the <em>Choices</em> sheet page.</p>
+<p>For more information on the definition of dropdown menus, see the <em>Choices</em> sheet page.</p>
 </div>
 </div>
 <p>In the case of “list auto” variables, you only need to provide the name of another variable in the “Control details” column. In the linelist, the values present in the referred variables will be automatically used to populate the dropdown menu.</p>
 </section>
-<section id="formulas" class="level4">
-<h4 class="anchored" data-anchor-id="formulas">Formulas</h4>
+<section id="sec-formulas" class="level4">
+<h4 class="anchored" data-anchor-id="sec-formulas">Formulas</h4>
 <p>If you have selected “formula”, “choice_formula” or “case_when” in the <a href="#sec-var-control">“Control” column</a>, you need to provide the formula to be applied in this column.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1040,8 +1053,8 @@ Note
 <p>The information given in the <a href="#sec-formula-control">Formula control</a> section below are also valid for “choice_formula” and “case_when” controls as these, while based on custom functions, are still formulas.</p>
 </div>
 </div>
-<section id="formula-control" class="level5">
-<h5 class="anchored" data-anchor-id="formula-control">Formula control</h5>
+<section id="sec-formula-control" class="level5">
+<h5 class="anchored" data-anchor-id="sec-formula-control">Formula control</h5>
 <p>The formula is written <strong>in English</strong>, <strong>without an “=” sign</strong>. The formulas are automatically translated into the Excel language defined on the computer used to generate the linelist.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1151,7 +1164,7 @@ Note
 </section>
 <section id="unique" class="level3">
 <h3 class="anchored" data-anchor-id="unique">Unique</h3>
-<p>This is a <em>yes/no</em> drop-down menu field. It has no direct impact on the linelist, but the information can be used in the data cleaning phase.</p>
+<p>This is a <em>yes/no</em> dropdown menu field. It has no direct impact on the linelist, but the information can be used in the data cleaning phase.</p>
 </section>
 </section>
 <section id="data-exports" class="level2">
@@ -1245,7 +1258,7 @@ Important
 </section>
 <section id="alert" class="level3">
 <h3 class="anchored" data-anchor-id="alert">Alert</h3>
-<p>This is a drop-down field. There are two possible options:</p>
+<p>This is a dropdown field. There are two possible options:</p>
 <ul>
 <li>error</li>
 <li>warning</li>
@@ -1299,8 +1312,8 @@ Note
 </section>
 </section>
 </section>
-<section id="conditional-formatting" class="level2">
-<h2 class="anchored" data-anchor-id="conditional-formatting">Conditional Formatting</h2>
+<section id="sec-conditional-formating" class="level2">
+<h2 class="anchored" data-anchor-id="sec-conditional-formating">Conditional Formatting</h2>
 <p><img src="../images/im-052-conditional-formatting.png" class="img-fluid"></p>
 <p>This section is used to define conditional formatting rules.</p>
 <section id="formatting-condition" class="level3">
