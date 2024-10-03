@@ -22,11 +22,11 @@ Sometimes you need to refer to data from another table, whether it is to use in 
 
 ### Refer to a single value in a formula
 
-It is straightforward to use the values of **vlist1D** variable in a formula: just use the name of the variable in another formula[^2].
+It is straightforward to use the values of **vlist1D** variable in a formula: just use the name of the variable in the formula[^2].
 
 [^2]: These variables can take only one value, see [the different sorts of tables](../reference/dictionary_sheet.qmd#sheet-types) for more information.
 
-Example: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:
+**Example**: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:
 
 > IF(ISBLANK(case_id), "", info_facility_name)
 
