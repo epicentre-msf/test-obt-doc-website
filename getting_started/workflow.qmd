@@ -10,7 +10,7 @@ Follow these steps to create a linelist with OutbreakTools:
 2.  Compile the **setup file** using the **designer file**
 3.  Test the created linelist
 4.  Correct bugs in the **setup file**
-5.  Rince and repeat until the linelist is functional
+5.  Rinse and repeat until the linelist is functional
 
 ## Setup file
 
@@ -27,7 +27,7 @@ Most of the work developing a linelist is spent filling a **setup file** templat
 The setup file contains the following sheets:
 
 | Setup file sheet | Description                                                                                                                                                                                  | Correspondence in linelist file                                   |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+|--------------|--------------------------------------------|--------------|
 | Dictionary       | Describes all the variables to be collected, their format, etc.                                                                                                                              | Data entry sheets (typically, *Info sheet* and *Linelist* sheets) |
 | Choices          | Defines the categories/levels accepted for categorical variables, in the form of a list                                                                                                      | Dropdown menus in linelist sheets                                 |
 | Exports          | Defines the characteristics of exports, such as protection, choice of variables or sheets to export and export names                                                                         | Export button in the OutbreakTools ribbon                         |
