@@ -4,17 +4,17 @@ title: "Create dictionary"
 
 ## Get the tools ready 🛠
 
-[Download](../getting_started/download.qmd#download) the files from github to get the most updated versions and unzip it.
+1. [Download](../getting_started/download.qmd#download) the files from github to get the most updated versions and unzip it.
 
-Save the empty **setup file** in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).
+2. Save the empty **setup file** in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).
 
-::: {callout-warning}
+::: {.callout-warning}
 OneDrive and macro-enabled Excel files [do not work well together in general](https://stackoverflow.com/questions/69282968/onedrive-corrupts-macro-enabled-files). To avoid random file corruption, we advise that you work in a non synchronise folder, or that you disable OneDrive while you are writting the **setup file**.
 :::
 
 ## Grow your setup file 🌱
 
-The first step is to create the **variable dictionary**. The other steps are optional, and can be completed if and when needed.
+The first step is to create the **variable dictionary**. The other steps are optional and can be completed if and when needed.
 
 ### Create the variable dictionary 📘
 
@@ -45,7 +45,7 @@ Fill the *Analysis* sheet to **define basic analyses** to include in the linelis
 - spatial analyses: top X location with... (most case, most deceased, most...)  
 - spatio-temporal analyses: temporal analyses but for a couple of user-specified places  
 
-Fill the **Translations** sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
+Fill the *Translations* sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
 
 As for when defining the dictionary, check for errors regularly with the "Check current setup for errors".
 
@@ -61,7 +61,7 @@ After correcting errors and checking warnings, you can go to the next step and [
 - is the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?
 - do the analyses work as expected?
 
-In all likelihood, you will need a couple of cycles "improve setup -> build linelist -> debug to get a working linelist, do not despair!
+In all likelihood, you will need a couple of cycles "improve setup -> build linelist -> debug" to get a working linelist, do not despair!
 
 ::: {.callout-tip}
 Don't hesitate to manually *unhide all columns* in the created linelist to check hidden columns formulas, you have the user rights to do it.
