@@ -18,13 +18,13 @@ You should however [authorise VBA macros in Excel](https://support.microsoft.com
 
 The archive contains several timestamped files:
 
--   \`setup-YYYY-MM-DD.xlsb\`: an empty **setup file**
--   \`designer_main-YYYY-MM-DD.xlsb\`: the **designer file** that is used to compile the setup
--   \`\_ribbontemplate_main-YYYY-MM-DD.xlsb\`: a template file containing information used during compilation
--   \`run_designer_on_windows.R\` and \`rundesigner.vbs\`: files that can be used to compile from R (experimental and yet undocumented)
+-   `setup-YYYY-MM-DD.xlsb`: an empty **setup file**
+-   `designer_main-YYYY-MM-DD.xlsb`: the **designer file** that is used to compile the setup
+-   `_ribbontemplate_main-YYYY-MM-DD.xlsb`: a template file containing information used during compilation
+-   `run_designer_on_windows.R` and `rundesigner.vbs`: files that can be used to compile from R (experimental and yet undocumented)
 
 ::: callout-note
-The excel files are in the \`.xlsb\` format, a compressed, more efficient Excel format that allows VBA macros.
+The excel files are in the `.xlsb` format, a compressed, more efficient Excel format that allows VBA macros.
 :::
 
 ## Update to a new version of OutbreakTools
