@@ -16,23 +16,23 @@ Variable metadata on the *Dictionary* sheet are organised in one (big)
 table in which **one line corresponds to one variable**. This table is
 divided in sections:
 
-+----------------+----------------------------------------------------+
-| Section        | Description                                        |
-+================+====================================================+
-| Variable names | List the variables to be collected by defining     |
-| and labels     | their main characteristics                         |
-+----------------+----------------------------------------------------+
-| Sheets and     | Define sheets and table structure; organise        |
-| Sections       | variables in sheets, sections and sub-sections     |
-+----------------+----------------------------------------------------+
-| Properties     | Define variable specs: visibility, type, format,   |
-|                | formulas...                                        |
-+----------------+----------------------------------------------------+
-| Data exports   | Selects and order the variables to be exported     |
-+----------------+----------------------------------------------------+
-| Data           | Define accepted MIN and MAX values, and alert or   |
-| validation     | error when an input is outside the rules.          |
-+----------------+----------------------------------------------------+
++----------------+-------------------------------------------------+
+| Section        | Description                                     |
++================+=================================================+
+| Variable names | List the variables to be collected by defining  |
+| and labels     | their main characteristics                      |
++----------------+-------------------------------------------------+
+| Sheets and     | Define sheets and table structure; organise     |
+| Sections       | variables in sheets, sections and sub-sections  |
++----------------+-------------------------------------------------+
+| Properties     | Define variable specs: visibility, type,        |
+|                | format, formulas...                             |
++----------------+-------------------------------------------------+
+| Data exports   | Selects and order the variables to be exported  |
++----------------+-------------------------------------------------+
+| Data           | Define accepted MIN and MAX values, and alert   |
+| validation     | or error when an input is outside the rules.    |
++----------------+-------------------------------------------------+
 
 : Sections of variable metadata
 
@@ -51,12 +51,12 @@ This is a free text field used to **uniquely identify the variables**.
 The name can be used to refer to the variable in formulas or in the
 [*Analyses* sheet](../reference/analyses_sheet.qmd).
 
+![](images/im-004-variable-names-and-labels.png){fig-align="center"}
+
 After you build the linelist, the variable name can be found in the
 formula bar of the grey cells from the eight-th row (of the linelist
 sheet)for 2-dimensions tables like patient data), or in the cell name
 zone for cells of a 1-dimension table (like the *Info* sheet).
-
-![](images/im-004-variable-names-and-labels.png){fig-align="center"}
 
 ::: callout-warning
 The variable name is what allows the scripts to uniquely identify
@@ -75,7 +75,7 @@ Variable names rules:
     are on different sheets.\
 -   Names must be **at least 4 characters long** to be valid.\
 -   Names should not contain special characters (except for "*\_*").\
--   Names will be automatically converted to lowercase during
+-   Names will be automatically converted to lower-case during
     compilation.
 
 ::: callout-tip
@@ -99,9 +99,13 @@ Instead, replace them with "*\_*".
 
 ### Main Label
 
-This is a free text field that defines the variable label. Labels are quick descriptions of the variable that the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons. 
+This is a free text field that defines the variables labels, which are
+quick descriptions of the variables, which the linelist user can read.
+They are typically more descriptive and longer than names, but we
+recommend to keep them moderately short for legibility reasons.
 
-In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see @sec-editable-label).
+In the linelist, the main label appears in black and bold. It cannot be
+modified by the end user (with one exception, see @sec-editable-label).
 
 ![](images/im-004-variable-names-and-labels.png)
 
@@ -109,7 +113,6 @@ In the linelist, the main label appears in black and bold. It cannot be modified
 To add more details, you can use the following fields: "Sub Label" and
 "Note" (see below).
 :::
-
 
 ### Dev Comment
 
@@ -119,15 +122,15 @@ information. **It is not read by the designer and does not affect the
 generated file.**
 
 ::: callout-note
-One of the author of this wiki uses these tags:
+One of the author of this doc uses these tags:
 
--   **Format**: calculated columns created solely for applying
-    conditional formatting (see section on "Conditional formatting"
-    below). These columns are very specific, and pure format. Tagging
-    them helps to quickly make sure that they are never exported
+-   **Format**: calculated columns created for applying conditional
+    formatting (see @sec-conditional-formating). These columns are very
+    specific, and pure format. Tagging them helps to quickly make sure
+    that they are never exported
 
 -   **MoH**: columns created when a general setup is adapted to a
-    specific country, by adding exports to a specific MoH format.
+    specific MoH format by adding a dedicated export for that format.
     Usually, we need to create some calculated columns that match the
     MoH export (recoding levels, or perhaps merging information of
     several variables...). I like to keep track of which columns are
@@ -139,23 +142,30 @@ One of the author of this wiki uses these tags:
 
 -   **Boilerplate**: calculated columns that are needed for graphs, or
     because the information is important (such as epiweeks). These
-    columns are often hidden, but not necessarily.
+    columns are often hidden, but not necessarily, and they sometimes
+    can be exported too.
 :::
 
-Feel free to use this column in a way that helps you work!
+Feel free to use this column in a ways that helps you work, or ignore
+it!
 
-### Editable Label {#editable-label}
-
-![](../images/im-007-editable-label.png)
+### Editable Label {#sec-editable-label}
 
 This is a *yes/no* column. If the value is "*yes*", the label of the
-variable in the linelist can be modified by the user. If the value is
+variable in the linelist can be modified by its user. If the value is
 "*no*" or if the field remains empty, the variable label in the linelist
-will be protected.
+is protected.
+
+::: callout-tip
+It is often desirable to add a couple of columns with editable labels at
+the end of the linelist, in case the user want to collect some extra
+information. It gives some freedom to users to collect some site
+specific data without needing an update of the setup. When I do that, I
+usually provide a couple of free text variables, and a couple of
+customisable dropdonws variables (see @sec-custom-dropdowns)
+:::
 
 ### Sub Label
-
-![](../images/im-008-sub-label.png)
 
 This is a free text field used to add a brief description under the
 variable label, such as the format in which a date is expected, a unit,
@@ -165,12 +175,12 @@ In the linelist, the sub-label appears just below the main label, in
 blue and slightly smaller font. It cannot be modified by the end user.
 
 ::: callout-note
-The sublabels "*Calculated*" and "*Custom label*" are added
+The sub-labels "*Calculated*" and "*Custom dropdown*" are added
 automatically, no need to add them manually.
 :::
 
 ::: callout-tip
-Common sublabels include the following:
+Common sub-labels include the following:
 
 -   Yes / No
 -   Yes / No / Unk.
@@ -180,8 +190,6 @@ Common sublabels include the following:
 
 ### Note
 
-![](../images/im-009-note.png)
-
 This is a free text field which content is added to the linelist as a
 *comment* on the corresponding cell. The comment in the linelist can be
 read by hovering the cursor over the cell. It cannot be modified by the
@@ -189,70 +197,67 @@ end user.
 
 ### Example
 
-Definition in the **setup file**:
+Definitions in the **setup file**:
 
-![](../images/im-010-example.png)
+![](images/im-010-example-en.png){fig-align="center"}
 
-Display in the **linelistfile**:
+Display in the **linelist file**:
 
-![](../images/im-011-example.png)
+![](images/im-011-example-en.png)
 
 ## Sheets and sections
 
-![](../images/im-012-sheets-and-sections.png)
+This section of the table organises variables within **sheets** and
+**tables**, and thus defines the *structure* of the linelist (at least
+for data-entry sheets).
 
-This section of the dictionary organises variables within **sheets and
-tables**, and thus creates part of the structure of the linelist.
+**One data entry sheet can contain only one table** but the structure of
+the table (*i.e*. the organisation of the variables) can vary.
 
-As a general rule, there is one table per data entry sheet created, but
-the structure of the table (*i.e*. the organisation of the variables)
-can vary.
+![Sheet and sections in the \*\*setup
+file\*\*](images/im-012-sheets-and-sections-en.png){fig-align="center"}
 
 ### Sheet Name
-
-![](../images/im-013-shhet-name.png)
 
 This is a free text field that contains the *name of the sheet* in which
 the variable will appear.
 
-In general, your linelists will contain at least a data entry sheet, and
-a metadata/general information data sheet.
+In general, your linelists will contain at least a patient data sheet,
+and an info/metadata sheet.
 
 ::: callout-note
-More sheets can be created, either automatically (such as the
-"Instruction" sheet), or by defining analyses in other parts of the
-**setup file**.
+The created linelist will contain more sheets than the one you specify
+in this section, as some of the sheets are added automatically during
+compilation (an "Instruction sheet, a sheet for the geobase, etc.) and
+more sheets can be added if you choose to include analyses.
 :::
 
-### Sheet Type {#sheet-types}
+### Sheet Type {#sec-sheet-types}
 
-![](../images/im-014-sheet-type.png)
+This is a dropdown menu field used to define the *type of table*
+contained in the sheet. There are two options:
 
-This is a drop-down menu field used to define the *type of table*
-contained in the sheet. There are 2 options:
-
--   **vlist1D**[^1]: corresponds to a table built vertically, so the
-    variables *labels* appear in columns, and **only one entry is
-    expected for each variable**. This type of sheet is used to collect
-    general information about the facilities or data collection.
+-   **vlist1D**[^1]: corresponds to a table built *vertically*, so the
+    variables labels are in the same column, and **only one entry is
+    expected for each variable**. This structure of data is well adapted
+    to collect metadata about the health structure, the project or the
+    data collection itself.
 
 -   **hlist2D**[^2]: corresponds to a horizontally constructed table, so
-    the variables labels appear in a row, and **several entries are
-    possible for each variable**. This type of sheet is used to collect
-    patient data.
+    the variables labels appear in the same row, and **several entries
+    are possible for each variable**. This type of sheet is used to
+    collect patient data.
 
 [^1]: vlist = vertical list of labels
 
 [^2]: hlist = horizontal list
 
-![](../images/im-015-sheet-type.png)
+![](images/im-015-sheet-type.png){fig-align="center"}
 
-### Main Section
-
-![](../images/im-016-main-section.png)
+### Main Section {#sec-main-section}
 
 This is a free text field used to define the *name* of the main section
-in which the variable is located. This makes it possible to organise
+in which the variable is located. This makes it possible to group
 variables by theme to make data entry and navigation easier.
 
 In the linelist file, the main sections appear in a darker colour in
@@ -267,8 +272,6 @@ section.
 
 ### Sub Section
 
-![](../images/im-017-sub-section.png)
-
 This is a free text field that allows you to further refine the
 organisation of variables in the table by creating a second level of
 grouping.
@@ -277,7 +280,7 @@ In the linelist file, the sub-sections appear in a lighter colour in the
 row or column, depending on the type of table (light blue in
 @sec-sheet-sections-example). They cannot be modified by the end user.
 
-### Example {#sheet-sections-example}
+### Example {#sec-sheet-sections-example}
 
 #### vlist1D
 
@@ -301,31 +304,37 @@ Display in the **linelist file**:
 
 ## Properties
 
-The properties section is as follows:
+The properties section of the table controls variable visibility,
+uniqueness, and the type and format of the variable (what it contains,
+in which form, and in which display).
 
-![](../images/im-023-status.png)
+![](images/im-022-properties-en.png){fig-align="center"}
 
 ### Status
 
-This is a drop-down field that contains four options for defining the
-**visibility** of the variable:
+This is a dropdown field that contains four options for defining the
+**visibility** of the variable. The linelist has a functionality to show
+or hide optional variables depending on the data needs on the field.
 
--   **"mandatory"**: variable displayed by default, it cannot be hidden
+-   *mandatory*: variable displayed by default, **it cannot be hidden**
     in the linelist
 
--   **"optional, visible"**: variable displayed by default, it can be
+-   *optional, visible*: variable displayed by default, it can be
     displayed or hidden by the linelist user
 
--   **"optional, hidden"**: variable hidden by default, it can be
-    displayed or hidden by the linelist user
+-   *optional, hidden*: variable hidden by default, it can be displayed
+    or hidden by the linelist user
 
--   **"hidden"**: variable hidden by default, it cannot be displayed in
-    the linelist
+-   *hidden*: variable hidden by default, it cannot be displayed in the
+    linelist\^\[Technically, the linelist user can force the columns to
+    unhide, which is actually very usefull to test and debug your
+    nascent linelist. This visibility setting will however not be
+    migrated.\]
 
 Variables can be shown or hidden using the *Show/Hide* button in the
 **linelist file**.
 
-#### **Example**
+#### Example
 
 Definition in the **setup file**:
 
@@ -337,7 +346,7 @@ Display in the **linelist file**:
 
 ![](../images/im-026-example.png)
 
-::: callout-note
+
 "Mandatory" variables in the **setup file** appear as "Mandatory" in the
 "Show/Hide" pop up, and cannot be hidden.
 
@@ -348,7 +357,8 @@ The "optional, hidden" variables in the **setup file** appear as
 choosing "Show", in which case the column will become visible.
 ![](../images/im-027-example.png)
 
-**2** ![](../images/im-028-example.png)
+**2** 
+![](../images/im-028-example.png)
 
 **3**
 
@@ -359,28 +369,27 @@ The "optional, visible" variables in the **setup file** appear as
 "Displayed" (by default). However, you can change the status by choosing
 "Hide", in which case the column will no longer be visible.
 
-**4** ![](../images/im-029-example.png)
-:::
+**4** 
+![](../images/im-029-example.png)
+
 
 ### Register Book
 
-![](../images/im-030-register-book.png)
-
-This is a *yes/no* drop-down menu field used to predefine the variables
-to be included in the register to be printed. This is not mandatory and
+This is a *yes/no* dropdown menu field used to predefine the variables
+to be included in the register to be printed. This step is not mandatory and
 can be managed later, directly in the **linelist file**.
 
 ### Personal Identifier
 
-![](../images/im-031-personal-identifier.png)
-
-This is a *yes/no* drop-down menu field that indicates that the variable
+This is a *yes/no* dropdown menu field that indicates that the variable
 contains personal data (such as names, phone numbers etc.).
 
-This column has to uses: - it allows the setup developer to quickly
-identify variables containing personal data in its dictionary\
+This column has to uses: 
+
+- it allows the setup developer to quickly
+identify variables containing personal data in its dictionary  
 - it is used to remove variables automatically from the exports if such
-a behaviour is needed (see the *Exports* sheet).
+a behaviour is needed (see the [Exports](../) sheet).
 
 ### Thinking about variables
 
@@ -417,11 +426,11 @@ or even as "10%" if the column contains proportions that can be
 displayed as percentages.\
 Learn more about format in @sec-var-format
 
-### Variable Type {#var-type}
+### Variable Type {#sec-var-type}
 
 ![](../images/im-032-variable-type.png)
 
-This column proposes a drop-down menu field containing four options for
+This column proposes a dropdown menu field containing four options for
 defining the type \[\^which is sometimes called *class* in some
 softwares\] of each variable:
 
@@ -442,14 +451,14 @@ softwares\] of each variable:
 
 ![](../images/im-127-var-types.png)
 
-### Variable Format {#var-format}
+### Variable Format {#sec-var-format}
 
 ![](../images/im-033-variable-format.png)
 
 This field is used to specify the **format** of the variable (which
 depends on its **type**).
 
-There is a predefined drop-down list with common options, but you can
+There is a predefined dropdown list with common options, but you can
 enter any format by hand, as long as it is written in Excel syntax.
 
 ![](../images/im-034-variable-format.png)
@@ -459,7 +468,7 @@ format: \# #00
 
 Note that the default data format is *jj-mmm-aaaa*.
 
-### Control {#var-control}
+### Control {#sec-var-control}
 
 ![](../images/im-035-control.png)
 
@@ -479,23 +488,24 @@ that are not simple free entry variables:
 These options can be broadly classified in three sorts of variables to
 be created:
 
-+-----------------------+-------------------------+----------------+
-| Sort of variable      | Controls                | Data entry in  |
-|                       |                         | the linelist   |
-+=======================+=========================+================+
-| Categorical           | choice_manual,          | Dropdown menu  |
-|                       | choice_custom,          |                |
-|                       | choice_multiple,        |                |
-|                       | list_auto               |                |
-+-----------------------+-------------------------+----------------+
-| Geo-related columns   | geo, hf                 | GeoHelper or   |
-| (a special case of    |                         | dropdown menu  |
-| categorical)          |                         |                |
-+-----------------------+-------------------------+----------------+
-| Calculated            | formula,                | No user input  |
-|                       | choice_formula,         | needed in      |
-|                       | case_when               | these columns  |
-+-----------------------+-------------------------+----------------+
++--------------------+----------------------+----------------+
+| Sort of variable   | Controls             | Data entry in  |
+|                    |                      | the linelist   |
++====================+======================+================+
+| Categorical        | choice_manual,       | Dropdown menu  |
+|                    | choice_custom,       |                |
+|                    | choice_multiple,     |                |
+|                    | list_auto            |                |
++--------------------+----------------------+----------------+
+| Geo-related        | geo, hf              | GeoHelper or   |
+| columns (a special |                      | dropdown menu  |
+| case of            |                      |                |
+| categorical)       |                      |                |
++--------------------+----------------------+----------------+
+| Calculated         | formula,             | No user input  |
+|                    | choice_formula,      | needed in      |
+|                    | case_when            | these columns  |
++--------------------+----------------------+----------------+
 
 ![](../images/im-128-var-control.png)
 
@@ -503,55 +513,66 @@ be created:
 
 This table summarises the different options:
 
-+-------------+-------------+-------------+-----------------------+
-| # Control   | # How       | # Whe       | Data entry in the     |
-|             |             |             | linelist \|           |
-| cho         | to populat  | re are valu | ===========           |
-| ice_manual  | e the drop  | es defined? | ====                  |
-|             | down menu?  |             | ===================== |
-|             |             | **Setup     | ====                  |
-|             | Predefined  | file**, in  | ===================== |
-|             | values      | the         | ====                  |
-|             |             | "*Choice*"  | ====================+ |
-|             |             | sheet       | **One value**         |
-|             |             |             | selected from a       |
-|             |             |             | dropdown menu \|      |
-+-------------+-------------+-------------+-----------------------+
-| choic       | Predefined  | **Setup     | **Several values**    |
-| e_multiple  | values      | file**, in  | selected from a       |
-|             |             | the         | dropdown menu \|      |
-|             |             | "*Choice*"  |                       |
-|             |             | sheet       |                       |
-+-------------+-------------+-------------+-----------------------+
-| cho         | Us          | **Linelist  | **One value**         |
-| ice_custom  | er-defined  | file**, in  | selected from a       |
-|             | values (but | the         | dropdown menu \|      |
-|             | see         | "*Custom    |                       |
-|             | details)    | dropdown*"  |                       |
-|             |             | sheet       |                       |
-+-------------+-------------+-------------+-----------------------+
-| list_auto   | Us          |             |                       |
-|             | er-defined  |             |                       |
-|             | values but  |             |                       |
-|             | from        |             |                       |
-|             | another     |             |                       |
-|             | data column |             |                       |
-|             | \|          |             |                       |
-|             | **Linelist  |             |                       |
-|             | file**, in  |             |                       |
-|             | another     |             |                       |
-|             | column \|   |             |                       |
-|             | **One       |             |                       |
-|             | value**,    |             |                       |
-|             | selected    |             |                       |
-|             | from a      |             |                       |
-|             | dropdown    |             |                       |
-|             | populated   |             |                       |
-|             | by the      |             |                       |
-|             | values of   |             |                       |
-|             | another     |             |                       |
-|             | variable    |             |                       |
-+-------------+-------------+-------------+-----------------------+
++-------------+-------------+-------------+-------------+
+| # Control   | # How       | # Whe       | Data entry  |
+|             |             |             | in the      |
+| cho         | to populat  | re are valu | linelist \| |
+| ice_manual  | e the drop  | es defined? | =========== |
+|             | down menu?  |             | ==== ====   |
+|             |             | **Setup     | ====        |
+|             | Predefined  | file**, in  | ==          |
+|             | values      | the         | =========== |
+|             |             | "*Choice*"  | ==== ====   |
+|             |             | sheet       | ====        |
+|             |             |             | ==          |
+|             |             |             | =========== |
+|             |             |             | ==== ====   |
+|             |             |             | ====        |
+|             |             |             | ==          |
+|             |             |             | ==========+ |
+|             |             |             | **One       |
+|             |             |             | value**     |
+|             |             |             | selected    |
+|             |             |             | from a      |
+|             |             |             | dropdown    |
+|             |             |             | menu \|     |
++-------------+-------------+-------------+-------------+
+| choic       | Predefined  | **Setup     | **Several   |
+| e_multiple  | values      | file**, in  | values**    |
+|             |             | the         | selected    |
+|             |             | "*Choice*"  | from a      |
+|             |             | sheet       | dropdown    |
+|             |             |             | menu \|     |
++-------------+-------------+-------------+-------------+
+| cho         | Us          | **Linelist  | **One       |
+| ice_custom  | er-defined  | file**, in  | value**     |
+|             | values (but | the         | selected    |
+|             | see         | "*Custom    | from a      |
+|             | details)    | dropdown*"  | dropdown    |
+|             |             | sheet       | menu \|     |
++-------------+-------------+-------------+-------------+
+| list_auto   | Us          |             |             |
+|             | er-defined  |             |             |
+|             | values but  |             |             |
+|             | from        |             |             |
+|             | another     |             |             |
+|             | data column |             |             |
+|             | \|          |             |             |
+|             | **Linelist  |             |             |
+|             | file**, in  |             |             |
+|             | another     |             |             |
+|             | column \|   |             |             |
+|             | **One       |             |             |
+|             | value**,    |             |             |
+|             | selected    |             |             |
+|             | from a      |             |             |
+|             | dropdown    |             |             |
+|             | populated   |             |             |
+|             | by the      |             |             |
+|             | values of   |             |             |
+|             | another     |             |             |
+|             | variable    |             |             |
++-------------+-------------+-------------+-------------+
 
 ##### Choice_manual
 
@@ -568,7 +589,7 @@ details" column (see @sec-var-control-details section).
 ##### Choice_multiple
 
 This control is similar to the choice manual, in that it creates a
-**static drop-down menu** in the linelist from **predefined values**
+**static dropdown menu** in the linelist from **predefined values**
 entered in the setup.
 
 The difference is that in the created **linelist file**, the user can
@@ -588,7 +609,7 @@ designer cannot predict the number of combinations the user will create,
 and thus cannot create tables with appropriate size.
 :::
 
-##### Choice_custom
+##### Choice_custom {#sec-custom-dropdowns}
 
 This control creates a **dynamic dropdown menu** in the linelist, but
 contrary to the previous controls, the values are not (necessarily)
@@ -603,7 +624,7 @@ is site dependent, thus unknown in advance.
 
 Using the choice_custom control will create a table in the "*Custom
 dropdown*" sheet in the linelist where the user can fill-in values to
-populate the **dynamic, customised drop-down menu**.
+populate the **dynamic, customised dropdown menu**.
 
 ::: callout-tip
 While by default the dropdown menu created is empty, it is possible to
@@ -614,7 +635,7 @@ sheet of the linelist will still created and future users will be able
 to modify/grow it.
 :::
 
-##### List_auto {#list-auto}
+##### List_auto {#sec-list-auto}
 
 This control also creates a **dynamic dropdown menu**, but the values
 come from the data entered in another column.
@@ -625,10 +646,10 @@ entry sheet contains patient data\
 re-admitted patients.
 
 The list_auto control allows to create a column on the second sheet with
-a drop-down menu populated dynamically with the patient IDs from the
+a dropdown menu populated dynamically with the patient IDs from the
 first sheet.
 
-In the setup, the **variable** used to populate the drop-down menu is
+In the setup, the **variable** used to populate the dropdown menu is
 defined in the "Control Details" column of the *Dictionary* sheet (see
 @sec-var-control-details section).
 
@@ -645,7 +666,7 @@ places. Once the geobase successfully imported, the values from its
 lists will populate specific dropdown menus (see the linelist
 documentation on how to import a geobase).
 
-##### Geo {#geo-variable}
+##### Geo {#sec-geo-variable}
 
 The "geo" control indicates that geographic data is expected. In the
 linelist, this results in the creation of **4 columns**, one for each
@@ -709,34 +730,53 @@ combination of Excel *functions*\], but the setup file also provides two
 custom functions, CASE_WHEN and CHOICE_FORMULA to simplify formula
 syntax.
 
-+------------+------------+------------+------------+------------+
-| Control    | Functions  | Use        | Default    | Can be     |
-|            |            |            | value      | used in    |
-|            |            |            |            | analyses   |
-|            |            |            |            | tables     |
-+============+============+============+============+:==========:+
-| formula    | Any        | Anything   |            | Continuous |
-|            | c          |            |            | variables: |
-|            | ombination |            |            | yes        |
-|            | of Excel   |            |            |            |
-|            | functions  |            |            | C          |
-|            | (in        |            |            | ategorical |
-|            | English)   |            |            | variables: |
-|            |            |            |            | no         |
-+------------+------------+------------+------------+------------+
-| case_when  | **C        | Replaces   | Empty      | no         |
-|            | ASE_WHEN** | nested IF  | cell; user |            |
-|            | (Excel     |            | can modify |            |
-|            | functions  |            | it         |            |
-|            | optional)  |            |            |            |
-+------------+------------+------------+------------+------------+
-| choi       | **CH       | Replaces   | Empty      | yes        |
-| ce_formula | OICE       | nested IF  | character; |            |
-|            | _FORMULA** |            | user       |            |
-|            | (Excel     |            | cannot     |            |
-|            | functions  |            | modify it  |            |
-|            | optional)  |            |            |            |
-+------------+------------+------------+------------+------------+
++---------+---------+---------+---------+---------+
+| Control | F       | Use     | Default | Can be  |
+|         | u       |         | value   | used in |
+|         | nctions |         |         | a       |
+|         |         |         |         | nalyses |
+|         |         |         |         | tables  |
++=========+=========+=========+=========+:=======:+
+| formula | Any c o | A       |         | C o     |
+|         | m       | nything |         | n       |
+|         | b       |         |         | tinuous |
+|         | ination |         |         | v a     |
+|         | of      |         |         | r       |
+|         | Excel f |         |         | iables: |
+|         | u       |         |         | yes     |
+|         | nctions |         |         |         |
+|         | (in     |         |         | C a t   |
+|         | E       |         |         | e       |
+|         | nglish) |         |         | gorical |
+|         |         |         |         | v a     |
+|         |         |         |         | r       |
+|         |         |         |         | iables: |
+|         |         |         |         | no      |
++---------+---------+---------+---------+---------+
+| c       | **C A S | R       | Empty   | no      |
+| a       | E       | eplaces | cell;   |         |
+| se_when | _WHEN** | nested  | user    |         |
+|         | (Excel  | IF      | can     |         |
+|         | f       |         | modify  |         |
+|         | u       |         | it      |         |
+|         | nctions |         |         |         |
+|         | o       |         |         |         |
+|         | p       |         |         |         |
+|         | tional) |         |         |         |
++---------+---------+---------+---------+---------+
+| choi c  | \*\*CH  | R       | Empty c | yes     |
+| e       | OICE    | eplaces | h       |         |
+| \_      | \_FO R  | nested  | a       |         |
+| formula | M       | IF      | racter; |         |
+|         | ULA\*\* |         | user    |         |
+|         | (Excel  |         | cannot  |         |
+|         | f       |         | modify  |         |
+|         | u       |         | it      |         |
+|         | nctions |         |         |         |
+|         | o       |         |         |         |
+|         | p       |         |         |         |
+|         | tional) |         |         |         |
++---------+---------+---------+---------+---------+
 
 ##### Formula
 
@@ -800,40 +840,58 @@ advance.
 Read more about writing the formula in the [Control details
 column](#sec-var-control-details) of the dictionary.
 
-### Control details {#var-control-details}
+### Control details {#sec-var-control-details}
 
 This is a free text field, which accepts three types of values: - the
 name of a *list* (defined in the *Choices* sheet), - the name or a
 *variable* (defined in the *Dictionary* sheet) - a *formula*.
 
-+-----------+-----------+-----------------------------+-----------+
-| # Cont    | # Contro  | Value expected in the       |           |
-|           |           | "Control details" column \| |           |
-| rol type  | l column  | ======================      |           |
-|           |           | ======                      |           |
-| Static    | choice    | =========================== |           |
-| dropdown  | \_manual, | ======                      |           |
-| menu      | choice    | =========================== |           |
-|           | *custom,  | ======                      |           |
-|           | choice*   | ==========================+ |           |
-|           | multiple  | The name of a *list* that   |           |
-|           |           | contains the authorised     |           |
-|           |           | values, defined in the      |           |
-|           |           | *Choice* sheet ("List Name" |           |
-|           |           | column) \|                  |           |
-+-----------+-----------+-----------------------------+-----------+
-|           | Dynamic   | list_auto                   | The name  |
-|           | dropdown  |                             | of an     |
-|           | menu      |                             | existing  |
-|           |           |                             | *v        |
-|           |           |                             | ariable*  |
-+-----------+-----------+-----------------------------+-----------+
-| Ca        | formula,  | An Excel formula (that can  |           |
-| lculated  | choice\_  | contain one or more         |           |
-|           | formula,  | functions, including the    |           |
-|           | c         | custom functions CASE_WHEN  |           |
-|           | ase_when  | and CHOICE_FORMULA)         |           |
-+-----------+-----------+-----------------------------+-----------+
++-------------+-------------+----------------+-------------+
+| # Cont      | # Contro    | Value expected |             |
+|             |             | in the         |             |
+| rol type    | l column    | "Control       |             |
+|             |             | details"       |             |
+| Static      | choice      | column \| ==== |             |
+| dropdown    | \_manual,   | ====           |             |
+| menu        | choice      | ============== |             |
+|             | *custom,    | ====== =====   |             |
+|             | choice*     | ====           |             |
+|             | multiple    | ====           |             |
+|             |             | ============== |             |
+|             |             | ====== =====   |             |
+|             |             | ====           |             |
+|             |             | ====           |             |
+|             |             | ============== |             |
+|             |             | ====== =====   |             |
+|             |             | ====           |             |
+|             |             | ====           |             |
+|             |             | =============+ |             |
+|             |             | The name of a  |             |
+|             |             | *list* that    |             |
+|             |             | contains the   |             |
+|             |             | authorised     |             |
+|             |             | values,        |             |
+|             |             | defined in the |             |
+|             |             | *Choice* sheet |             |
+|             |             | ("List Name"   |             |
+|             |             | column) \|     |             |
++-------------+-------------+----------------+-------------+
+|             | Dynamic     | list_auto      | The name of |
+|             | dropdown    |                | an existing |
+|             | menu        |                | *v ariable* |
++-------------+-------------+----------------+-------------+
+| Ca lculated | formula,    | An Excel       |             |
+|             | choice\_    | formula (that  |             |
+|             | formula, c  | can contain    |             |
+|             | ase_when    | one or more    |             |
+|             |             | functions,     |             |
+|             |             | including the  |             |
+|             |             | custom         |             |
+|             |             | functions      |             |
+|             |             | CASE_WHEN and  |             |
+|             |             | C              |             |
+|             |             | HOICE_FORMULA) |             |
++-------------+-------------+----------------+-------------+
 
 #### Defining dropdown menu categories
 
@@ -847,7 +905,7 @@ the "Control details" column.
 ![](../images/im-041-choices.png)
 
 ::: callout-note
-For more information on the definition of drop-down menus, see the
+For more information on the definition of dropdown menus, see the
 *Choices* sheet page.
 :::
 
@@ -856,7 +914,7 @@ of another variable in the "Control details" column. In the linelist,
 the values present in the referred variables will be automatically used
 to populate the dropdown menu.
 
-#### Formulas {#formulas}
+#### Formulas {#sec-formulas}
 
 If you have selected "formula", "choice_formula" or "case_when" in the
 ["Control" column](#sec-var-control), you need to provide the formula to
@@ -868,7 +926,7 @@ section below are also valid for "choice_formula" and "case_when"
 controls as these, while based on custom functions, are still formulas.
 :::
 
-##### Formula control {#formula-control}
+##### Formula control {#sec-formula-control}
 
 The formula is written **in English**, **without an "=" sign**. The
 formulas are automatically translated into the Excel language defined on
@@ -979,7 +1037,7 @@ valid here.
 
 ### Unique
 
-This is a *yes/no* drop-down menu field. It has no direct impact on the
+This is a *yes/no* dropdown menu field. It has no direct impact on the
 linelist, but the information can be used in the data cleaning phase.
 
 ## Data exports
@@ -1058,7 +1116,7 @@ of most date columns
 
 ### Alert
 
-This is a drop-down field. There are two possible options:
+This is a dropdown field. There are two possible options:
 
 -   error
 -   warning
@@ -1127,7 +1185,7 @@ Warning box appearing when the user attempts to enter invalid data:
 
 ![](../images/im-051-warning.png)
 
-## Conditional Formatting
+## Conditional Formatting {#sec-conditional-formating}
 
 ![](../images/im-052-conditional-formatting.png)
 
