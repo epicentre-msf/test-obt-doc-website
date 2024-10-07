@@ -18,7 +18,7 @@ The first step is to create the **variable dictionary**. The other steps are opt
 
 ### Create the variable dictionary 📘
 
-Aka fill the *Dictionary* and *Choices* sheets. The first sheet is a database about all the *variables* present in the linelist you want to create. The *Choices* sheet contains the categories for categorical variables.
+Aka fill the [Dictionary](../reference/dictionary_sheet.qmd) and [Choices](../reference/choices_sheet.qmd) sheets. The first sheet is a database about all the *variables* present in the linelist you want to create. The *Choices* sheet contains the categories for categorical variables.
 
 The different sections of the *Dictionary* sheet will define, for each variable:
 
@@ -36,16 +36,16 @@ When you have first draft of your dictionary, go to the [OutbreakTools ribbon](.
 
 ### Fill other sheets as needed
 
-Fill the *Exports* sheet to **define one or more personalised exports**: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.
+Fill the [Exports](../reference/exports_sheet.qmd) sheet to **define one or more personalised exports**: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.
 
-Fill the *Analysis* sheet to **define basic analyses** to include in the linelist:
+Fill the [Analyses](../reference/analyses_sheet.qmd)* sheet to **define basic analyses** to include in the linelist:
 
 - uni and bivariate analyses (figures and tables)  
 - temporal analyses (epicurves and corresponding tables)  
 - spatial analyses: top X location with... (most case, most deceased, most...)  
 - spatio-temporal analyses: temporal analyses but for a couple of user-specified places  
 
-Fill the *Translations* sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
+Fill the [Translations](../reference/analyses_sheet.qmd) sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
 
 As for when defining the dictionary, check for errors regularly with the "Check current setup for errors".
 
