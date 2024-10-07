@@ -4,7 +4,7 @@ title: "Obtain OutbreakTools files"
 
 ## Download the OutbreakTools archive 📦 {#sec-download}
 
-Go to the [OutbreakTools github repo](https://github.com/epicentre-msf/outbreak-tools), scroll down to the README and click on the yellow button to donload `.zip` archive that contains the file you need.
+Go to the [OutbreakTools github repo](https://github.com/epicentre-msf/outbreak-tools), scroll down to the README and click on the yellow button to donwload `.zip` archive that contains the file you need.
 
 ![](images/img-001-download.png)
 
