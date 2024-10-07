@@ -438,35 +438,35 @@
     "href": "reference/choices_sheet.html",
     "title": "Define variable categories",
     "section": "",
-    "text": "This sheet is used to define the drop-down menus categories to be inserted in certain variables, or the possible values for “choice_formula” type variables.\nThere is only one table on this sheet, where you can define as many lists as is needed for dropdown menus variables. In this table, a list is represented by several lines, one line for each value in the drop-down list. Different lists are written one below the other."
+    "text": "This sheet is used to define the dropdown menus categories to be inserted in certain variables, or the possible values for “choice_formula” type variables.\nThere is only one table on this sheet, where you can define as many lists as is needed for dropdown menus variables. In this table, a list is represented by several lines, one line for each value in the dropdown list. Different lists are written one below the other."
   },
   {
     "objectID": "reference/choices_sheet.html#list-name",
     "href": "reference/choices_sheet.html#list-name",
     "title": "Define variable categories",
     "section": "List Name",
-    "text": "List Name\nThis is a free text field used to define a drop-down list. Lines with the same name filled belong to the same list. This name is used in the Dictionary sheet to identify the drop-down list to be used for a given variable.\n\n\n\n\n\n\nNote\n\n\n\nWith the exception of lists used for “choice_custom” type variables, it is recommended not to leave any blanks in the list name. Instead, replace them with “_”, for example.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt is not mandatory, but we advise that you begin all your list names by “list_” to easily separate them from variable names in the dictionary."
+    "text": "List Name\nThis is a free text field used to define a dropdown list. Lines with the same name filled belong to the same list. This name is used in the Dictionary sheet to identify the dropdown list to be used for a given variable, in the Control details column.\n\n\n\n\n\n\nNote\n\n\n\nWith the exception of lists used for “choice_custom” type variables, it is recommended not to leave any blanks in the list name. Instead, replace them with “_”, for example.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt is not mandatory, but we advise that you begin all your list names by “list_” to easily separate them from variable names in the dictionary."
   },
   {
     "objectID": "reference/choices_sheet.html#ordering-list",
     "href": "reference/choices_sheet.html#ordering-list",
     "title": "Define variable categories",
     "section": "Ordering list",
-    "text": "Ordering list\nThis is a free text field. Fill in integers to define the order in which the options are displayed in the drop-down menu."
+    "text": "Ordering list\nThis is a free text field. Fill in integers to define the order in which the options are displayed in the dropdown menu."
   },
   {
     "objectID": "reference/choices_sheet.html#label",
     "href": "reference/choices_sheet.html#label",
     "title": "Define variable categories",
     "section": "Label",
-    "text": "Label\nThis is a free text field used to list the different values to be displayed in the drop-down menus.\n\n\n\n\n\n\nNote\n\n\n\nCategories names should not begin with a “&lt;” or a “&gt;”."
+    "text": "Label\nThis is a free text field used to list the different values to be displayed in the dropdown menus.\n\n\n\n\n\n\nNote\n\n\n\nCategories names should not begin with a “&lt;” or a “&gt;”."
   },
   {
     "objectID": "reference/choices_sheet.html#example",
     "href": "reference/choices_sheet.html#example",
     "title": "Define variable categories",
     "section": "Example",
-    "text": "Example\nDefinition in the set-up file:\n\n\nDisplay in the linelist file:"
+    "text": "Example\nDefinition in the setup file:\n\n\nDisplay in the linelist file:"
   },
   {
     "objectID": "index.html",
