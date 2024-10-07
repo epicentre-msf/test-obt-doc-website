@@ -1,0 +1,29 @@
+---
+title: "Variables in OutbreakTools"
+format: html
+---
+
+In OutbreakTools, the variables to fill in geographic information are treated as a special case of categorical variable and have their own dedicated control.
+
++--------------------+----------------------+----------------+
+| Sort of variable   | Controls             | Data entry in  |
+|                    |                      | the linelist   |
++====================+======================+================+
+| Categorical        | choice_manual,       | Dropdown menu  |
+|                    | choice_custom,       |                |
+|                    | choice_multiple,     |                |
+|                    | list_auto            |                |
++--------------------+----------------------+----------------+
+| Geo-related        | geo, hf              | GeoHelper or   |
+| columns (a special |                      | dropdown menu  |
+| case of            |                      |                |
+| categorical)       |                      |                |
++--------------------+----------------------+----------------+
+| Calculated         | formula,             | No user input  |
+|                    | choice_formula,      | needed in      |
+|                    | case_when            | these columns  |
++--------------------+----------------------+----------------+
+: Summary of the types of control available in OutbreakTools
+
+
+![Guide to choosing variable control in OBT](../images/im-128-var-control.png){fig-align="center"}
