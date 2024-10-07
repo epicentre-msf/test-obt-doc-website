@@ -39,7 +39,7 @@ divided in sections:
 
 : Sections of variable metadata
 
-::: callout-warning
+::: {.callout-warning}
 When compiling the setup, make sure that all the columns from this sheet
 are unhidden.
 :::
@@ -58,7 +58,7 @@ The name can be used to refer to the variable in formulas or in the
 
 After you build the linelist, the variable name can be found in the formula bar of the grey cells from the eight-th row (of the linelist sheet) for 2-dimensions tables like patient data), or in the cell name zone for cells of a 1-dimension table (like the *Info* sheet).
 
-::: callout-warning
+::: {.callout-warning}
 The variable name is what allows the scripts to uniquely identify
 variable, in any language the linelist is built in. By opposition,
 variable labels can change or be translated.
@@ -78,12 +78,12 @@ Variable names rules:
 -   Names will be automatically converted to lower-case during
     compilation.
 
-::: callout-tip
+::: {.callout-tip}
 As a general advice, try to create short but explicit names (easier said
 than done).
 :::
 
-::: callout-tip
+::: {.callout-tip}
 To ensure that variable names are unique, you can add the name of the
 sheet in which the variable will appear as a prefix, or use numbers.
 
@@ -92,7 +92,7 @@ occurrence will automatically be suffixed with the value "1"; if there
 is a third, it will be suffixed with the value "2", and so on.
 :::
 
-::: callout-tip
+::: {.callout-tip}
 We recommend that you do not leave any blanks in the variable name.
 Instead, replace them with "*\_*".
 :::
@@ -109,7 +109,7 @@ modified by the end user (with one exception, see @sec-editable-label).
 
 ![](images/im-004-variable-names-and-labels.png)
 
-::: callout-note
+::: {.callout-note}
 To add more details, you can use the following fields: [Sub Label](#sec-sub-label) and
 [Note](sec-note).
 :::
@@ -120,7 +120,7 @@ This free text column is for the sole benefit of the **setup file**
 developer (in all probability, you), to add technical or practical
 information. **It is not read by the designer and does not affect the generated file.**
 
-::: callout-note
+::: {.callout-note}
 One of the author of this doc uses these tags:
 
 -   **Format**: calculated columns created for applying [conditional
@@ -155,7 +155,7 @@ variable in the linelist can be modified by its user. If the value is
 "*no*" or if the field remains empty, the variable label in the linelist
 is protected.
 
-::: callout-tip
+::: {.callout-tip}
 It is often desirable to add a couple of columns with editable labels at
 the end of the linelist, in case the user want to collect some extra
 information. It gives some freedom to users to collect some site
@@ -173,12 +173,12 @@ or any other information to help with filling the variable in.
 In the linelist, the sub-label appears just below the main label, in
 blue and slightly smaller font. It cannot be modified by the end user.
 
-::: callout-note
+::: {.callout-note}
 The sub-labels "*Calculated*" and "*Custom dropdown*" are added
 automatically, no need to add them manually.
 :::
 
-::: callout-tip
+::: {.callout-tip}
 Common sub-labels include the following:
 
 -   Yes / No
@@ -223,7 +223,7 @@ the variable will appear.
 In general, your linelists will contain at least a patient data sheet,
 and an info/metadata sheet.
 
-::: callout-note
+::: {.callout-note}
 The created linelist will contain more sheets than the one you specify
 in this section, as some of the sheets are added automatically during
 compilation (an instruction sheet, a sheet for the geobase, etc.) and
@@ -249,7 +249,7 @@ This is a free text field used to define the *name* of the main section in which
 
 In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in the [example](#sec-sheet-sections-example)). They cannot be modified by the end user.
 
-::: callout-tip
+::: {.callout-tip}
 To make the dictionary easier to read, we recommend that you group
 (write one below another) the variables of a same sheet and a same
 section.
@@ -595,7 +595,7 @@ The "hf" control means that the user will enter health facility names. By identi
 Similarly to the "geo" control, the "hf" control does not need additional information to be filled in the "Control Details" column.
 
 
-::: callout-note
+::: {.callout-note}
 The variable label appears in an orange cell, which means that the *GeoHelper* button can be used to fill in the corresponding cells.
 :::
 
@@ -659,7 +659,7 @@ one value, so the designer knows what to expect.
 To work properly the "case_when" control must be associated with a `CASE_WHEN`function in the [Control details](#sec-var-control-details) column, or the designer will not work properly because the function is not native.
 :::
 
-::: callout-note
+::: {.callout-note}
 If you are using a recent version of Excel, you may know the functions `IFS` or `SWITCH`. OutbreakTools does not rely on them as they are not retro-compatible with some older versions of Excel. Use a `CASE_WHEN` or `CHOICE_FORMULA` instead.
 :::
 
@@ -795,7 +795,7 @@ Or write the equivalent with `CASE_WHEN`:
             age_value / 365, age_unit = "years", 
             age_value)
 
-::: callout-note
+::: {.callout-note}
 The information about the more generalist "formula" control are also
 valid here.
 :::
@@ -837,7 +837,7 @@ variable that contains the age in years. The values between inverted
 commas ("0 -- 5 years") correspond to the possible results, predefined
 in "list_age_group".
 
-::: callout-note
+::: {.callout-note}
 The information about the more generalist "formula" control are also
 valid here.
 :::
@@ -1015,7 +1015,7 @@ no special formatting.
 This means that in most cases, you will need to calculate a dummy
 variable, with a result of 1 or 0, to guide the formatting.
 
-::: callout-tip
+::: {.callout-tip}
 you can give special names to these calculated columns to easily
 identify them (*e.g.* *format_xxx*).
 :::
