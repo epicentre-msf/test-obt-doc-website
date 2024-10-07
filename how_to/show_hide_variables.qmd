@@ -1,0 +1,34 @@
+---
+title: "Show or hide variables"
+---
+
+TODO
+
+
+
+**1**
+
+The "optional, hidden" variables in the **setup file** appear as
+"Hidden" (by default). However, the user can change the status by
+choosing "Show", in which case the column will become visible.
+![](images/im-027-example.png)
+
+
+
+**2** 
+![](images/im-028-example.png)
+
+**3**
+
+The "Notification year" variable does not appear in the list of
+variables because it is in "hidden" status in the **setup file**.
+
+The "optional, visible" variables in the **setup file** appear as
+"Displayed" (by default). However, you can change the status by choosing
+"Hide", in which case the column will no longer be visible.
+
+**4** 
+![](images/im-029-example.png)
+
+"Mandatory" variables in the **setup file** appear as "Mandatory" in the
+"Show/Hide" pop up, and cannot be hidden.
