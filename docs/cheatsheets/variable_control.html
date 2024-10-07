@@ -179,8 +179,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#categorical-and-calculated-variables" id="toc-categorical-and-calculated-variables" class="nav-link active" data-scroll-target="#categorical-and-calculated-variables">Categorical and calculated variables</a></li>
+  <li><a href="#guide-to-choosing-variable-control" id="toc-guide-to-choosing-variable-control" class="nav-link" data-scroll-target="#guide-to-choosing-variable-control">Guide to choosing variable control</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -204,12 +211,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In OutbreakTools, the variables to fill in geographic information are treated as a special case of categorical variable and have their own dedicated control.</p>
+<section id="categorical-and-calculated-variables" class="level2">
+<h2 class="anchored" data-anchor-id="categorical-and-calculated-variables">Categorical and calculated variables</h2>
+<p>OutbreakTools allows both <strong>input variables</strong>, in which the user <em>enters data</em> and <strong>calculated variables</strong> derived from the raw data.</p>
+<p>When it comes to <strong>text input</strong> variables, there are two primary methods for data entry:</p>
+<ul>
+<li>a <em>free text</em> approach, allowing users to input any value they choose,</li>
+<li>a <em>controlled</em> approach, where user options are restricted.</li>
+</ul>
+<p>In Excel, the controlled approach for text variables is typically implemented with <strong>dropdown menus</strong>, which allow data entry of pre-defined categories. OutbreakTools offers multiple ways to create dropdown menus, depending on whether you have predefined categories or not.</p>
+<p>The columns <a href="#sec-var-control">Control</a> together with <a href="#sec-var-control-details">Controd details</a> are use to constrain the values that a text variable can take, or provide with a formula in the case of a calculated variable.</p>
 <table class="caption-top table">
 <caption>Summary of the types of control available in OutbreakTools</caption>
 <colgroup>
-<col style="width: 29%">
 <col style="width: 31%">
+<col style="width: 38%">
 <col style="width: 23%">
 </colgroup>
 <thead>
@@ -221,30 +237,75 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Categorical</td>
-<td>choice_manual, choice_custom, choice_multiple, list_auto</td>
-<td>Dropdown menu</td>
+<td>Free entry</td>
+<td>(none specified)</td>
+<td>Free</td>
 </tr>
 <tr class="even">
-<td>Geo-related columns (a special case of categorical)</td>
-<td>geo, hf</td>
-<td>GeoHelper or dropdown menu</td>
+<td>Categorical</td>
+<td><p>choice_manual choice_custom choice_multiple</p>
+<p>geo, hf (special cases)</p></td>
+<td><p>Dropdown menu</p>
+<p>GeoHelper or dropdown menu</p></td>
 </tr>
 <tr class="odd">
 <td>Calculated</td>
-<td>formula, choice_formula, case_when</td>
+<td>formula choice_formula case_when</td>
 <td>No user input needed in these columns</td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If no control is selected, the text variable is free text.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The variables that contain geographic information are treated as a special case of categorical variable and have their own dedicated control.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For non text variable (integers, decimals, dates) is is possible to restrict values using <a href="#sec-data-validation">data validation</a></p>
+</div>
+</div>
+</section>
+<section id="guide-to-choosing-variable-control" class="level2">
+<h2 class="anchored" data-anchor-id="guide-to-choosing-variable-control">Guide to choosing variable control</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/im-128-var-control.png" class="img-fluid figure-img"></p>
-<figcaption>Guide to choosing variable control in OBT</figcaption>
+<figcaption>Available options for control in OBT</figcaption>
 </figure>
 </div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

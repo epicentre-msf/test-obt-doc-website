@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Create dictionary – OutbreakTools documentation</title>
+<title>Show or hide variables – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,27 +179,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#get-the-tools-ready" id="toc-get-the-tools-ready" class="nav-link active" data-scroll-target="#get-the-tools-ready">Get the tools ready 🛠</a></li>
-  <li><a href="#grow-your-setup-file" id="toc-grow-your-setup-file" class="nav-link" data-scroll-target="#grow-your-setup-file">Grow your setup file 🌱</a>
-  <ul class="collapse">
-  <li><a href="#create-the-variable-dictionary" id="toc-create-the-variable-dictionary" class="nav-link" data-scroll-target="#create-the-variable-dictionary">Create the variable dictionary 📘</a></li>
-  <li><a href="#fill-other-sheets-as-needed" id="toc-fill-other-sheets-as-needed" class="nav-link" data-scroll-target="#fill-other-sheets-as-needed">Fill other sheets as needed</a></li>
-  <li><a href="#build-the-linelist-and-stress-test-it" id="toc-build-the-linelist-and-stress-test-it" class="nav-link" data-scroll-target="#build-the-linelist-and-stress-test-it">Build the linelist and stress-test it ✔</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Create dictionary</h1>
+<h1 class="title">Show or hide variables</h1>
 </div>
 
 
@@ -216,104 +204,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="get-the-tools-ready" class="level2">
-<h2 class="anchored" data-anchor-id="get-the-tools-ready">Get the tools ready 🛠</h2>
-<ol type="1">
-<li><p><a href="../getting_started/download.html#download">Download</a> the files from github to get the most updated versions and unzip it.</p></li>
-<li><p>Save the empty <strong>setup file</strong> in you working directory, locally. Open the file using Desktop Excel (web-based Excel cannot run macros).</p></li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>OneDrive and macro-enabled Excel files <a href="https://stackoverflow.com/questions/69282968/onedrive-corrupts-macro-enabled-files">do not work well together in general</a>. To avoid random file corruption, we advise that you work in a non synchronise folder, or that you disable OneDrive while you are writting the <strong>setup file</strong>.</p>
-</div>
-</div>
-</section>
-<section id="grow-your-setup-file" class="level2">
-<h2 class="anchored" data-anchor-id="grow-your-setup-file">Grow your setup file 🌱</h2>
-<p>The first step is to create the <strong>variable dictionary</strong>. The other steps are optional and can be completed if and when needed.</p>
-<section id="create-the-variable-dictionary" class="level3">
-<h3 class="anchored" data-anchor-id="create-the-variable-dictionary">Create the variable dictionary 📘</h3>
-<p>Aka fill the <a href="../reference/dictionary_sheet.html">Dictionary</a> and <a href="../reference/choices_sheet.html">Choices</a> sheets. The first sheet is a database about all the <em>variables</em> present in the linelist you want to create. The <em>Choices</em> sheet contains the categories for categorical variables.</p>
-<p>The different sections of the <em>Dictionary</em> sheet will define, for each variable:</p>
-<ul>
-<li>name, label, sublabel, notes</li>
-<li>sheet, section, subsection, hence also defining the <em>structure</em> of the linelist sheets and tables</li>
-<li>variable visibility</li>
-<li>variable type (<em>e.g.</em> a date or a decimal), format (<em>e.g.</em> the number of decimals in a case of a decimal), control (is it free text, a dropdown menu, a formula, a fancy <em>geo</em> section etc.)</li>
-<li>export status: should the variable be exported in one or more exports</li>
-<li>data validation rules: define min and max values, as well as error messages for values that do not respect rules</li>
-<li>whether to apply special formatting and how</li>
-<li><em>and more!</em></li>
-</ul>
-<p>When you have first draft of your dictionary, go to the <a href="../getting_started/workflow.html#fig-setup-ribbon">OutbreakTools ribbon</a> and click on the button “Check current setup for errors”. This will run a couple of automatic checks on the setup and raise warnings and errors.</p>
-</section>
-<section id="fill-other-sheets-as-needed" class="level3">
-<h3 class="anchored" data-anchor-id="fill-other-sheets-as-needed">Fill other sheets as needed</h3>
-<p>Fill the <a href="../reference/exports_sheet.html">Exports</a> sheet to <strong>define one or more personalised exports</strong>: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.</p>
-<p>Fill the <a href="../reference/analyses_sheet.html">Analyses</a>* sheet to <strong>define basic analyses</strong> to include in the linelist:</p>
-<ul>
-<li>uni and bivariate analyses (figures and tables)<br>
-</li>
-<li>temporal analyses (epicurves and corresponding tables)<br>
-</li>
-<li>spatial analyses: top X location with… (most case, most deceased, most…)<br>
-</li>
-<li>spatio-temporal analyses: temporal analyses but for a couple of user-specified places</li>
-</ul>
-<p>Fill the <a href="../reference/analyses_sheet.html">Translations</a> sheet to translate strings of text so that the <strong>linelist can automatically be built in other languages</strong> than the one in the setup.</p>
-<p>As for when defining the dictionary, check for errors regularly with the “Check current setup for errors”.</p>
-</section>
-<section id="build-the-linelist-and-stress-test-it" class="level3">
-<h3 class="anchored" data-anchor-id="build-the-linelist-and-stress-test-it">Build the linelist and stress-test it ✔</h3>
-<p>After correcting errors and checking warnings, you can go to the next step and <a href="../getting_started/compile.html">compile the setup</a> to build the linelist using the <strong>designer file</strong>. This will create the linelist.</p>
-<p><strong>Test you linelist!</strong> Enter false data and check your variables:</p>
-<ul>
-<li>is the format of the variable correct?</li>
-<li>are the formulas working as expected?</li>
-<li>is the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?</li>
-<li>do the analyses work as expected?</li>
-</ul>
-<p>In all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug” to get a working linelist, do not despair!</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Don’t hesitate to manually <em>unhide all columns</em> in the created linelist to check hidden columns formulas, you have the user rights to do it.</p>
-<p>Reverse to the original state by going to the “Advanced” section of the OutbreakTools ribbon, and click on the “Restore state of hidden columns”</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it.</p>
-<p>To do that, go to the “Advanced” section of the OutbreakTools ribbon and click on the “Export for migration” button. This will create a data export, that can be later imported in a new empty linelist by clicking on the “Import data” button.</p>
-</div>
-</div>
+<p>TODO</p>
+<p><strong>1</strong></p>
+<p>The “optional, hidden” variables in the <strong>setup file</strong> appear as “Hidden” (by default). However, the user can change the status by choosing “Show”, in which case the column will become visible. <img src="images/im-027-example.png" class="img-fluid"></p>
+<p><strong>2</strong> <img src="images/im-028-example.png" class="img-fluid"></p>
+<p><strong>3</strong></p>
+<p>The “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the <strong>setup file</strong>.</p>
+<p>The “optional, visible” variables in the <strong>setup file</strong> appear as “Displayed” (by default). However, you can change the status by choosing “Hide”, in which case the column will no longer be visible.</p>
+<p><strong>4</strong> <img src="images/im-029-example.png" class="img-fluid"></p>
+<p>“Mandatory” variables in the <strong>setup file</strong> appear as “Mandatory” in the “Show/Hide” pop up, and cannot be hidden.</p>
 
 
-</section>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
