@@ -1,8 +1,11 @@
 ---
 title: "Dictionary sheet: define linelist tables and their variables"
-editor: 
-  markdown: 
-    wrap: 72
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    toc-expand: 2
+    toc-title: Table of content
 ---
 
 The metadata about linelist variable, which is commonly called the
@@ -53,10 +56,7 @@ The name can be used to refer to the variable in formulas or in the
 
 ![](images/im-004-variable-names-and-labels.png){fig-align="center"}
 
-After you build the linelist, the variable name can be found in the
-formula bar of the grey cells from the eight-th row (of the linelist
-sheet)for 2-dimensions tables like patient data), or in the cell name
-zone for cells of a 1-dimension table (like the *Info* sheet).
+After you build the linelist, the variable name can be found in the formula bar of the grey cells from the eight-th row (of the linelist sheet) for 2-dimensions tables like patient data), or in the cell name zone for cells of a 1-dimension table (like the *Info* sheet).
 
 ::: callout-warning
 The variable name is what allows the scripts to uniquely identify
@@ -110,8 +110,8 @@ modified by the end user (with one exception, see @sec-editable-label).
 ![](images/im-004-variable-names-and-labels.png)
 
 ::: callout-note
-To add more details, you can use the following fields: "Sub Label" and
-"Note" (see below).
+To add more details, you can use the following fields: [Sub Label](#sec-sub-label) and
+[Note](sec-note).
 :::
 
 ### Dev Comment
@@ -123,8 +123,8 @@ information. **It is not read by the designer and does not affect the generated 
 ::: callout-note
 One of the author of this doc uses these tags:
 
--   **Format**: calculated columns created for applying conditional
-    formatting (see @sec-conditional-formating). These columns are very
+-   **Format**: calculated columns created for applying [conditional
+    formatting](#sec-conditional-formating). These columns are very
     specific, and pure format. Tagging them helps to quickly make sure
     that they are never exported
 
@@ -145,7 +145,7 @@ One of the author of this doc uses these tags:
     can be exported too.
 :::
 
-Feel free to use this column in a ways that helps you work, or ignore
+Feel free to use this column in a ways that helps you work, or to ignore
 it!
 
 ### Editable Label {#sec-editable-label}
@@ -161,7 +161,7 @@ the end of the linelist, in case the user want to collect some extra
 information. It gives some freedom to users to collect some site
 specific data without needing an update of the setup. When I do that, I
 usually provide a couple of free text variables, and a couple of
-customisable dropdonws variables (see @sec-custom-dropdowns)
+[customisable dropdowns variables](#sec-custom-dropdowns)
 :::
 
 ### Sub Label {#sec-sub-label}
@@ -187,7 +187,7 @@ Common sub-labels include the following:
 -   The format of your date (ex: DD/MM/YYYY)
 :::
 
-### Note
+### Note {#sec-note}
 
 This is a free text field which content is added to the linelist as a
 *comment* on the corresponding cell. The comment in the linelist can be
@@ -206,8 +206,8 @@ Display in the **linelist file**:
 
 ## Sheets and sections
 
-This section of the table organises variables within **sheets** and
-**tables**, and thus defines the *structure* of the linelist (at least
+This part of the table organises variables within **sheets** and
+**tables**, and thus defines the **structure** of the linelist (at least
 for data-entry sheets).
 
 **One data entry sheet can contain only one table** but the structure of
@@ -226,8 +226,8 @@ and an info/metadata sheet.
 ::: callout-note
 The created linelist will contain more sheets than the one you specify
 in this section, as some of the sheets are added automatically during
-compilation (an "Instruction sheet, a sheet for the geobase, etc.) and
-more sheets can be added if you choose to include analyses.
+compilation (an instruction sheet, a sheet for the geobase, etc.) and
+more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd].
 :::
 
 ### Sheet Type {#sec-sheet-types}
@@ -235,32 +235,19 @@ more sheets can be added if you choose to include analyses.
 This is a dropdown menu field used to define the *type of table*
 contained in the sheet. There are two options:
 
--   **vlist1D**[^1]: corresponds to a table built *vertically*, so the
-    variables labels are in the same column, and **only one entry is
-    expected for each variable**. This structure of data is well adapted
-    to collect metadata about the health structure, the project or the
-    data collection itself.
+-   **vlist1D**: corresponds to a table built *Vertically*, so the variables labels are in the same column, and **only one entry is expected for each variable**. This structure of data is well adapted
+    to collect metadata about the health structure, the project or the data collection itself.
 
--   **hlist2D**[^2]: corresponds to a horizontally constructed table, so
-    the variables labels appear in the same row, and **several entries
-    are possible for each variable**. This type of sheet is used to
-    collect patient data.
+-   **hlist2D**: corresponds to a table built *Horizontally*, so the variables labels appear in the same row, and **several entries are possible for each variable**. This type of sheet is used to collect patient data.
 
-[^1]: vlist = vertical list of labels
-
-[^2]: hlist = horizontal list
 
 ![](images/im-015-sheet-type.png){fig-align="center"}
 
 ### Main Section {#sec-main-section}
 
-This is a free text field used to define the *name* of the main section
-in which the variable is located. This makes it possible to group
-variables by theme to make data entry and navigation easier.
+This is a free text field used to define the *name* of the main section in which the variable is located. This makes it possible to group variables by theme to make data entry and navigation easier.
 
-In the linelist file, the main sections appear in a darker colour in
-rows or columns, depending on the type of table (dark blue in
-@sec-sheet-sections-example). They cannot be modified by the end user.
+In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in the [example](#sec-sheet-sections-example)). They cannot be modified by the end user.
 
 ::: callout-tip
 To make the dictionary easier to read, we recommend that you group
@@ -274,9 +261,7 @@ This is a free text field that allows you to further refine the
 organisation of variables in the table by creating a second level of
 grouping.
 
-In the linelist file, the sub-sections appear in a lighter colour in the
-row or column, depending on the type of table (light blue in
-@sec-sheet-sections-example). They cannot be modified by the end user.
+In the linelist file, the sub-sections appear in a lighter colour in the row or column, depending on the type of table (light blue in the [example](#sec-sheet-sections-example)). They cannot be modified by the end user.
 
 ### Example {#sec-sheet-sections-example}
 
@@ -310,9 +295,7 @@ in which form, and in which display).
 
 ### Status
 
-This is a dropdown field that contains four options for defining the
-**visibility** of the variable. The linelist has a functionality to show
-or hide optional variables depending on the data needs on the field.
+This is a dropdown field that contains four options for defining the **visibility** of the variable. The linelist has a functionality to [show or hide optional variables](../how_to/show_hide_variables.qmd) depending on the data needs on the field.
 
 -   *mandatory*: variable displayed by default, **it cannot be hidden**
     in the linelist
@@ -326,15 +309,14 @@ or hide optional variables depending on the data needs on the field.
 -   *hidden*: variable hidden by default, it cannot be displayed in the
     linelis
 
-Variables can be shown or hidden using the *Show/Hide* button in the
-**linelist file**.
+Variables can be shown or hidden using the [*Show/Hide* button](../how_to/show_hide_variables.qmd) in the **linelist file**.
 
 ::: {.callout-note}
 Technically, the linelist user can forcefully hide/un-hide columns.
 
-Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (*e.g. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.
+Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (*e.g*. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.
 
-It is however more dangerous to forcefully hide "mandatory" columns. These columns are often fundamental variables in the linelist, that are needed for data understanding, let alone analyses (*e.g. date of admission, age or sex). If you choose to hide one of these columns, know that some analyses might not function as expected, or not at all because they rely on the hidden columns.
+It is however more dangerous to forcefully hide "mandatory" columns. These columns are often fundamental variables in the linelist, that are needed for data understanding and analyses (*e.g*. date of admission, age or sex). If you choose to hide one of these columns, know that some analyses might not function as expected, or not at all because they rely on the hidden columns.
 
 Finally, any change of column visibility that is not made via the "Hide/show variable" button of the linelist will not be recorded and migrated to a new linelist.
 :::
@@ -350,33 +332,6 @@ Display in the **linelist file**:
 ![](images/im-025-example.png)
 
 ![](images/im-026-example.png)
-
-
-"Mandatory" variables in the **setup file** appear as "Mandatory" in the
-"Show/Hide" pop up, and cannot be hidden.
-
-**1**
-
-The "optional, hidden" variables in the **setup file** appear as
-"Hidden" (by default). However, the user can change the status by
-choosing "Show", in which case the column will become visible.
-![](images/im-027-example.png)
-
-**2** 
-![](images/im-028-example.png)
-
-**3**
-
-The "Notification year" variable does not appear in the list of
-variables because it is in "hidden" status in the **setup file**.
-
-The "optional, visible" variables in the **setup file** appear as
-"Displayed" (by default). However, you can change the status by choosing
-"Hide", in which case the column will no longer be visible.
-
-**4** 
-![](images/im-029-example.png)
-
 
 ### Register Book
 
@@ -394,34 +349,22 @@ This column has two uses:
 - it allows the setup developer to quickly identify variables containing personal data in its dictionary  
 
 - it is used to remove variables automatically from the exports if such
-a behaviour is needed (see the [Exports](../reference/exports_sheet.qmd) sheet).
+a behaviour is needed (see the [Exports sheet](../reference/exports_sheet.qmd)).
 
 ### Thinking about variables
 
 There are many ways of thinking about variables and of classifying them.
 
-In general we can distinguished between *input* variables, where the
-user enters raw data, and *calculated* (or derived) variables, which
-require no input. Both of them can be created in OutbreakTools.
+In general we can distinguished between *input* variables, where the user enters raw data, and *calculated* (or derived) variables which require no input. Both of them can be created in OutbreakTools.
 
-Independently of this distinction, a variety of **variables types** can
-exist, containing numbers or text in various forms. In Excel, we will
-often use the types *integer*, *decimals*, *dates* and *text*.[^3]. See
-the section on [variable types](#sec-var-type) for more information.
+Independently of this distinction, a variety of **variables types** can exist, containing numbers or text in various forms. In Excel, we will often use the types *integer*, *decimals*, *dates* and *text*.[^3]. These types are [implemented](#sec-var-type) in OutbreakTools linelists.
 
 [^3]: Note that we used the word "type" in its *computer science* meaning, which differs a bit from the *statistics* one.
 
-For input variables, you could think of two ways of entering data: a
-*free* approach, where user can enter the value of their choice, and a
-*controlled* (constrained) approach, where the values the user can enter
-are limited. In Excel, this is generally implemented through *dropdown
-menus* from which the data encoder selects a value. In OutbreakTools,
-there have several ways of building dropdown menus, depending on whether
-you know the categories in advance or not. This is what we call
-"variable control". Learn more about it in @sec-var-control.
+For input variables, you could think of two ways of entering data: a *free text* approach, where user can enter the value of their choice, and a *controlled* (constrained) approach, where the values the user can enter are limited. In Excel, this is generally implemented through *dropdown menus* from which the data encoder selects a value. In OutbreakTools, there have several ways of building dropdown menus, depending on whether you know the categories in advance or not. This is what we call [variable control](sec-var-control).
 
 Finally, many softwares allow the user to set the way the data is
-*displayed*, which we here call **format**. For example: 
+*displayed*, which we here call [variable format](#sec-var-format). For example: 
 
 - The date first of January of 2023 can be displayed as "01/01/2024", or
 "1/1/24" or 1-Jan-24" etc.  
@@ -430,36 +373,35 @@ Finally, many softwares allow the user to set the way the data is
 or even as "10%" if the column contains proportions that can be
 displayed as percentages.  
 
-Learn more about format in @sec-var-format.
 
 ### Variable Type {#sec-var-type}
 
 This column proposes a dropdown menu field containing four options for
-defining the type (sometimes called *class* in some software) of each variable:
+defining the type^[sometimes called *class* in some software] of each variable:
 
--   **Text**: creates a column of text (also called character string
-    in some softwares). The entry of the text may be free or
+-   **Text**: creates a column of text^[also called character string
+    in some softwares]. The entry of the text may be free or
     [constrained by a dropdown menu](#sec-var-control).
 
 -   **Date**: creates a date column, whose exact format is defined in
-    the [next column](#sec-var-format). The default format is
+    the [Variable format](#sec-var-format) column. The default format is
     *jj-mmm-aaaa*.
 
 -   **Integer**: creates an integer column
 
 -   **Decimal**: creates a column with decimal numbers. The number of
     digits after the decimal point is defined in
-    the [next column](#sec-var-format).
+    the [Variable format](#sec-var-format).
 
 ![](images/im-127-var-types.png)
 
 ### Variable Format {#sec-var-format}
 
-This field is used to specify the **format** of the variable (which
-depends on its **type**).
+This field is used to specify the *format* of the variable (which
+depends on its *type*).
 
 There is a predefined dropdown list with common options, but you can
-enter any format by hand, as long as it is written in **Excel syntax** (see [here](https://www.ablebits.com/office-addins-blog/excel-format-number-text/) and [here](https://www.ablebits.com/office-addins-blog/custom-excel-number-format/)).
+enter any format by hand, as long as it is written in **Excel syntax** (see [here](https://www.ablebits.com/office-addins-blog/excel-format-number-text/) and [here](https://www.ablebits.com/office-addins-blog/custom-excel-number-format/) for information).
 
 ![](images/im-034-variable-format.png)
 
@@ -486,13 +428,13 @@ that are not free text:
 -   case_when
 -   choice_formula
 
-These options can be broadly classified in two sorts of variables to
+These options broadly correspond to two sorts of variables to
 be created: 
 
-- **input categorical** variables with constrained values and filled with a dropdown menu  
+- **input categorical** variables with constrained values and filled *via* a dropdown menu  
 - **calculated** variables
 
-In OutbreakTools, the variables to fill in geographic information are treated as a special case of categorical variable and have their own dedicated control.
+In OutbreakTools, the variables to fill in geographic information are treated as a special case of categorical variable and have their own [dedicated control](#sec-geo-variable).
 
 +--------------------+----------------------+----------------+
 | Sort of variable   | Controls             | Data entry in  |
@@ -517,13 +459,16 @@ In OutbreakTools, the variables to fill in geographic information are treated as
 
 ![Guide to choosing variable control in OBT](../images/im-128-var-control.png){fig-align="center"}
 
+::: {.callout-important}
+For non text variable (integers, decimals, dates) is is possible to restrict values using [data validation](#sec-data-validation)
+:::
 
 #### Dropdown menu variables
 
 This table summarises the different options:
 
 +-----------------+--------------------+------------------------+--------------------------+
-| # Control       | # How to populate  | # Where are            | # Data entry             |
+| Control         | How to populate    | Where are              | Data entry               |
 |                 | the dropdown menu  | values defined?        |                          |
 +=================+====================+========================+==========================+
 | choice_manual   | Predefined values  | In the **setup file**, | **One value** selected   |
@@ -533,17 +478,17 @@ This table summarises the different options:
 |                 |                    | in the *Choices* sheet | selected from a dropdown |
 |                 |                    |                        | menu                     |
 +-----------------+--------------------+------------------------+--------------------------+
-| choice_custom   | User-defined values| **Linelist file**, in  | **One value** selected   |
-|                 | (but see details)  | the *Custom dropdown*  | from a dropdown menu     |
-|                 |                    | sheet                  |                          |
-+-----------------+--------------------+------------------------+--------------------------+
-| list_auto       | User-defined values| **Linelist file** in   | **One value** selected   |
-|                 | but from another   | another column         | from a dropdown menu     |
-|                 | data column        |                        | populated by the values  |
-|                 |                    |                        | of another variable      |
-+-----------------+--------------------+------------------------+--------------------------+
+| choice_custom   | User-defined values| In the **Linelist file**, | **One value** selected   |
+|                 | (but see details)  | in the *Custom dropdown*  | from a dropdown menu     |
+|                 |                    | sheet                     |                          |
++-----------------+--------------------+---------------------------+--------------------------+
+| list_auto       | User-defined values| In the **Linelist file**, | **One value** selected   |
+|                 | but from another   | in another column         | from a dropdown menu     |
+|                 | data column        |                           | populated by the values  |
+|                 |                    |                           | of another variable      |
++-----------------+--------------------+---------------------------+--------------------------+
 
-##### Choice_manual
+##### choice_manual
 
 This control creates a categorical variable with a **static dropdown menu** in the linelist, from which **one value** can be selected. The authorised values from the dropdown menu are **defined in advance in the setup** and cannot be modified by the users of the linelist (hence the
 "static" description).
@@ -553,35 +498,25 @@ In the **setup file**, we define these values in a list stored in the
 details](#sec-var-control-details) column.
 
 
-##### Choice_multiple
+##### choice_multiple
 
-This control is similar to the choice manual, in that it creates a
-**static dropdown menu** in the linelist from **predefined values**
-entered in the **setup file**.
+This control is similar to the "choice_manual" control, in that it creates a **static dropdown menu** in the linelist from **predefined values** entered in the **setup file**.
 
-The difference is that in the created linelist, the user can
-use the dropdown menu several times to select **multiple values**. These
-values will be concatenated and stored as a chain of character. 
-
-By default, the separator is a coma (","), but you can modify this in the
-control column. For example, entering *choice_multiple("\_")* will use
-the character "\_" to separate values instead of ",".
+The difference is that in the created linelist, the user can use the dropdown menu several times to select **multiple values**. These values will be concatenated and stored as a chain of character. By default, the separator is a coma (","), but you can modify this in the control column. For example, entering *choice_multiple("\_")* will use the character "\_" to separate values instead of ",".
 
 **Example**: if the user selects "Azythromicin", then "Ampicilin" from a
 dropdown menu, the value "Azythromicin, Ampicilin" will be stored in the
 cell.
 
 ::: {.callout-note}
-A choice_multiple column cannot be used in the *Analyses* sheets as the
-designer cannot predict the number of combinations the user will create,
-and thus cannot create tables with appropriate size.
+A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheets.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
 :::
 
 ::: {.callout-tip}
 Since columns allowing multiple choices are rare in linelists in general, we advise you to use the [sub-label](#sec-sub-label) and possibly a note to inform the linelist user that they can enter several values, and how to do it.
 :::
 
-##### Choice_custom {#sec-custom-dropdowns}
+##### choice_custom {#sec-custom-dropdowns}
 
 This control creates a **dynamic dropdown menu** in the linelist, but
 contrary to the previous controls, the values are not (necessarily)
@@ -590,20 +525,15 @@ control is useful for variables where one would like to enforce
 standardization of values, but the values to encode are not known in
 advance.
 
-**Example**: you wish to create a column containing the name of
-facilities patients can be transferred to. The names of these facilities
-is site dependent, thus unknown in advance.
+**Example**: you wish to create a column containing the name of facilities patients can be transferred to. The names of these facilities is site dependent, thus unknown in advance.
 "*Custom dropdown* sheet in the linelist where the user can fill-in values to populate the **dynamic, customised dropdown menu**.
 
 
-While by default the dropdown menu created is empty, it is possible to
-pre-fill it by filling the "Control Details" column with a list of
-choices, like for the other types of dropdowns menus (see
-the [details on setting up dropdown menus](#sec-var-control-details section) below). 
-The table in the *Custom dropdown* sheet of the linelist will still be created and future users will be able to modify it.
+While by default the dropdown menu created is empty, it is possible to pre-fill it by filling the "Control Details" column with a list of choices, like for the other types of dropdowns menus (see
+the [details on setting up dropdown menus](#sec-var-control-details section) below). The table in the *Custom dropdown* sheet of the linelist will still be created and future users will be able to modify it.
 
 
-##### List_auto {#sec-list-auto}
+##### list_auto {#sec-list-auto}
 
 This control also creates a **dynamic dropdown menu**, but the values
 come from the data entered in another column.
@@ -613,14 +543,11 @@ come from the data entered in another column.
 - the first data entry sheet contains patient data  
 - a second data entry sheet contains more variables for a subset of re-admitted patients.
 
-The list_auto control allows to create a column on the second sheet with
-a dropdown menu populated dynamically with the patient IDs from the
-first sheet.
+The "list_auto" control allows to create a column on the second sheet with a dropdown menu populated dynamically with the patient IDs from the first sheet.
 
 ![](../images/im-130-list-auto-3.png){fig-align="center"}
 
-In the **setup file**, the **variable** used to populate the dropdown menu is
-defined in the ["Control Details"](#sec-var-control-details section).
+In the **setup file**, the **variable** used to populate the dropdown menu is defined in [Control Details](#sec-var-control-details section).
 
 #### Special case of amdinistrative levels and health facilities
 
@@ -629,10 +556,10 @@ about health facilities. While the created variables are technically dropdown me
 
 OutbreakTool linelists all have a button to [import a geobase](../how_to/import_geobase.qmd), a standardised file containing lists of administrative levels to describe places. Once the geobase is successfully imported, the values from its lists populate specific dropdown menus.
 
-##### Geo {#sec-geo-variable}
+##### geo {#sec-geo-variable}
 
 The "geo" control indicates that geographic data is expected. In the
-linelist, this results in the creation of **4 columns**, one for each
+linelist, this results in the creation of **four columns**, one for each
 administrative level, which will be populated by values imported from a
 geobase. The user can enter data by using the *GeoHelper* button in the
 linelist or by selecting values from the cascading dropdown menus in the
@@ -660,20 +587,16 @@ Display in the **linelist file** after importing a geobase (here a Nigeria geoba
 
 ![](images/im-038-example-bis-en.png)
 
-##### HF
+##### hf
 
-The "hf" control means that the user will enter health facility names. By
-identifying hf data in this way, you can use the *GeoHelper* button in
-the linelist to fill in the column.
+The "hf" control means that the user will enter health facility names. By identifying hf data in this way, you can use the *GeoHelper* button in the linelist to fill in the column.
 
-::: callout-note
-Similarly to the "geo" control, the "hf" control does not need
-additional information to be filled in the "Control Details" column.
-:::
+
+Similarly to the "geo" control, the "hf" control does not need additional information to be filled in the "Control Details" column.
+
 
 ::: callout-note
-The variable label appears in an orange cell, which means that the
-*GeoHelper* button can be used to fill in the corresponding cells.
+The variable label appears in an orange cell, which means that the *GeoHelper* button can be used to fill in the corresponding cells.
 :::
 
 **Example:**
@@ -682,7 +605,7 @@ Definition in the **setup file**:
 
 ![](images/im-039-example-hf.png)
 
-Display in the linelist :
+Display in the **linelist**:
 
 ![](images/im-040-example-hf.png)
 
@@ -702,25 +625,20 @@ syntax.
 | formula        | Any combination of Excel  | Anything        |                       | Continuous variables: yes |
 |                | functions (in English)    |                 |                       | Categorical variables: no |
 +----------------+---------------------------+-----------------+-----------------------+---------------------------+
-| case_when      | `CASE_WHEN` (Excel        | Replaces nested | Empty cells; user can | No                        |
+| case_when      | `CASE_WHEN`(Excel         | Replaces nested | Empty cells; user can | No                        |
 |                | functions optional)       | Ifs             | modify it             |                           |
 +----------------+---------------------------+-----------------+-----------------------+---------------------------+
-| choice_formula | `CHOICE_FORMULA` (Excel | Replaces nested | Empty character; user | Yes                       |
+| choice_formula | `CHOICE_FORMULA` (Excel   | Replaces nested | Empty character; user | Yes                       |
 |                | functions optional)       | Ifs             | cannot modify it      |                           |
 +----------------+---------------------------+-----------------+------------------------+--------------------------+
 
-##### Formula
+##### formula
 
-When using the "formula" control, the value displayed is calculated
-according to a formula defined in the [Control details
-column](#sec-var-control-details) of the dictionary.
+When using the "formula" control, the value displayed is calculated according to a formula defined in the [Control details](#sec-var-control-details) column of the dictionary.
 
-##### Case_when
+##### case_when
 
-Variables of control "case_when" use a specifically developed function,
-`CASE_WHEN`, which replaces a succession of nested `IF`. While you could
-write the formula with nested `IF`, `CASE_WHEN` is easier to read, thus
-simpler to use.
+Variables of control "case_when" use a specifically developed function, `CASE_WHEN`, which replaces a succession of nested `IF`. While you could write the formula with nested `IF`, `CASE_WHEN` is easier to read, thus simpler to use.
 
 **Case usage**: you want to recode a variable, but you do not know which
 values will be generated. For example, the raw data contains a columns
@@ -738,44 +656,33 @@ one value, so the designer knows what to expect.
 :::
 
 ::: {.callout-warning}
-If the variable is not identified with a "case_when" control, and you
-still use the `CASE_WHEN`function in the [Control details
-column](#sec-var-control-details) column, Excel will not be able
-to return the desired result because the function is not native.
+To work properly the "case_when" control must be associated with a `CASE_WHEN`function in the [Control details](#sec-var-control-details) column, or the designer will not work properly because the function is not native.
 :::
 
 ::: callout-note
-If you are using a recent version of Excel, you may know the functions
-`IFS` or `SWITCH`. Outbreak Tools does not rely on them as they are not
-retro compatible with some older versions of Excel. Use a `CASE_WHEN` or
-`CHOICE_FORMULA` instead.
+If you are using a recent version of Excel, you may know the functions `IFS` or `SWITCH`. OutbreakTools does not rely on them as they are not retro-compatible with some older versions of Excel. Use a `CASE_WHEN` or `CHOICE_FORMULA` instead.
 :::
 
-Read more about writing the formula in the [Control details]
-(#sec-var-control-details) column below.
+Read more about writing the formula in the [Control details](#sec-formulas) column below.
 
-##### Choice_formula
+##### choice_formula
 
-This control indicates the use of the `CHOICE_FORMULA` function, another
-custom function. This function is a special case of the `CASE_WHEN` formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the *Choices* sheet.
+This control indicates the use of the `CHOICE_FORMULA` function, another custom function. This function is a special case of the `CASE_WHEN` formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the [Choices](../reference/choices_sheet.qmd) sheet.
 
-Columns generated with this control can be used in univariate or
-bivariate tables, as the number of possible categories is known in
-advance.
+Columns generated with this control can be used in univariate or bivariate tables, as the number of possible categories is known in advance.
 
-Read more about writing the formula in the [Control details]
-(#sec-var-control-details) column below.
+Read more about writing the formula in the [Control details](#sec-var-control-details) column below.
 
 ### Control details {#sec-var-control-details}
 
 This is a free text field, which accepts three types of values: 
 
-- the name of a *list* (defined in the *Choices* sheet), 
+- the name of a *list* (defined in the [Choices](../reference/choices_sheet.qmd) sheet), 
 - the name of a *variable* (defined in the *Dictionary* sheet)
-- a *formula*.
+- a [*formula*](#sec-formulas).
 
 +----------------------+-------------------+--------------------------------------------+
-| # Control type       | # Control column  | # Value expected in the "Control details"  |
+| Control type         | Control column    | Value expected in the "Control details"    |
 |                      |                   | column                                     |
 +----------------------+-------------------+--------------------------------------------+
 | Static dropdown menu | choice_manual     | The name of a *list* that contains the     |
@@ -784,7 +691,7 @@ This is a free text field, which accepts three types of values:
 +----------------------+-------------------+--------------------------------------------+
 | Dynamic dropdown     |list_auto          | The name of an existing *variable*         |
 +----------------------+-------------------+--------------------------------------------+
-| Calculated           | formula,          | An Excel formula (that can contain one or  |
+| Calculated           | formula           | An Excel formula (that can contain one or  |
 |                      | case_when         | more functions, including the custom       |
 |                      | choice_formula    | functions `CASE_WHEN` and `CHOICE_FORMULA` |
 +----------------------+-------------------+--------------------------------------------+
@@ -795,26 +702,21 @@ When the controls "choice_manual", "choice_multiple" (and optionally "choice_cus
 are selected in the [Control](#sec-var-control) column, you
 need to define the values the dropdown menu will contain (*i.e.* the *categories*). 
 
-These values are specified in the *Choices* sheet. Categories of a same
-variable are bundled into named *lists*. The name of the list is then entered in
-the "Control details" column of the *Dictionary* sheet. 
-
-For more information on the definition of dropdown menus, see the
-[Choices sheet](../reference/choices_sheet.qmd) page.
-
+These values are specified in the [Choices sheet](../reference/choices_sheet.qmd). Categories of a same variable are bundled into named *lists*. The name of the list is then entered in
+the "Control details" column of the *Dictionary* sheet.
 
 ![](images/im-041-choices.png)
 
 In the case of "list auto" variables, you only need to provide the *name
 of another variable* in the "Control details" column. In the linelist,
 the values present in the referred variable will be automatically used
-to populate the dropdown menu. See [this How to](../how_to/link_tables.qmd#sec-ht-list_auto) for an example in the setup.
+to populate the dropdown menu. See [this How to](../how_to/link_tables.qmd#sec-ht-list_auto) for an example.
 
 
 #### Formulas {#sec-formulas}
 
 If you have selected "formula", "choice_formula" or "case_when" in the
-[Control" column](#sec-var-control), you need to provide the formula to
+[Control](#sec-var-control) column, you need to provide the formula to
 be applied in this column.
 
 ::: {.callout-note}
@@ -823,18 +725,18 @@ section below are also valid for "choice_formula" and "case_when"
 controls as these, while based on custom functions, are still formulas.
 :::
 
-##### Formula control {#sec-formula-control}
+##### formula control {#sec-formula-control}
 
-The formula is written **in English**, **without an "=" sign**. The
-formulas are automatically translated into the Excel language defined on
+The formula is written **in English, without an "=" sign**. During compilation, the
+formulas will automatically be translated into the Excel language defined on
 the computer used to generate the linelist.
 
-::: callout-warning
-If your Excel is not usually in English, pay special attention to the
+::: {.callout-warning}
+If your Excel is not configured to use English, pay special attention to the
 following:
 
--   Use the English function names, such as "MEAN" instead of "MOYENNE",
-    or "IF" instead of "SI".
+-   Use the English function names, such as `MEAN` instead of `MOYENNE`,
+    or `IF` instead of `SI`.
 
 -   Function arguments are separated by **","** in English. Beware of
     lingering ";" if you are used to Excel in French!
@@ -843,16 +745,18 @@ following:
     French.
 :::
 
-::: callout-tip
-In Excel, you can use ALT+ENTRY to insert a carriage return and go to
+::: {.callout-tip}
+In Excel, you can use `ALT+ENTRY` to insert a carriage return to go to
 the next line. This does not affect the execution of your formulas, but
 greatly increases the readability. The same goes for inserting spaces
 around operators. Contrast these two formulas:
-:::
 
-![](../images/im-129-formula-style.png)
 
-::: callout-important
+![](images/im-129-formula-style.png)
+::: 
+
+
+::: {.callout-important}
 When writing a formula, make sure that it returns an empty value for
 rows without an ID, as all the rows with non-null values in it will be
 counted in the *Analyses* sheets. If your graphs show a lot of "Missing"
@@ -860,48 +764,54 @@ values that do not reflect how well a column is filled, check that a
 calculated column is not responsible for it.
 :::
 
-##### Case_when control
+##### case_when control
 
-Use the CASE_WHEN function to replace nested IF (therefore limiting the
+Use the `CASE_WHEN` function to replace nested `IF` (therefore limiting the
 risk of error when writing the formula), in this form:
 
-> CASE_WHEN( condition1, value1, condition2, value2, condition3, value3,
-> ..., ..., DEFAULT_VALUE)
+> CASE_WHEN( condition1, value1, 
+             condition2, value2, 
+             condition3, value3,
+             ..., ..., 
+             DEFAULT_VALUE)
 
-You need at least one pair of conditions but the function shines when
-there are many pairs. As in the nested IF or in the IFS functions, *the
-conditional statement are tested in the order they are written*. By
-default, any case that is not covered by the previous conditions will
-return an empty cell, unless you provide a default value (the *else*).
+You need at least one pair of conditions-values but the function shines when there are many pairs. As in the nested `IF` or in the `IFS` functions, the conditional statement are *tested in the order they are written*. 
+
+By default, any case that is not covered by the previous conditions will return an empty cell, unless you provide a default value (the "else").
 
 **Example**
 
-You could write a formula with nested IF to calculate an age_years
+You could write a formula with nested `IF` to calculate an age_years
 column:
 
 > IF(age_unit = "months", age_value / 12, IF(age_unit = "days",
 > age_value / 365, IF(age_unit = "years", age_value,
 > IF(ISBLANK(age_unit), ""))))
 
-Or write the equivalent with CASE_WHEN:
+Or write the equivalent with `CASE_WHEN`:
 
-> CASE_WHEN( age_unit = "months", age_value / 12, age_unit = "days",
-> age_value / 365, age_unit = "years", age_value)
+> CASE_WHEN(age_unit = "months", 
+            age_value / 12, age_unit = "days",
+            age_value / 365, age_unit = "years", 
+            age_value)
 
 ::: callout-note
 The information about the more generalist "formula" control are also
 valid here.
 :::
 
-##### Choice_formula control
+##### choice_formula control
 
-The CHOICE_FORMULA function is a subcase of CASE_WHEN for when we want
+The `CHOICE_FORMULA` function is a subcase of `CASE_WHEN` for when we want
 to encode a few **known modalities**.
 
 The pseudo-code is very similar to the CASE_WHEN function:
 
-> CHOICE_FORMULA(list_values_choices, condition1, value1, condition2,
-> value2, condition3, value3, ..., ... )
+> CHOICE_FORMULA(list_values_choices, 
+                 condition1, value1, 
+                 condition2, value2, 
+                 condition3, value3, 
+                 ..., ... )
 
 But here, the value1, value2, value3 etc. are pre-defined in the list
 "list_values_choices" in the *"Choices"* sheet, as if these values were
@@ -932,51 +842,58 @@ The information about the more generalist "formula" control are also
 valid here.
 :::
 
+##### Example
+
+Here is an example of a setup that codes for two input columns (age value and age unit) and three calculated columns.
+
+- `age_num` is a numeric column, with no special control
+- `age_unit` contains a dropdown with categories "Day"/"Month/"Year"
+- `age_years` uses `CASE_WHEN` to transform the input data into the age in years and keeping the formula easy to read. This column is continous, and can be used in the analyses to calculate a `mean` or a `median` (or any relevant summary statistics)
+- `age_months` is a simpler formula based on `age_years`.
+- `age_group` uses `CHOICE_FORMULA` so this column can be used in univariate or bivariate tables to count the nomber of patients in each class, and to build an age pyramid. 
+
+![](images/im-132-example-formulas.png)
+
+
 ### Unique
 
-This is a *yes/no* dropdown menu field. It has no direct impact on the
-linelist, but the information can be used in the data cleaning phase.
+This is a *yes/no* dropdown menu field. If the variable should have unique values (such as the patient ID in some cases), special data validation will be applied to duplicated values.
+
 
 ## Data exports
 
-![](../images/im-042-data-exports.png)
+OutbreakTools linelist have extensive data export functionalities. It is possible to define several personalised exports from the setup.
 
-This section lets you **choose the variables you want to have in each
-export**. The rest is defined in the *"Exports"* sheet (see the 'Data
-exports' page).
+To define a specific export, you need to fill both the "Export" section in the *Dictionary* sheet and the [Exports](../reference/exports_sheet/qmd) sheet. The *Export* sheet contains metadata for each export, while the "Export" columns in the *Dictionary* sheet allows to decide individually for each variable whether to export it or not in a given export.
 
-You can define the order in which variables are displayed in exports. To
-do this, simply number them in the desired order.
+To create a new export, first fill the [Exports](../reference/exports_sheet/qmd) sheet, which will add corresponding columns to the *Dictionary* sheet.
 
-::: callout-important
-Variables with **any values** entered in the Export columns will be
-exported. If you want to **not** export a variable, you need to keep the
-cells **empty**.
+
+**Rules**:
+
+-  Variables with **any value** entered in the "Export" columns will be exported. If you want to **not** export a variable, you need to keep the cells **empty**.
+
+- You can define the order in which variables are displayed in exports by entering numbers in the export column. If two variables have the same number (in the same export column), they will be exported in the order they are defined in the setup (from top to bottom).
+
+::: {.callout-tip}
+If you wish to create an anonymous export, i.e. one containing no personal identifier, you can filter the "personal identifier" column to *yes* and check that the column corresponding to the anonymous export is empty.
 :::
 
-::: callout-note
-If two variables have the same number in the same export columns, they
-will be exported in the order they are defined in the setup (from top to
-bottom).
-:::
 
-::: callout-tip
-If you wish to create an anonymous export, i.e. one containing no
-personal identifier, you can filter the "personal identifier" column to
-'yes' and check that the column corresponding to the anonymous export is
-empty.
-:::
+### Example
 
-## Data validation
+In the following example, two exports have been created. The first one exports all variables present in the order that they appear in the setup. The other export (perhaps a specific MoH export) only export some variable, and choses the order (`facility_name` is exported first, then `facility_type`, then etc.).
 
-![](../images/im-043-data-validation.png)
+![](images/im-133-exports.png)
+
+
+## Data validation {#sec-data-validation}
 
 To improve the quality of the data entered, it is possible to alert or
-block the user if they attempt to enter unvalid data.
+block the user if they attempt to enter invalid data.
 
-For continuous variables, you need to specify the min and or max values
-(see below), but for dropdown menu variables, go directly to the "Alert"
-column.
+For continuous variables, you can to specify the `min` and or `max` values
+(see below). For categorical variables with dropdown menus, go directly to the [Alert](#sec-alert) column.
 
 ### Min
 
@@ -984,16 +901,16 @@ This is a free text field that defines the minimal authorised value in
 the variable. It can be an integer, a decimal number, the name of a
 variable or a formula.
 
-::: callout-important
-As with the formulas, the "=" sign is **not** placed in front of the
-limits you define.
+::: {.callout-important}
+As with [formulas](#sec-formula-control), do not start with an "=" sign!
 :::
 
-Examples: - "0" to not allow negative vallues in an age in month or year
-column\
-- "date_notification" to not allo the date of exit to be before the
-arrival in the health facility\
-- "today() - 2 \* 365" to avoid dates older than two years if you know
+Examples: 
+
+- "0" to forbid negative values in an age in month or year column
+- `date_notification` to not allow the date of exit to be before the
+arrival in the health facility
+- `today() - 2 * 365` to avoid dates older than two years if you know
 that the linelist is not used to enter retrospective data
 
 ### Max
@@ -1002,23 +919,24 @@ This is a free text field used to define the upper limit of authorised
 values. It can be an integer, a decimal number, a variable name or a
 formula.
 
-::: callout-important
+::: {.callout-important}
 As with the formulas, the "=" sign is **not** placed in front of the
 limits you define.
 :::
 
-Examples: - "120" to limit the age in year\
-- "today()" to not allow dates after the day of data entry in the case
+Examples: 
+- "120" to limit the age in year
+- `today()` to not allow dates after the day of data entry in the case
 of most date columns
 
-### Alert
+### Alert {#sec-alert}
 
 This is a dropdown field. There are two possible options:
 
 -   error
 -   warning
 
-❌ The "error" message blocks data entry: it is impossible to force the
+❌ The "error" option blocks data entry: it is impossible to force the
 entry of a value other than the authorised one. It is symbolised by a
 cross in a red circle [^5].
 
@@ -1026,10 +944,10 @@ cross in a red circle [^5].
     though
 
 ⚠️ "warning" warns the end user that the data entered is not within the
-expected values, but if they wish they can still keep this data. It is
+expected values, but if they wish they can still force this data in. It is
 symbolised by an exclamation mark in an orange triangle.
 
-::: callout-note
+::: {.callout-note}
 You can add error and warnings to columns with dropdown menus, the
 messages will appear if the user tries to enter a value not from the
 dropdown menu.
@@ -1046,45 +964,43 @@ their entry is invalid.
 
 Definition in the **setup file**:
 
-![](../images/im-044-patients-age.png)
+![](images/im-044-patients-age.png)
 
-How it is encoded in the data validation system of the **linelist
-file**:
+How it is encoded in the data validation system of the **linelist file**:
 
-![](../images/im-045-patients-age.png)
+![](images/im-045-patients-age.png)
 
-Warning box appearing when the user attempts to enter invalid data:
+A warning box appearing when the user attempts to enter invalid data:
 
-![](../images/im-046-warnings.png)
+![](images/im-046-warnings.png)
 
 #### A categorical variable: age unit
 
 Definition in the **setup file**:
 
-![](../images/im-047-age-unit.png)
+![](images/im-047-age-unit.png)
 
 Display in the linelist:
 
-![](../images/im-048-age-unit.png)
+![](images/im-048-age-unit.png)
 
 #### A date variable
 
 Definition in the **setup file**:
 
-![](../images/im-049-date.png)
+![](images/im-049-date.png)
 
-How it is encoded in the data validation system of the **linelist
-file**:
+How it is encoded in the data validation system of the **linelist file**:
 
-![](../images/im-050-date.png)
+![](images/im-050-date.png)
 
 Warning box appearing when the user attempts to enter invalid data:
 
-![](../images/im-051-warning.png)
+![](images/im-051-warning.png)
 
 ## Conditional Formatting {#sec-conditional-formating}
 
-![](../images/im-052-conditional-formatting.png)
+![](images/im-052-conditional-formatting.png)
 
 This section is used to define conditional formatting rules.
 
@@ -1101,31 +1017,15 @@ variable, with a result of 1 or 0, to guide the formatting.
 
 ::: callout-tip
 you can give special names to these calculated columns to easily
-identify them.
+identify them (*e.g.* *format_xxx*).
 :::
 
 ### Formatting values
 
 This is a free text column, but what matters is not the text entered in
 it but the formatting applied to it, which is read and applied to the
-cells in the **linelist file**, if the formatting condition is met.
+cells in the **linelist file** if the formatting condition is met.
 
 ### Lock cells
 
 The 'Lock Cells' section is not currently available.
-
-### Example
-
-Definition in the **setup file**:
-
-![](../images/im-053-example-lock-cells.png)
-
-![](../images/im-054-example-lock-cells.png)
-
-Display in the **linelist file**:
-
-![](../images/im-055-example-lock-cells.png)
-
-Note that the hospitalised_format columns is completely hidden because
-it is of no interest to the user, just needed internally to know where
-to apply formatting.
