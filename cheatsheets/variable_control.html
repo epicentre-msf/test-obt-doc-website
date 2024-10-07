@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Create linelists with more than one entry sheets – OutbreakTools documentation</title>
+<title>Variables in OutbreakTools – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,26 +179,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#independent-data-tables" id="toc-independent-data-tables" class="nav-link active" data-scroll-target="#independent-data-tables">Independent data tables</a></li>
-  <li><a href="#non-independent-tables" id="toc-non-independent-tables" class="nav-link" data-scroll-target="#non-independent-tables">Non independent tables</a>
-  <ul class="collapse">
-  <li><a href="#refer-to-a-single-value-in-a-formula" id="toc-refer-to-a-single-value-in-a-formula" class="nav-link" data-scroll-target="#refer-to-a-single-value-in-a-formula">Refer to a single value in a formula</a></li>
-  <li><a href="#link-two-tables" id="toc-link-two-tables" class="nav-link" data-scroll-target="#link-two-tables">Link two tables</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Create linelists with more than one entry sheets</h1>
+<h1 class="title">Variables in OutbreakTools</h1>
 </div>
 
 
@@ -215,125 +204,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You want the linelist to contain several data entry sheets. The important thing to think about is how the tables should be linked, if at all.</p>
-<section id="independent-data-tables" class="level2">
-<h2 class="anchored" data-anchor-id="independent-data-tables">Independent data tables</h2>
-<p>If you need to create two independent data tables<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, just use different sheet names in the <em>Dictionary</em> sheet.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Technically, a linelist with an “<em>Info</em>” and a “<em>Patient linelist</em>” sheet already has two entry sheets, one with a 1-dimension table and one with a 2-dimensions table.</p>
-<p>Since the two tables are created independently, you could have two sheets with 2-dimensions table.</p>
-</div>
-</div>
-</section>
-<section id="non-independent-tables" class="level2">
-<h2 class="anchored" data-anchor-id="non-independent-tables">Non independent tables</h2>
-<p>Sometimes you need to refer to data from another table, whether it is to use in a formula, to copy data or to populate a dropdown menu.</p>
-<section id="refer-to-a-single-value-in-a-formula" class="level3">
-<h3 class="anchored" data-anchor-id="refer-to-a-single-value-in-a-formula">Refer to a single value in a formula</h3>
-<p>It is straightforward to use the values of <strong>vlist1D</strong> variable in a formula: just use the name of the variable in the formula<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-<p><strong>Example</strong>: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:</p>
-<blockquote class="blockquote">
-<p>IF(ISBLANK(case_id), ““, info_facility_name)</p>
-</blockquote>
-<p>See the page on <a href="../reference/dictionary_sheet.html#sec-formula">formulas</a> and <a href="../reference/dictionary_sheet.html#sec-formula-control">formulas controls</a></p>
-</section>
-<section id="link-two-tables" class="level3">
-<h3 class="anchored" data-anchor-id="link-two-tables">Link two tables</h3>
-<p>A more complex situation is when you have two 2-dimensions tables that are not independent. In this case, the tables should at minima be linked by a <strong>key</strong>.</p>
-<p>Example of a user case:</p>
-<ul>
-<li>a main data entry sheet with general patient data (e.g.&nbsp;a <em>Patient linelist</em> sheet)</li>
-<li>a secondary entry sheet with additional variables for a subset of patients (<em>e.g.</em> readmission variables or extensive lab testing).</li>
-</ul>
-<p>In this case, the natural way to link the tables is to have the ID of the patient in both tables.</p>
-<section id="sec-ht-list_auto" class="level4">
-<h4 class="anchored" data-anchor-id="sec-ht-list_auto">Constrain possibles values for patient IDs in the secondary table with list_auto</h4>
-<p>In the user case above, the patients from the <em>Readmission</em> sheet are a subset from the <em>Patient linelist</em> sheet so we expect the IDs from <em>Readmission</em> to match the ones from <em>Patient linelist</em>.</p>
-<p>The minimal (unsafe) option is to have two free text patient ID columns, one in each table, where data encoders enter IDs manually. This process however increases the risk of typing error and thus of merging nightmare.</p>
-<p>A safer way is to create a categorical variable in the <em>Readmission</em> sheet whose dropdown menu is populated by values present in the <em>case_id</em> column of the <em>Patient linelist</em> sheet. As the data encoder can only choose from existing patients from the <em>Patient linelist</em> sheet, the opportunity for encoding error and thus unmatched patients is greatly reduced.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>In OutbreakTools, the variables to fill in geographic information are treated as a special case of categorical variable and have their own dedicated control.</p>
+<table class="caption-top table">
+<caption>Summary of the types of control available in OutbreakTools</caption>
+<colgroup>
+<col style="width: 29%">
+<col style="width: 31%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sort of variable</th>
+<th>Controls</th>
+<th>Data entry in the linelist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Categorical</td>
+<td>choice_manual, choice_custom, choice_multiple, list_auto</td>
+<td>Dropdown menu</td>
+</tr>
+<tr class="even">
+<td>Geo-related columns (a special case of categorical)</td>
+<td>geo, hf</td>
+<td>GeoHelper or dropdown menu</td>
+</tr>
+<tr class="odd">
+<td>Calculated</td>
+<td>formula, choice_formula, case_when</td>
+<td>No user input needed in these columns</td>
+</tr>
+</tbody>
+</table>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/im-130-list-auto-3.png" class="img-fluid figure-img"></p>
-<figcaption>Use of list_auto to link two columns</figcaption>
+<p><img src="../images/im-128-var-control.png" class="img-fluid figure-img"></p>
+<figcaption>Guide to choosing variable control in OBT</figcaption>
 </figure>
 </div>
-<p>Seethe section on <a href="../reference/dictionary_sheet.html#sec-list-auto">list_auto</a> and its <a href="../reference/dictionary_sheet.html#sec-var-control-details">control</a> for a description on how to use the <strong>list_auto</strong> control.</p>
-</section>
-<section id="import-values-from-the-other-table-with-value_of" class="level4">
-<h4 class="anchored" data-anchor-id="import-values-from-the-other-table-with-value_of">Import values from the other table with VALUE_OF</h4>
-<p>In addition to key columns to be able to join the tables, it might be desirable to bring some of the patient data in the secondary table, to calculate new variables, or just to facilitate reading and understanding without having fill the value on each line.</p>
-<p>For example, we might want to bring in the name and surname of the patient, without entering it again, or the date of exit, to be able to calculate the number of days between the exit of the first admission and the date of readmission.</p>
-<p>The custom function VALUE_OF can do that. It works sort of like a LOOKUP function, except we provide variable names, and it matches the value you need.</p>
-<p>It takes three arguments, all <strong>variable names</strong>:</p>
-<blockquote class="blockquote">
-<p>VALUE_OF(<em>key_variable1</em>, <em>key_variable2</em>, <em>variable_values</em>)</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>key_variable1</em>: the list_auto in the current sheet (the key column that contains IDs, <em>e.g.</em> readmission_id)</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>key_variable2</em>: the source of the list_auto in the other sheet (the IDs from the main sheet, <em>e.g.</em> case_id)</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><em>variable_values</em>: the variable which values we want to import.</p>
-</blockquote>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/im-131-value-of.png" class="img-fluid figure-img"></p>
-<figcaption>Illustration of the use of VALLUE_OF</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>key_variable2</em> and <em>variable_values</em> must be on the same sheet or the function will return nothing.</p>
-</div>
-</div>
-<p>The function matches the values from columns <em>key_variable1</em> and <em>key_variable2</em>, and returns values from <em>variable_values</em> column at the corresponding row.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If the function finds more than two matches, it will return the values from the first match (the first line found).</p>
-</div>
-</div>
 
 
-</section>
-</section>
-</section>
 
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Example: a sheet containing patient data and a sheet containing bed occupancy data<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>These variables can take only one value, see <a href="../reference/dictionary_sheet.html#sec-sheet-types">the different sorts of tables</a> for more information.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>If data are exported in R or Stata, you will be able to merge/join them extremely easily with the two IDs variables.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
