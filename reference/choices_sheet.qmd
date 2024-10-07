@@ -2,48 +2,48 @@
 title: "Define variable categories"
 ---
 
-This sheet is used to define the **drop-down menus categories** to be inserted in certain variables, or the possible values for "choice_formula" type variables. 
+This sheet is used to define the **dropdown menus categories** to be inserted in certain variables, or the possible values for "choice_formula" type variables. 
 
-There is only one table on this sheet, where you can define as many lists as is needed for dropdown menus variables. In this table, a **list** is represented by several lines, one line for each value in the drop-down list. Different lists are written one below the other.
+There is only one table on this sheet, where you can define as many lists as is needed for dropdown menus variables. In this table, a **list** is represented by several lines, one line for each value in the dropdown list. Different lists are written one below the other.
 
-![](../images/im-056-choices-sheet.png)
+![](images/im-056-choices-sheet.png)    
 
 
 ## List Name
 
-This is a free text field used to define a drop-down list. Lines with the same *name* filled belong to the same list. This name is used in the *Dictionary* sheet to identify the drop-down list to be used for a given variable.
+This is a free text field used to define a dropdown list. Lines with the same *name* filled belong to the same list. This name is used in the *Dictionary* sheet to identify the dropdown list to be used for a given variable, in the [Control details](../reference/dictionary_sheet.qmd#sec-var-control-details) column.
 
-::: callout-note
+::: {.callout-note}
 With the exception of lists used for "choice_custom" type variables, it is recommended not to leave any blanks in the list name. Instead, replace them with "\_", for example.
 :::
 
 
-::: callout-tip
+::: {.callout-tip}
 It is not mandatory, but we advise that you begin all your list names by "list_" to easily separate them from variable names in the dictionary.
 :::
 
 
 ## Ordering list
 
-This is a free text field. Fill in integers to define the order in which the options are displayed in the drop-down menu.
+This is a free text field. Fill in integers to define the order in which the options are displayed in the dropdown menu.
 
 
 ## Label
 
-This is a free text field used to list the different values to be displayed in the drop-down menus.
+This is a free text field used to list the different values to be displayed in the dropdown menus.
 
-::: callout-note
+::: {.callout-note}
 Categories names should not begin with a "\<" or a "\>".
 :::
 
 ## Example
 
-Definition in the **set-up file**:
+Definition in the **setup file**:
 
-![](../images/im-057-example-choices-sheet.png)
+![](images/im-057-example-choices-sheet.png)
 
-![](../images/im-058-example-choices-sheet.png)
+![](images/im-058-example-choices-sheet.png)
 
 Display in the **linelist file**:
 
-![](../images/im-059-example-choices-sheet.png)
+![](images/im-059-example-choices-sheet.png)
