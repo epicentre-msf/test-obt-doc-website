@@ -45,6 +45,8 @@ This section provides functionalities for the [Translation sheet](../reference/t
 
 ![OutbreakTools tab in the designer](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 
+[Steps to add a language](../how_to/add_language.qmd)
+
 #### Add language
 
 This button adds a new column to translations sheet, to add a new linelist language.
@@ -52,9 +54,12 @@ This button adds a new column to translations sheet, to add a new linelist langu
 1. Fill the name of the language in the box
 2. Click on the button: it will add a new empty column on the right of the columns already present.
 
+
+
 ### Import
 
 These buttons allow to import data into an empty setup.
+
 ![OutbreakTools tab in the designer](images/img-003-ribbon-setup-import.png){fig-align="center"}
 
 #### Import data from another setup
