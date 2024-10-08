@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Define exports – OutbreakTools documentation</title>
+<title>Setup options ribbon – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -192,36 +192,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#export-number" id="toc-export-number" class="nav-link active" data-scroll-target="#export-number">Export number</a></li>
-  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
-  <li><a href="#label-button" id="toc-label-button" class="nav-link" data-scroll-target="#label-button">Label button</a></li>
-  <li><a href="#file-format" id="toc-file-format" class="nav-link" data-scroll-target="#file-format">File format</a></li>
-  <li><a href="#file-name" id="toc-file-name" class="nav-link" data-scroll-target="#file-name">File name</a>
-  <ul class="collapse">
-  <li><a href="#rules-to-create-a-name" id="toc-rules-to-create-a-name" class="nav-link" data-scroll-target="#rules-to-create-a-name">Rules to create a name</a></li>
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
-  </ul></li>
-  <li><a href="#password" id="toc-password" class="nav-link" data-scroll-target="#password">Password</a></li>
-  <li><a href="#include-personal-identifiers" id="toc-include-personal-identifiers" class="nav-link" data-scroll-target="#include-personal-identifiers">Include personal identifiers</a></li>
-  <li><a href="#include-p-code" id="toc-include-p-code" class="nav-link" data-scroll-target="#include-p-code">Include P-code</a></li>
-  <li><a href="#header-format" id="toc-header-format" class="nav-link" data-scroll-target="#header-format">Header format</a></li>
-  <li><a href="#export-metadata-sheets" id="toc-export-metadata-sheets" class="nav-link" data-scroll-target="#export-metadata-sheets">Export Metadata Sheets</a></li>
-  <li><a href="#export-translation" id="toc-export-translation" class="nav-link" data-scroll-target="#export-translation">Export Translation</a></li>
-  <li><a href="#export-analysis-sheet" id="toc-export-analysis-sheet" class="nav-link" data-scroll-target="#export-analysis-sheet">Export Analysis Sheet</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Define exports</h1>
+<h1 class="title">Setup options ribbon</h1>
 </div>
 
 
@@ -238,186 +217,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../images/im-088-exports-sheet.png" class="img-fluid"></p>
-<p>It is possible to predefine exports, such as a specific export for a given MoH. The setup of exports is done in two different sheets:</p>
-<ul>
-<li><p>In the <em>Exports</em> sheet you define the export: metadata, button label, exported file name, type of headers etc.</p></li>
-<li><p>In the <em>Dictionary</em> sheet you define which variable is exported in each export, and in which order</p></li>
-</ul>
-<p>A sheet in the <strong>linelist file</strong> corresponds to a sheet in the <strong>exported file</strong>.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Without some of export metadata, it may simply not be possible to generate an export or it may contain only the variables selected, in raw format.</p>
-</div>
-</div>
-<section id="export-number" class="level2">
-<h2 class="anchored" data-anchor-id="export-number">Export number</h2>
-<p>One line corresponds to one export. The exports are numbered from 1 to how many exports are available.</p>
-<p>In line “1”, we define the parameters for export 1, whose variables to be exported have been defined in the <em>Dictionary</em> sheet in the “Export 1” column, etc.</p>
-<p><img src="../images/im-089-export-number.png" class="img-fluid"></p>
-<p><img src="../images/im-090-export-number.png" class="img-fluid"></p>
-<p>Note that you can use the “<em>Add rows to table in current sheet</em>” button or the “<em>Resize tables in current sheet</em>” button to add more exports or removed empty rows (see the <a href="../reference/setup_ribbon.html">ribbon help</a>.</p>
-</section>
-<section id="status" class="level2">
-<h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>This is an <em>active/inactive</em> drop-down menu field. It is used to activate or deactivate an export button.</p>
-<p>Example:</p>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-091-status-exports-sheet.png" class="img-fluid"></p>
-<p>Display in the <strong>linelist file</strong>:</p>
-<p><img src="../images/im-092-status-exports-sheet.png" class="img-fluid"></p>
-</section>
-<section id="label-button" class="level2">
-<h2 class="anchored" data-anchor-id="label-button">Label button</h2>
-<p>This is a free text field that contains the label of the export button in the linelist. It should be fairly concise or it may overflow the button box.</p>
-<p>Example :</p>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-093-label-button-exports-sheet.png" class="img-fluid"></p>
-<p>Display in the <strong>linelist file</strong>:</p>
-<p><img src="../images/im-094-label-button-exports-sheet.png" class="img-fluid"></p>
-</section>
-<section id="file-format" class="level2">
-<h2 class="anchored" data-anchor-id="file-format">File format</h2>
-<p>This is a dropdown menu that allows choosing between the <strong>.xlsx</strong> and <strong>.xlsb</strong> file format for the exported file.</p>
-</section>
-<section id="file-name" class="level2">
-<h2 class="anchored" data-anchor-id="file-name">File name</h2>
-<p>This is a free text field used to define the <strong>name</strong> of the export.</p>
-<p>You can either define <strong>fixed</strong> export names (ex: “export_moh”) or <strong>dynamic</strong> exports names, that use values collected from variables in the linelist (such as the country, the section etc.).</p>
-<p>For dynamic names, you can only use variables that contain only one value (<strong>vlist1D</strong> variables), usually defined in the “Info” sheet of the linelist.</p>
-<section id="rules-to-create-a-name" class="level3">
-<h3 class="anchored" data-anchor-id="rules-to-create-a-name">Rules to create a name</h3>
-<ul>
-<li><strong>Character strings</strong> passed to this field must be enclosed in inverted commas like these: <em>“a character string</em>”</li>
-<li><strong>Variable names</strong> passed to this field must be naked (not surrounded by inverted comas), similarly to how we refer to variables in the <em>Dictionary</em> sheet columns.</li>
-<li>Different components of the name are separated by ‘<em>+</em>’, which will create names where the components are separated by ‘<em>__</em>’.</li>
-<li>No need to add a date to the export: the date and time at which an export is made is appended at the end of the name automatically.</li>
-<li>If the export is to be password protected (see below), the public key for opening the file will be included in the name.</li>
-</ul>
-</section>
-<section id="example" class="level3">
-<h3 class="anchored" data-anchor-id="example">Example</h3>
-<p><img src="../images/im-095-example-file-name.png" class="img-fluid"></p>
-<p>Here, the pieces in green, surrounded by inverted comas are fixed bits of texts (character strings). The blue pieces are <em>vlist1D variables</em> that were defined for that linelist (in the Info sheet, hence their suffixes).</p>
-<p>This name specification will result in the following export names, depending on where the linelist is used (hence depending on how they filled the metadata):</p>
-<ul>
-<li>MNG_linelist__MNG24__SSD__MSF-OCP__Aweil__anonyme__vb-1003__20240617-1901.xlsb if the linelist was used by OCP in Aweil (South Sudan)</li>
-<li>MNG_linelist__MNG24__NER__WaCa__Maradi__anonyme__vb-2035__20240617-1903.xlsb if the linelist was used by WaCa in Maradi (Niger)</li>
-<li>…</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If a variable is referred to in the name but remains empty in the linelist, the <strong>name of the variable</strong> is used as a placeholder. In the example above, if the data encoder filled none of the variables in the metadata, the created file would have the following name:</p>
-<p>MNG_linelist__info_outbreak_code__info_country_code__info_organisation__info_facility_name__anonyme__vb-1003__20240617-1906.xlsb</p>
-</div>
-</div>
-</section>
-</section>
-<section id="password" class="level2">
-<h2 class="anchored" data-anchor-id="password">Password</h2>
-<p>This is a <em>yes/no</em> drop-down field that is used to define whether or not the export should be password-protected.</p>
-<p>If so, the password will be displayed automatically when the export is created.</p>
-<p>Example:</p>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-096-example-password.png" class="img-fluid"></p>
-<p>Display in the <strong>linelist file</strong>:</p>
-<p><img src="../images/im-097-example-password.png" class="img-fluid"></p>
-<p><img src="../images/im-098-example-password.png" class="img-fluid"></p>
-</section>
-<section id="include-personal-identifiers" class="level2">
-<h2 class="anchored" data-anchor-id="include-personal-identifiers">Include personal identifiers</h2>
-<p>This is a <em>yes/no</em> dropdown menu which controls whether <em>variables</em> that are tagged as <a href="#sec-personal-identifiers">Personal identifier</a> in the <em>Dictionary</em> sheet should be included in the export.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The column defaults to “<em>no</em>”.</p>
-</section>
-<section id="include-p-code" class="level2">
-<h2 class="anchored" data-anchor-id="include-p-code">Include P-code</h2>
-<p>This is a <em>yes/no</em> drop-down field that controls whether the hidden columns that contains processed geographic data such as P-codes should be exported in addition to the raw data columns.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-</section>
-<section id="header-format" class="level2">
-<h2 class="anchored" data-anchor-id="header-format">Header format</h2>
-<p>This is a <em>variables names/variables labels</em> drop-down menu field. It allows you to define whether you want the column headings in the export to correspond to the <em>variable names</em>, their <em>labels</em>, or both.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip: choosing the header format
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you create an export for analyses purpose, use the <em>variable names</em> to avoid having to format and rename when importing in your favourite statistical software.</p>
-<p>If you are exporting data to the MoH or other partners, it might be easier for them to have the <em>variables labels</em>, which are more descriptive about the content of the variable.</p>
-</div>
-</div>
-<p><strong>Example</strong>:</p>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-099-example-header-format.png" class="img-fluid"></p>
-<p>Display in export:</p>
-<p><img src="../images/im-100-example-header-format.png" class="img-fluid"></p>
-<p>Definition in the <strong>setup file</strong>:</p>
-<p><img src="../images/im-101-example-header-format.png" class="img-fluid"></p>
-<p>Display in export:</p>
-<p><img src="../images/im-102-example-header-format.png" class="img-fluid"></p>
-</section>
-<section id="export-metadata-sheets" class="level2">
-<h2 class="anchored" data-anchor-id="export-metadata-sheets">Export Metadata Sheets</h2>
-<p>This is a <em>yes/no</em> drop-down field. By selecting “<em>yes</em>”, you decide that in addition to the data to be exported, you will also export:</p>
-<ul>
-<li>The “<em>Dictionary</em>” sheet</li>
-<li>The “<em>Choices</em>” sheet</li>
-<li>A metadata sheet<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
-</ul>
-</section>
-<section id="export-translation" class="level2">
-<h2 class="anchored" data-anchor-id="export-translation">Export Translation</h2>
-<p>This is a <em>yes/no</em> drop-down field. Selecting “<em>yes</em>” means that, in addition to the data to be exported, we will also have the sheet containing the translations.</p>
-</section>
-<section id="export-analysis-sheet" class="level2">
-<h2 class="anchored" data-anchor-id="export-analysis-sheet">Export Analysis Sheet</h2>
-<p>This is a <em>yes/no</em> drop-down field. By selecting ‘<em>yes</em>’, you decide that in addition to the data to be exported, you will also export all the analysis tables (but not the graphs).</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>It is also possible to export analysis tables directly from the linelist using the “<em>Export analyses</em>” button.</p>
-</div>
-</div>
+<p>TODO</p>
 
 
-</section>
 
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Remember, in the <em>Dictionary</em> sheet, any variable with <em>anything</em> written in the export columns will be exported in the corresponding exports (even if it is written “no”).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>These columns are automatically calculated when <em>geo</em> and <em>hf</em> variables are created in the linelist. They contain concatenated administrative levels at different scales, and p-codes. They are used for creating maps.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>we are not speaking of the sheet usually created for linelists that contains variables to collect metadata about the project (MSF section, disease, facility name…), but of hidden linelist metadata (when the file was compiled, language, version etc.)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

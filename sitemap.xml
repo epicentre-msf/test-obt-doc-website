@@ -2,78 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/getting_started/workflow.html</loc>
-    <lastmod>2024-10-08T09:24:56.208Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/getting_started/compile.html</loc>
-    <lastmod>2024-10-08T09:24:56.203Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.022Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/Options.html</loc>
-    <lastmod>2024-10-08T09:24:56.097Z</lastmod>
+    <lastmod>2024-10-08T09:36:19.907Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/about.html</loc>
-    <lastmod>2024-10-08T09:24:56.155Z</lastmod>
+    <lastmod>2024-10-08T09:36:19.967Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/custom_formulas.html</loc>
-    <lastmod>2024-10-08T09:24:56.237Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/translations_sheet.html</loc>
-    <lastmod>2024-10-08T09:24:56.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/dictionary_sheet.html</loc>
-    <lastmod>2024-10-08T09:24:56.238Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/import_geobase.html</loc>
-    <lastmod>2024-10-08T09:24:56.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/link_tables.html</loc>
-    <lastmod>2024-10-08T09:24:56.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/export_subset_geo.html</loc>
-    <lastmod>2024-10-08T09:24:56.208Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/show_hide_variables.html</loc>
-    <lastmod>2024-10-08T09:24:56.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/migrate_setup.html</loc>
-    <lastmod>2024-10-08T09:24:56.209Z</lastmod>
-  </url>
-  <url>
-    <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/exports_sheet.html</loc>
-    <lastmod>2024-10-08T09:24:56.238Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.078Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/analyses_sheet.html</loc>
-    <lastmod>2024-10-08T09:24:56.237Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/exports_sheet.html</loc>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/migrate_setup.html</loc>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/show_hide_variables.html</loc>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/export_subset_geo.html</loc>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/link_tables.html</loc>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/how_to/import_geobase.html</loc>
+    <lastmod>2024-10-08T09:36:20.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/dictionary_sheet.html</loc>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/setup_ribbon.html</loc>
+    <lastmod>2024-10-08T09:36:20.077Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/reference/choices_sheet.html</loc>
-    <lastmod>2024-10-08T09:24:56.237Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/index.html</loc>
-    <lastmod>2024-10-08T09:24:56.237Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.055Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/cheatsheets/variable_control.html</loc>
-    <lastmod>2024-10-08T09:24:56.155Z</lastmod>
+    <lastmod>2024-10-08T09:36:19.967Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/getting_started/download.html</loc>
-    <lastmod>2024-10-08T09:24:56.203Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.022Z</lastmod>
   </url>
   <url>
     <loc>https://epicentre-msf.github.io/test-obt-doc-website/getting_started/create_dic.html</loc>
-    <lastmod>2024-10-08T09:24:56.203Z</lastmod>
+    <lastmod>2024-10-08T09:36:20.022Z</lastmod>
   </url>
 </urlset>

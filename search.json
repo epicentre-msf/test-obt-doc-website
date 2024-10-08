@@ -4,21 +4,21 @@
     "href": "getting_started/workflow.html",
     "title": "General workflow and files",
     "section": "",
-    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRinse and repeat until the linelist is functional\n\n\n\n\n\n\n\nFigure 1: SImplified workflow"
+    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRinse and repeat until the linelist is functional\n\n\n\n\n\n\n\nFigure 1: Simplified workflow"
   },
   {
     "objectID": "getting_started/workflow.html#workflow",
     "href": "getting_started/workflow.html#workflow",
     "title": "General workflow and files",
     "section": "",
-    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRinse and repeat until the linelist is functional\n\n\n\n\n\n\n\nFigure 1: SImplified workflow"
+    "text": "Follow these steps to create a linelist with OutbreakTools:\n\nFill a setup file to define linelist specs\nCompile the setup file using the designer file\nTest the created linelist\nCorrect bugs in the setup file\nRinse and repeat until the linelist is functional\n\n\n\n\n\n\n\nFigure 1: Simplified workflow"
   },
   {
     "objectID": "getting_started/workflow.html#setup-file",
     "href": "getting_started/workflow.html#setup-file",
     "title": "General workflow and files",
     "section": "Setup file",
-    "text": "Setup file\nThe setup file is an excel file that describes the various sheets of the linelist to be created, in a predefined and standardised format. It allows you to specify:\n\nthe structure of the data entry sheets of the linelist\nthe variables for all data entry tables\nthe basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)\npersonalised exports\ntranslations to create linelists in several languages\n\nMost of the work developing a linelist is spent filling a setup file template to define all the aspects of the linelist you want to create.\nThe setup file contains the following sheets:\n\nSheets in the setup file and their uses.\n\n\n\n\n\n\n\nSetup file sheet\nDescription\nCorrespondence in linelist file\n\n\n\n\nDictionary\nDescribes all the variables to be collected, their format, etc.\nData entry sheets (typically, Info sheet and Linelist sheets)\n\n\nChoices\nDefines the categories/levels accepted for categorical variables, in the form of a list\nDropdown menus in linelist sheets\n\n\nExports\nDefines the characteristics of exports, such as protection, choice of variables or sheets to export and export names\nExport button in the OutbreakTools ribbon\n\n\nAnalysis\nDescribes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied\nAnalysis sheets\n\n\nTranslation\nAutomatically displays the list of strings of text/fields to be translated and adds new columns where the user can provide translated text in a desired language (one column = one language)\nChoice of linelist language when created (designer)\n\n\n\nThe setup file also has a dedicated OutbreakTools section in the top option ribbon from Excel:\n\n\n\n\n\n\nFigure 2: OutbreakTools ribbon in the setup file"
+    "text": "Setup file\nThe setup file is an excel file that describes the various sheets of the linelist to be created, in a predefined and standardised format. It allows you to specify:\n\nthe structure of the data entry sheets of the linelist\nthe variables for all data entry tables\nthe basic analyses to be included in the linelist (uni and bivarites, epicurves, geo data etc.)\npersonalised exports\ntranslations to create linelists in several languages\n\nMost of the work developing a linelist is spent filling a setup file template to define all the aspects of the linelist you want to create.\nThe setup file contains the following sheets:\n\nSheets in the setup file and their uses.\n\n\n\n\n\n\n\nSetup file sheet\nDescription\nCorrespondence in linelist file\n\n\n\n\nDictionary\nDescribes all the variables to be collected, their format, etc.\nData entry sheets (typically, Info sheet and Linelist sheets)\n\n\nChoices\nDefines the categories/levels accepted for categorical variables, in the form of a list\nDropdown menus in linelist sheets\n\n\nExports\nDefines the characteristics of exports, such as protection, choice of variables or sheets to export and export names\nExport button in the OutbreakTools ribbon\n\n\nAnalyses\nDescribes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied\nAnalysis sheets\n\n\nTranslation\nAutomatically displays the list of strings of text/fields to be translated and adds new columns where the user can provide translated text in a desired language (one column = one language)\nChoice of linelist language when created (designer)\n\n\n\nThe setup file also has a dedicated OutbreakTools section in the top option ribbon from Excel:\n\n\n\n\n\n\nFigure 2: OutbreakTools ribbon in the setup file\n\n\n\nGo to the reference to know more about the ribbon buttons."
   },
   {
     "objectID": "getting_started/workflow.html#designer-file",
@@ -140,6 +140,244 @@
     "text": "Footnotes\n\n\nwhich you can actually see in light grey font above the columns to be translated.↩︎"
   },
   {
+    "objectID": "reference/analyses_sheet.html",
+    "href": "reference/analyses_sheet.html",
+    "title": "Define basic analyses",
+    "section": "",
+    "text": "This sheet contains several tables for defining different types of analyses and their corresponding graphs:"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#global-summary",
+    "href": "reference/analyses_sheet.html#global-summary",
+    "title": "Define basic analyses",
+    "section": "Global Summary",
+    "text": "Global Summary\n\nThe “Global Summary” table summarises certain indicators for the current epidemic. It has 3 columns:\n\nSummary Label: free text field for entering a short but explicit label describing the analysis\nSummary function: free text field for entering the function that will display the desired indicator.1\nFormat: drop-down menu for defining the display format of the expected result (see also Format)\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist:"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#univariate-analysis",
+    "href": "reference/analyses_sheet.html#univariate-analysis",
+    "title": "Define basic analyses",
+    "section": "Univariate Analysis",
+    "text": "Univariate Analysis\n\nThe “Univariate Analysis” table is used to describe analyses based on a single variable. It has 10 columns:\nSection: this is a free field used to define blocks of univariate analyses on a theme, for example all the tables grouping patient characteristics. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nAdd missing data: this is a yes/no field used to indicate whether you want to count missing data for the selected variable.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the number of patients by modalities of a variable, and the “N” function, for counting rows, is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a pre-selection of possible display formats. (see also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If “yes”, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed horizontally rather than vertically.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\n\nExample\n\nDefinition in the setup file:\nDisplay in the linelist:\n\n\n\nSummary\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSection\nFree text\nYes\nGroup tables by section\n\n\nTable title\nFree text\nYes\nShort title\n\n\nGroup by variable (row)\nDropdown\nYes\nOne categorial variable to summarise\n\n\nAdd missing data\nDropdown (yes/no)\n\nAdd rows with missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, other formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (yes/no)\n\n\n\n\nAdd graph\nDropdown (yes/no)\n\n\n\n\nFlip coordinates\nDropdown (yes/no)\n\nInverse x and y axis of the graph"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#bivariate-analysis",
+    "href": "reference/analyses_sheet.html#bivariate-analysis",
+    "title": "Define basic analyses",
+    "section": "Bivariate Analysis",
+    "text": "Bivariate Analysis\n\nThe “Bivariate Analysis” table is used to describe analyses based on two variables. It has 11 columns:\nSection: this is a free field used to group analyses on a theme, for example all the tables grouping patient characteristics. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nGroup by variable (column): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nAdd missing data: this is a drop-down menu with 4 possible options, which allows you to indicate whether you want to count missing data for the selected variable(s):\n\nno: missing data are not added\nrow: missing data is added to variables in rows\ncolumn: missing data is added to variables in columns\nall: missing data is added to both column and row variables\n\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a preselection of possible display formats. (see also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed horizontally rather than vertically.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSection\nFree text\nYes\nGroup tables by section\n\n\nTable title\nFree text\nYes\nShort title\n\n\nGroup by variable (row)\nDropdown\nYes\nOne categorial variable to summarise\n\n\nGroup by variable (column)\n\nYes\n\n\n\nAdd missing data\nDropdown (no/row/column/all)\n\nAdd missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, but formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (yes/no)\n\n\n\n\nAdd graph\nDropdown (values/percentage)\n\n\n\n\nFlip coordinates\nDropdown (yes/no)\n\nInverse x and y axis of the graph\n\n\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist :"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#time-series-analysis",
+    "href": "reference/analyses_sheet.html#time-series-analysis",
+    "title": "Define basic analyses",
+    "section": "Time series Analysis",
+    "text": "Time series Analysis\nTime series analyses and graphs are defined using 3 different tables:\n\none to define the table(s) (and the series to add to the graphs)\none to define the list of associated graphs\none to define the characteristics of graphs\n\nSee a diagram at the end of the section.\n\nTime series Analysis\n\nThe first table is used to define the different time series. It has 12 columns, and one line represents one summary per variable (ex: counts for the different types of outcomes; or median of the length of stay). If you take the option to add a total or missing values, or if the variable is categorical, the table created will have several columns.\nSeries ID: this is an auto-populate field; each row in this table is automatically assigned a series ID, which is an incremental value (1). This ID is used in particular to define graphs.\nSection: this is a free field which can be used to combine analyses on a theme in a single table, for example patient characteristics over time. Each section corresponds to a table in the linelist. They are displayed one above the other, and it is possible to navigate between them using the “Go to section” drop-down menu.\nTime variable (row): this is a static drop-down menu containing time variables. In other words, variables of type date.\nGroup by variable (column): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables. It is also possible to leave this field empty, and define the analysis solely on the basis of a formula in the “Summary function” field.\nTitle (header): this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the summary label (described below), the label of the time variable (row) and the label of the variable to be analysed (Group by variable (column)).\nAdd missing data: this is a yes/no field which allows you to indicate whether you want to count missing data for the selected variable. If “yes” is selected, a column with the missing values will be added to the right of the other columns created for each mode of the variable to be analysed.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient. If the “Group by variable (column)” field is empty, the function will count the number of entries in the chosen time variable.\nSummary label: this is a free field which corresponds to the label used to create the “Title header” and which is used to label the column containing the results of the “summary function”.\nFormat: this is a static drop-down menu with a preselection of possible display formats. (see also Format)\nAdd percentage: this is a static drop-down menu with 3 options:\n\nNo: no percentage is added\nRow: there is an additional column to the right of each value listed to show the percentage according to the time scale. The percentage is calculated on the total number of patients in the row.\nColumn: there is an additional column to the right of each value listed to show the percentage according to the time scale. The percentage is calculated on the total number of patients in the column.\n\nAdd total: this is a yes/no field used to add a row at the bottom of the table in the LL with the totals for the entire period selected.\nTable Order: this is a read field which can be used to reorganise the order of analyses in the final table without having to modify the order of lines in the setup. By default, analyses are displayed from left to right in the order in which they are described in the Time series Analysis table in the setup.\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSeries ID\n-\nAutomatic\n\n\n\nSection\nFree text\nYes\nGroup columns by section\n\n\nTitle\n-\nAutomatic\n\n\n\nAdd missing data\nDropdown (yes/no)\n\nAdd missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, but formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (column/row/no)\n\n\n\n\nAdd total\nDropdown (yes/no)\n\n\n\n\nTable order\nFree text\n\n\n\n\n\n\n\nLabels for Time Series Graphs\n\nThe second Time Series table is used to define the titles and order of the graphs associated with the time series defined above.\nThe table has 3 columns:\n\nGraph title: this is a free field for naming the graph\nGraph order: this is a free field which allows you to organise the graphs in the desired order.\nGraph ID: this is an automatically calculated field, with the ID incremented by 1 on each line.\n\nOne line represents one graph.\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nGraph title\nFree text\nYes\nShort title\n\n\nGraph order\nFree text\nYes\n\n\n\nGraph ID\nAutomatic\nYes\n\n\n\n\n\n\nGraph on Time Series\n\nThis table is used to define the characteristics of each graph. It has 12 columns. One line represent one series to plot on a graph. A graph with the number of each outcome over time would thus be represented by as many lines as there are of types of outcomes (or as there are modalities that you wish to show on this graph).\nGraph title: this is a drop-down menu fed by the “Labels for Time Series Graphs” table. To define a graph, it must first be named in the previous table. Use the same graph title in different rows to indicate that several series should be on the same graph.\nSeries title: this is a drop-down menu fed by the “Time Series Analysis” table. It is used to link a graph to the characteristics of a group of series (variables to be displayed).\nGraph ID: this field is filled in automatically once the “Graph Title” has been selected. It searches for the Graph\nSeries ID: this field is automatically filled in once the “Series title” has been selected.\nGraph order: this field is filled in automatically once the “Graph title” has been selected. To change the order in which the graphs are displayed, simply change the order in the “Labels for Time Series Graphs” table; it is not necessary to change the order of the lines.\nTime variable (row): this field is automatically filled in once the “Series title” has been selected. It searches for the time variable defined for the time series.\nGroup by variable (column): this field is filled in automatically once the “Series title” has been selected. It searches for the variable to be calculated defined for the time series.\nChoices: this is a dynamic drop-down menu updated once the “Series title” has been selected. It will display the choices for the variable to be calculated.\nLabel: this is a free text column that contains le label corresponding to the choice, which will appear in the graph legend.\nPlot values or percentage: this is a static drop-down menu with two options: “values” or “percentages”, which lets you choose whether to display the results in the graph as values or percentages.\nChart type: this is a static drop-down menu with three options: “bar”, “line” or “dot”. This lets you choose between 3 pre-selected chart types (bar, line or dot). Chart display can be customised directly from the linelist.\nY-Axis: this is a static drop-down menu with two options: “left” or “right”, which lets you choose which side of the Y axis to display. This is particularly useful for displaying two different pieces of information on a single graph (e.g. Epicurve with the number of deaths in value and the CFR in %).\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nGraph title\nDropdown\nYes\nDefined in the previous table\n\n\nSeries title\nDropdown\nYes\nChoose which variable summary to plot (ex: counts for outcomes)\n\n\nGraph ID\n-\nAutomatic\n\n\n\nSeries ID\n-\nAutomatic\n\n\n\nGraph order\n-\nAutomatic\n\n\n\nTime variable (row)\n-\nAutomatic\n\n\n\nGroup by variable (column\n-\nAutomatic\n\n\n\nChoices\nDropdown (variable modality)\nYes\nChoose modality to plot (ex: deads)\n\n\nLabel\nFree text\n\nLabel of the modality\n\n\nPlot values or percentages\nDropdown (values/percentage)\nYes\n\n\n\nChart type\nDropdown (bar/line/point)\n\n\n\n\nY-axis\nDropdown (left/right)\n\n\n\n\n\n\n\nExample\n\nDefinition in the setup file:\n\nDisplay in the linelist:\n\n\n\n\n\nDiagrams"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#spatial-analysis",
+    "href": "reference/analyses_sheet.html#spatial-analysis",
+    "title": "Define basic analyses",
+    "section": "Spatial Analysis",
+    "text": "Spatial Analysis\n\nThe spatial analyses are described in a table with 11 columns. They are described in a similar way to the bivariate analyses, the difference being that the variables chosen for the rows are necessarily variables containing geographical data.\nSection: this is a free field used to define blocks of analyses on the same theme. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable Title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGeo/HF variable (row): this is a dynamic drop-down menu containing all variables of type hf or geo.\nN geo max: This is the maximum number of lines you want to see for each analysis. (e.g. if you want a top 10, enter 10).\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables. If the field remains empty, we will just count the number of occurrences per modality of the chosen time variable and these are the Ns (defined with the “N geo max” variable).\nAdd missing data: this is a yes/no field used to indicate whether you want to count missing data for the selected variable.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu containing a preselection of possible display formats. (See also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed vertically or horizontally.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\nExample\nDefinition in the setup file: \nDisplay in the linelist:"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#spatio-temporal-analysis",
+    "href": "reference/analyses_sheet.html#spatio-temporal-analysis",
+    "title": "Define basic analyses",
+    "section": "Spatio-Temporal Analysis",
+    "text": "Spatio-Temporal Analysis\nSpatio-temporal analyses and graphs are defined using 2 different tables:\n\nA “Specification for Spatio-Temporal Analysis” table\nA “Spatio-Temporal Analysis” table\n\n\nSpecification for Spatio-Temporal Analysis\n\nThe table has 3 columns:\nSection: this is a free field which can be used to combine analyses on a theme in a single table, for example patient characteristics over time. Each section corresponds to a table in the linelist. They are displayed one above the other, and it is possible to navigate between them using the “Go to section” drop-down menu.\nN geo max: This is the maximum number of lines you want to see for each analysis. (e.g. if you want a top 10, enter 10).\nSpatial type: this is a static drop-down menu with two options, “geo” or “hf”. This defines the type of geographic variable to be used in the section (a geo variable or a health facility).\n\n\nSpatio-Temporal Analysis\n\nThe table has 10 columns:\nSection (select): this is a drop-down menu created automatically and fed by the “Specification for Spatio-Temporal Analysis” table.\nTime variable (row): this is a static drop-down menu containing time variables. In other words, variables of type date.\nGeo/HF variable (column): this is a drop-down menu created automatically and fed by the “Specification for Spatio-Temporal Analysis” table.\nN geo max: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.\nTitle (header): this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the summary label (described below), the label of the time variable (row) and the label of the selected geographic variable (column).\nSpatial type: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften you will just want to count the number of patients according to their origin or the facility consulted and see how it changes over time, in which case you simply use the N function.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a pre-selection of possible display formats. (see also Format)\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist file:"
+  },
+  {
+    "objectID": "reference/analyses_sheet.html#footnotes",
+    "href": "reference/analyses_sheet.html#footnotes",
+    "title": "Define basic analyses",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAs in the dictionary, the function must be written in English, regardless of the language in which the rest of the setup is written.↩︎"
+  },
+  {
+    "objectID": "reference/exports_sheet.html",
+    "href": "reference/exports_sheet.html",
+    "title": "Define exports",
+    "section": "",
+    "text": "It is possible to predefine exports, such as a specific export for a given MoH. The setup of exports is done in two different sheets:\nA sheet in the linelist file corresponds to a sheet in the exported file."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#export-number",
+    "href": "reference/exports_sheet.html#export-number",
+    "title": "Define exports",
+    "section": "Export number",
+    "text": "Export number\nOne line corresponds to one export. The exports are numbered from 1 to how many exports are available.\nIn line “1”, we define the parameters for export 1, whose variables to be exported have been defined in the Dictionary sheet in the “Export 1” column, etc.\n\n\nNote that you can use the “Add rows to table in current sheet” button or the “Resize tables in current sheet” button to add more exports or removed empty rows (see the ribbon help."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#status",
+    "href": "reference/exports_sheet.html#status",
+    "title": "Define exports",
+    "section": "Status",
+    "text": "Status\nThis is an active/inactive drop-down menu field. It is used to activate or deactivate an export button.\nExample:\nDefinition in the setup file:\n\nDisplay in the linelist file:"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#label-button",
+    "href": "reference/exports_sheet.html#label-button",
+    "title": "Define exports",
+    "section": "Label button",
+    "text": "Label button\nThis is a free text field that contains the label of the export button in the linelist. It should be fairly concise or it may overflow the button box.\nExample :\nDefinition in the setup file:\n\nDisplay in the linelist file:"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#file-format",
+    "href": "reference/exports_sheet.html#file-format",
+    "title": "Define exports",
+    "section": "File format",
+    "text": "File format\nThis is a dropdown menu that allows choosing between the .xlsx and .xlsb file format for the exported file."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#file-name",
+    "href": "reference/exports_sheet.html#file-name",
+    "title": "Define exports",
+    "section": "File name",
+    "text": "File name\nThis is a free text field used to define the name of the export.\nYou can either define fixed export names (ex: “export_moh”) or dynamic exports names, that use values collected from variables in the linelist (such as the country, the section etc.).\nFor dynamic names, you can only use variables that contain only one value (vlist1D variables), usually defined in the “Info” sheet of the linelist.\n\nRules to create a name\n\nCharacter strings passed to this field must be enclosed in inverted commas like these: “a character string”\nVariable names passed to this field must be naked (not surrounded by inverted comas), similarly to how we refer to variables in the Dictionary sheet columns.\nDifferent components of the name are separated by ‘+’, which will create names where the components are separated by ‘__’.\nNo need to add a date to the export: the date and time at which an export is made is appended at the end of the name automatically.\nIf the export is to be password protected (see below), the public key for opening the file will be included in the name.\n\n\n\nExample\n\nHere, the pieces in green, surrounded by inverted comas are fixed bits of texts (character strings). The blue pieces are vlist1D variables that were defined for that linelist (in the Info sheet, hence their suffixes).\nThis name specification will result in the following export names, depending on where the linelist is used (hence depending on how they filled the metadata):\n\nMNG_linelist__MNG24__SSD__MSF-OCP__Aweil__anonyme__vb-1003__20240617-1901.xlsb if the linelist was used by OCP in Aweil (South Sudan)\nMNG_linelist__MNG24__NER__WaCa__Maradi__anonyme__vb-2035__20240617-1903.xlsb if the linelist was used by WaCa in Maradi (Niger)\n…\n\n\n\n\n\n\n\nNote\n\n\n\nIf a variable is referred to in the name but remains empty in the linelist, the name of the variable is used as a placeholder. In the example above, if the data encoder filled none of the variables in the metadata, the created file would have the following name:\nMNG_linelist__info_outbreak_code__info_country_code__info_organisation__info_facility_name__anonyme__vb-1003__20240617-1906.xlsb"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#password",
+    "href": "reference/exports_sheet.html#password",
+    "title": "Define exports",
+    "section": "Password",
+    "text": "Password\nThis is a yes/no drop-down field that is used to define whether or not the export should be password-protected.\nIf so, the password will be displayed automatically when the export is created.\nExample:\nDefinition in the setup file:\n\nDisplay in the linelist file:"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#include-personal-identifiers",
+    "href": "reference/exports_sheet.html#include-personal-identifiers",
+    "title": "Define exports",
+    "section": "Include personal identifiers",
+    "text": "Include personal identifiers\nThis is a yes/no dropdown menu which controls whether variables that are tagged as Personal identifier in the Dictionary sheet should be included in the export.1\nThe column defaults to “no”."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#include-p-code",
+    "href": "reference/exports_sheet.html#include-p-code",
+    "title": "Define exports",
+    "section": "Include P-code",
+    "text": "Include P-code\nThis is a yes/no drop-down field that controls whether the hidden columns that contains processed geographic data such as P-codes should be exported in addition to the raw data columns.2"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#header-format",
+    "href": "reference/exports_sheet.html#header-format",
+    "title": "Define exports",
+    "section": "Header format",
+    "text": "Header format\nThis is a variables names/variables labels drop-down menu field. It allows you to define whether you want the column headings in the export to correspond to the variable names, their labels, or both.\n\n\n\n\n\n\nTip: choosing the header format\n\n\n\nIf you create an export for analyses purpose, use the variable names to avoid having to format and rename when importing in your favourite statistical software.\nIf you are exporting data to the MoH or other partners, it might be easier for them to have the variables labels, which are more descriptive about the content of the variable.\n\n\nExample:\nDefinition in the setup file:\n\nDisplay in export:\n\nDefinition in the setup file:\n\nDisplay in export:"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#export-metadata-sheets",
+    "href": "reference/exports_sheet.html#export-metadata-sheets",
+    "title": "Define exports",
+    "section": "Export Metadata Sheets",
+    "text": "Export Metadata Sheets\nThis is a yes/no drop-down field. By selecting “yes”, you decide that in addition to the data to be exported, you will also export:\n\nThe “Dictionary” sheet\nThe “Choices” sheet\nA metadata sheet3"
+  },
+  {
+    "objectID": "reference/exports_sheet.html#export-translation",
+    "href": "reference/exports_sheet.html#export-translation",
+    "title": "Define exports",
+    "section": "Export Translation",
+    "text": "Export Translation\nThis is a yes/no drop-down field. Selecting “yes” means that, in addition to the data to be exported, we will also have the sheet containing the translations."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#export-analysis-sheet",
+    "href": "reference/exports_sheet.html#export-analysis-sheet",
+    "title": "Define exports",
+    "section": "Export Analysis Sheet",
+    "text": "Export Analysis Sheet\nThis is a yes/no drop-down field. By selecting ‘yes’, you decide that in addition to the data to be exported, you will also export all the analysis tables (but not the graphs).\n\n\n\n\n\n\nTip\n\n\n\nIt is also possible to export analysis tables directly from the linelist using the “Export analyses” button."
+  },
+  {
+    "objectID": "reference/exports_sheet.html#footnotes",
+    "href": "reference/exports_sheet.html#footnotes",
+    "title": "Define exports",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nRemember, in the Dictionary sheet, any variable with anything written in the export columns will be exported in the corresponding exports (even if it is written “no”).↩︎\nThese columns are automatically calculated when geo and hf variables are created in the linelist. They contain concatenated administrative levels at different scales, and p-codes. They are used for creating maps.↩︎\nwe are not speaking of the sheet usually created for linelists that contains variables to collect metadata about the project (MSF section, disease, facility name…), but of hidden linelist metadata (when the file was compiled, language, version etc.)↩︎"
+  },
+  {
+    "objectID": "how_to/migrate_setup.html",
+    "href": "how_to/migrate_setup.html",
+    "title": "Migrate setup data",
+    "section": "",
+    "text": "Explain how to migrate one setup to a new version\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "how_to/show_hide_variables.html",
+    "href": "how_to/show_hide_variables.html",
+    "title": "Show or hide variables",
+    "section": "",
+    "text": "TODO\n1\nThe “optional, hidden” variables in the setup file appear as “Hidden” (by default). However, the user can change the status by choosing “Show”, in which case the column will become visible. \n2 \n3\nThe “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the setup file.\nThe “optional, visible” variables in the setup file appear as “Displayed” (by default). However, you can change the status by choosing “Hide”, in which case the column will no longer be visible.\n4 \n“Mandatory” variables in the setup file appear as “Mandatory” in the “Show/Hide” pop up, and cannot be hidden.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "how_to/export_subset_geo.html",
+    "href": "how_to/export_subset_geo.html",
+    "title": "Export a subset of geographic columns",
+    "section": "",
+    "text": "You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.\nBut in the setup file geographic columns are represented by one “geo” variable, which is translated in 4 columns in the generated linelist1. In the setup file, if you indicate that this “geo” variable should be exported for a given export, the linelist export will contain the four admin levels columns2."
+  },
+  {
+    "objectID": "how_to/export_subset_geo.html#problem",
+    "href": "how_to/export_subset_geo.html#problem",
+    "title": "Export a subset of geographic columns",
+    "section": "",
+    "text": "You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.\nBut in the setup file geographic columns are represented by one “geo” variable, which is translated in 4 columns in the generated linelist1. In the setup file, if you indicate that this “geo” variable should be exported for a given export, the linelist export will contain the four admin levels columns2."
+  },
+  {
+    "objectID": "how_to/export_subset_geo.html#solution",
+    "href": "how_to/export_subset_geo.html#solution",
+    "title": "Export a subset of geographic columns",
+    "section": "Solution",
+    "text": "Solution\nThe solution: derive calculated columns from the automatically created “geo” variables, and exports these individually to the MoH export, in the order of your choice.\nHow does it works? The “geo” variable name is used to automatically create the four columns in the linelist. For example, if the “geo” variable in the setup file is called “origin”, four columns will be created in the linelist: -\n\nadm1_origin,\nadm2_origin,\nadm3_origin,\nadm4_origin.\n\nEven though these columns do not appear in the setup file, they are created in the linelist! This means that you can reference them and use them in formulas in other parts of the Dictionary sheet, like you would do for any other variable defined in that sheet."
+  },
+  {
+    "objectID": "how_to/export_subset_geo.html#example",
+    "href": "how_to/export_subset_geo.html#example",
+    "title": "Export a subset of geographic columns",
+    "section": "Example",
+    "text": "Example\nYou specify a geo variable named “residence” in the setup file (in green below), which triggers the creation of four columns in the linelist.\nThe blue variables are calculated variables that refer to the geo columns that are automatically created. You can decide for each of these whether to export them or not in a given export.\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nBecause the “geo” variables 1 to 4 do not appear in the setup file, the checkRep check will raise a warning, saying that the formulas will fail (because it references a variable that seem not to exist). In this specific instance, it is wrong: the columns will be created, and the formula will thus work in the linelist."
+  },
+  {
+    "objectID": "how_to/export_subset_geo.html#footnotes",
+    "href": "how_to/export_subset_geo.html#footnotes",
+    "title": "Export a subset of geographic columns",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAdmins levels 1, 2, 3 and 4, with cascading dropdown menus↩︎\n And more if you choose to export p-codes, see the “Exports” sheet options in the setup file↩︎"
+  },
+  {
+    "objectID": "how_to/link_tables.html",
+    "href": "how_to/link_tables.html",
+    "title": "Create linelists with more than one entry sheets",
+    "section": "",
+    "text": "You want the linelist to contain several data entry sheets. The important thing to think about is how the tables should be linked, if at all."
+  },
+  {
+    "objectID": "how_to/link_tables.html#independent-data-tables",
+    "href": "how_to/link_tables.html#independent-data-tables",
+    "title": "Create linelists with more than one entry sheets",
+    "section": "Independent data tables",
+    "text": "Independent data tables\nIf you need to create two independent data tables1, just use different sheet names in the Dictionary sheet.\n\n\n\n\n\n\nNote\n\n\n\nTechnically, a linelist with an “Info” and a “Patient linelist” sheet already has two entry sheets, one with a 1-dimension table and one with a 2-dimensions table.\nSince the two tables are created independently, you could have two sheets with 2-dimensions table."
+  },
+  {
+    "objectID": "how_to/link_tables.html#non-independent-tables",
+    "href": "how_to/link_tables.html#non-independent-tables",
+    "title": "Create linelists with more than one entry sheets",
+    "section": "Non independent tables",
+    "text": "Non independent tables\nSometimes you need to refer to data from another table, whether it is to use in a formula, to copy data or to populate a dropdown menu.\n\nRefer to a single value in a formula\nIt is straightforward to use the values of vlist1D variable in a formula: just use the name of the variable in the formula2.\nExample: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:\n\nIF(ISBLANK(case_id), ““, info_facility_name)\n\nSee the page on formulas and formulas controls\n\n\nLink two tables\nA more complex situation is when you have two 2-dimensions tables that are not independent. In this case, the tables should at minima be linked by a key.\nExample of a user case:\n\na main data entry sheet with general patient data (e.g. a Patient linelist sheet)\na secondary entry sheet with additional variables for a subset of patients (e.g. readmission variables or extensive lab testing).\n\nIn this case, the natural way to link the tables is to have the ID of the patient in both tables.\n\nConstrain possibles values for patient IDs in the secondary table with list_auto\nIn the user case above, the patients from the Readmission sheet are a subset from the Patient linelist sheet so we expect the IDs from Readmission to match the ones from Patient linelist.\nThe minimal (unsafe) option is to have two free text patient ID columns, one in each table, where data encoders enter IDs manually. This process however increases the risk of typing error and thus of merging nightmare.\nA safer way is to create a categorical variable in the Readmission sheet whose dropdown menu is populated by values present in the case_id column of the Patient linelist sheet. As the data encoder can only choose from existing patients from the Patient linelist sheet, the opportunity for encoding error and thus unmatched patients is greatly reduced.3\n\n\n\nUse of list_auto to link two columns\n\n\nSeethe section on list_auto and its control for a description on how to use the list_auto control.\n\n\nImport values from the other table with VALUE_OF\nIn addition to key columns to be able to join the tables, it might be desirable to bring some of the patient data in the secondary table, to calculate new variables, or just to facilitate reading and understanding without having fill the value on each line.\nFor example, we might want to bring in the name and surname of the patient, without entering it again, or the date of exit, to be able to calculate the number of days between the exit of the first admission and the date of readmission.\nThe custom function VALUE_OF can do that. It works sort of like a LOOKUP function, except we provide variable names, and it matches the value you need.\nIt takes three arguments, all variable names:\n\nVALUE_OF(key_variable1, key_variable2, variable_values)\n\n\nkey_variable1: the list_auto in the current sheet (the key column that contains IDs, e.g. readmission_id)\n\n\nkey_variable2: the source of the list_auto in the other sheet (the IDs from the main sheet, e.g. case_id)\n\n\nvariable_values: the variable which values we want to import.\n\n\n\n\nIllustration of the use of VALLUE_OF\n\n\n\n\n\n\n\n\nWarning\n\n\n\nkey_variable2 and variable_values must be on the same sheet or the function will return nothing.\n\n\nThe function matches the values from columns key_variable1 and key_variable2, and returns values from variable_values column at the corresponding row.\n\n\n\n\n\n\nNote\n\n\n\nIf the function finds more than two matches, it will return the values from the first match (the first line found)."
+  },
+  {
+    "objectID": "how_to/link_tables.html#footnotes",
+    "href": "how_to/link_tables.html#footnotes",
+    "title": "Create linelists with more than one entry sheets",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nExample: a sheet containing patient data and a sheet containing bed occupancy data↩︎\nThese variables can take only one value, see the different sorts of tables for more information.↩︎\nIf data are exported in R or Stata, you will be able to merge/join them extremely easily with the two IDs variables.↩︎"
+  },
+  {
+    "objectID": "how_to/import_geobase.html",
+    "href": "how_to/import_geobase.html",
+    "title": "Import a geobase in the linelist",
+    "section": "",
+    "text": "TODO\n\n\n\n Back to top"
+  },
+  {
     "objectID": "reference/dictionary_sheet.html",
     "href": "reference/dictionary_sheet.html",
     "title": "Dictionary sheet: define linelist tables and their variables",
@@ -196,242 +434,11 @@
     "text": "Footnotes\n\n\nNote that we used the word “type” in its computer science meaning, which differs a bit from the statistics one.↩︎\nsometimes called class in some software↩︎\nalso called character string in some softwares↩︎\ni.e. a combination of Excel functions↩︎\nyou can of course give the list any name that you wish, such as “list_age_group” for example if you were recoding age↩︎\nSometimes the user manage to break through by pasting values though↩︎"
   },
   {
-    "objectID": "how_to/import_geobase.html",
-    "href": "how_to/import_geobase.html",
-    "title": "Import a geobase in the linelist",
+    "objectID": "reference/setup_ribbon.html",
+    "href": "reference/setup_ribbon.html",
+    "title": "Setup options ribbon",
     "section": "",
     "text": "TODO\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "how_to/link_tables.html",
-    "href": "how_to/link_tables.html",
-    "title": "Create linelists with more than one entry sheets",
-    "section": "",
-    "text": "You want the linelist to contain several data entry sheets. The important thing to think about is how the tables should be linked, if at all."
-  },
-  {
-    "objectID": "how_to/link_tables.html#independent-data-tables",
-    "href": "how_to/link_tables.html#independent-data-tables",
-    "title": "Create linelists with more than one entry sheets",
-    "section": "Independent data tables",
-    "text": "Independent data tables\nIf you need to create two independent data tables1, just use different sheet names in the Dictionary sheet.\n\n\n\n\n\n\nNote\n\n\n\nTechnically, a linelist with an “Info” and a “Patient linelist” sheet already has two entry sheets, one with a 1-dimension table and one with a 2-dimensions table.\nSince the two tables are created independently, you could have two sheets with 2-dimensions table."
-  },
-  {
-    "objectID": "how_to/link_tables.html#non-independent-tables",
-    "href": "how_to/link_tables.html#non-independent-tables",
-    "title": "Create linelists with more than one entry sheets",
-    "section": "Non independent tables",
-    "text": "Non independent tables\nSometimes you need to refer to data from another table, whether it is to use in a formula, to copy data or to populate a dropdown menu.\n\nRefer to a single value in a formula\nIt is straightforward to use the values of vlist1D variable in a formula: just use the name of the variable in the formula2.\nExample: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:\n\nIF(ISBLANK(case_id), ““, info_facility_name)\n\nSee the page on formulas and formulas controls\n\n\nLink two tables\nA more complex situation is when you have two 2-dimensions tables that are not independent. In this case, the tables should at minima be linked by a key.\nExample of a user case:\n\na main data entry sheet with general patient data (e.g. a Patient linelist sheet)\na secondary entry sheet with additional variables for a subset of patients (e.g. readmission variables or extensive lab testing).\n\nIn this case, the natural way to link the tables is to have the ID of the patient in both tables.\n\nConstrain possibles values for patient IDs in the secondary table with list_auto\nIn the user case above, the patients from the Readmission sheet are a subset from the Patient linelist sheet so we expect the IDs from Readmission to match the ones from Patient linelist.\nThe minimal (unsafe) option is to have two free text patient ID columns, one in each table, where data encoders enter IDs manually. This process however increases the risk of typing error and thus of merging nightmare.\nA safer way is to create a categorical variable in the Readmission sheet whose dropdown menu is populated by values present in the case_id column of the Patient linelist sheet. As the data encoder can only choose from existing patients from the Patient linelist sheet, the opportunity for encoding error and thus unmatched patients is greatly reduced.3\n\n\n\nUse of list_auto to link two columns\n\n\nSeethe section on list_auto and its control for a description on how to use the list_auto control.\n\n\nImport values from the other table with VALUE_OF\nIn addition to key columns to be able to join the tables, it might be desirable to bring some of the patient data in the secondary table, to calculate new variables, or just to facilitate reading and understanding without having fill the value on each line.\nFor example, we might want to bring in the name and surname of the patient, without entering it again, or the date of exit, to be able to calculate the number of days between the exit of the first admission and the date of readmission.\nThe custom function VALUE_OF can do that. It works sort of like a LOOKUP function, except we provide variable names, and it matches the value you need.\nIt takes three arguments, all variable names:\n\nVALUE_OF(key_variable1, key_variable2, variable_values)\n\n\nkey_variable1: the list_auto in the current sheet (the key column that contains IDs, e.g. readmission_id)\n\n\nkey_variable2: the source of the list_auto in the other sheet (the IDs from the main sheet, e.g. case_id)\n\n\nvariable_values: the variable which values we want to import.\n\n\n\n\nIllustration of the use of VALLUE_OF\n\n\n\n\n\n\n\n\nWarning\n\n\n\nkey_variable2 and variable_values must be on the same sheet or the function will return nothing.\n\n\nThe function matches the values from columns key_variable1 and key_variable2, and returns values from variable_values column at the corresponding row.\n\n\n\n\n\n\nNote\n\n\n\nIf the function finds more than two matches, it will return the values from the first match (the first line found)."
-  },
-  {
-    "objectID": "how_to/link_tables.html#footnotes",
-    "href": "how_to/link_tables.html#footnotes",
-    "title": "Create linelists with more than one entry sheets",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nExample: a sheet containing patient data and a sheet containing bed occupancy data↩︎\nThese variables can take only one value, see the different sorts of tables for more information.↩︎\nIf data are exported in R or Stata, you will be able to merge/join them extremely easily with the two IDs variables.↩︎"
-  },
-  {
-    "objectID": "how_to/export_subset_geo.html",
-    "href": "how_to/export_subset_geo.html",
-    "title": "Export a subset of geographic columns",
-    "section": "",
-    "text": "You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.\nBut in the setup file geographic columns are represented by one “geo” variable, which is translated in 4 columns in the generated linelist1. In the setup file, if you indicate that this “geo” variable should be exported for a given export, the linelist export will contain the four admin levels columns2."
-  },
-  {
-    "objectID": "how_to/export_subset_geo.html#problem",
-    "href": "how_to/export_subset_geo.html#problem",
-    "title": "Export a subset of geographic columns",
-    "section": "",
-    "text": "You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.\nBut in the setup file geographic columns are represented by one “geo” variable, which is translated in 4 columns in the generated linelist1. In the setup file, if you indicate that this “geo” variable should be exported for a given export, the linelist export will contain the four admin levels columns2."
-  },
-  {
-    "objectID": "how_to/export_subset_geo.html#solution",
-    "href": "how_to/export_subset_geo.html#solution",
-    "title": "Export a subset of geographic columns",
-    "section": "Solution",
-    "text": "Solution\nThe solution: derive calculated columns from the automatically created “geo” variables, and exports these individually to the MoH export, in the order of your choice.\nHow does it works? The “geo” variable name is used to automatically create the four columns in the linelist. For example, if the “geo” variable in the setup file is called “origin”, four columns will be created in the linelist: -\n\nadm1_origin,\nadm2_origin,\nadm3_origin,\nadm4_origin.\n\nEven though these columns do not appear in the setup file, they are created in the linelist! This means that you can reference them and use them in formulas in other parts of the Dictionary sheet, like you would do for any other variable defined in that sheet."
-  },
-  {
-    "objectID": "how_to/export_subset_geo.html#example",
-    "href": "how_to/export_subset_geo.html#example",
-    "title": "Export a subset of geographic columns",
-    "section": "Example",
-    "text": "Example\nYou specify a geo variable named “residence” in the setup file (in green below), which triggers the creation of four columns in the linelist.\nThe blue variables are calculated variables that refer to the geo columns that are automatically created. You can decide for each of these whether to export them or not in a given export.\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nBecause the “geo” variables 1 to 4 do not appear in the setup file, the checkRep check will raise a warning, saying that the formulas will fail (because it references a variable that seem not to exist). In this specific instance, it is wrong: the columns will be created, and the formula will thus work in the linelist."
-  },
-  {
-    "objectID": "how_to/export_subset_geo.html#footnotes",
-    "href": "how_to/export_subset_geo.html#footnotes",
-    "title": "Export a subset of geographic columns",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAdmins levels 1, 2, 3 and 4, with cascading dropdown menus↩︎\n And more if you choose to export p-codes, see the “Exports” sheet options in the setup file↩︎"
-  },
-  {
-    "objectID": "how_to/show_hide_variables.html",
-    "href": "how_to/show_hide_variables.html",
-    "title": "Show or hide variables",
-    "section": "",
-    "text": "TODO\n1\nThe “optional, hidden” variables in the setup file appear as “Hidden” (by default). However, the user can change the status by choosing “Show”, in which case the column will become visible. \n2 \n3\nThe “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the setup file.\nThe “optional, visible” variables in the setup file appear as “Displayed” (by default). However, you can change the status by choosing “Hide”, in which case the column will no longer be visible.\n4 \n“Mandatory” variables in the setup file appear as “Mandatory” in the “Show/Hide” pop up, and cannot be hidden.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "how_to/migrate_setup.html",
-    "href": "how_to/migrate_setup.html",
-    "title": "Migrate setup data",
-    "section": "",
-    "text": "Explain how to migrate one setup to a new version\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "reference/exports_sheet.html",
-    "href": "reference/exports_sheet.html",
-    "title": "Define exports",
-    "section": "",
-    "text": "It is possible to predefine exports, such as a specific export for a given MoH. The setup of exports is done in two different sheets:\nA sheet in the linelist file corresponds to a sheet in the exported file."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#export-number",
-    "href": "reference/exports_sheet.html#export-number",
-    "title": "Define exports",
-    "section": "Export number",
-    "text": "Export number\nOne line corresponds to one export. The exports are numbered from 1 to how many exports are available.\nIn line “1”, we define the parameters for export 1, whose variables to be exported have been defined in the Dictionary sheet in the “Export 1” column, etc.\n\n\nNote that you can use the “Add rows to table in current sheet” button or the “Resize tables in current sheet” button to add more exports or removed empty rows (see the Setup Options ribbon section below)."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#status",
-    "href": "reference/exports_sheet.html#status",
-    "title": "Define exports",
-    "section": "Status",
-    "text": "Status\nThis is an active/inactive drop-down menu field. It is used to activate or deactivate an export button.\nExample:\nDefinition in the setup file:\n\nDisplay in the linelist file:"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#label-button",
-    "href": "reference/exports_sheet.html#label-button",
-    "title": "Define exports",
-    "section": "Label button",
-    "text": "Label button\nThis is a free text field that contains the label of the export button in the linelist. It should be fairly concise or it may overflow the button box.\nExample :\nDefinition in the setup file:\n\nDisplay in the linelist file:"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#file-format",
-    "href": "reference/exports_sheet.html#file-format",
-    "title": "Define exports",
-    "section": "File format",
-    "text": "File format\nThis is a dropdown menu that allows choosing between the .xlsx and .xlsb file format for the exported file."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#file-name",
-    "href": "reference/exports_sheet.html#file-name",
-    "title": "Define exports",
-    "section": "File name",
-    "text": "File name\nThis is a free text field used to define the name of the export.\nYou can either define fixed export names (ex: “export_moh”) or dynamic exports names, that use values collected from variables in the linelist (such as the country, the section etc.).\nFor dynamic names, you can only use variables that contain only one value (vlist1D variables), usually defined in the “Info” sheet of the linelist.\n\nRules to create a name\n\nCharacter strings passed to this field must be enclosed in inverted commas like these: “a character string”\nVariable names passed to this field must be naked (not surrounded by inverted comas), similarly to how we refer to variables in the Dictionary sheet columns.\nDifferent components of the name are separated by ‘+’, which will create names where the components are separated by ‘__’.\nNo need to add a date to the export: the date and time at which an export is made is appended at the end of the name automatically.\nIf the export is to be password protected (see below), the public key for opening the file will be included in the name.\n\n\n\nExample\n\nHere, the pieces in green, surrounded by inverted comas are fixed bits of texts (character strings). The blue pieces are vlist1D variables that were defined for that linelist (in the Info sheet, hence their suffixes).\nThis name specification will result in the following export names, depending on where the linelist is used (hence depending on how they filled the metadata):\n\nMNG_linelist__MNG24__SSD__MSF-OCP__Aweil__anonyme__vb-1003__20240617-1901.xlsb if the linelist was used by OCP in Aweil (South Sudan)\nMNG_linelist__MNG24__NER__WaCa__Maradi__anonyme__vb-2035__20240617-1903.xlsb if the linelist was used by WaCa in Maradi (Niger)\n…\n\nNote: if a variable is referred to in the name but remains empty in the linelist, the name of the variable is used as a placeholder. In the example above, if the data encoder filled none of the variables in the metadata, the created file would have the following name:\nMNG_linelist__info_outbreak_code__info_country_code__info_organisation__info_facility_name__anonyme__vb-1003__20240617-1906.xlsb"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#password",
-    "href": "reference/exports_sheet.html#password",
-    "title": "Define exports",
-    "section": "Password",
-    "text": "Password\nThis is a yes/no drop-down field that is used to define whether or not the export should be password-protected.\nIf so, the password will be displayed automatically when the export is created.\nExample:\nDefinition in the setup file:\n\nDisplay in the linelist file:"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#include-personal-identifiers",
-    "href": "reference/exports_sheet.html#include-personal-identifiers",
-    "title": "Define exports",
-    "section": "Include personal identifiers",
-    "text": "Include personal identifiers\nThis is a yes/no dropdown menu which controls whether variables that are tagged as “Personal identifier” in the Dictionary sheet should be included in the export.1\nThe column defaults to “no”."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#include-p-code",
-    "href": "reference/exports_sheet.html#include-p-code",
-    "title": "Define exports",
-    "section": "Include P-code",
-    "text": "Include P-code\nThis is a yes/no drop-down field that controls whether the hidden columns that contains processed geographic data such as P-codes should be exported in addition to the raw data columns.2"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#header-format",
-    "href": "reference/exports_sheet.html#header-format",
-    "title": "Define exports",
-    "section": "Header format",
-    "text": "Header format\nThis is a variables names/variables labels drop-down menu field. It allows you to define whether you want the column headings in the export to correspond to the variable names, their labels, or both.\n\n\n\n\n\n\nTip\n\n\n\nIf you create an export for analyses purpose, use the variable names to avoid having to format and rename when importing in your favourite statistical software. If you are exporting data to the MoH or other partners, it might be easier for them to have the variables labels, which are more descriptive about the content of the variable.\n\n\nExample:\nDefinition in the setup file:\n\nDisplay in export:\n\nDefinition in the setup file:\n\nDisplay in export:"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#export-metadata-sheets",
-    "href": "reference/exports_sheet.html#export-metadata-sheets",
-    "title": "Define exports",
-    "section": "Export Metadata Sheets",
-    "text": "Export Metadata Sheets\nThis is a yes/no drop-down field. By selecting “yes”, you decide that in addition to the data to be exported, you will also export:\n\nThe “Dictionary” sheet\nThe “Choices” sheet\nA metadata sheet3"
-  },
-  {
-    "objectID": "reference/exports_sheet.html#export-translation",
-    "href": "reference/exports_sheet.html#export-translation",
-    "title": "Define exports",
-    "section": "Export Translation",
-    "text": "Export Translation\nThis is a yes/no drop-down field. Selecting “yes” means that, in addition to the data to be exported, we will also have the sheet containing the translations."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#export-analysis-sheet",
-    "href": "reference/exports_sheet.html#export-analysis-sheet",
-    "title": "Define exports",
-    "section": "Export Analysis Sheet",
-    "text": "Export Analysis Sheet\nThis is a yes/no drop-down field. By selecting ‘yes’, you decide that in addition to the data to be exported, you will also export all the analysis tables (but not the graphs).\n\n\n\n\n\n\nTip\n\n\n\nIt is also possible to export analysis tables directly from the linelist using the “Export analyses” button."
-  },
-  {
-    "objectID": "reference/exports_sheet.html#footnotes",
-    "href": "reference/exports_sheet.html#footnotes",
-    "title": "Define exports",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nRemember, in the Dictionary sheet, any variable with anything written in the export columns will be exported in the corresponding exports (even if it is written “no”).↩︎\nThese columns are automatically calculated when geo and hf variables are created in the linelist. They contain concatenated administrative levels at different scales, and p-codes. They are used for creating maps.↩︎\nwe are not speaking of the sheet usually created for linelists that contains variables to collect metadata about the project (MSF section, disease, facility name…), but of hidden linelist metadata (when the file was compiled, language, version etc.)↩︎"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html",
-    "href": "reference/analyses_sheet.html",
-    "title": "Define basic analyses",
-    "section": "",
-    "text": "This sheet contains several tables for defining different types of analyses and their corresponding graphs:"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#global-summary",
-    "href": "reference/analyses_sheet.html#global-summary",
-    "title": "Define basic analyses",
-    "section": "Global Summary",
-    "text": "Global Summary\n\nThe “Global Summary” table summarises certain indicators for the current epidemic. It has 3 columns:\n\nSummary Label: free text field for entering a short but explicit label describing the analysis\nSummary function: free text field for entering the function that will display the desired indicator.1\nFormat: drop-down menu for defining the display format of the expected result (see also Format)\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist:"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#univariate-analysis",
-    "href": "reference/analyses_sheet.html#univariate-analysis",
-    "title": "Define basic analyses",
-    "section": "Univariate Analysis",
-    "text": "Univariate Analysis\n\nThe “Univariate Analysis” table is used to describe analyses based on a single variable. It has 10 columns:\nSection: this is a free field used to define blocks of univariate analyses on a theme, for example all the tables grouping patient characteristics. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nAdd missing data: this is a yes/no field used to indicate whether you want to count missing data for the selected variable.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the number of patients by modalities of a variable, and the “N” function, for counting rows, is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a pre-selection of possible display formats. (see also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If “yes”, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed horizontally rather than vertically.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\n\nExample\n\nDefinition in the setup file:\nDisplay in the linelist:\n\n\n\nSummary\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSection\nFree text\nYes\nGroup tables by section\n\n\nTable title\nFree text\nYes\nShort title\n\n\nGroup by variable (row)\nDropdown\nYes\nOne categorial variable to summarise\n\n\nAdd missing data\nDropdown (yes/no)\n\nAdd rows with missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, other formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (yes/no)\n\n\n\n\nAdd graph\nDropdown (yes/no)\n\n\n\n\nFlip coordinates\nDropdown (yes/no)\n\nInverse x and y axis of the graph"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#bivariate-analysis",
-    "href": "reference/analyses_sheet.html#bivariate-analysis",
-    "title": "Define basic analyses",
-    "section": "Bivariate Analysis",
-    "text": "Bivariate Analysis\n\nThe “Bivariate Analysis” table is used to describe analyses based on two variables. It has 11 columns:\nSection: this is a free field used to group analyses on a theme, for example all the tables grouping patient characteristics. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nGroup by variable (column): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables.\nAdd missing data: this is a drop-down menu with 4 possible options, which allows you to indicate whether you want to count missing data for the selected variable(s):\n\nno: missing data are not added\nrow: missing data is added to variables in rows\ncolumn: missing data is added to variables in columns\nall: missing data is added to both column and row variables\n\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a preselection of possible display formats. (see also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed horizontally rather than vertically.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSection\nFree text\nYes\nGroup tables by section\n\n\nTable title\nFree text\nYes\nShort title\n\n\nGroup by variable (row)\nDropdown\nYes\nOne categorial variable to summarise\n\n\nGroup by variable (column)\n\nYes\n\n\n\nAdd missing data\nDropdown (no/row/column/all)\n\nAdd missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, but formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (yes/no)\n\n\n\n\nAdd graph\nDropdown (values/percentage)\n\n\n\n\nFlip coordinates\nDropdown (yes/no)\n\nInverse x and y axis of the graph\n\n\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist :"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#time-series-analysis",
-    "href": "reference/analyses_sheet.html#time-series-analysis",
-    "title": "Define basic analyses",
-    "section": "Time series Analysis",
-    "text": "Time series Analysis\nTime series analyses and graphs are defined using 3 different tables:\n\none to define the table(s) (and the series to add to the graphs)\none to define the list of associated graphs\none to define the characteristics of graphs\n\nSee a diagram at the end of the section.\n\nTime series Analysis\n\nThe first table is used to define the different time series. It has 12 columns, and one line represents one summary per variable (ex: counts for the different types of outcomes; or median of the length of stay). If you take the option to add a total or missing values, or if the variable is categorical, the table created will have several columns.\nSeries ID: this is an auto-populate field; each row in this table is automatically assigned a series ID, which is an incremental value (1). This ID is used in particular to define graphs.\nSection: this is a free field which can be used to combine analyses on a theme in a single table, for example patient characteristics over time. Each section corresponds to a table in the linelist. They are displayed one above the other, and it is possible to navigate between them using the “Go to section” drop-down menu.\nTime variable (row): this is a static drop-down menu containing time variables. In other words, variables of type date.\nGroup by variable (column): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables. It is also possible to leave this field empty, and define the analysis solely on the basis of a formula in the “Summary function” field.\nTitle (header): this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the summary label (described below), the label of the time variable (row) and the label of the variable to be analysed (Group by variable (column)).\nAdd missing data: this is a yes/no field which allows you to indicate whether you want to count missing data for the selected variable. If “yes” is selected, a column with the missing values will be added to the right of the other columns created for each mode of the variable to be analysed.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient. If the “Group by variable (column)” field is empty, the function will count the number of entries in the chosen time variable.\nSummary label: this is a free field which corresponds to the label used to create the “Title header” and which is used to label the column containing the results of the “summary function”.\nFormat: this is a static drop-down menu with a preselection of possible display formats. (see also Format)\nAdd percentage: this is a static drop-down menu with 3 options:\n\nNo: no percentage is added\nRow: there is an additional column to the right of each value listed to show the percentage according to the time scale. The percentage is calculated on the total number of patients in the row.\nColumn: there is an additional column to the right of each value listed to show the percentage according to the time scale. The percentage is calculated on the total number of patients in the column.\n\nAdd total: this is a yes/no field used to add a row at the bottom of the table in the LL with the totals for the entire period selected.\nTable Order: this is a read field which can be used to reorganise the order of analyses in the final table without having to modify the order of lines in the setup. By default, analyses are displayed from left to right in the order in which they are described in the Time series Analysis table in the setup.\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nSeries ID\n-\nAutomatic\n\n\n\nSection\nFree text\nYes\nGroup columns by section\n\n\nTitle\n-\nAutomatic\n\n\n\nAdd missing data\nDropdown (yes/no)\n\nAdd missing values counts?\n\n\nSummary function\nFree text\nYes\nN to count rows, but formula accepted\n\n\nSummary label\nFree text\n\nName of the summary\n\n\nFormat\nDropdown\n\nFormat of the summary\n\n\nAdd percentage\nDropdown (column/row/no)\n\n\n\n\nAdd total\nDropdown (yes/no)\n\n\n\n\nTable order\nFree text\n\n\n\n\n\n\n\nLabels for Time Series Graphs\n\nThe second Time Series table is used to define the titles and order of the graphs associated with the time series defined above.\nThe table has 3 columns:\n\nGraph title: this is a free field for naming the graph\nGraph order: this is a free field which allows you to organise the graphs in the desired order.\nGraph ID: this is an automatically calculated field, with the ID incremented by 1 on each line.\n\nOne line represents one graph.\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nGraph title\nFree text\nYes\nShort title\n\n\nGraph order\nFree text\nYes\n\n\n\nGraph ID\nAutomatic\nYes\n\n\n\n\n\n\nGraph on Time Series\n\nThis table is used to define the characteristics of each graph. It has 12 columns. One line represent one series to plot on a graph. A graph with the number of each outcome over time would thus be represented by as many lines as there are of types of outcomes (or as there are modalities that you wish to show on this graph).\nGraph title: this is a drop-down menu fed by the “Labels for Time Series Graphs” table. To define a graph, it must first be named in the previous table. Use the same graph title in different rows to indicate that several series should be on the same graph.\nSeries title: this is a drop-down menu fed by the “Time Series Analysis” table. It is used to link a graph to the characteristics of a group of series (variables to be displayed).\nGraph ID: this field is filled in automatically once the “Graph Title” has been selected. It searches for the Graph\nSeries ID: this field is automatically filled in once the “Series title” has been selected.\nGraph order: this field is filled in automatically once the “Graph title” has been selected. To change the order in which the graphs are displayed, simply change the order in the “Labels for Time Series Graphs” table; it is not necessary to change the order of the lines.\nTime variable (row): this field is automatically filled in once the “Series title” has been selected. It searches for the time variable defined for the time series.\nGroup by variable (column): this field is filled in automatically once the “Series title” has been selected. It searches for the variable to be calculated defined for the time series.\nChoices: this is a dynamic drop-down menu updated once the “Series title” has been selected. It will display the choices for the variable to be calculated.\nLabel: this is a free text column that contains le label corresponding to the choice, which will appear in the graph legend.\nPlot values or percentage: this is a static drop-down menu with two options: “values” or “percentages”, which lets you choose whether to display the results in the graph as values or percentages.\nChart type: this is a static drop-down menu with three options: “bar”, “line” or “dot”. This lets you choose between 3 pre-selected chart types (bar, line or dot). Chart display can be customised directly from the linelist.\nY-Axis: this is a static drop-down menu with two options: “left” or “right”, which lets you choose which side of the Y axis to display. This is particularly useful for displaying two different pieces of information on a single graph (e.g. Epicurve with the number of deaths in value and the CFR in %).\n\n\n\n\n\n\n\n\n\nColumn\nType\nMandatory\nDetails\n\n\n\n\nGraph title\nDropdown\nYes\nDefined in the previous table\n\n\nSeries title\nDropdown\nYes\nChoose which variable summary to plot (ex: counts for outcomes)\n\n\nGraph ID\n-\nAutomatic\n\n\n\nSeries ID\n-\nAutomatic\n\n\n\nGraph order\n-\nAutomatic\n\n\n\nTime variable (row)\n-\nAutomatic\n\n\n\nGroup by variable (column\n-\nAutomatic\n\n\n\nChoices\nDropdown (variable modality)\nYes\nChoose modality to plot (ex: deads)\n\n\nLabel\nFree text\n\nLabel of the modality\n\n\nPlot values or percentages\nDropdown (values/percentage)\nYes\n\n\n\nChart type\nDropdown (bar/line/point)\n\n\n\n\nY-axis\nDropdown (left/right)\n\n\n\n\n\n\n\nExample\n\nDefinition in the setup file:\n\nDisplay in the linelist:\n\n\n\n\n\nDiagrams"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#spatial-analysis",
-    "href": "reference/analyses_sheet.html#spatial-analysis",
-    "title": "Define basic analyses",
-    "section": "Spatial Analysis",
-    "text": "Spatial Analysis\n\nThe spatial analyses are described in a table with 11 columns. They are described in a similar way to the bivariate analyses, the difference being that the variables chosen for the rows are necessarily variables containing geographical data.\nSection: this is a free field used to define blocks of analyses on the same theme. It will also be possible to navigate between sections in the linelist using the “Go to section” drop-down menu.\nTable Title: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.\nGeo/HF variable (row): this is a dynamic drop-down menu containing all variables of type hf or geo.\nN geo max: This is the maximum number of lines you want to see for each analysis. (e.g. if you want a top 10, enter 10).\nGroup by variable (row): this is a static drop-down menu containing the variables that can be analysed. In other words, variables with known modalities, i.e. choice_manual and choice_formula variables. If the field remains empty, we will just count the number of occurrences per modality of the chosen time variable and these are the Ns (defined with the “N geo max” variable).\nAdd missing data: this is a yes/no field used to indicate whether you want to count missing data for the selected variable.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften the aim is to show the distribution of patients between the modalities of a variable, and the “N” function is sufficient.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu containing a preselection of possible display formats. (See also Format)\nAdd percentage: this is a yes/no field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\nIf the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.\nFlip coordinates: this is a yes/no field used to indicate whether you want the graphic to be displayed vertically or horizontally.\nIf the “Add percentage” and “Flip coordinates” options are set to “yes”, the graph will not contain the percentages, as the two options are incompatible and the vertical display of the graph will prevail.\nA “Note” message will be displayed in the “__checkRep” sheet.\n\nExample\nDefinition in the setup file: \nDisplay in the linelist:"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#spatio-temporal-analysis",
-    "href": "reference/analyses_sheet.html#spatio-temporal-analysis",
-    "title": "Define basic analyses",
-    "section": "Spatio-Temporal Analysis",
-    "text": "Spatio-Temporal Analysis\nSpatio-temporal analyses and graphs are defined using 2 different tables:\n\nA “Specification for Spatio-Temporal Analysis” table\nA “Spatio-Temporal Analysis” table\n\n\nSpecification for Spatio-Temporal Analysis\n\nThe table has 3 columns:\nSection: this is a free field which can be used to combine analyses on a theme in a single table, for example patient characteristics over time. Each section corresponds to a table in the linelist. They are displayed one above the other, and it is possible to navigate between them using the “Go to section” drop-down menu.\nN geo max: This is the maximum number of lines you want to see for each analysis. (e.g. if you want a top 10, enter 10).\nSpatial type: this is a static drop-down menu with two options, “geo” or “hf”. This defines the type of geographic variable to be used in the section (a geo variable or a health facility).\n\n\nSpatio-Temporal Analysis\n\nThe table has 10 columns:\nSection (select): this is a drop-down menu created automatically and fed by the “Specification for Spatio-Temporal Analysis” table.\nTime variable (row): this is a static drop-down menu containing time variables. In other words, variables of type date.\nGeo/HF variable (column): this is a drop-down menu created automatically and fed by the “Specification for Spatio-Temporal Analysis” table.\nN geo max: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.\nTitle (header): this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the summary label (described below), the label of the time variable (row) and the label of the selected geographic variable (column).\nSpatial type: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.\nSummary function: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the setup file is written (see formula).\nOften you will just want to count the number of patients according to their origin or the facility consulted and see how it changes over time, in which case you simply use the N function.\nSummary label: this is a free field which corresponds to the label which will be displayed above the results column.\nFormat: this is a static drop-down menu with a pre-selection of possible display formats. (see also Format)\nAdd graph: this is a yes/no field used to indicate whether you want a vertical bar graph.\n\n\nExample\nDefinition in the setup file:\n\nDisplay in the linelist file:"
-  },
-  {
-    "objectID": "reference/analyses_sheet.html#footnotes",
-    "href": "reference/analyses_sheet.html#footnotes",
-    "title": "Define basic analyses",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAs in the dictionary, the function must be written in English, regardless of the language in which the rest of the setup is written.↩︎"
   },
   {
     "objectID": "reference/choices_sheet.html",
