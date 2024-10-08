@@ -12,6 +12,8 @@ Follow these steps to create a linelist with OutbreakTools:
 4.  Correct bugs in the **setup file**
 5.  Rinse and repeat until the linelist is functional
 
+![SImplified workflow](../images/im-001-outbreak-tools-solutions.png){#fig-setup-ribbon fig-align="center"}
+
 ## Setup file
 
 The **setup file** is an excel file that describes the various sheets of the linelist to be created, in a *predefined* and *standardised* format. It allows you to specify:
