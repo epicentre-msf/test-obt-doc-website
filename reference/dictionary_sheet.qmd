@@ -280,7 +280,7 @@ Display in the **linelist file**:
 
 This is a *yes/no* dropdown menu field used to predefine the variables to be included in the register to be printed. This step is not mandatory and can be managed later, directly in the **linelist file**.
 
-### Personal Identifier
+### Personal Identifier {#sec-personal-identifiers}
 
 This is a *yes/no* dropdown menu field that indicates that the variable contains personal data (such as names, phone numbers etc.).
 

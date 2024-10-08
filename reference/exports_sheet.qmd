@@ -6,7 +6,7 @@ title: "Define exports"
 
 It is possible to predefine exports, such as a specific export for a given MoH. The setup of exports is done in two different sheets:
 
-- In the *Exports* sheet you define the export: numbers of exports and their metadata (button label, exported file name, type of headers etc.)  
+- In the *Exports* sheet you define the export: metadata, button label, exported file name, type of headers etc. 
 
 - In the *Dictionary* sheet you define which variable is exported in each export, and in which order  
 
@@ -27,7 +27,7 @@ In line "1", we define the parameters for export 1, whose variables to be export
 
 ![](../images/im-090-export-number.png)
 
-Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the *Setup Options ribbon* section below).
+Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the [ribbon help](../reference/setup_ribbon.qmd).
 
 
 ## Status
@@ -92,10 +92,12 @@ This name specification will result in the following export names, depending on 
 -   MNG_linelist\_\_MNG24\_\_NER\_\_WaCa\_\_Maradi\_\_anonyme\_\_vb-2035\_\_20240617-1903.xlsb if the linelist was used by WaCa in Maradi (Niger)
 -   ...
 
-Note: if a variable is referred to in the name but remains empty in the linelist, the **name of the variable** is used as a placeholder. In the example above, if the data encoder filled none of the variables in the metadata, the created file would have the following name:
+
+::: {.callout-note}
+If a variable is referred to in the name but remains empty in the linelist, the **name of the variable** is used as a placeholder. In the example above, if the data encoder filled none of the variables in the metadata, the created file would have the following name:
 
 MNG_linelist\_\_info_outbreak_code\_\_info_country_code\_\_info_organisation\_\_info_facility_name\_\_anonyme\_\_vb-1003\_\_20240617-1906.xlsb
-
+:::
 
 ## Password
 
@@ -118,7 +120,7 @@ Display in the **linelist file**:
 
 ## Include personal identifiers
 
-This is a *yes/no* dropdown menu which controls whether *variables* that are tagged as "*Personal identifier*" in the *Dictionary* sheet should be included in the export.^[Remember, in the *Dictionary* sheet, any variable with *anything* written in the export columns will be exported in the corresponding exports (even if it is written "no").]
+This is a *yes/no* dropdown menu which controls whether *variables* that are tagged as [Personal identifier](#sec-personal-identifiers) in the *Dictionary* sheet should be included in the export.^[Remember, in the *Dictionary* sheet, any variable with *anything* written in the export columns will be exported in the corresponding exports (even if it is written "no").]
 
 The column defaults to "*no*". 
 
@@ -134,7 +136,10 @@ This is a *variables names/variables labels* drop-down menu field. It allows you
 
 
 ::: callout-tip
-If you create an export for analyses purpose, use the *variable names* to avoid having to format and rename when importing in your favourite statistical software. If you are exporting data to the MoH or other partners, it might be easier for them to have the *variables labels*, which are more descriptive about the content of the variable.
+## Tip: choosing the header format
+If you create an export for analyses purpose, use the *variable names* to avoid having to format and rename when importing in your favourite statistical software. 
+
+If you are exporting data to the MoH or other partners, it might be easier for them to have the *variables labels*, which are more descriptive about the content of the variable.
 :::
 
 **Example**:
