@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About OutbreakTools – OutbreakTools documentation</title>
+<title>Show case of outbreak-tools usage – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial.html"> 
+    <a class="nav-link active" href="./tutorial.html" aria-current="page"> 
 <span class="menu-text">Tutoriels</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -211,16 +211,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#use-case" id="toc-use-case" class="nav-link" data-scroll-target="#use-case">Use-case</a></li>
+  <li><a href="#prepare-the-materials" id="toc-prepare-the-materials" class="nav-link" data-scroll-target="#prepare-the-materials">Prepare the materials</a>
+  <ul>
+  <li><a href="#download-and-unzip-the-materials" id="toc-download-and-unzip-the-materials" class="nav-link" data-scroll-target="#download-and-unzip-the-materials">Download and unzip the materials</a></li>
+  <li><a href="#unlock-files-if-necessary" id="toc-unlock-files-if-necessary" class="nav-link" data-scroll-target="#unlock-files-if-necessary">Unlock files if necessary</a></li>
+  <li><a href="#activate-macros-before-exercises" id="toc-activate-macros-before-exercises" class="nav-link" data-scroll-target="#activate-macros-before-exercises">Activate macros before exercises</a></li>
+  </ul></li>
+  <li><a href="#exercise-1-getting-started." id="toc-exercise-1-getting-started." class="nav-link" data-scroll-target="#exercise-1-getting-started.">Exercise 1: Getting started.</a></li>
+  <li><a href="#exercise-2-adding-new-variables" id="toc-exercise-2-adding-new-variables" class="nav-link" data-scroll-target="#exercise-2-adding-new-variables">Exercise 2: Adding new variables</a></li>
+  <li><a href="#warning-for-mac-users" id="toc-warning-for-mac-users" class="nav-link" data-scroll-target="#warning-for-mac-users">Warning for Mac users</a></li>
+  <li><a href="#exercise-3-adding-new-analyses" id="toc-exercise-3-adding-new-analyses" class="nav-link" data-scroll-target="#exercise-3-adding-new-analyses">Exercise 3: Adding new analyses</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">OutbreakTools</h1>
-<p class="subtitle lead">Generate robust linelists from a dictionary without fancy VBA skills</p>
+<h1 class="title">Show case of outbreak-tools usage</h1>
 </div>
 
 
@@ -237,10 +253,197 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>OutbreakTools</strong> is a set of solutions designed by <a href="https://epicentre.msf.org/">Epicentre</a> <a href="https://apps.epicentre-msf.org/public/">EpiDS team</a> to quickly create linelists to collect field data during outbreaks. These linelists have a number of functionalities including descriptive analyses, buttons to migrate data to or from the linelist, or to import geographic data to better describe locations.</p>
-<p><strong>OutbreakTools</strong> allow you to quickly develop these linelists without the need for advanced Excel skills or ad-hoc development, by creating a (glorified) dictionary and compiling it. If you have ever built a Kobo form or a Redcap database from a dictionary, this might sound familiar.</p>
+<p>Authors: Anton Camacho, Yves Amevoin, Marine Durthaler</p>
+<div data-align="center">
+<p align="center">
+</p><p>Excercises and show-case of <a href="https://github.com/epicentre-msf/outbreak-tools/">outbreak-tools</a> and <a href="https://github.com/epicentre-msf/outbreak-tools-setup/">outbreak-tools-setup</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip"><img src="https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/materials.svg" class="img-fluid figure-img" alt="Download all the materials of the demo"></a></p>
+<figcaption>Download all the materials of the demo</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/epicentre-msf/outbreak-tools-setup/raw/main/setup.xlsb"><img src="https://github.com/epicentre-msf/outbreak-tools/raw/main/src/imgs/setup_file.svg" class="img-fluid figure-img" alt="Download Latest version of setup file"></a></p>
+<figcaption>Download Latest version of setup file</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/epicentre-msf/outbreak-tools/raw/dev/misc/_ribbontemplate.xlsb"><img src="https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/ribbon_template.svg" class="img-fluid figure-img" alt="Download Latest development version of the designer"></a></p>
+<figcaption>Download Latest development version of the designer</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/bin/designer_dev.xlsb"><img src="https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/dev_designer.svg" class="img-fluid figure-img" alt="Download ribbon template of linelist"></a></p>
+<figcaption>Download ribbon template of linelist</figcaption>
+</figure>
+</div>
+<p></p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you just want to focus on linelist usage, you can download <em>materials for a short tutorial</em> <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip">available here</a></p>
+</div>
+</div>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Outbreak-tools is a set of tools to facilitate the creation and maintainance of Excel linelists. In particular, you can easily:</p>
+<ul>
+<li>Define different types of variables (dropdown lists, Excel formulas) their format and data validation rules.</li>
+<li>Print a register book that perfectly match your linelist. Translate your linelist into several languages.</li>
+<li>Use pre-defined geo databases for patient origin.</li>
+<li>Display custom analyses (univariate, bivariate, temporal, spatial) as tables and graphs.<br>
+</li>
+<li>Export the entire data or selected variables/lines.</li>
+<li>Migrate the data to an updated version of the linelist.</li>
+</ul>
+<p>The linelist is defined in a configuration file called <em>setup</em>. This <em>setup</em> file is then loaded into another file that designs the linelist (the <em>designer</em>). The designer creates the linelist, based on the configurations of the <em>setup</em>.</p>
+<p>There are 3 steps to creating a linelist:</p>
+<ol type="1">
+<li><p>Open the setup file and define your needs. The configuration of the file is inspired from Kobo’s XLS forms. No in-depth knowledge of Excel is required. A setup file can be used to create linelists in several languages.</p></li>
+<li><p>Download geographic data for the targeted area: There is a <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geo-App</a> available online to download the geobase for the region of interest (new users must <a href="https://reports.msf.net/signup/">register</a>). The Geo-App is updated as new geographical information becomes available.</p></li>
+<li><p>Open the designer, load the setup and geobase files, set the options (languages etc) and generate your linelist.</p></li>
+</ol>
+</section>
+<section id="use-case" class="level2">
+<h2 class="anchored" data-anchor-id="use-case">Use-case</h2>
+<p>In this demo, you’ll familiarise yourself with the various features of the tool and simulate a scenario well known to epidemiologists in the field: upgrading a linelist that already contains data to a new version. This often happens when you want to collect new variables as the epidemic unfold and you need to answer new questions.</p>
+<p>The folders contain all the materials needed to perform the exercises.</p>
+</section>
+<section id="prepare-the-materials" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-the-materials">Prepare the materials</h2>
+<section id="download-and-unzip-the-materials" class="level3">
+<h3 class="anchored" data-anchor-id="download-and-unzip-the-materials">Download and unzip the materials</h3>
+<p>You can download the exercices bundled in a<code>zip</code> file for offline use <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip">here</a>.</p>
+<p><strong>Download and extract files.</strong></p>
+</section>
+<section id="unlock-files-if-necessary" class="level3">
+<h3 class="anchored" data-anchor-id="unlock-files-if-necessary">Unlock files if necessary</h3>
+<p>Sometimes Excel files with macro downloaded from the web are automatically blocked for security reasons. You can unblock the files by:</p>
+<ol type="1">
+<li>Right click on the file</li>
+<li>Select “Properties” 3- Check the <em>Unblock</em> box on the bottom right.</li>
+</ol>
+<p><strong>Be sure the downloaded files are not locked by Windows</strong></p>
+</section>
+<section id="activate-macros-before-exercises" class="level3">
+<h3 class="anchored" data-anchor-id="activate-macros-before-exercises">Activate macros before exercises</h3>
+<p>If you’re going to run the designer to build a linelist, you’ll need to enable VBA macros in Excel, as well as access to the VBA object model:</p>
+<ol type="1">
+<li>Open Excel</li>
+<li>Display the <em>Developer</em> tab in Excel.</li>
+<li>In the <em>Developer</em> tab, click on <em>Macro security</em>. Check the options as shown in the following image:</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/macros_security_en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="exercise-1-getting-started." class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1-getting-started.">Exercise 1: Getting started.</h2>
+<ul>
+<li><p>Open the linelist <code>linelist_measles_en_ex1.xlsb</code> located in the <code>linelist</code> folder. The file password is 5678. It contains a mock measles dataset.</p></li>
+<li><p>Take a quick look at the different sheets to get an overview of the structure of the file.</p></li>
+<li><p>In the <em>Linelist patients</em> sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients’ origin (see <em>Data table</em> section of the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
+<li><p>Explore univariate, bivariate, temporal and spatial analyses. Use button “Refresh analyses” in the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a> to update the analyses.</p></li>
+<li><p>In the temporal analysis, change the start/end dates as well as the time unit of the analysis.</p></li>
+<li><p>In the spatial analysis, change the administrative level and divide by the population size to get attack rates (note we don’t have population estimates below the health-zone level).</p></li>
+<li><p>Go back to the <em>Linelist patients</em> and use the filters to show only patients under 2 years of age. Then go back to the analyses sheets and recalculate (use button “Refresh analyses”).</p></li>
+<li><p>Export the filtered data using the <code>anonymous export for MSF</code> (see <em>Export button</em> in the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>). Open and browse the exported file.</p></li>
+<li><p>Finally, print a register book for the <code>Linelist patients</code> (see the <em>Register book</em> section of the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
+</ul>
+</section>
+<section id="exercise-2-adding-new-variables" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2-adding-new-variables">Exercise 2: Adding new variables</h2>
+<p>Open the setup file <code>setup_measles_base_ex2.xlsb</code> in the <code>setup</code> folder. This setup file corresponds to the linelist you have been working with. Take a look at the different sheets and see how they relate to the linelist.</p>
+<p>Now, we would like to add the following variables:</p>
+<ul>
+<li><p>In the <em>Admission</em> section of <em>Linelist patients</em> sheet, just before the <em>hospitalisation</em> sub-section: a variable called <code>muac</code> (MUAC) that can take three values: “Green (125+mm)”, “Yellow (115-124mm)”, “Red (&lt; 115mm)”</p></li>
+<li><p>In the <em>Vaccination</em> section of <em>Linelist patients</em> sheet, just after <em>Vaccination against measles</em>:</p>
+<ul>
+<li>A variable called <code>vacci_measles_doses</code> (Number of doses received) which is a numeric variable.</li>
+<li>Create a data validation rule to ensure that this variable remains between 0 and 4.</li>
+</ul></li>
+<li><p>Translate newly added labels into French (see the <a href="../reference/ribbons.qmd#sec-setup-ribbon">Setup Options ribbon</a> and the <a href="../reference/translations_sheet.qmd">Setup Translation sheet</a>).</p></li>
+<li><p>Check the setup for potential errors (see the <a href="../reference/ribbons.qmd#sec-setup-ribbon">Setup Options ribbon</a>).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should normally have a configuration file identical to <code>setup_measles_exercise_two.xlsb</code> in the <code>setup</code> folder. You can also start from this file if you like.</p>
+</div>
+</div>
+<ul>
+<li>Regenerate a new linelist named <code>linelist_measles_en_ex2</code> using the designer located in the <code>designer</code> folder. Save the linelist in the demo folder, making sure you have selected English as the language. You will use the file <code>geobase-cod-2023-03-13_20230612.xlsx</code> in the <code>geobase</code> folder as your geobase.</li>
+</ul>
+</section>
+<section id="warning-for-mac-users" class="level2 .{callout-warning}">
+<h2 class="anchored" data-anchor-id="warning-for-mac-users">Warning for Mac users</h2>
+<p>Sometimes generating the linelist using a ribbon file can fail on Mac. In that case, it will default back to a linelist with buttons instead, but you should be able to pursue the exercices with this linelist. We are working to provide full support for Ribbon on Mac Os.</p>
+<p>You might experience screen flickering during the linelist creation process.</p>
+</section>
+<ul>
+<li>You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
+<ul>
+<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters (see the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">linelist options ribbon</a>). Then, export the data (use the <em>Export data</em> button in the same ribbon) to a location of your choice. This migration file contains all your data.</p></li>
+<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
+</ul></li>
+</ul>
+<section id="exercise-3-adding-new-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3-adding-new-analyses">Exercise 3: Adding new analyses</h2>
+<p>We have decided to add some analyses on the type of discharge (variable <code>outcome</code>) to the linelist.</p>
+<ul>
+<li><p>Open the setup file <code>setup_measles_base_ex3.xlsb</code> located in the <code>setup</code> folder.</p></li>
+<li><p>In the <em>Analyses</em> sheet, section <em>Univariate Analysis</em>, add a univariate table showing the number of patients by type of discharge. Add percentages and a graph for this table.</p></li>
+<li><p>In the <em>Analyses</em> sheet, section <em>Time Series Analysis</em>, add a temporal table showing the number of patient by type of discharge and notification date. Add percentages by row and add total.</p></li>
+<li><p>In the <em>Analyses</em> sheet, section <em>Labels for Time Series Graphs</em>, add a graph title <em>Deaths</em>. In the section <em>Graph on Time Series</em> graph specifications, add the number of deaths per notification date, in bars.</p></li>
+<li><p>Translate newly added labels into French (see <em>Setup Options</em> ribbon).</p></li>
+<li><p>Check the setup for potential errors (see <em>Setup Options</em> ribbon).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should get a configuration file identical to <code>setup_measles_exercise_three.xlsb</code> in the <code>setup</code> folder. You can also start from this file if you like.</p>
+</div>
+</div>
+<ul>
+<li><p>Regenerate a new linelist named <code>linelist_measles_en_ex3</code> using the designer located in the <code>designer</code> folder. Save the linelist in the demo folder, making sure you have selected English as the language. You willl use the file <code>geobase-cod-2023-03-13_20230612.xlsx</code> in the <code>geobase</code> folder as your geobase.</p></li>
+<li><p>You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:</p>
+<ul>
+<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters. Then, export the data to a location of your choice. This migration file contains all your data.</p></li>
+<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex3.xlsb</code> and import the migration file. Look at the importation report and browse the data in the new linelist.</p></li>
+</ul></li>
+</ul>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
