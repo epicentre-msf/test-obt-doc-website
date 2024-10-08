@@ -25,7 +25,7 @@ Go to the [OutbreakTools tab](../reference/ribbons.qmd#sec-setup-ribbon) of the 
 
 To add a new linelist language:
 
-1. Click on the "Update translation table", which is going to scrap all text bits from the setup and add them to the translation table (even if there is only one language in the sheet). This step can be done at a later stage, and each time you modify a label in the setup.
+1. Click on the "Update translation table", which is going to scrap all text bits from the setup and add them to the translation table (even if there is only one language in the sheet). This step can be done at a later stage, and each time you modify or add a label in the setup.
 
 2. Fill the name of the language you want to add in the rectangular box
 
@@ -37,3 +37,5 @@ To add a new linelist language:
 ::: {.callout-tip}
 You can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.
 :::
+
+To know more about the [Tranlation sheet](../reference/translations_sheet.qmd).
