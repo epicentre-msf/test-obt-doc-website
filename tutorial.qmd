@@ -24,7 +24,7 @@ Excercises and show-case of [outbreak-tools](https://github.com/epicentre-msf/ou
 </div>
 
 ::: {.callout-note}
-If you just want to focus on linelist usage, you can download *materials for a short tutorial* [available here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip)
+If you just want to focus on linelist usage, you can download materials for a short tutorial [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip)
 :::
 
 ## Introduction
@@ -62,8 +62,6 @@ The folders contain all the materials needed to perform the exercises.
 
 You can download the exercices bundled in a`zip` file for offline use [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip).
 
-**Download and extract files.**
-
 ### Unlock files if necessary
 
 Sometimes Excel files with macro downloaded from the web are automatically blocked for security reasons. You can unblock the files by:
@@ -71,8 +69,6 @@ Sometimes Excel files with macro downloaded from the web are automatically block
 1. Right click on the file
 2. Select "Properties"
 3- Check the *Unblock* box on the bottom right.
-
-**Be sure the downloaded files are not locked by Windows**
 
 
 ### Activate macros before exercises
@@ -129,7 +125,7 @@ You should normally have a configuration file identical to `setup_measles_exerci
 
 - Regenerate a new linelist named `linelist_measles_en_ex2` using the designer located in the `designer` folder. Save the linelist in the demo folder, making sure you have selected English as the language. You will use the file `geobase-cod-2023-03-13_20230612.xlsx` in the `geobase` folder as your geobase.
 
-::: .{callout-warning}
+::: {.callout-warning}
 ## Warning for Mac users
 
 Sometimes generating the linelist using a ribbon file can fail on Mac. In that case, it will default back to a linelist with buttons instead, but you should be able to pursue the exercices with this linelist. We are working to provide full support for Ribbon on Mac Os.
