@@ -655,7 +655,7 @@
     "href": "cheatsheets/analyses.html#some-functionsexamples",
     "title": "Cheatsheet analyses",
     "section": "Some functions/examples",
-    "text": "Some functions/examples"
+    "text": "Some functions/examples\nN: count the number of rows for each modality"
   },
   {
     "objectID": "getting_started/download.html",
