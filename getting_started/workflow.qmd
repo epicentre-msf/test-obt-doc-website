@@ -38,11 +38,13 @@ The setup file contains the following sheets:
 
 : Sheets in the **setup file** and their uses.
 
-The **setup file** also has a dedicated OutbreakTools section in the top option ribbon from Excel:
+The **setup file** has a dedicated OutbreakTools section in the top option ribbon from Excel:
 
-![OutbreakTools ribbon in the **setup file**](images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
+![OutbreakTools tab in the **setup file**](../images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
 
-Go to the [reference](../reference/setup_ribbon.qmd) to know more about the ribbon buttons.
+Go to the [reference](../reference/ribbons.qmd) to know more about the ribbon buttons.
+
+
 
 ## Designer file
 
@@ -51,6 +53,10 @@ The **designer** is another excel file, that contains the code to build a lineli
 When the **setup file** is ready (or at least a first draft is), you load it into a **designer**, fill a couple of fields[^1] and let the designer build the linelist.
 
 [^1]: What is the name of the created linelist, where to save it, should it be password protected and if yes, which password etc.
+
+The **designer file** also has a dedicated OutbreakTools section in the top option ribbon from Excel:
+
+![OutbreakTools tab in the **setup file**](../images/img-003-ribbon-designer.png){#fig-setup-ribbon fig-align="center"}
 
 ## Linelist
 
@@ -62,4 +68,4 @@ The linelists created from a compiled **setup file** will contain several sheets
 
 In addition to that, the OBT linelists also have a dedicated **OutbreakTools ribbon** in addition to the other excel options in the top ribbon.
 
-![OutbreakTools ribbon in the created linelist files](images/img-002-ribbon-linelist.png){fig-align="center"}
+![OutbreakTools ribbon in the created linelist files](../images/img-002-ribbon-linelist.png){fig-align="center"}
