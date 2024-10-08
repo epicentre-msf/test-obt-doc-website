@@ -103,7 +103,7 @@ website:
           - text: Choosing variable controls
             href: cheatsheets/variable_control.qmd
             
-          - text: Setup analyses
+          - text: Defining analyses
             href: cheatsheets/analyses.qmd
         
     tools:

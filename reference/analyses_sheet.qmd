@@ -93,7 +93,7 @@ A "Note" message will be displayed in the *"\_\_checkRep*" sheet.
 
 Definition in the **setup file**:
 
-Display in the linelist:
+Display in the **linelist**:
 
 ![](../reference/images/im-067-example-univariate-analysis.png){fig-align="center"}
 
@@ -168,7 +168,7 @@ Definition in the **setup file**:
 
 ![](../reference/images/im-069-example-bivariate-analysis.png){fig-align="center"}
 
-Display in the linelist :
+Display in the **linelist**:
 
 ![](../reference/images/im-070-example-bivariate-analysis.png){fig-align="center"}
 
@@ -345,7 +345,7 @@ Definition in the **setup file**:
 
 ![](../reference/images/im-075-example-graph-on-time-series.png){fig-align="center"}
 
-Display in the linelist:
+Display in the **linelist**:
 
 ![](../reference/images/im-076-example-graph-on-time-series.png){fig-align="center"}
 
@@ -408,7 +408,7 @@ Definition in the **setup file**:
 
 ![](../reference/images/im-082-example-spatial-analysis.png){fig-align="center"}
 
-Display in the linelist:
+Display in the **linelist**:
 
 ![](../reference/images/im-083-example-spatial-analysis.png){fig-align="center"}
 

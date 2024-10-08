@@ -107,4 +107,29 @@ Example: a graph plotting the number of "Cured" and "Dead" across time is plotti
 
 ## Some functions/examples
 
-`N`: count the number of rows for each modality
+### In the global summary
+
+`DATE_RANGE` is a custom funtion to display the min and max of a date variable. Example: `DATE_RANGE(visit_date)`.
+
+`COUNTA(case_id)`: counts the number of non empty case_id.
+
+`COUNTIF(hospit_yn, "Yes")` counts the number of *Yes* in the `hospit_yn` variable
+
+
+### Count rows
+
+`N`: count the number of rows for each modality of a variable. The setup user defines for each analysis whether the empty cells should be added in the table (as their own categories).
+
+
+### Calculate a CFR
+
+`SUM(cfr_numerator) / SUM(cfr_denominator)` to calculate a Case Fatality Rate. 
+- The `cfr_numerator` is a calculated variable  based on the outcome column; it takes 1 for deceased patient and zero for others. 
+- The `cfr_denominator` is also a calculated column, which takes 1 for discharged patients and 0 for other patients.
+
+Don't forget to pick a percent format with appropriate rounding level.
+
+### Spatial analyses or spatio-temporal analyses
+
+For the top ten (or whichever value you chose) areas with the most cases, use `N` as the function summary.
+ For the top ten areas for the number of deaths, use `SUM(is_dead_01)` where `is_dead_01` here is a calculated variable that takes 1 if the patient is dead and 0 otherwhise.
