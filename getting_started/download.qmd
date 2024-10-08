@@ -23,7 +23,7 @@ The archive contains several timestamped files:
 -   `_ribbontemplate_main-YYYY-MM-DD.xlsb`: a template file containing information used during compilation
 -   `run_designer_on_windows.R` and `rundesigner.vbs`: files that can be used to compile from R (experimental and yet undocumented)
 
-::: callout-note
+::: {.callout-note callout-appearance: simple}
 The excel files are in the `.xlsb` format, a compressed, more efficient Excel format that allows VBA macros.
 :::
 

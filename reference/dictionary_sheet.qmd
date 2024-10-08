@@ -81,12 +81,12 @@ We recommend that you do not leave any blanks in the variable name. Instead, rep
 
 This is a free text field that defines the variables labels, which are quick descriptions of the variables, which the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.
 
-In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see @sec-editable-label).
+In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with the exception of explicitly [editable labels](#sec-editable-label).
 
 ![](images/im-004-variable-names-and-labels.png)
 
 ::: {.callout-note collapse="true"}
-## Add more information
+## Tip: add more information
 To add more details, you can use the following fields: [Sub Label](#sec-sub-label) and [Note](sec-note).
 :::
 
@@ -118,7 +118,7 @@ This is a *yes/no* column. If the value is "*yes*", the label of the variable in
 
 ::: {.callout-tip}
 
-## Use editable labels to add customisable variables in your linelists
+## Tip: add customisable variables in your linelists
 
 It is often desirable to add a couple of columns with editable labels at the end of the linelist, in case the user want to collect some extra information. It gives some freedom to users to collect some site specific data without needing an update of the setup. When I do that, I usually provide a couple of free text variables, and a couple of
 [customisable dropdowns variables](#sec-custom-dropdowns)
@@ -136,7 +136,7 @@ The sub-labels "*Calculated*" and "*Custom dropdown*" are added automatically, n
 
 ::: {.callout-tip collapse="true"}
 
-## Example of common sub-labels
+## Tip: example of common sub-labels
 
 -   Yes / No
 -   Yes / No / Unk.
@@ -173,8 +173,10 @@ This is a free text field that contains the *name of the sheet* in which the var
 In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.
 
 ::: {.callout-note collapse="true"}
+
 ## Note on linelist sheets
-The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd].
+
+The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd).
 :::
 
 ### Sheet Type {#sec-sheet-types}
@@ -386,8 +388,8 @@ In OutbreakTools, the variables to fill in geographic information are treated as
 
 ![Guide to choosing variable control in OBT](../images/im-128-var-control.png){fig-align="center"}
 
-::: {.callout-important}
-## Data validation
+::: {.callout-note}
+## Note on data validation
 For non-text variable (integers, decimals, dates) is is possible to restrict values using [data validation](#sec-data-validation)
 :::
 
@@ -432,13 +434,13 @@ The difference is that in the created linelist, the user can use the dropdown me
 
 **Example**: if the user selects "Azythromicin", then "Ampicilin" from a dropdown menu, the value "Azythromicin, Ampicilin" will be stored in the cell.
 
-::: {.callout-note}
-## Note: cannot be used for analyses
+::: {.callout-warning}
+## Warning: cannot be used for analyses
 A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheets.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
 :::
 
 ::: {.callout-tip}
-## Tip: Inform the linelist user
+## Tip: inform the linelist user
 Since columns allowing multiple choices are rare in linelists in general, we advise you to use the [sub-label](#sec-sub-label) and possibly a note to inform the linelist user that they can enter several values, and how to do it.
 :::
 
@@ -536,8 +538,8 @@ Three controls allow the creation of calculated columns. In general, the user ca
 |                | functions optional)       | Ifs             | modify it             |                           |
 +----------------+---------------------------+-----------------+-----------------------+---------------------------+
 | choice_formula | `CHOICE_FORMULA` (Excel   | Replaces nested | Empty character; user | Yes                       |
-|                | functions optional)       | Ifs             | cannot modify it      |                           |
-+----------------+---------------------------+-----------------+------------------------+--------------------------+
+|                | functions optional)       | `IF`            | cannot modify it      |                           |
++----------------+---------------------------+-----------------+-----------------------+---------------------------+
 
 ##### formula
 
@@ -588,7 +590,7 @@ This is a free text field, which accepts three types of values:
 +----------------------+-------------------+--------------------------------------------+
 | Control type         | Control column    | Value expected in the "Control details"    |
 |                      |                   | column                                     |
-+----------------------+-------------------+--------------------------------------------+
++======================+===================+============================================+
 | Static dropdown menu | choice_manual     | The name of a *list* that contains the     |
 |                      | choice_custom     | authorised values defined in the *Choice*  |
 |                      | choice_multiple   | sheet ("List Name" column)                 |
@@ -597,7 +599,7 @@ This is a free text field, which accepts three types of values:
 +----------------------+-------------------+--------------------------------------------+
 | Calculated           | formula           | An Excel formula (that can contain one or  |
 |                      | case_when         | more functions, including the custom       |
-|                      | choice_formula    | functions `CASE_WHEN` and `CHOICE_FORMULA` |
+|                      | choice_formula    | functions `CASE_WHEN` and `CHOICE_FORMULA`) |
 +----------------------+-------------------+--------------------------------------------+
 
 #### Defining dropdown menu categories
@@ -608,7 +610,7 @@ These values are specified in the [Choices sheet](../reference/choices_sheet.qmd
 
 ![](images/im-041-choices.png)
 
-In the case of "list auto" variables, you only need to provide the *name of another variable* in the "Control details" column. In the linelist, the values present in the referred variable will be automatically used to populate the dropdown menu. See [this How to](../how_to/link_tables.qmd#sec-ht-list_auto) for an example.
+In the case of "list_auto" variables, you only need to provide the *name of another variable* in the "Control details" column. In the linelist, the values present in the referred variable will be automatically used to populate the dropdown menu. See [this How to](../how_to/link_tables.qmd#sec-ht-list_auto) for an example.
 
 
 #### Formulas {#sec-formulas}
@@ -659,14 +661,13 @@ In Excel, you can use `ALT+ENTRY` to insert a carriage return to go to the next 
 
 ##### case_when control
 
-Use the `CASE_WHEN` function to replace nested `IF` (therefore limiting the
-risk of error when writing the formula), in this form:
+Use the `CASE_WHEN` function to replace nested `IF` (therefore limiting the risk of error when writing the formula), in this form:
 
-> CASE_WHEN( condition1, value1, 
-             condition2, value2, 
-             condition3, value3,
-             ..., ..., 
-             DEFAULT_VALUE)
+> CASE_WHEN(condition1, value1,   
+            condition2, value2,   
+            condition3, value3,  
+            ..., ...,   
+            DEFAULT_VALUE)  
 
 You need at least one pair of conditions-values but the function shines when there are many pairs. As in the nested `IF` or in the `IFS` functions, the conditional statement are *tested in the order they are written*. 
 
@@ -676,16 +677,14 @@ By default, any case that is not covered by the previous conditions will return 
 
 You could write a formula with nested `IF` to calculate an age_years column:
 
-> IF(age_unit = "months", age_value / 12, IF(age_unit = "days",
-> age_value / 365, IF(age_unit = "years", age_value,
-> IF(ISBLANK(age_unit), ""))))
+> IF(age_unit = "months", age_value / 12, IF(age_unit = "days", age_value / 365, IF(age_unit = "years", age_value, IF(ISBLANK(age_unit), ""))))
 
 Or write the equivalent with `CASE_WHEN`:
 
-> CASE_WHEN(age_unit = "months", 
-            age_value / 12, age_unit = "days",
-            age_value / 365, age_unit = "years", 
-            age_value)
+> CASE_WHEN(age_unit = "months",  
+            age_value / 12,  age_unit = "days",  
+            age_value / 365, age_unit = "years",   
+            age_value)  
 
 ::: {.callout-note}
 The information about the more generalist "formula" control are also valid here.
@@ -697,11 +696,11 @@ The `CHOICE_FORMULA` function is a subcase of `CASE_WHEN` for when we want to en
 
 The pseudo-code is very similar to the CASE_WHEN function:
 
-> CHOICE_FORMULA(list_values_choices, 
-                 condition1, value1, 
-                 condition2, value2, 
-                 condition3, value3, 
-                 ..., ... )
+> CHOICE_FORMULA(list_values_choices,   
+>                condition1, value1,   
+>                condition2, value2,   
+>                condition3, value3,   
+>                ..., ... )
 
 But here, the value1, value2, value3 etc. are pre-defined in the list "list_values_choices" in the *"Choices"* sheet, as if these values were for a dropdown menu [^4].
 
@@ -749,7 +748,7 @@ To define a specific export, you need to fill both the "Export" section in the *
 To create a new export, first fill the [Exports](../reference/exports_sheet/qmd) sheet, which will add corresponding columns to the *Dictionary* sheet.
 
 
-**Rules**:
+### Rules
 
 -  Variables with **any value** entered in the "Export" columns will be exported. If you want to **not** export a variable, you need to keep the cells **empty**.
 
@@ -782,7 +781,7 @@ This is a free text field that defines the minimal authorised value in the varia
 As with [formulas](#sec-formula-control), do not start with an "=" sign!
 :::
 
-Examples: 
+**Examples: **
 
 - "0" to forbid negative values in an age in month or year column
 - `date_notification` to not allow the date of exit to be before the arrival in the health facility
@@ -796,9 +795,10 @@ This is a free text field used to define the upper limit of authorised values. I
 As with the formulas, the "=" sign is **not** placed in front of the limits you define.
 :::
 
-Examples: 
-- "120" to limit the age in year
-- `today()` to not allow dates after the day of data entry in the case of most date columns
+**Examples: **
+
+- "120" to limit the age in year 
+- `today()` to not allow dates after the day of data entry in the case of most date columns  
 
 ### Alert {#sec-alert}
 

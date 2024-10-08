@@ -1,13 +1,14 @@
 ---
-title: "Define variable categories"
+title: "Choices sheet: define variable categories"
 ---
 
 This sheet is used to define the **dropdown menus categories** to be used for categorical variables, or the possible values for "choice_formula" type variables. 
 
-**Rules**
-- a *list* is made of several consecutive lines
-- a *line* represents one value of a given list, and correspond to one item of the associated dropdown menu 
-- different lists are written one below the other
+## Rules
+
+- a *list* is made of several consecutive lines  
+- a *line* represents one value of a given list, and correspond to one item of the associated dropdown menu  
+- different lists are written one below the other  
 - you can define as many lists as needed
 
 ![](images/im-134-choices_sheet.png)    
@@ -42,6 +43,9 @@ This is a free text field used to list the different values to be displayed in t
 Categories names should not begin with a "\<" or a "\>".
 :::
 
+## Short label
+
+This is a free text field in which you can enter a shortened version of the label, to be used in the Case Report Form generation tool in the linelist, to make the CRF more condensed.
 
 ## Example
 
