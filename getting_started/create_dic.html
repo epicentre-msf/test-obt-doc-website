@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/choices_sheet.html">
- <span class="dropdown-text">Choice sheet</span></a>
+ <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/analyses_sheet.html">
@@ -271,7 +271,7 @@ Warning
 <section id="fill-other-sheets-as-needed" class="level3">
 <h3 class="anchored" data-anchor-id="fill-other-sheets-as-needed">Fill other sheets as needed</h3>
 <p>Fill the <a href="../reference/exports_sheet.html">Exports</a> sheet to <strong>define one or more personalised exports</strong>: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.</p>
-<p>Fill the <a href="../reference/analyses_sheet.html">Analyses</a>* sheet to <strong>define basic analyses</strong> to include in the linelist:</p>
+<p>Fill the <a href="../reference/analyses_sheet.html">Analyses</a> sheet to <strong>define basic analyses</strong> to include in the linelist:</p>
 <ul>
 <li>uni and bivariate analyses (figures and tables)<br>
 </li>
@@ -296,31 +296,37 @@ Warning
 </ul>
 <p>In all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug” to get a working linelist, do not despair!</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Tip to check calculated variables
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Don’t hesitate to manually <em>unhide all columns</em> in the created linelist to check hidden columns formulas, you have the user rights to do it.</p>
 <p>Reverse to the original state by going to the “Advanced” section of the OutbreakTools ribbon, and click on the “Restore state of hidden columns”</p>
 </div>
 </div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Save your testing data
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it.</p>
 <p>To do that, go to the “Advanced” section of the OutbreakTools ribbon and click on the “Export for migration” button. This will create a data export, that can be later imported in a new empty linelist by clicking on the “Import data” button.</p>
+</div>
 </div>
 </div>
 

@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/choices_sheet.html">
- <span class="dropdown-text">Choice sheet</span></a>
+ <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/analyses_sheet.html">
@@ -266,6 +266,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#data-exports" id="toc-data-exports" class="nav-link" data-scroll-target="#data-exports">Data exports</a>
   <ul>
+  <li><a href="#rules" id="toc-rules" class="nav-link" data-scroll-target="#rules">Rules</a></li>
   <li><a href="#example-3" id="toc-example-3" class="nav-link" data-scroll-target="#example-3">Example</a></li>
   </ul></li>
   <li><a href="#sec-data-validation" id="toc-sec-data-validation" class="nav-link" data-scroll-target="#sec-data-validation">Data validation</a>
@@ -446,7 +447,7 @@ Tip
 <section id="main-label" class="level3">
 <h3 class="anchored" data-anchor-id="main-label">Main Label</h3>
 <p>This is a free text field that defines the variables labels, which are quick descriptions of the variables, which the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.</p>
-<p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see <a href="#sec-editable-label" class="quarto-xref">Section&nbsp;1.4</a>).</p>
+<p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with the exception of explicitly <a href="#sec-editable-label">editable labels</a>.</p>
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
@@ -454,7 +455,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Add more information
+Tip: add more information
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -501,7 +502,7 @@ Example of one user usage
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Use editable labels to add customisable variables in your linelists
+Tip: add customisable variables in your linelists
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -532,7 +533,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example of common sub-labels
+Tip: example of common sub-labels
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -590,7 +591,7 @@ Note on linelist sheets
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd].</p>
+<p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include <a href="../reference/analyses_sheet.html">analyses</a>.</p>
 </div>
 </div>
 </div>
@@ -813,13 +814,13 @@ Note
 <figcaption>Guide to choosing variable control in OBT</figcaption>
 </figure>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Data validation
+Note on data validation
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -881,13 +882,13 @@ Data validation
 <p>This control is similar to the “choice_manual” control, in that it creates a <strong>static dropdown menu</strong> in the linelist from <strong>predefined values</strong> entered in the <strong>setup file</strong>.</p>
 <p>The difference is that in the created linelist, the user can use the dropdown menu several times to select <strong>multiple values</strong>. These values will be concatenated and stored as a chain of character. By default, the separator is a coma (“,”), but you can modify this in the control column. For example, entering <em>choice_multiple(“_”)</em> will use the character “_” to separate values instead of “,”.</p>
 <p><strong>Example</strong>: if the user selects “Azythromicin”, then “Ampicilin” from a dropdown menu, the value “Azythromicin, Ampicilin” will be stored in the cell.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note: cannot be used for analyses
+Warning: cannot be used for analyses
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -900,7 +901,7 @@ Note: cannot be used for analyses
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip: Inform the linelist user
+Tip: inform the linelist user
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -983,8 +984,7 @@ Note
 <col style="width: 23%">
 <col style="width: 15%">
 <col style="width: 20%">
-<col style="width: 0%">
-<col style="width: 22%">
+<col style="width: 23%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -992,7 +992,7 @@ Note
 <th>Functions</th>
 <th>Use</th>
 <th>Default value</th>
-<th colspan="2">Can be used in used in analyses tables</th>
+<th>Can be used in used in analyses tables</th>
 </tr>
 </thead>
 <tbody>
@@ -1001,20 +1001,21 @@ Note
 <td>Any combination of Excel functions (in English)</td>
 <td>Anything</td>
 <td></td>
-<td colspan="2">Continuous variables: yes Categorical variables: no</td>
+<td>Continuous variables: yes Categorical variables: no</td>
 </tr>
 <tr class="even">
 <td>case_when</td>
 <td><code>CASE_WHEN</code>(Excel functions optional)</td>
 <td>Replaces nested Ifs</td>
 <td>Empty cells; user can modify it</td>
-<td colspan="2">No</td>
+<td>No</td>
 </tr>
 <tr class="odd">
 <td>choice_formula</td>
 <td><code>CHOICE_FORMULA</code> (Excel functions optional)</td>
-<td>Replaces nested Ifs</td>
-<td colspan="3">Empty character; user | Yes cannot modify it |</td>
+<td>Replaces nested <code>IF</code></td>
+<td>Empty character; user cannot modify it</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
@@ -1090,29 +1091,35 @@ Why not using more recent Excel functions?
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
-<col style="width: 22%">
-<col style="width: 50%">
+<col style="width: 21%">
+<col style="width: 49%">
+<col style="width: 1%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>Control type</th>
+<th>Control column</th>
+<th>Value expected in the “Control details” column</th>
+<th></th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>Control type</td>
-<td>Control column</td>
-<td>Value expected in the “Control details” column</td>
-</tr>
-<tr class="even">
 <td>Static dropdown menu</td>
 <td>choice_manual choice_custom choice_multiple</td>
 <td>The name of a <em>list</em> that contains the authorised values defined in the <em>Choice</em> sheet (“List Name” column)</td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Dynamic dropdown</td>
 <td>list_auto</td>
 <td>The name of an existing <em>variable</em></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Calculated</td>
 <td>formula case_when choice_formula</td>
-<td>An Excel formula (that can contain one or more functions, including the custom functions <code>CASE_WHEN</code> and <code>CHOICE_FORMULA</code></td>
+<td colspan="2">An Excel formula (that can contain one or | more functions, including the custom | functions <code>CASE_WHEN</code> and <code>CHOICE_FORMULA</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -1121,7 +1128,7 @@ Why not using more recent Excel functions?
 <p>When the controls “choice_manual”, “choice_multiple” (and optionally “choice_custom”) are selected in the <a href="#sec-var-control">Control</a> column, you need to define the values the dropdown menu will contain (<em>i.e.</em> the <em>categories</em>).</p>
 <p>These values are specified in the <a href="../reference/choices_sheet.html">Choices sheet</a>. Categories of a same variable are bundled into named <em>lists</em>. The name of the list is then entered in the “Control details” column of the <em>Dictionary</em> sheet.</p>
 <p><img src="images/im-041-choices.png" class="img-fluid"></p>
-<p>In the case of “list auto” variables, you only need to provide the <em>name of another variable</em> in the “Control details” column. In the linelist, the values present in the referred variable will be automatically used to populate the dropdown menu. See <a href="../how_to/link_tables.html#sec-ht-list_auto">this How to</a> for an example.</p>
+<p>In the case of “list_auto” variables, you only need to provide the <em>name of another variable</em> in the “Control details” column. In the linelist, the values present in the referred variable will be automatically used to populate the dropdown menu. See <a href="../how_to/link_tables.html#sec-ht-list_auto">this How to</a> for an example.</p>
 </section>
 <section id="sec-formulas" class="level4">
 <h4 class="anchored" data-anchor-id="sec-formulas">Formulas</h4>
@@ -1195,7 +1202,11 @@ Tip: improve formual readibility
 <h5 class="anchored" data-anchor-id="case_when-control">case_when control</h5>
 <p>Use the <code>CASE_WHEN</code> function to replace nested <code>IF</code> (therefore limiting the risk of error when writing the formula), in this form:</p>
 <blockquote class="blockquote">
-<p>CASE_WHEN( condition1, value1, condition2, value2, condition3, value3, …, …, DEFAULT_VALUE)</p>
+<p>CASE_WHEN(condition1, value1,<br>
+condition2, value2,<br>
+condition3, value3,<br>
+…, …,<br>
+DEFAULT_VALUE)</p>
 </blockquote>
 <p>You need at least one pair of conditions-values but the function shines when there are many pairs. As in the nested <code>IF</code> or in the <code>IFS</code> functions, the conditional statement are <em>tested in the order they are written</em>.</p>
 <p>By default, any case that is not covered by the previous conditions will return an empty cell, unless you provide a default value (the “else”).</p>
@@ -1206,7 +1217,10 @@ Tip: improve formual readibility
 </blockquote>
 <p>Or write the equivalent with <code>CASE_WHEN</code>:</p>
 <blockquote class="blockquote">
-<p>CASE_WHEN(age_unit = “months”, age_value / 12, age_unit = “days”, age_value / 365, age_unit = “years”, age_value)</p>
+<p>CASE_WHEN(age_unit = “months”,<br>
+age_value / 12, age_unit = “days”,<br>
+age_value / 365, age_unit = “years”,<br>
+age_value)</p>
 </blockquote>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1227,7 +1241,11 @@ Note
 <p>The <code>CHOICE_FORMULA</code> function is a subcase of <code>CASE_WHEN</code> for when we want to encode a few <strong>known modalities</strong>.</p>
 <p>The pseudo-code is very similar to the CASE_WHEN function:</p>
 <blockquote class="blockquote">
-<p>CHOICE_FORMULA(list_values_choices, condition1, value1, condition2, value2, condition3, value3, …, … )</p>
+<p>CHOICE_FORMULA(list_values_choices,<br>
+condition1, value1,<br>
+condition2, value2,<br>
+condition3, value3,<br>
+…, … )</p>
 </blockquote>
 <p>But here, the value1, value2, value3 etc. are pre-defined in the list “list_values_choices” in the <em>“Choices”</em> sheet, as if these values were for a dropdown menu <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
 <p>Since we know exactly which modalities this variable can take, we can use it as a categorical variable in the <em>Analyses</em> sheet, to build a uni or a bivariate table.</p>
@@ -1274,7 +1292,8 @@ Note
 <p>OutbreakTools linelist have extensive data export functionalities. It is possible to define several personalised exports from the setup.</p>
 <p>To define a specific export, you need to fill both the “Export” section in the <em>Dictionary</em> sheet and the <a href="../reference/exports_sheet/qmd">Exports</a> sheet. The <em>Export</em> sheet contains metadata for each export, while the “Export” columns in the <em>Dictionary</em> sheet allows to decide individually for each variable whether to export it or not in a given export.</p>
 <p>To create a new export, first fill the <a href="../reference/exports_sheet/qmd">Exports</a> sheet, which will add corresponding columns to the <em>Dictionary</em> sheet.</p>
-<p><strong>Rules</strong>:</p>
+<section id="rules" class="level3">
+<h3 class="anchored" data-anchor-id="rules">Rules</h3>
 <ul>
 <li><p>Variables with <strong>any value</strong> entered in the “Export” columns will be exported. If you want to <strong>not</strong> export a variable, you need to keep the cells <strong>empty</strong>.</p></li>
 <li><p>You can define the order in which variables are displayed in exports by entering numbers in the export column. If two variables have the same number (in the same export column), they will be exported in the order they are defined in the setup (from top to bottom).</p></li>
@@ -1292,6 +1311,7 @@ Tip: create anonymous exports
 <p>If you wish to create an anonymous export, i.e.&nbsp;one containing no personal identifier, you can filter the “personal identifier” column to <em>yes</em> and check that the column corresponding to the anonymous export is empty.</p>
 </div>
 </div>
+</section>
 <section id="example-3" class="level3">
 <h3 class="anchored" data-anchor-id="example-3">Example</h3>
 <p>In the following example, two exports have been created. The first one exports all variables present in the order that they appear in the setup. The other export (perhaps a specific MoH export) only export some variable, and choses the order (<code>facility_name</code> is exported first, then <code>facility_type</code>, then etc.).</p>
@@ -1318,7 +1338,7 @@ Important
 <p>As with <a href="#sec-formula-control">formulas</a>, do not start with an “=” sign!</p>
 </div>
 </div>
-<p>Examples:</p>
+<p><strong>Examples: </strong></p>
 <ul>
 <li>“0” to forbid negative values in an age in month or year column</li>
 <li><code>date_notification</code> to not allow the date of exit to be before the arrival in the health facility</li>
@@ -1341,7 +1361,11 @@ Important
 <p>As with the formulas, the “=” sign is <strong>not</strong> placed in front of the limits you define.</p>
 </div>
 </div>
-<p>Examples: - “120” to limit the age in year - <code>today()</code> to not allow dates after the day of data entry in the case of most date columns</p>
+<p><strong>Examples: </strong></p>
+<ul>
+<li>“120” to limit the age in year</li>
+<li><code>today()</code> to not allow dates after the day of data entry in the case of most date columns</li>
+</ul>
 </section>
 <section id="sec-alert" class="level3">
 <h3 class="anchored" data-anchor-id="sec-alert">Alert</h3>
