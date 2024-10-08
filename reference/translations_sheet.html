@@ -211,8 +211,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#update-the-translation-table" id="toc-update-the-translation-table" class="nav-link active" data-scroll-target="#update-the-translation-table">Update the translation table</a></li>
+  <li><a href="#add-a-new-language" id="toc-add-a-new-language" class="nav-link" data-scroll-target="#add-a-new-language">Add a new language</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -236,11 +243,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The <strong>setup</strong> file has functionalities to create linelists in different languages from the same dictionary, which makes maintenance much easier.</p>
+<p>OutbreakTools can create linelists in different languages from the same dictionary, which makes maintenance of a linelist much easier (only one place to make a change, before compiling in all the languages).</p>
 <p>The <em>Translation</em> sheet contains all text values to translate. This works because by design, the text fields that require translation in the various sheets of the <strong>setup file</strong> are tagged with a “translate as text” tag.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The <em>Translation</em> contains at least one column, with the default language. i.e.&nbsp;the language you chose to complete the <strong>setup file</strong> (here: “French”).</p>
-<p>The column headings can be modified. It is better to name the languages in the table headings, as they will be used to populate a dropdown menu later, when the linelist is created.</p>
-<p>Click on the button <em>“Update translation table”</em> from the <em>Setup Options</em> ribbon to import all the fields to be translated into the table. They are listed in alphabetical order.</p>
+<p>The <em>Translation</em> sheet contains at least one column, with the default language, <em>i.e</em>. the language you chose to complete the <strong>setup file</strong>.</p>
+<p>The columns headings can be modified. It is important to name the languages in the table headings, as they will be used to populate a dropdown menu in the <strong>designer file</strong> when the linelist is to be compiled.</p>
+<section id="update-the-translation-table" class="level2">
+<h2 class="anchored" data-anchor-id="update-the-translation-table">Update the translation table</h2>
+<p>Click on the button <em>“Update translation table”</em> from the <a href="../reference/ribbons.html#sec-setup-ribbon">Setup Options ribbon</a> to scrap the file and import all the fields to be translated into the table. They are listed in alphabetical order.</p>
+</section>
+<section id="add-a-new-language" class="level2">
+<h2 class="anchored" data-anchor-id="add-a-new-language">Add a new language</h2>
 <p>To add a language to the table, use the <em>Setup Options</em> ribbon.</p>
 <p><img src="../images/im-103-translations-sheet.png" class="img-fluid"></p>
 <p>In the “Translation” tab, in the “Add language” field, enter the name of the language you want to add, then press the “Enter” key on your keyboard.</p>
@@ -327,27 +339,27 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="../images/im-112-translations-sheet.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please note that there is no control or intelligence behind the notions of default language and other languages, <em>i.e</em>. if you name the first column “French” and the second “English”, even though you have used English in the <strong>setup file</strong>, it is the column named first column named “French” that will contain the values in English.</p>
+<p>There is no control or intelligence behind the notions of default language and other languages, <em>i.e</em>. if you name the first column “French” and the second “English”, even though you have used English in the <strong>setup file</strong>, it is the first column named “French” that will contain the values in English.</p>
 <p>Similarly, if you have mixed several languages across the <strong>setup file</strong>, all the values will be in the same column, the first column of the table.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -382,6 +394,7 @@ Note
 </div>
 
 
+</section>
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
