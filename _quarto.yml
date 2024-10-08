@@ -8,13 +8,18 @@ execute:
 website:
   title: "OutbreakTools documentation"
   favicon: images/icon.png
+  repo-url: https://github.com/epicentre-msf/test-obt-doc-website
+  
+  # Options
   page-navigation: true
   back-to-top-navigation: true
-  # repo-url: https://github.com/openscapes/quarto-website-tutorial 
+
   
+  # Navbar
   navbar:
     search: true
     logo: images/icon.png
+    
     left:
      - text: About
        href: about.qmd
@@ -55,14 +60,19 @@ website:
 
       - text: Tutoriels
 
-      - text: How to
-        menu: 
+      - text: How-to 
+        menu:
           - text: Export subset of geo columns
             href: how_to/export_subset_geo.qmd
-            
+
           - text: Create two data entry tables
             href: how_to/link_tables.qmd
             
+      - text: Cheatsheet
+        menu:
+          - text: Choosing variable controls
+            href: cheatsheets/variable_control.qmd
+        
     tools:
       - icon: github
         text: Source Code
@@ -71,14 +81,16 @@ website:
   # sidebar:
   #   contents: auto
 
+  # Footer
   page-footer:
     left: Developed by [![](images/epicentre.png){fig-alt="Epicentre logo" width=65px}](https://epicentre.msf.org/)
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    
+    right: This website is built with {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - styles.scss
     toc: true
     citations-hover: true
     footnotes-hover: true
