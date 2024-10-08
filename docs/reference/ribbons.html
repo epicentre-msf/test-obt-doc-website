@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Import a geobase in the linelist – OutbreakTools documentation</title>
+<title>Ribbons – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -212,15 +212,46 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#sec-setup-ribbon" id="toc-sec-setup-ribbon" class="nav-link active" data-scroll-target="#sec-setup-ribbon">Setup</a>
+  <ul>
+  <li><a href="#table-management" id="toc-table-management" class="nav-link" data-scroll-target="#table-management">Table management</a>
+  <ul>
+  <li><a href="#add-rows" id="toc-add-rows" class="nav-link" data-scroll-target="#add-rows">Add rows</a></li>
+  <li><a href="#resize-table-in-the-current-sheet" id="toc-resize-table-in-the-current-sheet" class="nav-link" data-scroll-target="#resize-table-in-the-current-sheet">Resize table in the current sheet</a></li>
+  <li><a href="#remove-filters" id="toc-remove-filters" class="nav-link" data-scroll-target="#remove-filters">Remove filters</a></li>
+  </ul></li>
+  <li><a href="#translation" id="toc-translation" class="nav-link" data-scroll-target="#translation">Translation</a>
+  <ul>
+  <li><a href="#add-language" id="toc-add-language" class="nav-link" data-scroll-target="#add-language">Add language</a></li>
+  </ul></li>
+  <li><a href="#import" id="toc-import" class="nav-link" data-scroll-target="#import">Import</a>
+  <ul>
+  <li><a href="#import-data-from-another-setup" id="toc-import-data-from-another-setup" class="nav-link" data-scroll-target="#import-data-from-another-setup">Import data from another setup</a></li>
+  <li><a href="#import-from-disease-in-developpment" id="toc-import-from-disease-in-developpment" class="nav-link" data-scroll-target="#import-from-disease-in-developpment">Import from disease (in developpment)</a></li>
+  </ul></li>
+  <li><a href="#advanced" id="toc-advanced" class="nav-link" data-scroll-target="#advanced">Advanced</a>
+  <ul>
+  <li><a href="#sec-check-setup" id="toc-sec-check-setup" class="nav-link" data-scroll-target="#sec-check-setup">Check current setup for errors</a></li>
+  <li><a href="#clear-data-in-current-setup" id="toc-clear-data-in-current-setup" class="nav-link" data-scroll-target="#clear-data-in-current-setup">Clear data in current setup</a></li>
+  </ul></li>
+  <li><a href="#dev" id="toc-dev" class="nav-link" data-scroll-target="#dev">Dev</a></li>
+  </ul></li>
+  <li><a href="#sec-designer-ribbon" id="toc-sec-designer-ribbon" class="nav-link" data-scroll-target="#sec-designer-ribbon">Designer</a></li>
+  <li><a href="#sec-linelist-ribbon" id="toc-sec-linelist-ribbon" class="nav-link" data-scroll-target="#sec-linelist-ribbon">Linelist</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Import a geobase in the linelist</h1>
+<h1 class="title">Ribbons</h1>
 </div>
 
 
@@ -237,11 +268,195 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TODO</p>
+<p>Recent version of Excel have a top <a href="https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/">ribbon</a> that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this ribbon with OutbreakTools functionalities.</p>
+<section id="sec-setup-ribbon" class="level2">
+<h2 class="anchored" data-anchor-id="sec-setup-ribbon">Setup</h2>
+<div id="fig-setup-ribbon" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-setup-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/img-003-ribbon-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-setup-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
+</figcaption>
+</figure>
+</div>
+<section id="table-management" class="level3">
+<h3 class="anchored" data-anchor-id="table-management">Table management</h3>
+<p>The buttons of this section provide action on tables within the setup: main table on the <em>Dictionary sheet</em>, table for choices, table for exports, tables for analyses etc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-003-ribbon-setup-table.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+<section id="add-rows" class="level4">
+<h4 class="anchored" data-anchor-id="add-rows">Add rows</h4>
+<p>This button insert rows at the bottom of the table in the current sheet.</p>
+<p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to add rows to all tables or just one in particular.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/im-115-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="resize-table-in-the-current-sheet" class="level4">
+<h4 class="anchored" data-anchor-id="resize-table-in-the-current-sheet">Resize table in the current sheet</h4>
+<p>This button remove empty rows (whether at the end or in the middle).</p>
+<p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to remove empty rows to all tables or just one in particular.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/im-117-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="remove-filters" class="level4">
+<h4 class="anchored" data-anchor-id="remove-filters">Remove filters</h4>
+<p>This button clears filters. It is usefull if you have applied Excel filters in several columns, no need to track them all one by one, just clear them in one go.</p>
+</section>
+</section>
+<section id="translation" class="level3">
+<h3 class="anchored" data-anchor-id="translation">Translation</h3>
+<p>This section provides functionalities for the <a href="../reference/translations_sheet.html">Translation sheet</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-003-ribbon-setup-translations.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+<p><a href="../how_to/add_language.html">Steps to add a language</a></p>
+<section id="add-language" class="level4">
+<h4 class="anchored" data-anchor-id="add-language">Add language</h4>
+<p>This button adds a new column to translations sheet, to add a new linelist language.</p>
+<ol type="1">
+<li>Fill the name of the language in the box</li>
+<li>Click on the button: it will add a new empty column on the right of the columns already present.</li>
+</ol>
+</section>
+</section>
+<section id="import" class="level3">
+<h3 class="anchored" data-anchor-id="import">Import</h3>
+<p>These buttons allow to import data into an empty setup.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-003-ribbon-setup-import.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+<section id="import-data-from-another-setup" class="level4">
+<h4 class="anchored" data-anchor-id="import-data-from-another-setup">Import data from another setup</h4>
+<p>Use this button to migrate data from one <strong>setup file</strong> to another empty setup file<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<ol type="1">
+<li>Click on the button; it opens a popup window</li>
+<li>Click on the “Load another setup file” button. It will open a window to select the file to import data from.</li>
+<li>Select what to import from the original by ticking the boxes.</li>
+<li>Decide if you want to run a checkup of the <strong>setup</strong> file after import by ticking the box or not</li>
+<li>Click on the “Import” button and wait.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-004-import-setup.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are migrating a setup to a new <strong>setup file</strong>, you should check all boxes to import everything.</p>
+<p>You can run the coherence checks now, or do it at a later stage with the <a href="#sec-check-setup">Check setup button</a></p>
+</div>
+</div>
+</section>
+<section id="import-from-disease-in-developpment" class="level4">
+<h4 class="anchored" data-anchor-id="import-from-disease-in-developpment">Import from disease (in developpment)</h4>
+<p>This button is used to import a “disease setup” from a disease <strong>Master file</strong>. This file is being piloted for Epinetwork discussions.</p>
+</section>
+</section>
+<section id="advanced" class="level3">
+<h3 class="anchored" data-anchor-id="advanced">Advanced</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-003-ribbon-setup-advanced.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+<section id="sec-check-setup" class="level4">
+<h4 class="anchored" data-anchor-id="sec-check-setup">Check current setup for errors</h4>
+<p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you can (should) click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
+<p>There is a table for each sheet or section (in the case of analyses), with the following three columns:</p>
+<ul>
+<li><p>“<strong>Incoherences Type</strong>” preceded by the name of the sheet,</p></li>
+<li><p>“<strong>Where?</strong>”, which shows the name of the sheet or section and the line where the incoherence is located,</p></li>
+<li><p>“<strong>Details</strong>”, which gives details of the incoherence.</p></li>
+</ul>
+<p>There are several types information that could appear in the Incoherence column:</p>
+<ul>
+<li><p><strong>Info</strong> (in grey): this is not strictly speaking an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.</p></li>
+<li><p><strong>Warning</strong> (in yellow): these are problems that need to be fixed because there is a real inconsistency. It could be an error in a formula, for example.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p><strong>Note</strong> (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/im-121-check-current-setup-for-errors.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="clear-data-in-current-setup" class="level4">
+<h4 class="anchored" data-anchor-id="clear-data-in-current-setup">Clear data in current setup</h4>
+<p>This feature allows you to delete all the data entered in the <strong>setup file</strong>.</p>
+<ol type="1">
+<li>Click on the button; it opens a popup window to decide which part of the setup you want to clear</li>
+<li>Tick boxes to select sheets to clean</li>
+<li>Click on the “Clear” button. It will open a window to ask you if you are very sure.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-005-clear-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="dev" class="level3">
+<h3 class="anchored" data-anchor-id="dev">Dev</h3>
+<p>The dev tab is for the OBT developer and you can ignore it.</p>
+</section>
+</section>
+<section id="sec-designer-ribbon" class="level2">
+<h2 class="anchored" data-anchor-id="sec-designer-ribbon">Designer</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/img-003-ribbon-designer.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the designer</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-linelist-ribbon" class="level2">
+<h2 class="anchored" data-anchor-id="sec-linelist-ribbon">Linelist</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/img-002-ribbon-linelist.png" class="img-fluid figure-img"></p>
+<figcaption>OutbreakTools tab in the created linelist</figcaption>
+</figure>
+</div>
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>An upgraded version, or an empty file fo the same version in case the original file got corrupted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated colums after compilation!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

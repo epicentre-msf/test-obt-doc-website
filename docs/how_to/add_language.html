@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Import a geobase in the linelist – OutbreakTools documentation</title>
+<title>Add a new language – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -212,15 +212,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#a-note-about-languages" id="toc-a-note-about-languages" class="nav-link active" data-scroll-target="#a-note-about-languages">A note about languages</a></li>
+  <li><a href="#add-a-new-language-to-a-setup" id="toc-add-a-new-language-to-a-setup" class="nav-link" data-scroll-target="#add-a-new-language-to-a-setup">Add a new language to a setup</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Import a geobase in the linelist</h1>
+<h1 class="title">Add a new language</h1>
 </div>
 
 
@@ -237,9 +244,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TODO</p>
+<section id="a-note-about-languages" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-about-languages">A note about languages</h2>
+<p>There are two levels of translation:</p>
+<ul>
+<li><p>the language of the <em>interface</em> (buttons and fuctionalities): standardised for all linelists, since all linelists produced by OBT have the same set of buttons and functionalities</p></li>
+<li><p>the language of <em>linelist content</em> (variable labels, categories…)</p></li>
+</ul>
+<p>The <em>linelist interface</em> has built-in translations for: English, French, Arabic, Spanish and Portuguese. The translations are buil-in the <strong>designer file</strong> itself. If another language needs to be added to this list, you can contact Yves Amevoin or the EpiDS team to request it.</p>
+<p>The <em>content</em> of the linelist depends on the setup, so each <strong>setup file</strong> must come with its own translations (if several languages needed).</p>
+<p>Both levels of translation are selected during the <a href="../getting_started/compile.html">compilation</a> steps of a given linelist.</p>
+</section>
+<section id="add-a-new-language-to-a-setup" class="level2">
+<h2 class="anchored" data-anchor-id="add-a-new-language-to-a-setup">Add a new language to a setup</h2>
+<p>Go to the <a href="../reference/ribbons.html#sec-setup-ribbon">OutbreakTools tab</a> of the setup top ribbon. One section contains buttons for translation:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/img-003-ribbon-setup-translations.png" class="img-fluid figure-img"></p>
+<figcaption>Translation section in the OutbreakTools tab</figcaption>
+</figure>
+</div>
+<p>To add a new linelist language:</p>
+<ol type="1">
+<li><p>Click on the “Update translation table”, which is going to scrap all text bits from the setup and add them to the translation table (even if there is only one language in the sheet). This step can be done at a later stage, and each time you modify or add a label in the setup.</p></li>
+<li><p>Fill the name of the language you want to add in the rectangular box</p></li>
+<li><p>Click on the “Add language” button: it will add a new empty column on the right of the column(s) already present in the <a href="../reference/translations_sheet.html">Translation sheet</a>, and open the</p></li>
+<li><p>Provide translation for each string of text.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.</p>
+</div>
+</div>
+<p>To know more about the <a href="../reference/translations_sheet.html">Tranlation sheet</a>.</p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

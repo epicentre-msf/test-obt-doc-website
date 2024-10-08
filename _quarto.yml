@@ -5,6 +5,20 @@ project:
 execute:
   freeze: auto
 
+format:
+  html:
+    theme: 
+      - cosmo
+      - styles.scss
+    
+    toc: true
+    toc-depth: 5
+    toc-expand: 2
+    toc-title: Table of content
+    
+    citations-hover: true
+    footnotes-hover: true
+
 website:
   title: "OutbreakTools documentation"
   favicon: images/icon.png
@@ -101,11 +115,3 @@ website:
     left: Developed by [![](images/epicentre.png){fig-alt="Epicentre logo" width=65px}](https://epicentre.msf.org/)
     right: This website is built with {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
 
-format:
-  html:
-    theme: 
-      - cosmo
-      - styles.scss
-    toc: true
-    citations-hover: true
-    footnotes-hover: true
