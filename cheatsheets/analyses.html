@@ -215,8 +215,24 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#choosing-analyses" id="toc-choosing-analyses" class="nav-link active" data-scroll-target="#choosing-analyses">Choosing analyses</a></li>
+  <li><a href="#univariate-analyses" id="toc-univariate-analyses" class="nav-link" data-scroll-target="#univariate-analyses">Univariate analyses</a></li>
+  <li><a href="#bivariate-analyses" id="toc-bivariate-analyses" class="nav-link" data-scroll-target="#bivariate-analyses">Bivariate analyses</a></li>
+  <li><a href="#time-series" id="toc-time-series" class="nav-link" data-scroll-target="#time-series">Time series</a>
+  <ul>
+  <li><a href="#table-1" id="toc-table-1" class="nav-link" data-scroll-target="#table-1">Table 1</a></li>
+  <li><a href="#table-2-graph-metadata" id="toc-table-2-graph-metadata" class="nav-link" data-scroll-target="#table-2-graph-metadata">Table 2: graph metadata</a></li>
+  <li><a href="#table-3-define-the-graph" id="toc-table-3-define-the-graph" class="nav-link" data-scroll-target="#table-3-define-the-graph">Table 3: define the graph</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul></li>
+  <li><a href="#some-functionsexamples" id="toc-some-functionsexamples" class="nav-link" data-scroll-target="#some-functionsexamples">Some functions/examples</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -240,10 +256,410 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="choosing-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-analyses">Choosing analyses</h2>
 <p><img src="../images/im-060-analysis-and-graphs-sheet.png" class="img-fluid"></p>
-<p>Some functions/examples</p>
+</section>
+<section id="univariate-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="univariate-analyses">Univariate analyses</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th style="text-align: center;">Mandatory</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Section</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Group tables by section</td>
+</tr>
+<tr class="even">
+<td>Table title</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Short title</td>
+</tr>
+<tr class="odd">
+<td>Group by variable (row)</td>
+<td>Dropdown</td>
+<td style="text-align: center;">Yes</td>
+<td>One categorical variable to summarise</td>
+</tr>
+<tr class="even">
+<td>Add missing data</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td>Add rows with missing values counts?</td>
+</tr>
+<tr class="odd">
+<td>Summary function</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td><code>N</code> to count rows, other formulas accepted</td>
+</tr>
+<tr class="even">
+<td>Summary label</td>
+<td>Free text</td>
+<td style="text-align: center;"></td>
+<td>Name of the summary</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Dropdown</td>
+<td style="text-align: center;"></td>
+<td>Format of the summary</td>
+</tr>
+<tr class="even">
+<td>Add percentage</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Add graph</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Flip coordinates</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td>Inverse x and y axis of the graph</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bivariate-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="bivariate-analyses">Bivariate analyses</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 21%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th style="text-align: center;">Mandatory</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Section</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Group tables by section</td>
+</tr>
+<tr class="even">
+<td>Table title</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Short title</td>
+</tr>
+<tr class="odd">
+<td>Group by variable (row)</td>
+<td>Dropdown</td>
+<td style="text-align: center;">Yes</td>
+<td>One categorical variable to summarise</td>
+</tr>
+<tr class="even">
+<td>Group by variable (column)</td>
+<td></td>
+<td style="text-align: center;">Yes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Add missing data</td>
+<td>Dropdown (no/row/column/all)</td>
+<td style="text-align: center;"></td>
+<td>Add missing values counts?</td>
+</tr>
+<tr class="even">
+<td>Summary function</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td><code>N</code> to count rows, but formulas accepted</td>
+</tr>
+<tr class="odd">
+<td>Summary label</td>
+<td>Free text</td>
+<td style="text-align: center;"></td>
+<td>Name of the summary</td>
+</tr>
+<tr class="even">
+<td>Format</td>
+<td>Dropdown</td>
+<td style="text-align: center;"></td>
+<td>Format of the summary</td>
+</tr>
+<tr class="odd">
+<td>Add percentage</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Add graph</td>
+<td>Dropdown (values/percentage)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Flip coordinates</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td>Inverse x and y axis of the graph</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-series" class="level2">
+<h2 class="anchored" data-anchor-id="time-series">Time series</h2>
+<section id="table-1" class="level3">
+<h3 class="anchored" data-anchor-id="table-1">Table 1</h3>
+<p>Defines the tables (organise them in sections, which temporal variable, which grouping variable if any, title, summarising formula etc. )</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 21%">
+<col style="width: 20%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th style="text-align: center;">Mandatory</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Series ID</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Section</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Group columns by section</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Add missing data</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td>Add missing values counts?</td>
+</tr>
+<tr class="odd">
+<td>Summary function</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td><code>N</code> to count rows, but formula accepted</td>
+</tr>
+<tr class="even">
+<td>Summary label</td>
+<td>Free text</td>
+<td style="text-align: center;"></td>
+<td>Name of the summary</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Dropdown</td>
+<td style="text-align: center;"></td>
+<td>Format of the summary</td>
+</tr>
+<tr class="even">
+<td>Add percentage</td>
+<td>Dropdown (column/row/no)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Add total</td>
+<td>Dropdown (yes/no)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Table order</td>
+<td>Free text</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="table-2-graph-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="table-2-graph-metadata">Table 2: graph metadata</h3>
+<p>This table table is used to define the title and order of the graphs associated with the time series.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th style="text-align: center;">Mandatory</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Graph title</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td>Short title</td>
+</tr>
+<tr class="even">
+<td>Graph order</td>
+<td>Free text</td>
+<td style="text-align: center;">Yes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Graph ID</td>
+<td>Automatic</td>
+<td style="text-align: center;">Yes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="table-3-define-the-graph" class="level3">
+<h3 class="anchored" data-anchor-id="table-3-define-the-graph">Table 3: define the graph</h3>
+<p>This table defines the graphs. It imports a lot of information from the two other tables. One graph can plot several series. A series is a <em>column</em> in a time series table.</p>
+<p>Example: a graph plotting the number of “Cured” and “Dead” across time is plotting <em>two series</em>, the number of cured and the number of dead, which were obtained from one table where the <code>exit_status</code> was used as grouping variable.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th style="text-align: center;">Mandatory</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Graph title</td>
+<td>Dropdown</td>
+<td style="text-align: center;">Yes</td>
+<td>Defined in the previous table</td>
+</tr>
+<tr class="even">
+<td>Series title</td>
+<td>Dropdown</td>
+<td style="text-align: center;">Yes</td>
+<td>Choose which variable summary to plot (ex: counts for outcomes)</td>
+</tr>
+<tr class="odd">
+<td>Graph ID</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Series ID</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Graph order</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Time variable (row)</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Group by variable (column</td>
+<td>-</td>
+<td style="text-align: center;">Automatic</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Choices</td>
+<td>Dropdown (variable modality)</td>
+<td style="text-align: center;">Yes</td>
+<td>Choose modality to plot (ex: deads)</td>
+</tr>
+<tr class="odd">
+<td>Label</td>
+<td>Free text</td>
+<td style="text-align: center;"></td>
+<td>Label of the modality</td>
+</tr>
+<tr class="even">
+<td>Plot values or percentages</td>
+<td>Dropdown (values/percentage)</td>
+<td style="text-align: center;">Yes</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Chart type</td>
+<td>Dropdown (bar/line/point)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Y-axis</td>
+<td>Dropdown (left/right)</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/im-079-diagram.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/im-080-diagram.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="some-functionsexamples" class="level2">
+<h2 class="anchored" data-anchor-id="some-functionsexamples">Some functions/examples</h2>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
