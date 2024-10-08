@@ -75,9 +75,6 @@ website:
             href: reference/ribbons.qmd
             
 
-      - text: Tutoriels
-        href: tutorial.qmd
-
       - text: How-to 
         menu:
           - text: Export subset of geo columns
@@ -100,11 +97,14 @@ website:
             
       - text: Cheatsheet
         menu:
-          - text: Choosing variable controls
+          - text: Variable controls
             href: cheatsheets/variable_control.qmd
             
-          - text: Defining analyses
+          - text: Analyses
             href: cheatsheets/analyses.qmd
+            
+      - text: Tutoriel
+        href: tutorial.qmd
         
     tools:
       - icon: github
