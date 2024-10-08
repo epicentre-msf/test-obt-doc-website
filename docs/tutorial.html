@@ -197,6 +197,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./cheatsheets/variable_control.html">
  <span class="dropdown-text">Choosing variable controls</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./cheatsheets/analyses.html">
+ <span class="dropdown-text">Setup analyses</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -226,7 +230,6 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#exercise-1-getting-started." id="toc-exercise-1-getting-started." class="nav-link" data-scroll-target="#exercise-1-getting-started.">Exercise 1: Getting started.</a></li>
   <li><a href="#exercise-2-adding-new-variables" id="toc-exercise-2-adding-new-variables" class="nav-link" data-scroll-target="#exercise-2-adding-new-variables">Exercise 2: Adding new variables</a></li>
-  <li><a href="#warning-for-mac-users" id="toc-warning-for-mac-users" class="nav-link" data-scroll-target="#warning-for-mac-users">Warning for Mac users</a></li>
   <li><a href="#exercise-3-adding-new-analyses" id="toc-exercise-3-adding-new-analyses" class="nav-link" data-scroll-target="#exercise-3-adding-new-analyses">Exercise 3: Adding new analyses</a></li>
   </ul>
 </nav>
@@ -293,7 +296,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you just want to focus on linelist usage, you can download <em>materials for a short tutorial</em> <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip">available here</a></p>
+<p>If you just want to focus on linelist usage, you can download materials for a short tutorial <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip">here</a></p>
 </div>
 </div>
 <section id="introduction" class="level2">
@@ -326,7 +329,6 @@ Note
 <section id="download-and-unzip-the-materials" class="level3">
 <h3 class="anchored" data-anchor-id="download-and-unzip-the-materials">Download and unzip the materials</h3>
 <p>You can download the exercices bundled in a<code>zip</code> file for offline use <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip">here</a>.</p>
-<p><strong>Download and extract files.</strong></p>
 </section>
 <section id="unlock-files-if-necessary" class="level3">
 <h3 class="anchored" data-anchor-id="unlock-files-if-necessary">Unlock files if necessary</h3>
@@ -335,7 +337,6 @@ Note
 <li>Right click on the file</li>
 <li>Select “Properties” 3- Check the <em>Unblock</em> box on the bottom right.</li>
 </ol>
-<p><strong>Be sure the downloaded files are not locked by Windows</strong></p>
 </section>
 <section id="activate-macros-before-exercises" class="level3">
 <h3 class="anchored" data-anchor-id="activate-macros-before-exercises">Activate macros before exercises</h3>
@@ -396,12 +397,20 @@ Note
 <ul>
 <li>Regenerate a new linelist named <code>linelist_measles_en_ex2</code> using the designer located in the <code>designer</code> folder. Save the linelist in the demo folder, making sure you have selected English as the language. You will use the file <code>geobase-cod-2023-03-13_20230612.xlsx</code> in the <code>geobase</code> folder as your geobase.</li>
 </ul>
-</section>
-<section id="warning-for-mac-users" class="level2 .{callout-warning}">
-<h2 class="anchored" data-anchor-id="warning-for-mac-users">Warning for Mac users</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning for Mac users
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Sometimes generating the linelist using a ribbon file can fail on Mac. In that case, it will default back to a linelist with buttons instead, but you should be able to pursue the exercices with this linelist. We are working to provide full support for Ribbon on Mac Os.</p>
 <p>You might experience screen flickering during the linelist creation process.</p>
-</section>
+</div>
+</div>
 <ul>
 <li>You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
 <ul>
@@ -409,6 +418,7 @@ Note
 <li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
 </ul></li>
 </ul>
+</section>
 <section id="exercise-3-adding-new-analyses" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-3-adding-new-analyses">Exercise 3: Adding new analyses</h2>
 <p>We have decided to add some analyses on the type of discharge (variable <code>outcome</code>) to the linelist.</p>

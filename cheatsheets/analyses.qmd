@@ -107,3 +107,4 @@ Example: a graph plotting the number of "Cured" and "Dead" across time is plotti
 
 ## Some functions/examples
 
+`N`: count the number of rows for each modality
