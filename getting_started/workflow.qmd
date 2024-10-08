@@ -12,7 +12,7 @@ Follow these steps to create a linelist with OutbreakTools:
 4.  Correct bugs in the **setup file**
 5.  Rinse and repeat until the linelist is functional
 
-![SImplified workflow](../images/im-001-outbreak-tools-solutions.png){#fig-setup-ribbon fig-align="center"}
+![Simplified workflow](../images/im-001-outbreak-tools-solutions.png){#fig-setup-ribbon fig-align="center"}
 
 ## Setup file
 
@@ -33,7 +33,7 @@ The setup file contains the following sheets:
 | Dictionary       | Describes all the variables to be collected, their format, etc.                                                                                                                              | Data entry sheets (typically, *Info sheet* and *Linelist* sheets) |
 | Choices          | Defines the categories/levels accepted for categorical variables, in the form of a list                                                                                                      | Dropdown menus in linelist sheets                                 |
 | Exports          | Defines the characteristics of exports, such as protection, choice of variables or sheets to export and export names                                                                         | Export button in the OutbreakTools ribbon                         |
-| Analysis         | Describes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied                                                      | Analysis sheets                                                   |
+| Analyses         | Describes the analyses to include is the linelist in tabular form, by selecting the variables and indicating the formulas to be applied                                                      | Analysis sheets                                                   |
 | Translation      | Automatically displays the list of strings of text/fields to be translated and adds new columns where the user can provide translated text in a desired language (one column = one language) | Choice of linelist language when created (designer)               |
 
 : Sheets in the **setup file** and their uses.
@@ -41,6 +41,8 @@ The setup file contains the following sheets:
 The **setup file** also has a dedicated OutbreakTools section in the top option ribbon from Excel:
 
 ![OutbreakTools ribbon in the **setup file**](images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
+
+Go to the [reference](../reference/setup_ribbon.qmd) to know more about the ribbon buttons.
 
 ## Designer file
 
