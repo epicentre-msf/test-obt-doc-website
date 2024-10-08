@@ -40,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -154,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How to</span>
+ <span class="menu-text">How-to</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
@@ -164,6 +166,17 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../how_to/link_tables.html">
  <span class="dropdown-text">Create two data entry tables</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cheatsheet</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
+        <li>
+    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
+ <span class="dropdown-text">Choosing variable controls</span></a>
   </li>  
     </ul>
   </li>
@@ -408,7 +421,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Names must be made unique
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -436,16 +449,19 @@ Tip
 <p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with one exception, see <a href="#sec-editable-label" class="quarto-xref">Section&nbsp;1.4</a>).</p>
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Add more information
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>To add more details, you can use the following fields: <a href="#sec-sub-label">Sub Label</a> and <a href="sec-note">Note</a>.</p>
+</div>
 </div>
 </div>
 </section>
@@ -453,14 +469,16 @@ Note
 <h3 class="anchored" data-anchor-id="dev-comment">Dev Comment</h3>
 <p>This free text column is for the sole benefit of the <strong>setup file</strong> developer (in all probability, you), to add technical or practical information. <strong>It is not read by the designer and does not affect the generated file.</strong></p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Example of one user usage
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>One of the author of this doc uses these tags:</p>
 <ul>
@@ -469,6 +487,7 @@ Note
 <li><p><strong>WHO/Epinetwork</strong>: sometimes I want to keep the information that a column is here because it comes from the Epinetwork or the WHO CRF, and should probably not be modified.</p></li>
 <li><p><strong>Boilerplate</strong>: calculated columns that are needed for graphs, or because the information is important (such as epiweeks). These columns are often hidden, but not necessarily, and they sometimes can be exported too.</p></li>
 </ul>
+</div>
 </div>
 </div>
 <p>Feel free to use this column in a ways that helps you work, or to ignore it!</p>
@@ -482,7 +501,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Use editable labels to add customisable variables in your linelists
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -508,22 +527,24 @@ Note
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Example of common sub-labels
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Common sub-labels include the following:</p>
 <ul>
 <li>Yes / No</li>
 <li>Yes / No / Unk.</li>
 <li>Free text</li>
 <li>The format of your date (ex: DD/MM/YYYY)</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -558,16 +579,19 @@ Tip
 <p>This is a free text field that contains the <em>name of the sheet</em> in which the variable will appear.</p>
 <p>In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Note on linelist sheets
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd].</p>
+</div>
 </div>
 </div>
 </section>
@@ -594,7 +618,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Tip: organise variables
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -644,19 +668,22 @@ Tip
 </ul>
 <p>Variables can be shown or hidden using the <a href="../how_to/show_hide_variables.html"><em>Show/Hide</em> button</a> in the <strong>linelist file</strong>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Note on showing and hiding columns manually
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Technically, the linelist user can forcefully hide/un-hide columns.</p>
 <p>Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (<em>e.g</em>. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.</p>
 <p>It is however more dangerous to forcefully hide “mandatory” columns. These columns are often fundamental variables in the linelist, that are needed for data understanding and analyses (<em>e.g</em>. date of admission, age or sex). If you choose to hide one of these columns, know that some analyses might not function as expected, or not at all because they rely on the hidden columns.</p>
 <p>Finally, any change of column visibility that is not made via the “Hide/show variable” button of the linelist will not be recorded and migrated to a new linelist.</p>
+</div>
 </div>
 </div>
 <section id="example-1" class="level4">
@@ -792,11 +819,11 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Data validation
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For non text variable (integers, decimals, dates) is is possible to restrict values using <a href="#sec-data-validation">data validation</a></p>
+<p>For non-text variable (integers, decimals, dates) is is possible to restrict values using <a href="#sec-data-validation">data validation</a></p>
 </div>
 </div>
 <section id="dropdown-menu-variables" class="level4">
@@ -806,41 +833,41 @@ Important
 <colgroup>
 <col style="width: 18%">
 <col style="width: 21%">
-<col style="width: 25%">
-<col style="width: 3%">
-<col style="width: 24%">
-<col style="width: 3%">
+<col style="width: 29%">
+<col style="width: 28%">
 </colgroup>
+<thead>
+<tr class="header">
+<th>Control</th>
+<th>How to populate the dropdown menu</th>
+<th>Where are values defined?</th>
+<th>Data entry</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td rowspan="2"><p>Control</p>
-<p>================= choice_manual</p></td>
-<td rowspan="2">How to populate the dropdown menu ==================== Predefined values</td>
-<td rowspan="2">Where are values defined? ======================== In the <strong>setup file</strong>, in the <em>Choices</em> sheet</td>
-<td colspan="2" rowspan="2"><p>Data entry</p>
-<p>========================== <strong>One value</strong> selected from a dropdown menu</p></td>
-<td></td>
+<td>choice_manual</td>
+<td>Predefined values</td>
+<td>In the <strong>setup file</strong>, in the <em>Choices</em> sheet</td>
+<td><strong>One value</strong> selected from a dropdown menu</td>
 </tr>
 <tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
 <td>choice_multiple</td>
 <td>Predefined values</td>
 <td>In the <strong>setup file</strong>, in the <em>Choices</em> sheet</td>
-<td colspan="2"><strong>Several values</strong> selected from a dropdown menu</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>choice_custom</td>
-<td>User-defined values (but see details)</td>
-<td colspan="4">In the <strong>Linelist file</strong>, | <strong>One value</strong> selected in the <em>Custom dropdown</em> | from a dropdown menu sheet |</td>
+<td><strong>Several values</strong> selected from a dropdown menu</td>
 </tr>
 <tr class="odd">
+<td>choice_custom</td>
+<td>User-defined values (but see details)</td>
+<td>In the <strong>Linelist file</strong>, in the <em>Custom dropdown</em> sheet</td>
+<td><strong>One value</strong> selected from a dropdown menu</td>
+</tr>
+<tr class="even">
 <td>list_auto</td>
 <td>User-defined values but from another data column</td>
-<td colspan="2">In the <strong>Linelist file</strong>, in another column</td>
-<td colspan="2"><strong>One value</strong> selected from a dropdown menu populated by the values of another variable</td>
+<td>In the <strong>Linelist file</strong>, in another column</td>
+<td><strong>One value</strong> selected from a dropdown menu populated by the values of another variable</td>
 </tr>
 </tbody>
 </table>
@@ -860,7 +887,7 @@ Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Note: cannot be used for analyses
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -873,7 +900,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Tip: Inform the linelist user
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -884,7 +911,8 @@ Tip
 <section id="sec-custom-dropdowns" class="level5">
 <h5 class="anchored" data-anchor-id="sec-custom-dropdowns">choice_custom</h5>
 <p>This control creates a <strong>dynamic dropdown menu</strong> in the linelist, but contrary to the previous controls, the values are not (necessarily) predefined in the <strong>setup file</strong>, but instead <strong>defined by the user</strong>. This control is useful for variables where one would like to enforce standardization of values, but the values to encode are not known in advance.</p>
-<p><strong>Example</strong>: you wish to create a column containing the name of facilities patients can be transferred to. The names of these facilities is site dependent, thus unknown in advance. “<em>Custom dropdown</em> sheet in the linelist where the user can fill-in values to populate the <strong>dynamic, customised dropdown menu</strong>.</p>
+<p><strong>Example</strong>: you wish to create a column containing the name of facilities patients can be transferred to. The names of these facilities is site dependent, thus unknown in advance.</p>
+<p>Using this control for at least one variable adds a “<em>Custom dropdown</em> sheet in the linelist, where the user can fill-in values to populate the <strong>dynamic, customised dropdown menu</strong>.</p>
 <p>While by default the dropdown menu created is empty, it is possible to pre-fill it by filling the “Control Details” column with a list of choices, like for the other types of dropdowns menus (see the <a href="#sec-var-control-details%20section">details on setting up dropdown menus</a> below). The table in the <em>Custom dropdown</em> sheet of the linelist will still be created and future users will be able to modify it.</p>
 </section>
 <section id="sec-list-auto" class="level5">
@@ -1004,7 +1032,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Important: CASE_WHEN and analyses
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1026,16 +1054,19 @@ Warning
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Why not using more recent Excel functions?
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If you are using a recent version of Excel, you may know the functions <code>IFS</code> or <code>SWITCH</code>. OutbreakTools does not rely on them as they are not retro-compatible with some older versions of Excel. Use a <code>CASE_WHEN</code> or <code>CHOICE_FORMULA</code> instead.</p>
+</div>
 </div>
 </div>
 <p>Read more about writing the formula in the <a href="#sec-formulas">Control details</a> column below.</p>
@@ -1111,13 +1142,26 @@ Note
 <section id="sec-formula-control" class="level5">
 <h5 class="anchored" data-anchor-id="sec-formula-control">formula control</h5>
 <p>The formula is written <strong>in English, without an “=” sign</strong>. During compilation, the formulas will automatically be translated into the Excel language defined on the computer used to generate the linelist.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When writing a formula, make sure that it returns an empty value for rows without an ID, as all the rows with non-null values in it will be counted in the <em>Analyses</em> sheets. If your graphs show a lot of “Missing” values that do not reflect how well a column is filled, check that a calculated column is not responsible for it.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important: english proof your formulas!
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1130,30 +1174,20 @@ Warning
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Tip: improve formual readibility
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>In Excel, you can use <code>ALT+ENTRY</code> to insert a carriage return to go to the next line. This does not affect the execution of your formulas, but greatly increases the readability. The same goes for inserting spaces around operators. Contrast these two formulas:</p>
 <p><img src="images/im-129-formula-style.png" class="img-fluid"></p>
 </div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When writing a formula, make sure that it returns an empty value for rows without an ID, as all the rows with non-null values in it will be counted in the <em>Analyses</em> sheets. If your graphs show a lot of “Missing” values that do not reflect how well a column is filled, check that a calculated column is not responsible for it.</p>
 </div>
 </div>
 </section>
@@ -1251,7 +1285,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Tip: create anonymous exports
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1841,7 +1875,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+<p>This website is built with <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://github.com" target="_blank"><i class="fa-brands fa-github" title="GitHub octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html" target="_blank"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/" target="_blank">Quarto</a></p>
 </div>
   </div>
 </footer>
