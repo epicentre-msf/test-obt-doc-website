@@ -7,15 +7,15 @@ The *Translation* sheet contains all text values to translate. This works becaus
 
 The *Translation* contains at least one column, with the default language. i.e. the language you chose to complete the **setup file** (here: "French").
 
-The column headings can be modified. It is better to name the languages in the table headings, as they will be used to populate a drop-down menu later, when the linelist is created.
+The column headings can be modified. It is better to name the languages in the table headings, as they will be used to populate a dropdown menu later, when the linelist is created.
 
-Click on the button *"update translation table"* from the *Setup Options* ribbon to import all the fields to be translated into the table. They are listed in alphabetical order.
+Click on the button *"Update translation table"* from the *Setup Options* ribbon to import all the fields to be translated into the table. They are listed in alphabetical order.
 
 To add a language to the table, use the *Setup Options* ribbon.
 
 ![](../images/im-103-translations-sheet.png)
 
-In the "Translation" block, in the "Add language" field, enter the name of the language you want to add, then press the "Enter" key on your keyboard.
+In the "Translation" tab, in the "Add language" field, enter the name of the language you want to add, then press the "Enter" key on your keyboard.
 
 The new language is added to the table:
 
@@ -43,7 +43,7 @@ The new language is added to the table:
 
 You can then fill in your translations.
 
-If you are making changes to the set-up and want to ensure that all the translatable fields are correctly listed, click Update translation table. A message will then inform you of the number of missing fields per language.
+If you are making changes to the setup and want to ensure that all the translatable fields are correctly listed, click Update translation table. A message will then inform you of the number of missing fields per language.
 
 ![](../images/im-110-translations-sheet.png){fig-align="center"}
 
