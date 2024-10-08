@@ -45,7 +45,7 @@ website:
           - text: Dictionary sheet
             href: reference/dictionary_sheet.qmd
             
-          - text: Choice sheet
+          - text: Choices sheet
             href: reference/choices_sheet.qmd
           
           - text: Analyses sheet
