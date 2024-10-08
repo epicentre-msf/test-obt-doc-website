@@ -57,6 +57,9 @@ website:
           - text: Translation sheet
             href: reference/translations_sheet.qmd
             
+          - text: Ribbon tabs
+            href: reference/ribbons.qmd
+            
 
       - text: Tutoriels
 
@@ -67,6 +70,18 @@ website:
 
           - text: Create two data entry tables
             href: how_to/link_tables.qmd
+            
+          - text: Add a new linelist language
+            href: how_to/add_language.qmd
+            
+          - text: Migrate a setup to an upgraded version
+            href: how_to/migrate_setup.qmd            
+            
+          - text: Import a geobase in the linelist
+            href: how_to/import_geobase.qmd
+            
+          - text: Show or hide variables in the linelist
+            href: how_to/show_hide_variables.qmd
             
       - text: Cheatsheet
         menu:
