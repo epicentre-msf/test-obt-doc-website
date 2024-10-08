@@ -10,11 +10,11 @@ This sheet contains several tables for defining different types of analyses and 
 -   three tables for defining time series and their graphs: "Time Series Analysis", "Labels for Time Series Graphs", "Graph on Time Series"
 -   two tables for defining spatio-temporal analyses: "Specification for Spatio-Temporal Analysis", "Spatio-Temporal Analysis"
 
-![Pick your analysis!](../images/im-060-analysis-and-graphs-sheet.png)
+![Pick your analysis!](../images/im-060-analysis-and-graphs-sheet.png){fig-align="center"}
 
 ## Global Summary
 
-![](../images/im-061-global-summary.png)
+![](../reference/images/im-061-global-summary.png)
 
 The "Global Summary" table summarises certain indicators for the current epidemic. It has 3 columns:
 
@@ -30,15 +30,15 @@ The "Global Summary" table summarises certain indicators for the current epidemi
 
 Definition in the **setup file**:
 
-![](../images/im-062-example-global-summary.png)
+![](../reference/images/im-062-example-global-summary.png){fig-align="center"}
 
 Display in the **linelist**:
 
-![](../images/im-063-example-global-summary.png)
+![](../reference/images/im-063-example-global-summary.png){fig-align="center"}
 
 ## Univariate Analysis
 
-![](../images/im-064-univariate-analysis.png)
+![](../reference/images/im-064-univariate-analysis.png){fig-align="center"}
 
 The "Univariate Analysis" table is used to describe analyses based on a single variable. It has 10 columns:
 
@@ -70,17 +70,17 @@ If the "Add percentage" and "Flip coordinates" options are set to "*yes*", the g
 
 A "Note" message will be displayed in the *"\_\_checkRep*" sheet.
 
-![](../images/im-065-univariate-analysis.png)
+![](../reference/images/im-065-univariate-analysis.png){fig-align="center"}
 
 ### Example
 
-![](../images/im-066-example-univariate-analysis.png)
+![](../reference/images/im-066-example-univariate-analysis.png)
 
 Definition in the **setup file**:
 
 Display in the linelist:
 
-![](../images/im-067-example-univariate-analysis.png)
+![](../reference/images/im-067-example-univariate-analysis.png){fig-align="center"}
 
 ### Summary
 
@@ -99,7 +99,7 @@ Display in the linelist:
 
 ## Bivariate Analysis
 
-![](../images/im-068-bivariate-analysis.png)
+![](../reference/images/im-068-bivariate-analysis.png){fig-align="center"}
 
 The "Bivariate Analysis" table is used to describe analyses based on two variables. It has 11 columns:
 
@@ -156,11 +156,11 @@ A "Note" message will be displayed in the *"\_\_checkRep"* sheet.
 
 Definition in the **setup file**:
 
-![](../images/im-069-example-bivariate-analysis.png)
+![](../reference/images/im-069-example-bivariate-analysis.png){fig-align="center"}
 
 Display in the linelist :
 
-![](../images/im-070-example-bivariate-analysis.png)
+![](../reference/images/im-070-example-bivariate-analysis.png){fig-align="center"}
 
 ## Time series Analysis
 
@@ -174,7 +174,7 @@ See a diagram at the end of the section.
 
 ### Time series Analysis
 
-![](../images/im-071-time-series-analysis.png)
+![](../reference/images/im-071-time-series-analysis.png){fig-align="center"}
 
 The first table is used to define the different time series. It has 12 columns, and one line represents *one summary per variable* (ex: *counts* for the different types of *outcomes*; or *median* of the *length of stay*). If you take the option to add a total or missing values, or if the variable is categorical, the table created will have several columns.
 
@@ -225,7 +225,7 @@ Often the aim is to show the distribution of patients between the modalities of 
 
 ### Labels for Time Series Graphs
 
-![](../images/im-072-labels-for-time-series-graphs.png)
+![](../reference/images/im-072-labels-for-time-series-graphs.png){fig-align="center"}
 
 The second Time Series table is used to define the titles and order of the graphs associated with the time series defined above.
 
@@ -245,7 +245,7 @@ One line represents one graph.
 
 ### Graph on Time Series
 
-![](../images/im-073-graph-on-time-series.png)
+![](../reference/images/im-073-graph-on-time-series.png){fig-align="center"}
 
 This table is used to define the characteristics of each graph. It has 12 columns. One line represent one series to plot on a graph. A graph with the number of each outcome over time would thus be represented by as many lines as there are of types of outcomes (or as there are modalities that you wish to show on this graph).
 
@@ -290,29 +290,30 @@ This table is used to define the characteristics of each graph. It has 12 column
 
 ### Example
 
-![](../images/im-074-example-graph-on-time-series.png)
+![](../reference/images/im-074-example-graph-on-time-series.png){fig-align="center"}
 
 Definition in the **setup file**:
 
-![](../images/im-075-example-graph-on-time-series.png)
+![](../reference/images/im-075-example-graph-on-time-series.png){fig-align="center"}
 
 Display in the linelist:
 
-![](../images/im-076-example-graph-on-time-series.png)
+![](../reference/images/im-076-example-graph-on-time-series.png){fig-align="center"}
 
-![](../images/im-077-example-graph-on-time-series.png)
+![](../reference/images/im-077-example-graph-on-time-series.png){fig-align="center"}
 
-![](../images/im-078-example-graph-on-time-series.png)
+![](../reference/images/im-078-example-graph-on-time-series.png){fig-align="center"}
+
 
 ### Diagrams
 
-![](../images/im-079-diapgram.png)
+![](../images/im-079-diagram.png){fig-align="center"}
 
-![](../images/im-080-diapgram.png)
+![](../images/im-080-diagram.png){fig-align="center"}
 
 ## Spatial Analysis
 
-![](../images/im-081-spatial-analysis.png)
+![](../reference/images/im-081-spatial-analysis.png){fig-align="center"}
 
 The spatial analyses are described in a table with 11 columns. They are described in a similar way to the bivariate analyses, the difference being that the variables chosen for the rows are necessarily variables containing geographical data.
 
@@ -350,9 +351,13 @@ A "Note" message will be displayed in the *"\_\_checkRep"* sheet.
 
 ### Example
 
-Definition in the **setup file**: ![](../images/im-082-example-spatial-analysis.png)
+Definition in the **setup file**: 
 
-Display in the linelist: ![](../images/im-083-example-spatial-analysis.png)
+![](../reference/images/im-082-example-spatial-analysis.png){fig-align="center"}
+
+Display in the linelist:
+
+![](../reference/images/im-083-example-spatial-analysis.png){fig-align="center"}
 
 ## Spatio-Temporal Analysis
 
@@ -363,7 +368,7 @@ Spatio-temporal analyses and graphs are defined using 2 different tables:
 
 ### Specification for Spatio-Temporal Analysis
 
-![](../images/im-084-specification-for-spatio-temporal-analysis.png)
+![](../reference/images/im-084-specification-for-spatio-temporal-analysis.png){fig-align="center"}
 
 The table has 3 columns:
 
@@ -375,7 +380,7 @@ The table has 3 columns:
 
 ### Spatio-Temporal Analysis
 
-![](../images/im-085-spatio-temporal-analysis.png)
+![](../reference/images/im-085-spatio-temporal-analysis.png){fig-align="center"}
 
 The table has 10 columns:
 
@@ -405,8 +410,8 @@ Often you will just want to count the number of patients according to their orig
 
 Definition in the **setup file**:
 
-![](../images/im-086-example-spatio-temporal-analysis.png)
+![](../reference/images/im-086-example-spatio-temporal-analysis.png){fig-align="center"}
 
 Display in the **linelist file**:
 
-![](../images/im-087-example-spatio-temporal-analysis.png)
+![](../reference/images/im-087-example-spatio-temporal-analysis.png){fig-align="center"}
