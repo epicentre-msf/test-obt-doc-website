@@ -259,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-custom-dropdowns" id="toc-sec-custom-dropdowns" class="nav-link" data-scroll-target="#sec-custom-dropdowns">choice_custom</a></li>
   <li><a href="#sec-list-auto" id="toc-sec-list-auto" class="nav-link" data-scroll-target="#sec-list-auto">list_auto</a></li>
   </ul></li>
-  <li><a href="#special-case-of-amdinistrative-levels-and-health-facilities" id="toc-special-case-of-amdinistrative-levels-and-health-facilities" class="nav-link" data-scroll-target="#special-case-of-amdinistrative-levels-and-health-facilities">Special case of amdinistrative levels and health facilities</a>
+  <li><a href="#sec-geo-data" id="toc-sec-geo-data" class="nav-link" data-scroll-target="#sec-geo-data">Special case of amdinistrative levels and health facilities</a>
   <ul class="collapse">
   <li><a href="#sec-geo-variable" id="toc-sec-geo-variable" class="nav-link" data-scroll-target="#sec-geo-variable">geo</a></li>
   <li><a href="#hf" id="toc-hf" class="nav-link" data-scroll-target="#hf">hf</a></li>
@@ -912,7 +912,7 @@ Warning: cannot be used for analyses
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A choice_multiple column cannot be used in the <a href="../reference/analyses_sheets.qmd">Analyses sheets</a> as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.</p>
+<p>A choice_multiple column cannot be used in the <a href="../reference/analyses_sheet.html">Analyses sheets</a> as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -954,8 +954,8 @@ Tip: inform the linelist user
 <p>In the <strong>setup file</strong>, the <strong>variable</strong> used to populate the dropdown menu is defined in <a href="#sec-var-control-details%20section">Control Details</a>.</p>
 </section>
 </section>
-<section id="special-case-of-amdinistrative-levels-and-health-facilities" class="level4">
-<h4 class="anchored" data-anchor-id="special-case-of-amdinistrative-levels-and-health-facilities">Special case of amdinistrative levels and health facilities</h4>
+<section id="sec-geo-data" class="level4">
+<h4 class="anchored" data-anchor-id="sec-geo-data">Special case of amdinistrative levels and health facilities</h4>
 <p>Two controls allow the user of the linelist to enter geographic information, or information about health facilities. While the created variables are technically dropdown menus, they are treated as a special type of variables in OubtbreakTools linelists, with dedicated tools and analyses.</p>
 <p>OutbreakTool linelists all have a button to <a href="../how_to/import_geobase.html">import a geobase</a>, a standardised file containing lists of administrative levels to describe places. Once the geobase is successfully imported, the values from its lists populate specific dropdown menus.</p>
 <section id="sec-geo-variable" class="level5">
