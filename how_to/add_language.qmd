@@ -38,4 +38,4 @@ To add a new linelist language:
 You can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.
 :::
 
-To know more about the [Tranlation sheet](../reference/translations_sheet.qmd).
+To know more about translations, go to the [Tranlation sheet](../reference/translations_sheet.qmd).
