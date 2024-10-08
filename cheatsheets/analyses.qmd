@@ -1,0 +1,7 @@
+---
+title: "Cheatsheet analyses"
+---
+
+![](../images/im-060-analysis-and-graphs-sheet.png)
+
+Some functions/examples

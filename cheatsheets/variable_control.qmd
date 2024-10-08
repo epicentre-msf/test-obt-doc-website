@@ -1,6 +1,5 @@
 ---
 title: "Variables in OutbreakTools"
-format: html
 ---
 
 ## Categorical and calculated variables

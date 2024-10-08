@@ -102,6 +102,9 @@ website:
         menu:
           - text: Choosing variable controls
             href: cheatsheets/variable_control.qmd
+            
+          - text: Setup analyses
+            href: cheatsheets/analyses.qmd
         
     tools:
       - icon: github
