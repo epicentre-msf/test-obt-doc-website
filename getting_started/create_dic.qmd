@@ -38,7 +38,7 @@ When you have first draft of your dictionary, go to the [OutbreakTools ribbon](.
 
 Fill the [Exports](../reference/exports_sheet.qmd) sheet to **define one or more personalised exports**: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.
 
-Fill the [Analyses](../reference/analyses_sheet.qmd)* sheet to **define basic analyses** to include in the linelist:
+Fill the [Analyses](../reference/analyses_sheet.qmd) sheet to **define basic analyses** to include in the linelist:
 
 - uni and bivariate analyses (figures and tables)  
 - temporal analyses (epicurves and corresponding tables)  
@@ -63,13 +63,19 @@ After correcting errors and checking warnings, you can go to the next step and [
 
 In all likelihood, you will need a couple of cycles "improve setup -> build linelist -> debug" to get a working linelist, do not despair!
 
-::: {.callout-tip}
+::: {.callout-tip collapse=true}
+
+## Tip to check calculated variables
+
 Don't hesitate to manually *unhide all columns* in the created linelist to check hidden columns formulas, you have the user rights to do it.
 
 Reverse to the original state by going to the "Advanced" section of the OutbreakTools ribbon, and click on the "Restore state of hidden columns"
 :::
 
-::: {.callout-tip}
+::: {.callout-tip collapse=true}
+
+## Save your testing data
+
 If you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it. 
 
 To do that, go to the "Advanced" section of the OutbreakTools ribbon and click on the "Export for migration" button. This will create a data export, that can be later imported in a new empty linelist by clicking on the "Import data" button.
