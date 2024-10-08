@@ -45,7 +45,7 @@ This section provides functionalities for the [Translation sheet](../reference/t
 
 ![OutbreakTools tab in the designer](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 
-[Steps to add a language](../how_to/add_language.qmd)
+
 
 #### Add language
 
@@ -54,6 +54,19 @@ This button adds a new column to translations sheet, to add a new linelist langu
 1. Fill the name of the language in the box
 2. Click on the button: it will add a new empty column on the right of the columns already present.
 
+[More information to add a language](../how_to/add_language.qmd)
+
+#### Update translation table
+
+Click on this button to update the whole translation table. You can use it whether there is only one language or more.
+
+The script will scrap the setup and import all the fields to be translated into the table, listed in alphabetical order.
+
+At the end, it will open a popup window with information on the update of the translation table.
+
+![](../images/im-112-translations-sheet.png){fig-align="center"}
+
+Go to the [Translation sheet](../reference/translations_sheet.qmd) for more information on translations.
 
 
 ### Import
@@ -91,7 +104,7 @@ This button is used to import a "disease setup" from a disease **Master file**. 
 
 #### Check current setup for errors {#sec-check-setup}
 
-The **setup file** comes with a series of checks on its content to help you debug your dictionary. After adding major components to your **setup file**, or before compiling a linelist with the designer, you can (should) click on the button "*Check current setup for errors*" to see any errors in the *"\_\_checkRep*" sheet.
+The **setup file** comes with a series of checks on its content to help you debug your dictionary. After adding major components to your **setup file**, or before compiling a linelist with the designer, you ~~can~~ should click on the button "*Check current setup for errors*" to see any errors in the *"\_\_checkRep*" sheet.
 
 There is a table for each sheet or section (in the case of analyses), with the following three columns:
 
@@ -101,15 +114,16 @@ There is a table for each sheet or section (in the case of analyses), with the f
 
 -   "**Details**", which gives details of the incoherence.
 
+
 There are several types information that could appear in the Incoherence column:
 
--   **Info** (in grey): this is not strictly speaking an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.    
+-   **Info** (in grey): this is not an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.    
 
--   **Warning** (in yellow): these are problems that need to be fixed because there is a real inconsistency. It could be an error in a formula, for example.^[Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated colums after compilation!]  
+-   **Warning** (in yellow): these are problems that need to be fixed because there is a real inconsistency or problem. It could be an error in a formula, for example.^[Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated columns after compilation!]  
 
 -   **Note** (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).
 
-![](imgs/im-121-check-current-setup-for-errors.png){fig-align="center"}
+![](../images/im-121-check-current-setup-for-errors.png){fig-align="center"}
 
 #### Clear data in current setup
 
@@ -129,6 +143,39 @@ The dev tab is for the OBT developer and you can ignore it.
 ## Designer  {#sec-designer-ribbon}
 
 ![OutbreakTools tab in the designer](../images/img-003-ribbon-designer.png){fig-align="center"}
+
+### Manage the designer
+
+#### Clear the geobase
+
+Remove any geobase that was loaded in the designer.
+
+#### Clear entries
+
+Remove all user entered data from fields.
+
+#### Language of the designer
+
+Use the dropdown to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese. 
+
+
+
+
+
+### Imports
+
+#### Import translations
+
+If the user wishes to modify the linelist interface translations, it is possible to ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.
+
+#### Import passwords
+
+The designer is loaded with a pasword table, with private and public keys to protect export if the user want a password-protected export. However, the designer is on Github, in a public repo, so if you compile a linelist that needs a password protection, it is best to ask for the config file to EpiDS/Yves Amevoin and import it using the "Import button".
+
+#### Import styles
+
+The designer comes with two default styles for linelist themes. It is possible to personalise it. To do that, ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.
+
 
 
 ## Linelist  {#sec-linelist-ribbon}

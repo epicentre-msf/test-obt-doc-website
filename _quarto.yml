@@ -76,6 +76,7 @@ website:
             
 
       - text: Tutoriels
+        href: tutorial.qmd
 
       - text: How-to 
         menu:
