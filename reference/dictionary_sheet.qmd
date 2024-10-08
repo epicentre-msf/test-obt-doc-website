@@ -430,7 +430,7 @@ The difference is that in the created linelist, the user can use the dropdown me
 
 ::: {.callout-warning}
 ## Warning: cannot be used for analyses
-A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheets.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
+A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheet.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
 :::
 
 ::: {.callout-tip}

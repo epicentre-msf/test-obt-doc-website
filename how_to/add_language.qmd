@@ -14,7 +14,7 @@ The *linelist interface* has built-in translations for: English, French, Arabic,
 
 The *content* of the linelist depends on the setup, so each **setup file** must come with its own translations (if several languages needed).
 
-Both levels of translation are selected during the [compilation](../getting_started/compilation.qmd) steps of a given linelist.
+Both levels of translation are selected during the [compilation](../getting_started/compile.qmd) steps of a given linelist.
 
 
 ## Add a new language to a setup
