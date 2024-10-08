@@ -154,9 +154,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Tutoriels</span>
-    </span>
+    <a class="nav-link" href="../tutorial.html"> 
+<span class="menu-text">Tutoriels</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -228,6 +227,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#translation" id="toc-translation" class="nav-link" data-scroll-target="#translation">Translation</a>
   <ul>
   <li><a href="#add-language" id="toc-add-language" class="nav-link" data-scroll-target="#add-language">Add language</a></li>
+  <li><a href="#update-translation-table" id="toc-update-translation-table" class="nav-link" data-scroll-target="#update-translation-table">Update translation table</a></li>
   </ul></li>
   <li><a href="#import" id="toc-import" class="nav-link" data-scroll-target="#import">Import</a>
   <ul>
@@ -241,7 +241,21 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#dev" id="toc-dev" class="nav-link" data-scroll-target="#dev">Dev</a></li>
   </ul></li>
-  <li><a href="#sec-designer-ribbon" id="toc-sec-designer-ribbon" class="nav-link" data-scroll-target="#sec-designer-ribbon">Designer</a></li>
+  <li><a href="#sec-designer-ribbon" id="toc-sec-designer-ribbon" class="nav-link" data-scroll-target="#sec-designer-ribbon">Designer</a>
+  <ul>
+  <li><a href="#manage-the-designer" id="toc-manage-the-designer" class="nav-link" data-scroll-target="#manage-the-designer">Manage the designer</a>
+  <ul>
+  <li><a href="#clear-the-geobase" id="toc-clear-the-geobase" class="nav-link" data-scroll-target="#clear-the-geobase">Clear the geobase</a></li>
+  <li><a href="#clear-entries" id="toc-clear-entries" class="nav-link" data-scroll-target="#clear-entries">Clear entries</a></li>
+  <li><a href="#language-of-the-designer" id="toc-language-of-the-designer" class="nav-link" data-scroll-target="#language-of-the-designer">Language of the designer</a></li>
+  </ul></li>
+  <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">Imports</a>
+  <ul>
+  <li><a href="#import-translations" id="toc-import-translations" class="nav-link" data-scroll-target="#import-translations">Import translations</a></li>
+  <li><a href="#import-passwords" id="toc-import-passwords" class="nav-link" data-scroll-target="#import-passwords">Import passwords</a></li>
+  <li><a href="#import-styles" id="toc-import-styles" class="nav-link" data-scroll-target="#import-styles">Import styles</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#sec-linelist-ribbon" id="toc-sec-linelist-ribbon" class="nav-link" data-scroll-target="#sec-linelist-ribbon">Linelist</a></li>
   </ul>
 </nav>
@@ -324,7 +338,6 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <figcaption>OutbreakTools tab in the designer</figcaption>
 </figure>
 </div>
-<p><a href="../how_to/add_language.html">Steps to add a language</a></p>
 <section id="add-language" class="level4">
 <h4 class="anchored" data-anchor-id="add-language">Add language</h4>
 <p>This button adds a new column to translations sheet, to add a new linelist language.</p>
@@ -332,6 +345,19 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <li>Fill the name of the language in the box</li>
 <li>Click on the button: it will add a new empty column on the right of the columns already present.</li>
 </ol>
+<p><a href="../how_to/add_language.html">More information to add a language</a></p>
+</section>
+<section id="update-translation-table" class="level4">
+<h4 class="anchored" data-anchor-id="update-translation-table">Update translation table</h4>
+<p>Click on this button to update the whole translation table. You can use it whether there is only one language or more.</p>
+<p>The script will scrap the setup and import all the fields to be translated into the table, listed in alphabetical order.</p>
+<p>At the end, it will open a popup window with information on the update of the translation table.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/im-112-translations-sheet.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Go to the <a href="../reference/translations_sheet.html">Translation sheet</a> for more information on translations.</p>
 </section>
 </section>
 <section id="import" class="level3">
@@ -389,7 +415,7 @@ Note
 </div>
 <section id="sec-check-setup" class="level4">
 <h4 class="anchored" data-anchor-id="sec-check-setup">Check current setup for errors</h4>
-<p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you can (should) click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
+<p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you <del>can</del> should click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
 <p>There is a table for each sheet or section (in the case of analyses), with the following three columns:</p>
 <ul>
 <li><p>“<strong>Incoherences Type</strong>” preceded by the name of the sheet,</p></li>
@@ -398,13 +424,13 @@ Note
 </ul>
 <p>There are several types information that could appear in the Incoherence column:</p>
 <ul>
-<li><p><strong>Info</strong> (in grey): this is not strictly speaking an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.</p></li>
-<li><p><strong>Warning</strong> (in yellow): these are problems that need to be fixed because there is a real inconsistency. It could be an error in a formula, for example.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p><strong>Info</strong> (in grey): this is not an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.</p></li>
+<li><p><strong>Warning</strong> (in yellow): these are problems that need to be fixed because there is a real inconsistency or problem. It could be an error in a formula, for example.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 <li><p><strong>Note</strong> (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imgs/im-121-check-current-setup-for-errors.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../images/im-121-check-current-setup-for-errors.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -436,6 +462,36 @@ Note
 <figcaption>OutbreakTools tab in the designer</figcaption>
 </figure>
 </div>
+<section id="manage-the-designer" class="level3">
+<h3 class="anchored" data-anchor-id="manage-the-designer">Manage the designer</h3>
+<section id="clear-the-geobase" class="level4">
+<h4 class="anchored" data-anchor-id="clear-the-geobase">Clear the geobase</h4>
+<p>Remove any geobase that was loaded in the designer.</p>
+</section>
+<section id="clear-entries" class="level4">
+<h4 class="anchored" data-anchor-id="clear-entries">Clear entries</h4>
+<p>Remove all user entered data from fields.</p>
+</section>
+<section id="language-of-the-designer" class="level4">
+<h4 class="anchored" data-anchor-id="language-of-the-designer">Language of the designer</h4>
+<p>Use the dropdown to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese.</p>
+</section>
+</section>
+<section id="imports" class="level3">
+<h3 class="anchored" data-anchor-id="imports">Imports</h3>
+<section id="import-translations" class="level4">
+<h4 class="anchored" data-anchor-id="import-translations">Import translations</h4>
+<p>If the user wishes to modify the linelist interface translations, it is possible to ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.</p>
+</section>
+<section id="import-passwords" class="level4">
+<h4 class="anchored" data-anchor-id="import-passwords">Import passwords</h4>
+<p>The designer is loaded with a pasword table, with private and public keys to protect export if the user want a password-protected export. However, the designer is on Github, in a public repo, so if you compile a linelist that needs a password protection, it is best to ask for the config file to EpiDS/Yves Amevoin and import it using the “Import button”.</p>
+</section>
+<section id="import-styles" class="level4">
+<h4 class="anchored" data-anchor-id="import-styles">Import styles</h4>
+<p>The designer comes with two default styles for linelist themes. It is possible to personalise it. To do that, ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.</p>
+</section>
+</section>
 </section>
 <section id="sec-linelist-ribbon" class="level2">
 <h2 class="anchored" data-anchor-id="sec-linelist-ribbon">Linelist</h2>
@@ -454,7 +510,7 @@ Note
 
 <ol>
 <li id="fn1"><p>An upgraded version, or an empty file fo the same version in case the original file got corrupted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated colums after compilation!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated columns after compilation!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
