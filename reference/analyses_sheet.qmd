@@ -10,7 +10,7 @@ This sheet contains several tables for defining different types of analyses and 
 -   three tables for defining time series and their graphs: "Time Series Analysis", "Labels for Time Series Graphs", "Graph on Time Series"
 -   two tables for defining spatio-temporal analyses: "Specification for Spatio-Temporal Analysis", "Spatio-Temporal Analysis"
 
-![](../images/im-060-analysis-and-graphs-sheet.png)
+![Pick your analysis!](../images/im-060-analysis-and-graphs-sheet.png)
 
 ## Global Summary
 
@@ -85,7 +85,7 @@ Display in the linelist:
 ### Summary
 
 | Column                  | Type              | Mandatory | Details                                           |
-|-------------------------|-------------------|:---------:|---------------------------------------------------|
+|--------------|--------------|:------------:|------------------------------|
 | Section                 | Free text         |    Yes    | Group tables by section                           |
 | Table title             | Free text         |    Yes    | Short title                                       |
 | Group by variable (row) | Dropdown          |    Yes    | One categorial variable to summarise              |
@@ -139,7 +139,7 @@ If the "Add percentage" and "Flip coordinates" options are set to "yes", the gra
 A "Note" message will be displayed in the *"\_\_checkRep"* sheet.
 
 | Column                     | Type                         | Mandatory | Details                                 |
-|----------------------------|------------------------------|:---------:|-----------------------------------------|
+|----------------|-----------------|:--------------:|------------------------|
 | Section                    | Free text                    |    Yes    | Group tables by section                 |
 | Table title                | Free text                    |    Yes    | Short title                             |
 | Group by variable (row)    | Dropdown                     |    Yes    | One categorial variable to summarise    |
@@ -211,7 +211,7 @@ Often the aim is to show the distribution of patients between the modalities of 
 **Table Order**: this is a read field which can be used to reorganise the order of analyses in the final table without having to modify the order of lines in the setup. By default, analyses are displayed from left to right in the order in which they are described in the Time series Analysis table in the setup.
 
 | Column           | Type                     | Mandatory | Details                                 |
-|------------------|--------------------------|:---------:|-----------------------------------------|
+|---------------|----------------|:-------------:|---------------------------|
 | Series ID        | \-                       | Automatic |                                         |
 | Section          | Free text                |    Yes    | Group columns by section                |
 | Title            | \-                       | Automatic |                                         |
@@ -274,7 +274,7 @@ This table is used to define the characteristics of each graph. It has 12 column
 **Y-Axis**: this is a static drop-down menu with two options: "left" or "right", which lets you choose which side of the Y axis to display. This is particularly useful for displaying two different pieces of information on a single graph (e.g. Epicurve with the number of deaths in value and the CFR in %).
 
 | Column                     | Type                         | Mandatory | Details                                                         |
-|----------------------------|------------------------------|:---------:|-----------------------------------------------------------------|
+|--------------|--------------|:------------:|------------------------------|
 | Graph title                | Dropdown                     |    Yes    | Defined in the previous table                                   |
 | Series title               | Dropdown                     |    Yes    | Choose which variable summary to plot (ex: counts for outcomes) |
 | Graph ID                   | \-                           | Automatic |                                                                 |
