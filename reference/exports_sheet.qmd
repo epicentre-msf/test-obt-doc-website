@@ -4,7 +4,7 @@ title: "Define exports"
 
 ![](../images/im-088-exports-sheet.png)
 
-It is possible to predefine exports, such as a specific export for a given MoH. The setup of exports is done in two different sheets:
+It is possible to predefine exports, such as a specific export for a given MoH. The preparation of exports is done in two different sheets:
 
 - In the *Exports* sheet you define the export: metadata, button label, exported file name, type of headers etc. 
 
@@ -27,7 +27,7 @@ In line "1", we define the parameters for export 1, whose variables to be export
 
 ![](../images/im-090-export-number.png)
 
-Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the [ribbon help](../reference/ribbons.qmd).
+Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the [ribbon help](../reference/ribbons.qmd#sec-setup-ribbon).
 
 
 ## Status
@@ -135,8 +135,10 @@ This is a *yes/no* drop-down field that controls whether the hidden columns that
 This is a *variables names/variables labels* drop-down menu field. It allows you to define whether you want the column headings in the export to correspond to the *variable names*, their *labels*, or both.
 
 
-::: callout-tip
+::: {.callout-tip}
+
 ## Tip: choosing the header format
+
 If you create an export for analyses purpose, use the *variable names* to avoid having to format and rename when importing in your favourite statistical software. 
 
 If you are exporting data to the MoH or other partners, it might be easier for them to have the *variables labels*, which are more descriptive about the content of the variable.
@@ -180,6 +182,6 @@ This is a *yes/no* drop-down field. Selecting "*yes*" means that, in addition to
 This is a *yes/no* drop-down field. By selecting '*yes*', you decide that in addition to the data to be exported, you will also export all the analysis tables (but not the graphs).
 
 
-::: callout-tip
+::: {.callout-tip}
 It is also possible to export analysis tables directly from the linelist using the "*Export analyses*" button.
 :::
