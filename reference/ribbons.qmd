@@ -173,7 +173,7 @@ If the user wishes to modify the linelist interface translations, it is possible
 
 The designer is loaded with a pasword table, with private and public keys to protect export if the user want a password-protected export. However, the designer is on Github, in a public repo, so if you compile a linelist that needs a password protection, it is best to ask for the config file to EpiDS/Yves Amevoin and import it using the "Import button".
 
-#### Import styles
+#### Import styles {#sec-setup-styles}
 
 The designer comes with two default styles for linelist themes. It is possible to personalise it. To do that, ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.
 
