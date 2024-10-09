@@ -281,6 +281,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#exports" id="toc-exports" class="nav-link" data-scroll-target="#exports">Exports</a>
   <ul>
+  <li><a href="#export-data" id="toc-export-data" class="nav-link" data-scroll-target="#export-data">Export data</a></li>
   <li><a href="#export-analyses" id="toc-export-analyses" class="nav-link" data-scroll-target="#export-analyses">Export analyses</a></li>
   </ul></li>
   <li><a href="#register-and-case-report-form" id="toc-register-and-case-report-form" class="nav-link" data-scroll-target="#register-and-case-report-form">Register and Case report form</a></li>
@@ -337,7 +338,7 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/img-003-ribbon-setup-table.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
+<figcaption>Table management section</figcaption>
 </figure>
 </div>
 <section id="add-rows" class="level4">
@@ -346,7 +347,8 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to add rows to all tables or just one in particular.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/im-115-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../images/im-115-table-managment.png" class="img-fluid figure-img"></p>
+<figcaption>Button to add or remove rows of diffeent analyses tables</figcaption>
 </figure>
 </div>
 </section>
@@ -356,7 +358,8 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to remove empty rows to all tables or just one in particular.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/im-117-table-managment.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../images/im-117-table-managment.png" class="img-fluid figure-img"></p>
+<figcaption>Button to add or remove rows of diffeent analyses tables</figcaption>
 </figure>
 </div>
 </section>
@@ -371,7 +374,7 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/img-003-ribbon-setup-translations.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
+<figcaption>Translation section</figcaption>
 </figure>
 </div>
 <section id="add-language" class="level4">
@@ -390,7 +393,8 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <p>At the end, it will open a popup window with information on the update of the translation table.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../reference/images/im-112-translations-sheet.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-112-translations-sheet.png" class="img-fluid figure-img"></p>
+<figcaption>Message of end of translation update</figcaption>
 </figure>
 </div>
 <p>Go to the <a href="../reference/translations_sheet.html">Translation sheet</a> for more information on translations.</p>
@@ -402,7 +406,7 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/img-003-ribbon-setup-import.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
+<figcaption>Import section</figcaption>
 </figure>
 </div>
 <section id="import-data-from-another-setup" class="level4">
@@ -417,8 +421,7 @@ Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/img-004-import-setup.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
+<p><img src="images/img-004-import-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -446,7 +449,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/img-003-ribbon-setup-advanced.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
+<figcaption>Advanced section</figcaption>
 </figure>
 </div>
 <section id="sec-check-setup" class="level4">
@@ -454,9 +457,9 @@ Note
 <p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you <del>can</del> should click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
 <p>There is a table for each sheet or section (in the case of analyses), with the following three columns:</p>
 <ul>
-<li><p>“<strong>Incoherences Type</strong>” preceded by the name of the sheet,</p></li>
-<li><p>“<strong>Where?</strong>”, which shows the name of the sheet or section and the line where the incoherence is located,</p></li>
-<li><p>“<strong>Details</strong>”, which gives details of the incoherence.</p></li>
+<li><p><strong>Incoherences Type</strong> preceded by the name of the sheet,</p></li>
+<li><p><strong>Where?</strong>, which shows the name of the sheet or section and the line where the incoherence is located,</p></li>
+<li><p><strong>Details</strong>, which gives details of the incoherence.</p></li>
 </ul>
 <p>There are several types information that could appear in the Incoherence column:</p>
 <ul>
@@ -510,7 +513,7 @@ Note
 </section>
 <section id="language-of-the-designer" class="level4">
 <h4 class="anchored" data-anchor-id="language-of-the-designer">Language of the designer</h4>
-<p>Use the dropdown to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese.</p>
+<p>Use the dropdown menu to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese.</p>
 </section>
 </section>
 <section id="imports" class="level3">
@@ -690,7 +693,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The import of the geobase deos not affect the data already entered in the linelist, it only fills the modalities offered by dropdown menus. If data is already present in the linelist and the new geobase has different levels, you need to correct them yourselves.</p>
+<p>The import of the geobase does not affect the data already entered in the linelist, it only fills the modalities offered by dropdown menus. If data is already present in the linelist and the new geobase has different levels, you need to correct them yourselves.</p>
 </div>
 </div>
 <p>Go <a href="../how_to/import_geobase.html#sec-geobase-download">here</a> to learn how to download a geobase.</p>
@@ -699,7 +702,14 @@ Warning
 <section id="exports" class="level3">
 <h3 class="anchored" data-anchor-id="exports">Exports</h3>
 <p>The regular exports buttons are available in the “Export section” of the ribbon, and the “Export for migration” is available in the <a href="#sec-linelist-advanced">Advanced</a> section of the ribbon.</p>
-<p><img src="../reference/images/img-009-ll-exports.png" class="img-fluid quarto-figure quarto-figure-center" alt="Exports section"> #### Export data</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../reference/images/img-009-ll-exports.png" class="img-fluid figure-img"></p>
+<figcaption>Exports section</figcaption>
+</figure>
+</div>
+<section id="export-data" class="level4">
+<h4 class="anchored" data-anchor-id="export-data">Export data</h4>
 <p>OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the <a href="../reference/exports_sheet.html">setup file</a> that is used to generate the linelist.</p>
 <p>While Epicentre linelists should have at minima be an “Anonymous export for MSF” button, the other available exports differ between linelists created.</p>
 <p>To export data, click on the “Export Data” button, which opens a popup window, with several options. At the top, you will see buttons for different exports. After clicking on the desired export, a window pops-up for saving the export. If “Export Filtered Data” is selected, a confirmation message will pop-up first to ask you whether this is what you really want.</p>
@@ -718,6 +728,7 @@ Tip
 </div>
 </div>
 <p>Click on the button “Generate new password” to change the password used by default.</p>
+</section>
 <section id="export-analyses" class="level4">
 <h4 class="anchored" data-anchor-id="export-analyses">Export analyses</h4>
 <p>You can export all the tables from the analysis sheets in one document by using the “Export the analysis sheets” button and selecting the directory where you want to save them.</p>
@@ -784,7 +795,7 @@ Tip
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the created linelist</figcaption>
+<figcaption>Export for migration</figcaption>
 </figure>
 </div>
 <p>After selecting the options and clicking on “Export”, a window pops-up for saving the export. Select the folder and click on “OK”. Once finished a message appears to ask if you want to close the window.</p>
