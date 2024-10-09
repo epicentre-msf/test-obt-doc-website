@@ -240,9 +240,9 @@ This is a dropdown field that contains four options for defining the **visibilit
 
 -   *optional, hidden*: variable hidden by default, it can be displayed or hidden by the linelist user
 
--   *hidden*: variable hidden by default, it cannot be displayed in the linelis
+-   *hidden*: variable hidden by default, it cannot be displayed in the linelist
 
-Variables can be shown or hidden using the [*Show/Hide* button](../how_to/show_hide_variables.qmd) in the **linelist file**.
+Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
 
 ::: {.callout-note collapse="true"}
 
@@ -465,7 +465,7 @@ The "list_auto" control allows to create a column on the second sheet with a dro
 
 In the **setup file**, the **variable** used to populate the dropdown menu is defined in [Control Details](#sec-var-control-details section).
 
-#### Special case of amdinistrative levels and health facilities {#sec-geo-data}
+#### Special case of administrative levels and health facilities {#sec-geo-data}
 
 Two controls allow the user of the linelist to enter geographic information, or information about health facilities. While the created variables are technically dropdown menus, they are treated as a special type of variables in OubtbreakTools linelists, with dedicated tools and analyses.
 

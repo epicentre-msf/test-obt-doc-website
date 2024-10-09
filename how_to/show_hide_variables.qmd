@@ -2,8 +2,12 @@
 title: "Show or hide variables"
 ---
 
-TODO
+TODO (copied stuff en vrac)
 
+
+Clicking on the "Show/hide variables" button opens a window listing all the variables in this linelist sheet. 
+
+![OutbreakTools tab in the created linelist](../reference/images/img-012-ll-show-hide.png){fig-align="center"}
 
 
 **1**
