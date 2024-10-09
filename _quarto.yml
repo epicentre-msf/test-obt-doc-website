@@ -8,12 +8,12 @@ execute:
 format:
   html:
     theme: 
-      - cosmo
+      - flatly
       - styles.scss
     
     toc: true
     toc-depth: 5
-    toc-expand: 2
+    toc-expand: 1
     toc-title: Table of content
     
     citations-hover: true
