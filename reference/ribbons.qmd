@@ -64,7 +64,7 @@ The script will scrap the setup and import all the fields to be translated into 
 
 At the end, it will open a popup window with information on the update of the translation table.
 
-![](../images/im-112-translations-sheet.png){fig-align="center"}
+![](../reference/images/im-112-translations-sheet.png){fig-align="center"}
 
 Go to the [Translation sheet](../reference/translations_sheet.qmd) for more information on translations.
 
