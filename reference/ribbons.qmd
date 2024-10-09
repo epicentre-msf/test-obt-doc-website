@@ -12,7 +12,7 @@ Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office
 
 The buttons of this section provide action on tables within the setup: main table on the *Dictionary sheet*, table for choices, table for exports, tables for analyses etc.
 
-![OutbreakTools tab in the designer](images/img-003-ribbon-setup-table.png){fig-align="center"}
+![Table management section](images/img-003-ribbon-setup-table.png){fig-align="center"}
 
 #### Add rows
 
@@ -21,7 +21,7 @@ This button insert rows at the bottom of the table in the current sheet.
 
 When this functionality is used in the *Analyses* sheet, you can use the drop-down menu in *cell A1* to choose whether you want to add rows to all tables or just one in particular.
 
-![](../images/im-115-table-managment.png){fig-align="center"}
+![Button to add or remove rows of diffeent analyses tables](../images/im-115-table-managment.png){fig-align="center"}
 
 
 #### Resize table in the current sheet
@@ -31,7 +31,7 @@ This button remove empty rows (whether at the end or in the middle).
 
 When this functionality is used in the *Analyses* sheet, you can use the drop-down menu in *cell A1* to choose whether you want to remove empty rows to all tables or just one in particular.
 
-![](../images/im-117-table-managment.png){fig-align="center"}
+![Button to add or remove rows of diffeent analyses tables](../images/im-117-table-managment.png){fig-align="center"}
 
 
 #### Remove filters
@@ -43,7 +43,7 @@ This button clears filters. It is usefull if you have applied Excel filters in s
 
 This section provides functionalities for the [Translation sheet](../reference/translations_sheet.qmd).
 
-![OutbreakTools tab in the designer](images/img-003-ribbon-setup-translations.png){fig-align="center"}
+![Translation section](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 
 
 
@@ -64,7 +64,7 @@ The script will scrap the setup and import all the fields to be translated into 
 
 At the end, it will open a popup window with information on the update of the translation table.
 
-![](../reference/images/im-112-translations-sheet.png){fig-align="center"}
+![Message of end of translation update](../reference/images/im-112-translations-sheet.png){fig-align="center"}
 
 Go to the [Translation sheet](../reference/translations_sheet.qmd) for more information on translations.
 
@@ -73,7 +73,7 @@ Go to the [Translation sheet](../reference/translations_sheet.qmd) for more info
 
 These buttons allow to import data into an empty setup.
 
-![OutbreakTools tab in the designer](images/img-003-ribbon-setup-import.png){fig-align="center"}
+![Import section](images/img-003-ribbon-setup-import.png){fig-align="center"}
 
 #### Import data from another setup
 
@@ -85,7 +85,7 @@ Use this button to migrate data from one **setup file** to another empty setup f
 4. Decide if you want to run a checkup of the **setup** file after import by ticking the box or not
 5. Click on the "Import" button and wait.
 
-![OutbreakTools tab in the designer](images/img-004-import-setup.png){fig-align="center"}
+![](images/img-004-import-setup.png){fig-align="center"}
 
 ::: {.callout-note}
 If you are migrating a setup to a new **setup file**, you should check all boxes to import everything.
@@ -101,7 +101,7 @@ This button is used to import a "disease setup" from a disease **Master file**. 
 
 ### Advanced {#sec-advanced}
 
-![OutbreakTools tab in the designer](images/img-003-ribbon-setup-advanced.png){fig-align="center"}
+![Advanced section](images/img-003-ribbon-setup-advanced.png){fig-align="center"}
 
 #### Check current setup for errors {#sec-check-setup}
 
@@ -109,11 +109,11 @@ The **setup file** comes with a series of checks on its content to help you debu
 
 There is a table for each sheet or section (in the case of analyses), with the following three columns:
 
--   "**Incoherences Type**" preceded by the name of the sheet,  
+-   **Incoherences Type** preceded by the name of the sheet,  
 
--   "**Where?**", which shows the name of the sheet or section and the line where the incoherence is located,  
+-   **Where?**, which shows the name of the sheet or section and the line where the incoherence is located,  
 
--   "**Details**", which gives details of the incoherence.
+-   **Details**, which gives details of the incoherence.
 
 
 There are several types information that could appear in the Incoherence column:
@@ -157,9 +157,7 @@ Remove all user entered data from fields.
 
 #### Language of the designer
 
-Use the dropdown to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese. 
-
-
+Use the dropdown menu to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese. 
 
 
 
@@ -291,7 +289,7 @@ Make sure the data is not overlapping before importing, as the import will just 
 "Import geobase" allows you to import a geobase in the linelist. If the current linelist had already a geobase, it will be replaced.
 
 ::: {.callout-warning}
-The import of the geobase deos not affect the data already entered in the linelist, it only fills the modalities offered by dropdown menus. If data is already present in the linelist and the new geobase has different levels, you need to correct them yourselves.
+The import of the geobase does not affect the data already entered in the linelist, it only fills the modalities offered by dropdown menus. If data is already present in the linelist and the new geobase has different levels, you need to correct them yourselves.
 :::
 
 Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to download a geobase.
@@ -302,6 +300,7 @@ Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to dow
 The regular exports buttons are available in the "Export section" of the ribbon, and the "Export for migration" is available in the [Advanced](#sec-linelist-advanced) section of the ribbon. 
 
 ![Exports section](../reference/images/img-009-ll-exports.png){fig-align="center"}
+
 #### Export data
 
 OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the [setup file ](../reference/exports_sheet.qmd) that is used to generate the linelist. 
@@ -368,7 +367,7 @@ This button exports raw data and metadata for migration to another linelist file
 
 You can choose to export the patient data, the geobase and the history of the geobase (history list in the GeoHelper), by ticking the matching cases. There are also options to include metadata on the state of hidden/shown columns (to not have to redo the full setup in the new file), and the updated labels of the custom variables, if you used these variables.	
 
-![OutbreakTools tab in the created linelist](../reference/images/img-013-ll-export-migration.png){fig-align="center"}
+![Export for migration](../reference/images/img-013-ll-export-migration.png){fig-align="center"}
 
 
 After selecting the options and clicking on “Export”, a window pops-up for saving the export. Select the folder and click on “OK”. Once finished a message appears to ask if you want to close the window.
