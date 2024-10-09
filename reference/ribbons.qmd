@@ -99,7 +99,8 @@ You can run the coherence checks now, or do it at a later stage with the [Check 
 This button is used to import a "disease setup" from a disease **Master file**. This file is being piloted for Epinetwork discussions.
 
 
-### Advanced
+### Advanced {#sec-advanced}
+
 ![OutbreakTools tab in the designer](images/img-003-ribbon-setup-advanced.png){fig-align="center"}
 
 #### Check current setup for errors {#sec-check-setup}
