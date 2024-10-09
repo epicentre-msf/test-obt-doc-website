@@ -368,7 +368,7 @@
     "href": "getting_started/create_dic.html#grow-your-setup-file",
     "title": "Create dictionary",
     "section": "Grow your setup file 🌱",
-    "text": "Grow your setup file 🌱\nThe first step is to create the variable dictionary. The other steps are optional and can be completed if and when needed.\n\nCreate the variable dictionary 📘\nAka fill the Dictionary and Choices sheets. The first sheet is a database about all the variables present in the linelist you want to create. The Choices sheet contains the categories for categorical variables.\nThe different sections of the Dictionary sheet will define, for each variable:\n\nname, label, sublabel, notes\nsheet, section, subsection, hence also defining the structure of the linelist sheets and tables\nvariable visibility\nvariable type (e.g. a date or a decimal), format (e.g. the number of decimals in a case of a decimal), control (is it free text, a dropdown menu, a formula, a fancy geo section etc.)\nexport status: should the variable be exported in one or more exports\ndata validation rules: define min and max values, as well as error messages for values that do not respect rules\nwhether to apply special formatting and how\nand more!\n\nWhen you have first draft of your dictionary, go to the OutbreakTools ribbon and click on the button “Check current setup for errors”. This will run a couple of automatic checks on the setup and raise warnings and errors.\n\n\nFill other sheets as needed\nFill the Exports sheet to define one or more personalised exports: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.\nFill the Analyses sheet to define basic analyses to include in the linelist:\n\nuni and bivariate analyses (figures and tables)\n\ntemporal analyses (epicurves and corresponding tables)\n\nspatial analyses: top X location with… (most case, most deceased, most…)\n\nspatio-temporal analyses: temporal analyses but for a couple of user-specified places\n\nFill the Translations sheet to translate strings of text so that the linelist can automatically be built in other languages than the one in the setup.\nAs for when defining the dictionary, check for errors regularly with the “Check current setup for errors”.\n\n\nBuild the linelist and stress-test it ✔\nAfter correcting errors and checking warnings, you can go to the next step and compile the setup to build the linelist using the designer file. This will create the linelist.\nTest you linelist! Enter false data and check your variables:\n\nis the format of the variable correct?\nare the formulas working as expected?\nis the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?\ndo the analyses work as expected?\n\nIn all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug” to get a working linelist, do not despair!\n\n\n\n\n\n\nTip to check calculated variables\n\n\n\n\n\nDon’t hesitate to manually unhide all columns in the created linelist to check hidden columns formulas, you have the user rights to do it.\nReverse to the original state by going to the “Advanced” section of the OutbreakTools ribbon, and click on the “Restore state of hidden columns”\n\n\n\n\n\n\n\n\n\nSave your testing data\n\n\n\n\n\nIf you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it.\nTo do that, go to the “Advanced” section of the OutbreakTools ribbon and click on the “Export for migration” button. This will create a data export, that can be later imported in a new empty linelist by clicking on the “Import data” button."
+    "text": "Grow your setup file 🌱\nThe first step is to create the variable dictionary. The other steps are optional and can be completed if and when needed.\n\nCreate the variable dictionary 📘\nAka fill the Dictionary and Choices sheets. The first sheet is a database about all the variables present in the linelist you want to create. The Choices sheet contains the categories for categorical variables.\nThe different sections of the Dictionary sheet will define, for each variable:\n\nname, label, sublabel, notes\nsheet, section, subsection, hence also defining the structure of the linelist sheets and tables\nvariable visibility\nvariable type (e.g. a date or a decimal), format (e.g. the number of decimals in a case of a decimal), control (is it free text, a dropdown menu, a formula, a fancy geo section etc.)\nexport status: should the variable be exported in one or more exports\ndata validation rules: define min and max values, as well as error messages for values that do not respect rules\nwhether to apply special formatting and how\nand more!\n\nWhen you have first draft of your dictionary, go to the OutbreakTools ribbon and click on the button “Check current setup for errors”. This will run a couple of automatic checks on the setup and raise warnings and errors.\n\n\nFill other sheets as needed\nFill the Exports sheet to define one or more personalised exports: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.\nFill the Analyses sheet to define basic analyses to include in the linelist:\n\nuni and bivariate analyses (figures and tables)\n\ntemporal analyses (epicurves and corresponding tables)\n\nspatial analyses: top X location with… (most case, most deceased, most…)\n\nspatio-temporal analyses: temporal analyses but for a couple of user-specified places\n\nFill the Translations sheet to translate strings of text so that the linelist can automatically be built in other languages than the one in the setup.\nAs for when defining the dictionary, check for errors regularly with the “Check current setup for errors”.\n\n\nBuild the linelist and stress-test it ✔\nAfter correcting errors and checking warnings, you can go to the next step and compile the setup to build the linelist using the designer file. This will create the linelist.\nTest you linelist! Enter false data and check your variables:\n\nis the format of the variable correct?\nare the formulas working as expected?\nis the formatting applied correctly (which boils down to a formula problem, SEE SECTION)?\ndo the analyses work as expected?\n\nIn all likelihood, you will need a couple of cycles “improve setup -&gt; build linelist -&gt; debug” to get a working linelist, do not despair!\n\n\n\n\n\n\nTip to check calculated variables\n\n\n\n\n\nDon’t hesitate to manually unhide all columns in the created linelist to check hidden columns formulas, you have the user rights to do it.\nReverse to the original state by going to the “Advanced” section of the OutbreakTools ribbon, and click on the “Restore state of hidden columns”\n\n\n\n\n\n\n\n\n\nSave your testing data\n\n\n\n\n\nIf you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it.\nTo do that, go to the “Advanced” section of the OutbreakTools ribbon and click on the “Export for migration” button. This will create a data export, that can be later imported in a new empty linelist by clicking on the “Import data” button from the same ribbon."
   },
   {
     "objectID": "cheatsheets/variable_control.html",
@@ -431,14 +431,42 @@
     "href": "getting_started/compile.html",
     "title": "Compile a linelist",
     "section": "",
-    "text": "Now it is time to use the designer\nTODO"
+    "text": "The designer file reads a setup file, compiles it and generates a linelist file."
   },
   {
-    "objectID": "getting_started/compile.html#to-put-somewhere-getting-started-or-reference",
-    "href": "getting_started/compile.html#to-put-somewhere-getting-started-or-reference",
+    "objectID": "getting_started/compile.html#out-of-the-box-compilation",
+    "href": "getting_started/compile.html#out-of-the-box-compilation",
     "title": "Compile a linelist",
-    "section": "To put somewhere (getting started or reference)",
-    "text": "To put somewhere (getting started or reference)\n\n\n\n\n\n\nWarning\n\n\n\nWhen compiling the setup, make sure that all the columns from this sheet are unhidden."
+    "section": "Out-of-the-box compilation",
+    "text": "Out-of-the-box compilation\n\nOpen a designer file\nChoose the language of the interface of the linelist you want to build\nClick on the blue button “Path to the dictionary file” to select the setup you want to use\nUse the dropdown menu “Language of the dictionary file” to select one of the languages present in the setup file for the linelist content (the dropdown is on the right of the blue button)\nClick on the button “Select the folder of the linelist” to select the folder where the linelist will be saved\nClick on the button “Select template file” to provide the path to the ribbon template file (the file was in the OutbreakTools zip archive that you downloaded). This step is important to have the OutbreakTools option tab at the top of the file.\nProvide the name of the linelist you want to generate\nClick on the “New linelist” button and wait while compilation occurs. It could take several minutes.1\n\n\n\n\n\n\n\nFigure 2: Simple compilation"
+  },
+  {
+    "objectID": "getting_started/compile.html#customise-generated-linelists",
+    "href": "getting_started/compile.html#customise-generated-linelists",
+    "title": "Compile a linelist",
+    "section": "Customise generated linelists",
+    "text": "Customise generated linelists\nThere are a couple of extra steps you can take.\n\n\n\n\n\n\nFigure 3: Customise linelist\n\n\n\n\nChange style\nYou can select the other “Linelist design” using the dropdown menu (see the ribbon to import your own style)\n\n\nImport a geobase\nIf you are compiling a linelist for a given country, you could generate the linelist with the geobase already imported. Click on the “Import de geobase” button to import a geobase in excel format (learn how to get a geobase) before compiling.\n\n\n\n\n\n\nNote\n\n\n\nIf no geobase is imported during compilation, the linelist user can import one at a later stage.\n\n\n\n\nAdd passwords\nIt is highly recommended to add passwords, both to forbid user capacity to modify the content (and break the file) and to limit outside parties from opening the file.\nTo do that, just fill the passwords in the little blue boxes before compiling."
+  },
+  {
+    "objectID": "getting_started/compile.html#advanced-customisations",
+    "href": "getting_started/compile.html#advanced-customisations",
+    "title": "Compile a linelist",
+    "section": "Advanced customisations",
+    "text": "Advanced customisations\nThere are a couple more customisations available through the OutbreakTools option ribbon.\n\n\n\nOutbreakTools tab in the designer file"
+  },
+  {
+    "objectID": "getting_started/compile.html#compilation-advice",
+    "href": "getting_started/compile.html#compilation-advice",
+    "title": "Compile a linelist",
+    "section": "Compilation advice",
+    "text": "Compilation advice\nThe linelist compilation relies on Excel VBA and can be a litle bit finicky. Here is some advice.\n\nRun the checks on the setup before attempting compilation to verify that everything is good.\nMake sure there are no hidden columns or filters on the sheets of the setup.\nPause Onedrive or work in a non-synchronised folder (see here for more information)\nThe compilation is sensitive to RAM limitations: if it fails it might be worth closing a couple of greedy applications and try again.2\nIn general, it is always worth trying again: sometimes an action you did in another applications perturbed the process.\nIf it fails, start with a new designer file, in case the other got corrupted when compilation fails.\nExcel VBA sometimes interact with other Office applications. If all goes well, no problem. But in case of unexpected failures, try avoiding using Office applications while compiling.\n\n\n\n\n\n\n\nTip\n\n\n\nOne of the writer of this guide prepares the setup, the designer, and then copy both of them and use the copies to compile. If a compilation fails, delete both copies and start from fresh, just in case the failure to compile corrupted any of the file."
+  },
+  {
+    "objectID": "getting_started/compile.html#footnotes",
+    "href": "getting_started/compile.html#footnotes",
+    "title": "Compile a linelist",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe more calculated columns and analyses there are, the longer it takes.↩︎\nFor example, attempting compilation while sharing screen in a Teams call might ending up in failure on bad days.↩︎"
   },
   {
     "objectID": "getting_started/download.html",
@@ -455,8 +483,8 @@
     "text": "Go to the OutbreakTools github repo, scroll down to the README and click on the yellow button to donwload .zip archive that contains the file you need.\n\nSave the archive locally on your computer and unzip it."
   },
   {
-    "objectID": "getting_started/download.html#install-the-oubreaktools-files",
-    "href": "getting_started/download.html#install-the-oubreaktools-files",
+    "objectID": "getting_started/download.html#sec-obt-files",
+    "href": "getting_started/download.html#sec-obt-files",
     "title": "Obtain OutbreakTools files",
     "section": "Install the OubreakTools files?",
     "text": "Install the OubreakTools files?\nThe solution is based on VBA scripts in Excel files, so there is nothing to install.\nYou should however authorise VBA macros in Excel so that the files work as expected (or at all, in fact).\nThe archive contains several timestamped files:\n\nsetup-YYYY-MM-DD.xlsb: an empty setup file\ndesigner_main-YYYY-MM-DD.xlsb: the designer file that is used to compile the setup\n_ribbontemplate_main-YYYY-MM-DD.xlsb: a template file containing information used during compilation\nrun_designer_on_windows.R and rundesigner.vbs: files that can be used to compile from R (experimental and yet undocumented)\n\n::: {.callout-note callout-appearance: simple} The excel files are in the .xlsb format, a compressed, more efficient Excel format that allows VBA macros. :::"
@@ -490,11 +518,11 @@
     "text": "Add a new language to a setup\nGo to the OutbreakTools tab of the setup top ribbon. One section contains buttons for translation:\n\n\n\nTranslation section in the OutbreakTools tab\n\n\nTo add a new linelist language:\n\nClick on the “Update translation table”, which is going to scrap all text bits from the setup and add them to the translation table (even if there is only one language in the sheet). This step can be done at a later stage, and each time you modify or add a label in the setup.\nFill the name of the language you want to add in the rectangular box\nClick on the “Add language” button: it will add a new empty column on the right of the column(s) already present in the Translation sheet, and open the\nProvide translation for each string of text.\n\n\n\n\n\n\n\nTip\n\n\n\nYou can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.\n\n\nTo know more about translations, go to the Tranlation sheet."
   },
   {
-    "objectID": "how_to/import_geobase.html",
-    "href": "how_to/import_geobase.html",
+    "objectID": "how_to/import_geobase.html#sec-geobase-import",
+    "href": "how_to/import_geobase.html#sec-geobase-import",
     "title": "Import a geobase in the linelist",
-    "section": "",
-    "text": "TODO\n\n\n\n Back to top"
+    "section": "Import a geobase in a linelist",
+    "text": "Import a geobase in a linelist"
   },
   {
     "objectID": "how_to/migrate_setup.html",
