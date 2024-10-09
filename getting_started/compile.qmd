@@ -2,12 +2,19 @@
 title: "Compile a linelist"
 ---
 
-Now it is time to use the **designer**
+The **designer file** reads a **setup file**, compiles it and generates a **linelist file**.
 
-TODO
+![Simplified workflow](../images/im-001-outbreak-tools-solutions.png){#fig-setup-ribbon fig-align="center"}
+
+## Out-of-the-box compilation
 
 
-
+1. Open a **designer file**
+2. Choose the language of the interface of the linelist you want to build
+3. Click on the blue button "Path to the dictionary file" to select the setup you want to use
+4. Use the dropdown menu "Language of the dictionary file" to select one of the languages present in the setup file for the linelist content (the dropdown is on the right of the blue button)
+5. Click on the button "Select the folder of the linelist" to select the folder where the linelist will be saved
+6. Click on the button "Select template file" to provide the path to the ribbon template file (the file was in the [OutbreakTools zip archive that you downloaded](../getting_started/download.qmd#sec-obt-files))
 
 ## To put somewhere (getting started or reference)
 
