@@ -543,7 +543,11 @@ When using the "formula" control, the value displayed is calculated according to
 
 Variables of control "case_when" use a specifically developed function, `CASE_WHEN`, which replaces a succession of nested `IF`. While you could write the formula with nested `IF`, `CASE_WHEN` is easier to read, thus simpler to use.
 
-**Case usage**: you want to recode a variable, but you do not know which values will be generated. For example, the raw data contains a columns for the age value and a column for the age unit. You use `CASE_WHEN` to create a column "age_years". The values which will be present in the column can take many decimal value in the range of reasonable ages.
+
+::: {.usercase}
+You want to recode a variable, but you do not know which values will be generated. For example, the raw data contains a columns for the age value and a column for the age unit. You use `CASE_WHEN` to create a column "age_years". The values which will be present in the column can take many decimal value in the range of reasonable ages.
+:::
+
 
 ::: {.callout-important}
 
