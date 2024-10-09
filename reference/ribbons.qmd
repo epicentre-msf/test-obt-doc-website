@@ -294,7 +294,7 @@ Make sure the data is not overlapping before importing, as the import will just 
 The import of the geobase deos not affect the data already entered in the linelist, it only fills the modalities offered by dropdown menus. If data is already present in the linelist and the new geobase has different levels, you need to correct them yourselves.
 :::
 
-Go [here](../how_to/import_deobase.qmd#sec-geobase-download) to learn how to download a geobase.
+Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to download a geobase.
 
 
 ### Exports

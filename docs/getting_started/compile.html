@@ -221,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#out-of-the-box-compilation" id="toc-out-of-the-box-compilation" class="nav-link active" data-scroll-target="#out-of-the-box-compilation">Out-of-the-box compilation</a></li>
-  <li><a href="#customise-generated-linelists" id="toc-customise-generated-linelists" class="nav-link" data-scroll-target="#customise-generated-linelists">Customise generated linelists</a>
+  <li><a href="#extra-customisations" id="toc-extra-customisations" class="nav-link" data-scroll-target="#extra-customisations">Extra customisations</a>
   <ul>
   <li><a href="#change-style" id="toc-change-style" class="nav-link" data-scroll-target="#change-style">Change style</a></li>
   <li><a href="#import-a-geobase" id="toc-import-a-geobase" class="nav-link" data-scroll-target="#import-a-geobase">Import a geobase</a></li>
@@ -288,8 +288,8 @@ Figure&nbsp;2: Simple compilation
 </figure>
 </div>
 </section>
-<section id="customise-generated-linelists" class="level2">
-<h2 class="anchored" data-anchor-id="customise-generated-linelists">Customise generated linelists</h2>
+<section id="extra-customisations" class="level2">
+<h2 class="anchored" data-anchor-id="extra-customisations">Extra customisations</h2>
 <p>There are a couple of extra steps you can take.</p>
 <div id="fig-setup-ribbon" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -307,7 +307,7 @@ Figure&nbsp;3: Customise linelist
 </section>
 <section id="import-a-geobase" class="level3">
 <h3 class="anchored" data-anchor-id="import-a-geobase">Import a geobase</h3>
-<p>If you are compiling a linelist for a given country, you could generate the linelist with the geobase already imported. Click on the “Import de geobase” button to import a geobase in excel format (learn <a href="../how_to/import_geobase#sec-geobase-download">how to get</a> a geobase) before compiling.</p>
+<p>If you are compiling a linelist for a given country, you could generate the linelist with the geobase already imported. Click on the “Import de geobase” button to import a geobase in excel format (learn <a href="../how_to/import_geobase#sec-geobase-download">how to get a geobase</a>) before compiling.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -340,14 +340,14 @@ Note
 </section>
 <section id="compilation-advice" class="level2">
 <h2 class="anchored" data-anchor-id="compilation-advice">Compilation advice</h2>
-<p>The linelist compilation relies on Excel VBA and can be a litle bit finicky. Here is some advice.</p>
+<p>The linelist compilation relies on Excel VBA and can be a bit <em>finicky.</em> Here is some advice.</p>
 <ul>
-<li><p><a href="../reference/ribbons.html#sec-check-setup">Run the checks</a> on the setup before attempting compilation to verify that everything is good.</p></li>
-<li><p>Make sure there are no hidden columns or filters on the sheets of the setup.</p></li>
+<li><p><a href="../reference/ribbons.html#sec-check-setup">Run the checks</a> on the setup before attempting compilation to verify that everything is ready.</p></li>
+<li><p>Make sure there are no hidden columns or filters on the sheets of the <strong>setup file</strong>.</p></li>
 <li><p>Pause Onedrive or work in a non-synchronised folder (see <a href="../getting_started/create_dic.html#sec-get-tools-ready">here</a> for more information)</p></li>
 <li><p>The compilation is sensitive to RAM limitations: if it fails it might be worth closing a couple of greedy applications and try again.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
 <li><p>In general, it is always worth trying again: sometimes an action you did in another applications perturbed the process.</p></li>
-<li><p>If it fails, start with a new designer file, in case the other got corrupted when compilation fails.</p></li>
+<li><p>If it fails, start with a new designer file, in case the previous one got corrupted when compilation failed.</p></li>
 <li><p>Excel VBA sometimes interact with other Office applications. If all goes well, no problem. But in case of unexpected failures, try avoiding using Office applications while compiling.</p></li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -360,7 +360,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>One of the writer of this guide prepares the setup, the designer, and then copy both of them and use the copies to compile. If a compilation fails, delete both copies and start from fresh, just in case the failure to compile corrupted any of the file.</p>
+<p>I prepare the <strong>setup file</strong>, the <strong>designer file</strong>, and then copy both of them and use the copies to compile. If a compilation fails, I delete both copies and start from fresh, just in case the failure to compile corrupted any of the file.</p>
 </div>
 </div>
 
