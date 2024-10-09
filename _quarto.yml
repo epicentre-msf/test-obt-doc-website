@@ -9,7 +9,7 @@ format:
   html:
     theme: 
       - flatly
-      - styles.scss
+      - styles.css
     
     toc: true
     toc-depth: 5
