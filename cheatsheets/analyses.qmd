@@ -100,7 +100,7 @@ Example: a graph plotting the number of "Cured" and "Dead" across time is plotti
 
 ### Summary
 
-![](../images/im-079-diagram.png){fig-align="center"}
+![](../images/im-079-diagram.png)
 
 ![](../images/im-080-diagram.png){fig-align="center"}
 
