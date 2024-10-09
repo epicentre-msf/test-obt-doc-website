@@ -252,9 +252,9 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>In you internet browser, go to the <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geoapp</a>.</p></li>
 <li><p>Use your account to connect. If you do not have one already, create one <a href="https://reports.msf.net/signup/">here</a> first then connect to the Geoapp.</p></li>
-<li><p>Select one or more countries from the dropdown menu in the top left of the screen. The Admin 1 regions of each country will be rendered on the map.</p></li>
-<li><p>Click on the regions you require geo data for. Once clicked, the region will turn red to indicate it has been selected. Alternatively, to select all regions currently rendered on the map, click the “Select all regions” button under the country dropdown menu. Once at least one region has been selected, buttons to inspect and download the data will appear below the country dropdown menu.</p></li>
-<li><p>Clicking the “Download Geobase” button will download the data for the selected regions in the excel format that can be directly imported into an Outbreak Tools Linelist.</p></li>
+<li><p>Select one <em>or more</em> countries from the dropdown menu in the top left of the screen. The Admin 1 regions of each country will be rendered on the map.</p></li>
+<li><p>Click on the regions you require geo data for. Selected regions turn red. If you want to select the whole country, click the “Select all regions” button under the country dropdown menu. Once one region has been selected, buttons to inspect and download the data will appear below the country dropdown menu.</p></li>
+<li><p>Clicking the “Download Geobase” button to download the data for the selected regions in an excel format that can be directly imported into an OutbreakTools Linelist.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -266,7 +266,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The geospatial administrative boundary data used to build the Geobase can also be downloaded in the format of your choice, compatible with GIS software (e.g.&nbsp;QGIS, ArcGIS) and the R statistical software by clicking on the “Download geo Data” button</p>
+<p>The geospatial administrative boundary data used to build the geobase can also be downloaded in the format of your choice, compatible with GIS software (e.g.&nbsp;QGIS, ArcGIS) and the R statistical software by clicking on the “Download geo Data” button.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -285,6 +285,12 @@ Tip
 </section>
 <section id="sec-geobase-import" class="level2">
 <h2 class="anchored" data-anchor-id="sec-geobase-import">Import a geobase in a linelist</h2>
+<p>Once you have downloaded a geobase from the <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geoapp</a>, you can import it in an OBT linelist.</p>
+<ol type="1">
+<li>Open the linelist</li>
+<li>Go to the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools Menu</a></li>
+<li>Click on the <a href="../reference/ribbons.html#sec-import-geobase">“Import geobase” button</a></li>
+</ol>
 
 
 </section>
