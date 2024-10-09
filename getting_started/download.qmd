@@ -10,7 +10,7 @@ Go to the [OutbreakTools github repo](https://github.com/epicentre-msf/outbreak-
 
 Save the archive locally on your computer and unzip it.
 
-## Install the OubreakTools files?
+## Install the OubreakTools files? {#sec-obt-files}
 
 The solution is based on VBA scripts in Excel files, so there is nothing to install.
 
