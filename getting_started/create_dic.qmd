@@ -2,7 +2,7 @@
 title: "Create dictionary"
 ---
 
-## Get the tools ready 🛠
+## Get the tools ready 🛠 {#sec-get-tools-ready}
 
 1. [Download](../getting_started/download.qmd#download) the files from github to get the most updated versions and unzip it.
 
