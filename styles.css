@@ -2,17 +2,10 @@
 
 /* Define colors */
 :root {
-    --primary: #2c3e50;      /* TOC highlight, note sidebar */
-    --primary_light: #E4EDF3;
-    --primary_light_inline: #E4EDF3;
+    --green_hightlight: #20be9f;      /* bs-link-color-rgb */
+    --dark_blue: #2c3e50;             /* background-color */
+    --grey_code: #2c3e501a;
     
-    --secondary: #A1B8CF;
-    --secondary_bg: #F5F9FB;
-    --dark_grey: #C5C5C5;
-    --light_grey: #F8F8F8;
-    --light_blue_bg:#bcdfeb;
-    --light_green_bg: #f1f9f1;
-    --dark_green_bg:#002800
 
 }
 
@@ -22,15 +15,9 @@
 /* BLOCKQUOTE for trainee instructions */
 blockquote {
   font-size: 1em;
-  color: var(--primary);
-  border-left-color: var(--primary);
+  color: var(--bs-link-color-rgb);
+  border-left-color: var(--bs-link-color-rgb);
 }
-
-/* TOC highlight color */
-/*.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: var(--primary);
-} */
-
 
 /* Titres */
 /*h1 {
@@ -45,46 +32,8 @@ h1.title {
 
 /* Inline code */
 code {
-  color: var(--primary);
-  background-color: var(--primary_light_inline);
-  border-radius: 3px;
-}
-
-
-/* Case usage */
-.usercase {
-  background-color: var(--secondary_bg);
-  border-left: 6px solid var(--secondary);
-  /*border: 1px solid #da222200;*/
-  border-radius: 4px;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 0px 10px 0px;
-  position: relative;
-  width: fit-content;
-}
-
-.usercase p {
- width: fit-content; 
- color: var(--primary);
- margin: 0;
-}
-
-
-
-/* Best Practices */
-.best {
-  background-color: var(--light_grey);
-  border-left: 6px solid var(--dark_grey);
-  /*border: 1px solid #da222200;*/
-  border-radius: 4px;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 0px 10px 0px;
-  position: relative;
-  width: fit-content;
-}
-
-.best p {
-  width: fit-content; 
-  color: var(--primary);
-  margin: 0;
+  color: var(--bs-link-color-rgb);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  padding: 0.2em 0.25em 0.2em 0.25em
 }
