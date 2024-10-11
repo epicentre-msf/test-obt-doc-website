@@ -229,7 +229,7 @@ The properties section of the table controls variable visibility, uniqueness, an
 
 ![](images/im-022-properties-en.png){fig-align="center"}
 
-### Status
+### Status {#sec-visibility-status}
 
 This is a dropdown field that contains four options for defining the **visibility** of the variable. The linelist has a functionality to [show or hide optional variables](../how_to/show_hide_variables.qmd) depending on the data needs on the field.
 
