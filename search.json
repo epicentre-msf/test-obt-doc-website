@@ -46,7 +46,21 @@
     "href": "how_to/show_hide_variables.html",
     "title": "Show or hide variables",
     "section": "",
-    "text": "TODO (copied stuff en vrac)\nClicking on the “Show/hide variables” button opens a window listing all the variables in this linelist sheet.\n\n\n\nOutbreakTools tab in the created linelist\n\n\n1\nThe “optional, hidden” variables in the setup file appear as “Hidden” (by default). However, the user can change the status by choosing “Show”, in which case the column will become visible. \n2 \n3\nThe “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the setup file.\nThe “optional, visible” variables in the setup file appear as “Displayed” (by default). However, you can change the status by choosing “Hide”, in which case the column will no longer be visible.\n4 \n“Mandatory” variables in the setup file appear as “Mandatory” in the “Show/Hide” pop up, and cannot be hidden.\n\n\n\n Back to top"
+    "text": "TODO (copied stuff en vrac)"
+  },
+  {
+    "objectID": "how_to/show_hide_variables.html#visibility-status",
+    "href": "how_to/show_hide_variables.html#visibility-status",
+    "title": "Show or hide variables",
+    "section": "Visibility status",
+    "text": "Visibility status\nIn OutbreakTools, there are several visibility status, which can be modified using a button in the OutbreakTools Menu:\n\nmandatory: the columns cannot be hidden using the Show/Hide\nhiden: the columns are internal and cannot be shows using the Show/Hide\noptional: the linelist user can decide to show or hide the variable based on their needs.\n\nThese linelist status correspond to the setup file status property, with the subtility that the setup user can decide for optional columns to show them by default (optional, visible) or hide them by default (optional, hidden), based on the expected frequency of use of the variable."
+  },
+  {
+    "objectID": "how_to/show_hide_variables.html#show-and-hide-variables",
+    "href": "how_to/show_hide_variables.html#show-and-hide-variables",
+    "title": "Show or hide variables",
+    "section": "Show and hide variables",
+    "text": "Show and hide variables\nClicking on the “Show/hide variables” button opens a window listing all the variables in the current sheet.\n\n\n\nOutbreakTools tab in the created linelist\n\n\nThe optional, hidden variables in the setup file appear as Hidden by default. However, the user can change the status by choosing Show, in which case the column will become visible.\n\n\nThe “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the setup file.\nThe optional, visible variables in the setup file appear as Shown by default. However, you can change the status by choosing Hide, in which case the column will no longer be visible.\n\nMandatory variables in the setup file appear as *Mandatory in the “Show/Hide” pop up, and cannot be hidden.\n\n\n\n\n\n\nNote on showing and hiding columns manually\n\n\n\n\n\nTechnically, the linelist user can forcefully hide/un-hide columns.\nUn-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (e.g. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.\nIt is however more dangerous to forcefully hide “mandatory” columns. These columns are often fundamental variables in the linelist, that are needed for data understanding and analyses (e.g. date of admission, age or sex). If you choose to hide one of these columns, know that some analyses might not function as expected, or not at all because they rely on the hidden columns.\nFinally, any change of column visibility that is not made via the “Hide/show variable” button of the linelist will not be recorded and migrated to a new linelist."
   },
   {
     "objectID": "reference/analyses_sheet.html",
@@ -683,7 +697,7 @@
     "href": "how_to/migrate_setup.html",
     "title": "Migrate setup data",
     "section": "",
-    "text": "Explain how to migrate one setup to a new version\n\n\n\n Back to top"
+    "text": "Get a new, empty setup file\nGo to the OutbreakTools menu of this setup file and click on the button “Import data from another setup”.\n\n\n\n\nImport section\n\n\nIt opens a popup windowto select the file to import data from.\n\n\n\n\n\n\nSelect what to import from the original by ticking the boxes. If you are doing a standard setup file upgrade, you should tick all the boxes to iport everything.\nDecide if you want to run a checkup of the setup file after import by ticking the box or not (you probably want to, but you can also do it at a later stage)\nClick on the “Import” button and wait.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "how_to/link_tables.html",
