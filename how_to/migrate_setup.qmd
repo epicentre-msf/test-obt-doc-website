@@ -3,7 +3,7 @@ title: "Migrate setup data"
 ---
 
 1. Get a new, empty **setup file**
-2. Go to the [OutbreakTools menu](../getting_started/workflow.qmd#fig-setup-ribbon) of this setup file and click on the button "Import data from another setup".
+2. Go to the [OutbreakTools menu](../reference/ribbons.qmd#sec-setup-ribbon) of this setup file and click on the button "Import data from another setup".
 
 ![Import section](../reference/images/img-003-ribbon-setup-import.png){fig-align="center"}
 
