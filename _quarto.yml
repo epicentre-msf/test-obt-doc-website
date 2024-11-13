@@ -53,6 +53,9 @@ website:
           - text: Compile a linelist
             href: getting_started/compile.qmd
             
+          - text: Use an OutbreakTools linelist
+            href: getting_started/use_linelist.qmd
+            
       
       - text: Setup file reference
         menu: 
@@ -97,6 +100,9 @@ website:
             
           - text: Linelist - Migrate linelist data
             href: how_to/migrate_linelist.qmd
+            
+          - text: Linelist - Send data to the dashboard
+            href: how_to/send_data_to_dashboard.qmd
             
       - text: Cheatsheet
         menu:
