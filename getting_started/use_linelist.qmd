@@ -70,10 +70,10 @@ At minima, an OutbreakTools linelist will contain these sheets:
 2.	At least one *data entry sheet* to enter patient data  
 3.	Some or all of the following analyses sheets containing basic exploration of data:  
 
-  - Uni and bivariate analyses
-  - Temporal analyses (epicurves and their associated tables)
-  - Spatial analyses (top X locations of cases)
-  - Spatio-temporal analyses (epicurves for chosen locations)
+    - Uni and bivariate analyses
+    - Temporal analyses (epicurves and their associated tables)
+    - Spatial analyses (top X locations of cases)
+    - Spatio-temporal analyses (epicurves for chosen locations)
     
 4.	A Custom dropdown sheet where the user can define categories for some specific variables
 5.	A Custom tables sheet where the user can create a pivot table of the data

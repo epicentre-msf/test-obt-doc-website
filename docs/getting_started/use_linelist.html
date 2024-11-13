@@ -92,12 +92,6 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -237,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#save-the-file-locally" id="toc-save-the-file-locally" class="nav-link" data-scroll-target="#save-the-file-locally">Save the file locally</a></li>
   <li><a href="#use-the-excel-desktop-version" id="toc-use-the-excel-desktop-version" class="nav-link" data-scroll-target="#use-the-excel-desktop-version">Use the Excel Desktop version</a></li>
-  <li><a href="#unprotect-the-file-and-authorize-macros" id="toc-unprotect-the-file-and-authorize-macros" class="nav-link" data-scroll-target="#unprotect-the-file-and-authorize-macros">Unprotect the file and authorize macros</a></li>
+  <li><a href="#unprotect-the-file-and-authorise-macros" id="toc-unprotect-the-file-and-authorise-macros" class="nav-link" data-scroll-target="#unprotect-the-file-and-authorise-macros">Unprotect the file and authorise macros</a></li>
   </ul></li>
   <li><a href="#the-outbreaktools-ribbon" id="toc-the-outbreaktools-ribbon" class="nav-link" data-scroll-target="#the-outbreaktools-ribbon">The OutbreakTools ribbon</a></li>
   <li><a href="#structure-of-the-file" id="toc-structure-of-the-file" class="nav-link" data-scroll-target="#structure-of-the-file">Structure of the file</a></li>
@@ -284,49 +278,44 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="steps-to-prepare-a-linelist-for-deployment">Steps to prepare a linelist for deployment</h2>
 <ol type="1">
 <li><p>Download the empty linelist template in the language of your choice.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
-<li><p><a href="..how_to/import_geobase.qmd">Prepare geographic information</a></p></li>
-</ol>
+<li><p><a href="../how_to/import_geobase.html">Prepare geographic information</a>:</p>
 <ol type="a">
-<li><p>Go to the <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geoapp</a> and download the geo-base for the area of interest (it can be cross-border).</p></li>
-<li><p>In the linelist, go to the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools menu</a> and click on the <a href="../reference/ribbons.html#sec-import-geobase">“Import geobase” button</a></p></li>
-</ol>
-<ol start="3" type="1">
-<li><p>Set up the day of the week: “Week start” button in the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools menu</a></p></li>
-<li><p>Optional:</p>
-<ol type="a">
-<li>Modify variable visibility: “Show/Hide variables” button from the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools menu</a><br>
+<li>Go to the <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geoapp</a> and download the geo-base for the area of interest (it can be cross-border).<br>
 </li>
-<li>Prepare and print a register and/or Case Report Form to enter data on paper (“Register and Case report form” section of the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools menu</a>)</li>
+<li>In the linelist, go to the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a> and click on the <a href="../reference/ribbons.html#sec-import-geobase">“Import geobase” button</a></li>
 </ol></li>
-<li><p>Send the linelist to the sites. There should be 1 linelist per site.</p></li>
-<li><p>Each site should fill the Info sheet in their linelist before entering patient data.</p></li>
+<li><p>Set up the day of the week: “Week start” button in the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a></p></li>
+<li><p>Optionaly: modify variable visibility: “Show/Hide variables” button from the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a></p></li>
+<li><p>Optionaly: prepare and print a register and/or Case Report Form to enter data on paper (“Register and Case report form” section of the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a>)</p></li>
+<li><p>Send the linelist to the sites. There should be one linelist per site.</p></li>
+<li><p>Each site should fill the <em>Info sheet</em> in their linelist before entering patient data.</p></li>
 </ol>
 <p>After data has been encoded in the linelist, you can <a href="../how_to/send_data_to_dashboard.html">export data and send it to Epicentre</a> for visualisation on an dashboard if a dashboard is paired with the linelist (which is the default for intersection approved linelists).</p>
-<p>Current dashboards include: cholera, measles, hepatitis E, diphtheria, mpox. Other are added as OutbreakTools linelist available grow.</p>
+<p><strong>Current dashboards include</strong>: cholera, measles, hepatitis E, diphtheria, mpox. Other are added as OutbreakTools linelist available grow.</p>
 </section>
 <section id="working-with-the-file" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-the-file">Working with the file</h2>
 <section id="save-the-file-locally" class="level3">
 <h3 class="anchored" data-anchor-id="save-the-file-locally">Save the file locally</h3>
-<p>To avoid synchronization problems, it is advised that you do not synchronize it with OneDrive while the Excel file is opened.</p>
+<p>To avoid synchronization problems, it is advised that you do not synchronise it with OneDrive while the Excel file is opened.</p>
 </section>
 <section id="use-the-excel-desktop-version" class="level3">
 <h3 class="anchored" data-anchor-id="use-the-excel-desktop-version">Use the Excel Desktop version</h3>
 <p>Most of the functionalities of the linelist are not supported by the internet Excel version.</p>
 </section>
-<section id="unprotect-the-file-and-authorize-macros" class="level3">
-<h3 class="anchored" data-anchor-id="unprotect-the-file-and-authorize-macros">Unprotect the file and authorize macros</h3>
+<section id="unprotect-the-file-and-authorise-macros" class="level3">
+<h3 class="anchored" data-anchor-id="unprotect-the-file-and-authorise-macros">Unprotect the file and authorise macros</h3>
 <p>The OubreakTools linelist rely on macros for functionalities, so at minima the macro needs to be enabled, but sometimes more steps are needed to authorise the use.</p>
 <ol type="1">
 <li><p>Make sure the file is not <em>protected</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.</p></li>
 <li><p>Open the file (a password may be needed at this stage)</p></li>
-<li><p>If VBA macros are already in you Excel, you may need to authorize VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros <a href="https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6">authorise VBA macros in options</a>. You will probably need to restart the file after that for the changes to be taken into account.</p></li>
+<li><p>If VBA macros are already in you Excel, you may need to authorise VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros <a href="https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6">authorise VBA macros in options</a>. You will probably need to restart the file after that for the changes to be taken into account.</p></li>
 </ol>
 </section>
 </section>
 <section id="the-outbreaktools-ribbon" class="level2">
 <h2 class="anchored" data-anchor-id="the-outbreaktools-ribbon">The OutbreakTools ribbon</h2>
-<p>Most of the important features of the linelist can be accessed through the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools Menu</a> at the top of Excel interface. Go and explore it!</p>
+<p>Most of the important features of the linelist can be accessed through the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools Menu</a> at the top of Excel interface. Go and explore it!</p>
 </section>
 <section id="structure-of-the-file" class="level2">
 <h2 class="anchored" data-anchor-id="structure-of-the-file">Structure of the file</h2>
@@ -350,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="enter-data-for-locations" class="level2">
 <h2 class="anchored" data-anchor-id="enter-data-for-locations">Enter data for locations</h2>
-<p>Geographical location are encoded using four columns that can accommodate up to four administrative levels, and these columns have a special status in OutbreakTools linelists. You can recognize them by the orange background of their labels.</p>
+<p>Geographical location are encoded using four columns that can accommodate up to four administrative levels, and these columns have a special status in OutbreakTools linelists. You can recognise them by the orange background of their labels.</p>
 <p>When you import a geobase in a linelist:</p>
 <ul>
 <li>The labels of the columns are updated with the administrative levels present in the geobase (e.g.&nbsp;“adm1_name” will change to “Province” for DRC).</li>
@@ -400,7 +389,7 @@ Search options in the Geohelper
 
 <ol>
 <li id="fn1"><p>you can expect English and French as default, but Spanish, Portuguese or Arabic translations have been developed when needed, don’t hesitate to ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows apply an extra layer of blocking<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows applies an extra layer of blocking<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>You can also navigate to that sheet using the bottom tabs, as you would do any other sheet<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Again, this is a shortcut but you could go back using normal sheet navigation<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
