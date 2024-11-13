@@ -242,7 +242,7 @@ You can manually modify the width of columns in the linelist table to adjust to 
 :::
 
 
-#### GeoHelper
+#### GeoHelper {#sec-geo-helper}
 
 The **GeoHelper** is a popup window that helps you entering geographic data surch as the origin of the patient or the name of the facility (if the ["hf" control was used for the variable](../reference/dictionary_sheet.qmd#sec-geo-data)). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.
 
@@ -295,7 +295,7 @@ The import of the geobase does not affect the data already entered in the lineli
 Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to download a geobase.
 
 
-### Exports
+### Exports {#sec-export-data}
 
 The regular exports buttons are available in the "Export section" of the ribbon, and the "Export for migration" is available in the [Advanced](#sec-linelist-advanced) section of the ribbon. 
 
