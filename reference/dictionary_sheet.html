@@ -160,27 +160,31 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Export subset of geo columns</span></a>
+ <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Create two data entry tables</span></a>
+ <span class="dropdown-text">Setup - Create two data entry tables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Add a new linelist language</span></a>
+ <span class="dropdown-text">Setup - Add a new linelist language</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Migrate a setup to an upgraded version</span></a>
+ <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Import a geobase in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Show or hide variables in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
+ <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
     </ul>
   </li>
@@ -439,7 +443,7 @@ Tip
 <p>As a general advice, try to create short but explicit names (easier said than done).</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Names must be made unique">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -472,7 +476,7 @@ Tip
 <p>This is a free text field that defines the variables labels, which are quick descriptions of the variables, which the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.</p>
 <p>In the linelist, the main label appears in black and bold. It cannot be modified by the end user (with the exception of explicitly <a href="#sec-editable-label">editable labels</a>.</p>
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Tip: add more information">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -492,13 +496,13 @@ Tip: add more information
 <section id="dev-comment" class="level3">
 <h3 class="anchored" data-anchor-id="dev-comment">Dev Comment</h3>
 <p>This free text column is for the sole benefit of the <strong>setup file</strong> developer (in all probability, you), to add technical or practical information. <strong>It is not read by the designer and does not affect the generated file.</strong></p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Tip: Example of one user usage">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example of one user usage
+Tip: Example of one user usage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -519,7 +523,7 @@ Example of one user usage
 <section id="sec-editable-label" class="level3">
 <h3 class="anchored" data-anchor-id="sec-editable-label">Editable Label</h3>
 <p>This is a <em>yes/no</em> column. If the value is “<em>yes</em>”, the label of the variable in the linelist can be modified by its user. If the value is “<em>no</em>” or if the field remains empty, the variable label in the linelist is protected.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: add customisable variables in your linelists">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -550,7 +554,7 @@ Note
 <p>The sub-labels “<em>Calculated</em>” and “<em>Custom dropdown</em>” are added automatically, no need to add them manually.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: example of common sub-labels">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -602,7 +606,7 @@ Tip: example of common sub-labels
 <h3 class="anchored" data-anchor-id="sheet-name">Sheet Name</h3>
 <p>This is a free text field that contains the <em>name of the sheet</em> in which the variable will appear.</p>
 <p>In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Note on linelist sheets">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -636,7 +640,7 @@ Note on linelist sheets
 <h3 class="anchored" data-anchor-id="sec-main-section">Main Section</h3>
 <p>This is a free text field used to define the <em>name</em> of the main section in which the variable is located. This makes it possible to group variables by theme to make data entry and navigation easier.</p>
 <p>In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in the <a href="#sec-sheet-sections-example">example</a>). They cannot be modified by the end user.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: organise variables">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -691,7 +695,7 @@ Tip: organise variables
 <li><p><em>hidden</em>: variable hidden by default, it cannot be displayed in the linelist</p></li>
 </ul>
 <p>Variables can be shown or hidden using the “Show/Hide” button of the <a href="../reference/ribbons.html#sec-linelist-ribbon">linelist OutbreakTools menu</a> in the <strong>linelist file</strong>. See the <a href="../how_to/show_hide_variables.html">how to</a>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Note on showing and hiding columns manually">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -837,7 +841,7 @@ Note
 <figcaption>Guide to choosing variable control in OBT</figcaption>
 </figure>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Note on data validation">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -905,7 +909,7 @@ Note on data validation
 <p>This control is similar to the “choice_manual” control, in that it creates a <strong>static dropdown menu</strong> in the linelist from <strong>predefined values</strong> entered in the <strong>setup file</strong>.</p>
 <p>The difference is that in the created linelist, the user can use the dropdown menu several times to select <strong>multiple values</strong>. These values will be concatenated and stored as a chain of character. By default, the separator is a coma (“,”), but you can modify this in the control column. For example, entering <em>choice_multiple(“_”)</em> will use the character “_” to separate values instead of “,”.</p>
 <p><strong>Example</strong>: if the user selects “Azythromicin”, then “Ampicilin” from a dropdown menu, the value “Azythromicin, Ampicilin” will be stored in the cell.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled" title="Warning: cannot be used for analyses">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -918,7 +922,7 @@ Warning: cannot be used for analyses
 <p>A choice_multiple column cannot be used in the <a href="../reference/analyses_sheet.html">Analyses sheets</a> as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: inform the linelist user">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1050,7 +1054,7 @@ Note
 <h5 class="anchored" data-anchor-id="case_when">case_when</h5>
 <p>Variables of control “case_when” use a specifically developed function, <code>CASE_WHEN</code>, which replaces a succession of nested <code>IF</code>. While you could write the formula with nested <code>IF</code>, <code>CASE_WHEN</code> is easier to read, thus simpler to use.</p>
 <p><strong>Usercase</strong> You want to recode a variable, but you do not know which values will be generated. For example, the raw data contains a columns for the age value and a column for the age unit. You use <code>CASE_WHEN</code> to create a column “age_years”. The values which will be present in the column can take many decimal value in the range of reasonable ages.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Important: CASE_WHEN and analyses">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1077,7 +1081,7 @@ Warning
 <p>To work properly the “case_when” control must be associated with a <code>CASE_WHEN</code>function in the <a href="#sec-var-control-details">Control details</a> column, or the designer will not work properly because the function is not native.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Why not using more recent Excel functions?">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1185,7 +1189,7 @@ Important
 <p>When writing a formula, make sure that it returns an empty value for rows without an ID, as all the rows with non-null values in it will be counted in the <em>Analyses</em> sheets. If your graphs show a lot of “Missing” values that do not reflect how well a column is filled, check that a calculated column is not responsible for it.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Important: english proof your formulas!">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1203,7 +1207,7 @@ Important: english proof your formulas!
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: improve formual readibility">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1321,7 +1325,7 @@ Note
 <li><p>Variables with <strong>any value</strong> entered in the “Export” columns will be exported. If you want to <strong>not</strong> export a variable, you need to keep the cells <strong>empty</strong>.</p></li>
 <li><p>You can define the order in which variables are displayed in exports by entering numbers in the export column. If two variables have the same number (in the same export column), they will be exported in the order they are defined in the setup (from top to bottom).</p></li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: create anonymous exports">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
