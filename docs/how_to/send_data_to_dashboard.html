@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Migrate setup data – OutbreakTools documentation</title>
+<title>Send data to the dashboard – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Migrate setup data</h1>
+<h1 class="title">Send data to the dashboard</h1>
 </div>
 
 
@@ -252,27 +252,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>OutbreakTools linelists have functionalities to export data. OutbreakTools linelists developped by the EpiDS team are usually paired with a dashboard, at least in the case of intersection linelists or big multi-sections projects. As a consequence, all linelists created by the EpiDS team can generate password-protected anonymous data, ready to be sent to Epicentre for compilation and visualisation.</p>
+<p>If you are using a linelist for which a dashboard was developed, you can send data to Epicentre. The scripts run automatically every hours, so you can choose the frequency at which you send the data depending on the needs (some cholera projects at the peak of outbreak have sent data up to twice a day, but in many cases once a week is good enough, YMMV).</p>
+<p>Steps:</p>
 <ol type="1">
-<li>Get a new, empty <strong>setup file</strong></li>
-<li>Go to the <a href="../reference/ribbons.html#sec-setup-ribbon">OutbreakTools menu</a> of this setup file and click on the button “Import data from another setup”.</li>
+<li><p>Clean your data as much as you can. Pay special attention to dates (date format, date in the future, impossible dates…) and geographic data (see <a href="#nte-geomatching" class="quarto-xref">Note&nbsp;1</a>)</p></li>
+<li><p>Make sure that the general information metadata is properly filled (country, site name, section…) as this data is used by the compilation script.</p></li>
+<li><p>Clear filters: you need to send the whole dataset, not only the current week. (see <a href="#imp-whole-data" class="quarto-xref">Important&nbsp;1</a>) and if you know that automatic calculations get stuck sometimes, hit F9/“Recalculate now” Excel button to update all formulas.</p></li>
+<li><p>Export data using the “Export data” button of the <a href="../reference/ribbons.html#sec-export-data">OutbreakTools menu</a>, and chose the “Anonymous export to MSF” option (or a similar name). You will be prompted for a place to save the genarated export.</p></li>
+<li><p>Send the data to epi-data@epicentre.msf.org <strong>without renaming the file</strong>.</p></li>
+<li><p>Rince and repeat for all the sites/linelists.</p></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../reference/images/img-003-ribbon-setup-import.png" class="img-fluid figure-img"></p>
-<figcaption>Import section</figcaption>
-</figure>
+<p>The file generated is a password protected excel file, which you can open if you want to see what it looks like. It has the Info sheet and patient data, as well as some automatically generated metadata (language, linelist version etc.). <strong>The name of the export file is generated automatically based on the matadata you filled</strong> so make sure these data are filled correctly once and for all.</p>
+<p>If their metadata are filled correctly, you can send several exports in the same mail (from different sites, or even different diseases), the scripts will parse the name to sort the files on our side.</p>
+<div id="nte-geomatching" class="callout callout-style-default callout-note callout-titled" title="Geodata matching">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>It opens a popup windowto select the file to import data from.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../reference/images/img-004-import-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
+<div class="callout-title-container flex-fill">
+Note&nbsp;1: Geodata matching
 </div>
-<ol start="3" type="1">
-<li>Select what to import from the original by ticking the boxes. If you are doing a standard <strong>setup file</strong> upgrade, you should tick all the boxes to iport everything.</li>
-<li>Decide if you want to run a checkup of the <strong>setup</strong> file after import by ticking the box or not (you probably want to, but you can also <a href="../reference/ribbons.html#sec-check-setup">do it</a> at a later stage)</li>
-<li>Click on the “Import” button and wait.</li>
-</ol>
+</div>
+<div class="callout-body-container callout-body">
+<p>The dashboard display a map, where you can visualise data at several administrative levels (1 to 4), but it depends on the resolution of the data you and other send). For patients to appear on the map at a given resolution level, their geolocations needs to match the geobase for this level because the geobase loaded with the linelist corresponds to shapes used to create maps.</p>
+<p>If a place of origin cannot be matched for a given level (<em>e.g.</em> health area), the patient will not be included on the map at the “health area” level resolution If the above level (here the health zone) is matched, the patient will be accounted in the health zone resolution map.</p>
+<p>The patient will be counted in other tables/graphs as long as the relevant information is filled, regardless of the geomatching.</p>
+</div>
+</div>
+<div id="imp-whole-data" class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important&nbsp;1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only the last occurrence of data you send is loaded on the dashboard.</p>
+<p>Consequently, it is perfectly fine to correct past data even if you sent it previously: past exports will be ignored.</p>
+</div>
+</div>
 
 
 
