@@ -77,23 +77,26 @@ website:
 
       - text: How-to 
         menu:
-          - text: Export subset of geo columns
+          - text: Setup - Export subset of geo columns
             href: how_to/export_subset_geo.qmd
 
-          - text: Create two data entry tables
+          - text: Setup - Create two data entry tables
             href: how_to/link_tables.qmd
             
-          - text: Add a new linelist language
+          - text: Setup - Add a new linelist language
             href: how_to/add_language.qmd
             
-          - text: Migrate a setup to an upgraded version
+          - text: Setup - Migrate a setup to an upgraded version
             href: how_to/migrate_setup.qmd            
             
-          - text: Import a geobase in the linelist
+          - text: Linelist - Import a geobase in the linelist
             href: how_to/import_geobase.qmd
             
-          - text: Show or hide variables in the linelist
+          - text: Linelist - Show or hide variables in the linelist
             href: how_to/show_hide_variables.qmd
+            
+          - text: Linelist - Migrate linelist data
+            href: how_to/migrate_linelist.qmd
             
       - text: Cheatsheet
         menu:
