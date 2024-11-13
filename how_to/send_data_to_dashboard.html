@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Show or hide variables – OutbreakTools documentation</title>
+<title>Send data to the dashboard – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -221,22 +221,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
-    <h2 id="toc-title">Table of content</h2>
-   
-  <ul>
-  <li><a href="#visibility-status" id="toc-visibility-status" class="nav-link active" data-scroll-target="#visibility-status">Visibility status</a></li>
-  <li><a href="#show-and-hide-variables" id="toc-show-and-hide-variables" class="nav-link" data-scroll-target="#show-and-hide-variables">Show and hide variables</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Show or hide variables</h1>
+<h1 class="title">Send data to the dashboard</h1>
 </div>
 
 
@@ -253,55 +246,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TODO (copied stuff en vrac)</p>
-<section id="visibility-status" class="level2">
-<h2 class="anchored" data-anchor-id="visibility-status">Visibility status</h2>
-<p>In OutbreakTools, there are several visibility status, which can be modified using a button in the <a href="../reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools Menu</a>:</p>
-<ul>
-<li><strong>mandatory</strong>: the columns cannot be hidden using the Show/Hide</li>
-<li><strong>hiden</strong>: the columns are internal and cannot be shows using the Show/Hide</li>
-<li><strong>optional</strong>: the linelist user can decide to show or hide the variable based on their needs.</li>
-</ul>
-<p>These linelist status correspond to the <strong>setup file</strong> <a href="../reference/dictionary_sheet.html#sec-visibility-status">status property</a>, with the subtility that the setup user can decide for optional columns to show them by default (<em>optional, visible</em>) or hide them by default (<em>optional, hidden</em>), based on the expected frequency of use of the variable.</p>
-</section>
-<section id="show-and-hide-variables" class="level2">
-<h2 class="anchored" data-anchor-id="show-and-hide-variables">Show and hide variables</h2>
-<p>Clicking on the “Show/hide variables” button opens a window listing all the variables in the current sheet.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../reference/images/img-012-ll-show-hide.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the created linelist</figcaption>
-</figure>
-</div>
-<p>The <em>optional, hidden</em> variables in the <strong>setup file</strong> appear as <em>Hidden</em> by default. However, the user can change the status by choosing <em>Show</em>, in which case the column will become visible.</p>
-<p><img src="../how_to/images/im-027-example.png" class="img-fluid"></p>
-<p><img src="../how_to/images/im-028-example.png" class="img-fluid"></p>
-<p>The “Notification year” variable does not appear in the list of variables because it is in “hidden” status in the <strong>setup file</strong>.</p>
-<p>The <em>optional, visible</em> variables in the <strong>setup file</strong> appear as <em>Shown</em> by default. However, you can change the status by choosing <em>Hide</em>, in which case the column will no longer be visible.</p>
-<p><img src="../how_to/images/im-029-example.png" class="img-fluid"></p>
-<p><em>Mandatory</em> variables in the <strong>setup file</strong> appear as *Mandatory in the “Show/Hide” pop up, and cannot be hidden.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<p>OutbreakTools linelists have functionalities to export data. OutbreakTools linelists developped by the EpiDS team are usually paired with a dashboard, at least in the case of intersection linelists or big multi-sections projects. As a consequence, all linelists created by the EpiDS team can generate password-protected anonymous data, ready to be sent to Epicentre for compilation and visualisation.</p>
+<p>If you are using a linelist for which a dashboard was developed, you can send data to Epicentre. The scripts run automatically every hours, so you can choose the frequency at which you send the data depending on the needs (some cholera projects at the peak of outbreak have sent data up to twice a day, but in many cases once a week is good enough, YMMV).</p>
+<p>Steps:</p>
+<ol type="1">
+<li><p>Clean your data as much as you can. Pay special attention to dates (date format, date in the future, impossible dates…) and geographic data (see <a href="#nte-geomatching" class="quarto-xref">Note&nbsp;1</a>)</p></li>
+<li><p>Make sure that the general information metadata is properly filled (country, site name, section…) as this data is used by the compilation script.</p></li>
+<li><p>Clear filters: you need to send the whole dataset, not only the current week. (see <a href="#imp-whole-data" class="quarto-xref">Important&nbsp;1</a>) and if you know that automatic calculations get stuck sometimes, hit F9/“Recalculate now” Excel button to update all formulas.</p></li>
+<li><p>Export data using the “Export data” button of the <a href="../reference/ribbons.html#sec-export-data">OutbreakTools menu</a>, and chose the “Anonymous export to MSF” option (or a similar name). You will be prompted for a place to save the genarated export.</p></li>
+<li><p>Send the data to epi-data@epicentre.msf.org <strong>without renaming the file</strong>.</p></li>
+<li><p>Rince and repeat for all the sites/linelists.</p></li>
+</ol>
+<p>The file generated is a password protected excel file, which you can open if you want to see what it looks like. It has the Info sheet and patient data, as well as some automatically generated metadata (language, linelist version etc.). <strong>The name of the export file is generated automatically based on the matadata you filled</strong> so make sure these data are filled correctly once and for all.</p>
+<p>If their metadata are filled correctly, you can send several exports in the same mail (from different sites, or even different diseases), the scripts will parse the name to sort the files on our side.</p>
+<div id="nte-geomatching" class="callout callout-style-default callout-note callout-titled" title="Geodata matching">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note on showing and hiding columns manually
+Note&nbsp;1: Geodata matching
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Technically, the linelist user can forcefully hide/un-hide columns.</p>
-<p>Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (<em>e.g</em>. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.</p>
-<p>It is however more dangerous to forcefully hide “mandatory” columns. These columns are often fundamental variables in the linelist, that are needed for data understanding and analyses (<em>e.g</em>. date of admission, age or sex). If you choose to hide one of these columns, know that some analyses might not function as expected, or not at all because they rely on the hidden columns.</p>
-<p>Finally, any change of column visibility that is not made via the “Hide/show variable” button of the linelist will not be recorded and migrated to a new linelist.</p>
+<p>The dashboard display a map, where you can visualise data at several administrative levels (1 to 4), but it depends on the resolution of the data you and other send). For patients to appear on the map at a given resolution level, their geolocations needs to match the geobase for this level because the geobase loaded with the linelist corresponds to shapes used to create maps.</p>
+<p>If a place of origin cannot be matched for a given level (<em>e.g.</em> health area), the patient will not be included on the map at the “health area” level resolution If the above level (here the health zone) is matched, the patient will be accounted in the health zone resolution map.</p>
+<p>The patient will be counted in other tables/graphs as long as the relevant information is filled, regardless of the geomatching.</p>
 </div>
+</div>
+<div id="imp-whole-data" class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important&nbsp;1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only the last occurrence of data you send is loaded on the dashboard.</p>
+<p>Consequently, it is perfectly fine to correct past data even if you sent it previously: past exports will be ignored.</p>
 </div>
 </div>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

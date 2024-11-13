@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About OutbreakTools – OutbreakTools documentation</title>
+<title>OutbreakTools – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -73,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -92,12 +91,6 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -119,6 +112,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="./getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./getting_started/use_linelist.html">
+ <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
   </li>  
     </ul>
   </li>
@@ -186,6 +183,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./how_to/migrate_linelist.html">
  <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./how_to/send_data_to_dashboard.html">
+ <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -219,38 +220,33 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla">
+  <img src="images/outbreaktools.png" class="about-image
+  round " style="height: 10em; width: 10em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">OutbreakTools</h1>
 <p class="subtitle lead">Generate robust linelists from a dictionary without fancy VBA skills</p>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
-
-
-</header>
-
-
+</header><main class="content" id="quarto-document-content">
 <p><strong>OutbreakTools</strong> is a set of solutions designed by <a href="https://epicentre.msf.org/">Epicentre</a> <a href="https://apps.epicentre-msf.org/public/">EpiDS team</a> to quickly create linelists to collect field data during outbreaks. These linelists have a number of functionalities including descriptive analyses, buttons to migrate data to or from the linelist, or to import geographic data to better describe locations.</p>
 <p><strong>OutbreakTools</strong> allow you to quickly develop these linelists without the need for advanced Excel skills or ad-hoc development, by creating a (glorified) dictionary and compiling it. If you have ever built a Kobo form or a Redcap database from a dictionary, this might sound familiar.</p>
 
 
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://github.com/epicentre-msf/outbreak-tools" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+</div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -271,13 +267,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

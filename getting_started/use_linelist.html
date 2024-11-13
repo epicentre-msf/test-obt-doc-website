@@ -92,12 +92,6 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -119,6 +113,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../getting_started/use_linelist.html">
+ <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
   </li>  
     </ul>
   </li>
@@ -186,6 +184,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../how_to/migrate_linelist.html">
  <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
+ <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -219,8 +221,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#steps-to-prepare-a-linelist-for-deployment" id="toc-steps-to-prepare-a-linelist-for-deployment" class="nav-link active" data-scroll-target="#steps-to-prepare-a-linelist-for-deployment">Steps to prepare a linelist for deployment</a></li>
+  <li><a href="#working-with-the-file" id="toc-working-with-the-file" class="nav-link" data-scroll-target="#working-with-the-file">Working with the file</a>
+  <ul>
+  <li><a href="#save-the-file-locally" id="toc-save-the-file-locally" class="nav-link" data-scroll-target="#save-the-file-locally">Save the file locally</a></li>
+  <li><a href="#use-the-excel-desktop-version" id="toc-use-the-excel-desktop-version" class="nav-link" data-scroll-target="#use-the-excel-desktop-version">Use the Excel Desktop version</a></li>
+  <li><a href="#unprotect-the-file-and-authorise-macros" id="toc-unprotect-the-file-and-authorise-macros" class="nav-link" data-scroll-target="#unprotect-the-file-and-authorise-macros">Unprotect the file and authorise macros</a></li>
+  </ul></li>
+  <li><a href="#the-outbreaktools-ribbon" id="toc-the-outbreaktools-ribbon" class="nav-link" data-scroll-target="#the-outbreaktools-ribbon">The OutbreakTools ribbon</a></li>
+  <li><a href="#structure-of-the-file" id="toc-structure-of-the-file" class="nav-link" data-scroll-target="#structure-of-the-file">Structure of the file</a></li>
+  <li><a href="#enter-data-for-locations" id="toc-enter-data-for-locations" class="nav-link" data-scroll-target="#enter-data-for-locations">Enter data for locations</a></li>
+  <li><a href="#sec-custom-dropdown" id="toc-sec-custom-dropdown" class="nav-link" data-scroll-target="#sec-custom-dropdown">Fill dropdown menus for Custom Dropdowns variables</a>
+  <ul>
+  <li><a href="#extra-columns" id="toc-extra-columns" class="nav-link" data-scroll-target="#extra-columns">Extra columns</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -244,10 +265,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>OutbreakTools (OBT) linelist are linelist created using the OBT solution. They always have the same functionalities, which include:</p>
+<ul>
+<li>Possibility to upload pre-formatted geobases to standardise geographical information</li>
+<li>Basic analyses (uni and bivariate tables, epicurves, top x locations with the most cases etc.)</li>
+<li>Data and analyses export (anonymous or not)</li>
+<li>Possibility to show or hide optional variables</li>
+<li>Possibility to migrate data to a newer version of the linelist</li>
+<li>…</li>
+</ul>
+<section id="steps-to-prepare-a-linelist-for-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="steps-to-prepare-a-linelist-for-deployment">Steps to prepare a linelist for deployment</h2>
+<ol type="1">
+<li><p>Download the empty linelist template in the language of your choice.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p><a href="../how_to/import_geobase.html">Prepare geographic information</a>:</p>
+<ol type="a">
+<li>Go to the <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geoapp</a> and download the geo-base for the area of interest (it can be cross-border).<br>
+</li>
+<li>In the linelist, go to the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a> and click on the <a href="../reference/ribbons.html#sec-import-geobase">“Import geobase” button</a></li>
+</ol></li>
+<li><p>Set up the day of the week: “Week start” button in the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a></p></li>
+<li><p>Optionaly: modify variable visibility: “Show/Hide variables” button from the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a></p></li>
+<li><p>Optionaly: prepare and print a register and/or Case Report Form to enter data on paper (“Register and Case report form” section of the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools menu</a>)</p></li>
+<li><p>Send the linelist to the sites. There should be one linelist per site.</p></li>
+<li><p>Each site should fill the <em>Info sheet</em> in their linelist before entering patient data.</p></li>
+</ol>
+<p>After data has been encoded in the linelist, you can <a href="../how_to/send_data_to_dashboard.html">export data and send it to Epicentre</a> for visualisation on an dashboard if a dashboard is paired with the linelist (which is the default for intersection approved linelists).</p>
+<p><strong>Current dashboards include</strong>: cholera, measles, hepatitis E, diphtheria, mpox. Other are added as OutbreakTools linelist available grow.</p>
+</section>
+<section id="working-with-the-file" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-the-file">Working with the file</h2>
+<section id="save-the-file-locally" class="level3">
+<h3 class="anchored" data-anchor-id="save-the-file-locally">Save the file locally</h3>
+<p>To avoid synchronization problems, it is advised that you do not synchronise it with OneDrive while the Excel file is opened.</p>
+</section>
+<section id="use-the-excel-desktop-version" class="level3">
+<h3 class="anchored" data-anchor-id="use-the-excel-desktop-version">Use the Excel Desktop version</h3>
+<p>Most of the functionalities of the linelist are not supported by the internet Excel version.</p>
+</section>
+<section id="unprotect-the-file-and-authorise-macros" class="level3">
+<h3 class="anchored" data-anchor-id="unprotect-the-file-and-authorise-macros">Unprotect the file and authorise macros</h3>
+<p>The OubreakTools linelist rely on macros for functionalities, so at minima the macro needs to be enabled, but sometimes more steps are needed to authorise the use.</p>
+<ol type="1">
+<li><p>Make sure the file is not <em>protected</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.</p></li>
+<li><p>Open the file (a password may be needed at this stage)</p></li>
+<li><p>If VBA macros are already in you Excel, you may need to authorise VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros <a href="https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6">authorise VBA macros in options</a>. You will probably need to restart the file after that for the changes to be taken into account.</p></li>
+</ol>
+</section>
+</section>
+<section id="the-outbreaktools-ribbon" class="level2">
+<h2 class="anchored" data-anchor-id="the-outbreaktools-ribbon">The OutbreakTools ribbon</h2>
+<p>Most of the important features of the linelist can be accessed through the <a href="../reference/ribbons.html#sec-linelist-ribbon">OutbreakTools Menu</a> at the top of Excel interface. Go and explore it!</p>
+</section>
+<section id="structure-of-the-file" class="level2">
+<h2 class="anchored" data-anchor-id="structure-of-the-file">Structure of the file</h2>
+<p>At minima, an OutbreakTools linelist will contain these sheets:</p>
+<ol type="1">
+<li><p>An <em>Info</em> sheet which contains metadata about the project<br>
+</p></li>
+<li><p>At least one <em>data entry sheet</em> to enter patient data<br>
+</p></li>
+<li><p>Some or all of the following analyses sheets containing basic exploration of data:</p>
+<ul>
+<li>Uni and bivariate analyses</li>
+<li>Temporal analyses (epicurves and their associated tables)</li>
+<li>Spatial analyses (top X locations of cases)</li>
+<li>Spatio-temporal analyses (epicurves for chosen locations)</li>
+</ul></li>
+<li><p>A Custom dropdown sheet where the user can define categories for some specific variables</p></li>
+<li><p>A Custom tables sheet where the user can create a pivot table of the data</p></li>
+<li><p>A Geo sheet showing the loaded geobase.</p></li>
+</ol>
+</section>
+<section id="enter-data-for-locations" class="level2">
+<h2 class="anchored" data-anchor-id="enter-data-for-locations">Enter data for locations</h2>
+<p>Geographical location are encoded using four columns that can accommodate up to four administrative levels, and these columns have a special status in OutbreakTools linelists. You can recognise them by the orange background of their labels.</p>
+<p>When you import a geobase in a linelist:</p>
+<ul>
+<li>The labels of the columns are updated with the administrative levels present in the geobase (e.g.&nbsp;“adm1_name” will change to “Province” for DRC).</li>
+<li>The categories of the dropdown menus update.</li>
+</ul>
+<p>You can fill the variables either by using the cascading dropdown menus, or by using the <a href="../reference/ribbons.html#sec-geo-helper">GeoHelper button</a> from the OutbreakTools menu.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Search options in the Geohelper">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Search options in the Geohelper
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The first tab of the <a href="../reference/ribbons.html#sec-geo-helper">GeoHelper popup window</a> allows you to pick the location level after level; the second tab allows you to search for a name in the geobase and the third tab displays the past values previously picked in the GeoHelper.</p>
+</div>
+</div>
+</section>
+<section id="sec-custom-dropdown" class="level2">
+<h2 class="anchored" data-anchor-id="sec-custom-dropdown">Fill dropdown menus for Custom Dropdowns variables</h2>
+<p>Custom dropdowns columns are categorical columns for which the dropdown menu categories are defined by the user. They are useful for variables that rely on local, field specific information.</p>
+<p>To define categories:</p>
+<ol type="1">
+<li><p>Click on the column label to go to the <em>Custom dropdown</em> sheet where you can define the content of the dropdown menu<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p></li>
+<li><p>Enter categories in the table</p></li>
+<li><p>Click on the head of the table to be brought back to the corresponding column in the linelist sheet to enter data<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
+</ol>
+<section id="extra-columns" class="level3">
+<h3 class="anchored" data-anchor-id="extra-columns">Extra columns</h3>
+<p>OBT linelists often come with “extra columns” at the end (which may be show or hidden by default, go to the Show/hide variable popup to see them). The user can change the label of the columns and use them to collect whichever information they wish.</p>
+<p>Usually, a couple of free text/numeric and a couple of custom dropdown menus are available.</p>
+<ol type="1">
+<li><p>Decide which additional variable you wish to collect</p></li>
+<li><p>Rename the variable (select the label cell and write the new label)</p></li>
+<li><p>Optional: define the categories for the dropdown menu (see <a href="#sec-custom-dropdown" class="quarto-xref">Section&nbsp;6</a>)</p></li>
+<li><p>Fill in data</p></li>
+</ol>
 
 
+</section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>you can expect English and French as default, but Spanish, Portuguese or Arabic translations have been developed when needed, don’t hesitate to ask.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows applies an extra layer of blocking<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>You can also navigate to that sheet using the bottom tabs, as you would do any other sheet<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Again, this is a shortcut but you could go back using normal sheet navigation<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

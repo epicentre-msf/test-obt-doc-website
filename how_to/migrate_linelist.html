@@ -92,12 +92,6 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -119,6 +113,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
  <span class="dropdown-text">Compile a linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../getting_started/use_linelist.html">
+ <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
   </li>  
     </ul>
   </li>
@@ -185,6 +183,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../how_to/migrate_linelist.html">
  <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
+ <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
   </li>  
     </ul>
   </li>
@@ -346,9 +348,9 @@ Tip: export a subset of data
 </ul>
 <p><strong>Steps:</strong></p>
 <ol type="1">
-<li><p>Export the data from each facility linelist using the “Export data” button from the “Export section” of the OutbreakTools ribbon. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
+<li><p>Export the data from each facility linelist using the “Export data” button from the the <a href="../reference/ribbons.html#sec-export-data">OutbreakTools menu</a>. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
 <li><p>Get an empty linelist file. This will become your temporary master linelist.</p></li>
-<li><p>Import the all the exports into the master file one by one, using the “Import data” button, from the Import section of the OutbreakTools ribbon. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
+<li><p>Import the all the exports into the master file one by one, using the “Import data” button from the <a href="../reference/ribbons.html#sec-import-data">OutbreakTools menu</a>. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
 <li><p>Refresh analyses (always!) before examining the analyses.</p></li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled" title="Warning: do not modify data in this file">
