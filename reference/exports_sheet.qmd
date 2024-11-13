@@ -135,10 +135,7 @@ This is a *yes/no* drop-down field that controls whether the hidden columns that
 This is a *variables names/variables labels* drop-down menu field. It allows you to define whether you want the column headings in the export to correspond to the *variable names*, their *labels*, or both.
 
 
-::: {.callout-tip}
-
-## Tip: choosing the header format
-
+::: {.callout-tip title="Tip: choosing the header format"}
 If you create an export for analyses purpose, use the *variable names* to avoid having to format and rename when importing in your favourite statistical software. 
 
 If you are exporting data to the MoH or other partners, it might be easier for them to have the *variables labels*, which are more descriptive about the content of the variable.

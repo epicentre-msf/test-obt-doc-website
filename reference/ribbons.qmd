@@ -263,7 +263,7 @@ Once the location has been found, select it and click on “OK”.
 Hit the "Refresh analyses" button to update analyses on all analyses sheets in one go. You should use it whenever you entered new data or when you applied filters to existing data and want to see the analyses on this subset of data.^[Do not forget to remove the filters and refresh the analyses at the end to not be confused but the numbers in a couple of days]
 
 
-### Imports
+### Imports {#sec-import-data}
 
 ![Imports section](../reference/images/img-008-ll-imports.png){fig-align="center"}
 

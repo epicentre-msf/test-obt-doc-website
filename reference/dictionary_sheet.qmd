@@ -60,8 +60,7 @@ Variable names are used to migrate data from one linelist file to the other: cha
 As a general advice, try to create short but explicit names (easier said than done).
 :::
 
-::: {.callout-tip}
-## Names must be made unique
+::: {.callout-tip title="Names must be made unique"}
 To ensure that variable names are unique, you can add the name of the sheet in which the variable will appear as a prefix, or use numbers.
 
 If by error two or more variables have the same name, the second occurrence will automatically be suffixed with the value "1"; if there is a third, it will be suffixed with the value "2", and so on.
@@ -71,6 +70,7 @@ If by error two or more variables have the same name, the second occurrence will
 We recommend that you do not leave any blanks in the variable name. Instead, replace them with "*\_*".
 :::
 
+
 ### Main Label
 
 This is a free text field that defines the variables labels, which are quick descriptions of the variables, which the linelist user can read. They are typically more descriptive and longer than names, but we recommend to keep them moderately short for legibility reasons.
@@ -79,8 +79,7 @@ In the linelist, the main label appears in black and bold. It cannot be modified
 
 ![](images/im-004-variable-names-and-labels.png)
 
-::: {.callout-note collapse="true"}
-## Tip: add more information
+::: {.callout-note collapse="true" title="Tip: add more information"}
 To add more details, you can use the following fields: [Sub Label](#sec-sub-label) and [Note](sec-note).
 :::
 
@@ -88,10 +87,7 @@ To add more details, you can use the following fields: [Sub Label](#sec-sub-labe
 
 This free text column is for the sole benefit of the **setup file** developer (in all probability, you), to add technical or practical information. **It is not read by the designer and does not affect the generated file.**
 
-::: {.callout-note collapse="true"}
-
-## Example of one user usage
-
+::: {.callout-note collapse="true" title="Tip: Example of one user usage"}
 One of the author of this doc uses these tags:
 
 -   **Format**: calculated columns created for applying [conditional     formatting](#sec-conditional-formating). These columns are very specific, and pure format. Tagging them helps to quickly make sure that they are never exported
@@ -110,10 +106,7 @@ Feel free to use this column in a ways that helps you work, or to ignore it!
 
 This is a *yes/no* column. If the value is "*yes*", the label of the variable in the linelist can be modified by its user. If the value is "*no*" or if the field remains empty, the variable label in the linelist is protected.
 
-::: {.callout-tip}
-
-## Tip: add customisable variables in your linelists
-
+::: {.callout-tip title="Tip: add customisable variables in your linelists"}
 It is often desirable to add a couple of columns with editable labels at the end of the linelist, in case the user want to collect some extra information. It gives some freedom to users to collect some site specific data without needing an update of the setup. When I do that, I usually provide a couple of free text variables, and a couple of
 [customisable dropdowns variables](#sec-custom-dropdowns)
 :::
@@ -128,10 +121,7 @@ In the linelist, the sub-label appears just below the main label, in blue and sl
 The sub-labels "*Calculated*" and "*Custom dropdown*" are added automatically, no need to add them manually.
 :::
 
-::: {.callout-tip collapse="true"}
-
-## Tip: example of common sub-labels
-
+::: {.callout-tip collapse="true" title="Tip: example of common sub-labels"}
 -   Yes / No
 -   Yes / No / Unk.
 -   Free text
@@ -166,10 +156,7 @@ This is a free text field that contains the *name of the sheet* in which the var
 
 In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.
 
-::: {.callout-note collapse="true"}
-
-## Note on linelist sheets
-
+::: {.callout-note collapse="true" title="Note on linelist sheets"}
 The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd).
 :::
 
@@ -190,8 +177,7 @@ This is a free text field used to define the *name* of the main section in which
 
 In the linelist file, the main sections appear in a darker colour in rows or columns, depending on the type of table (dark blue in the [example](#sec-sheet-sections-example)). They cannot be modified by the end user.
 
-::: {.callout-tip}
-## Tip: organise variables
+::: {.callout-tip title="Tip: organise variables"}
 To make the dictionary easier to read, we recommend that you group (write one below another) the variables of a same sheet and a same section.
 :::
 
@@ -244,10 +230,7 @@ This is a dropdown field that contains four options for defining the **visibilit
 
 Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
 
-::: {.callout-note collapse="true"}
-
-## Note on showing and hiding columns manually
-
+::: {.callout-note collapse="true" title="Note on showing and hiding columns manually"}
 Technically, the linelist user can forcefully hide/un-hide columns.
 
 Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (*e.g*. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.
@@ -382,8 +365,7 @@ In OutbreakTools, the variables to fill in geographic information are treated as
 
 ![Guide to choosing variable control in OBT](../images/im-128-var-control.png){fig-align="center"}
 
-::: {.callout-note}
-## Note on data validation
+::: {.callout-note title="Note on data validation"}
 For non-text variable (integers, decimals, dates) is is possible to restrict values using [data validation](#sec-data-validation)
 :::
 
@@ -428,13 +410,11 @@ The difference is that in the created linelist, the user can use the dropdown me
 
 **Example**: if the user selects "Azythromicin", then "Ampicilin" from a dropdown menu, the value "Azythromicin, Ampicilin" will be stored in the cell.
 
-::: {.callout-warning}
-## Warning: cannot be used for analyses
+::: {.callout-warning title="Warning: cannot be used for analyses"}
 A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheet.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
 :::
 
-::: {.callout-tip}
-## Tip: inform the linelist user
+::: {.callout-tip title="Tip: inform the linelist user"}
 Since columns allowing multiple choices are rare in linelists in general, we advise you to use the [sub-label](#sec-sub-label) and possibly a note to inform the linelist user that they can enter several values, and how to do it.
 :::
 
@@ -549,10 +529,7 @@ You want to recode a variable, but you do not know which values will be generate
 
 
 
-::: {.callout-important}
-
-## Important: CASE_WHEN and analyses
-
+::: {.callout-important title="Important: CASE_WHEN and analyses"}
 Categorical variable created with this control **cannot be used in univariate or bivariate tables** in analyses sheets, because the designer cannot know in advance how many modalities the variable will take, and thus cannot build the tables.
 
 On the other hand, numeric variables created with this control (such as age in years) can be summarised in the analyses. Indeed, taking the `mean` or the `median` of a numeric variable variable outputs one value, so the designer knows what to expect.
@@ -562,8 +539,7 @@ On the other hand, numeric variables created with this control (such as age in y
 To work properly the "case_when" control must be associated with a `CASE_WHEN`function in the [Control details](#sec-var-control-details) column, or the designer will not work properly because the function is not native.
 :::
 
-::: {.callout-note collapse="true"}
-## Why not using more recent Excel functions?
+::: {.callout-note collapse="true" title="Why not using more recent Excel functions?"}
 If you are using a recent version of Excel, you may know the functions `IFS` or `SWITCH`. OutbreakTools does not rely on them as they are not retro-compatible with some older versions of Excel. Use a `CASE_WHEN` or `CHOICE_FORMULA` instead.
 :::
 
@@ -628,10 +604,7 @@ The formula is written **in English, without an "=" sign**. During compilation, 
 When writing a formula, make sure that it returns an empty value for rows without an ID, as all the rows with non-null values in it will be counted in the *Analyses* sheets. If your graphs show a lot of "Missing" values that do not reflect how well a column is filled, check that a calculated column is not responsible for it.
 :::
 
-::: {.callout-important}
-
-## Important: english proof your formulas!
-
+::: {.callout-important title="Important: english proof your formulas!"}
 If your Excel is not configured to use English, pay special attention to the following:
 
 -   Use the English function names, such as `MEAN` instead of `MOYENNE`,
@@ -646,10 +619,7 @@ If your Excel is not configured to use English, pay special attention to the fol
 
 
 
-::: {.callout-tip collapse="true"}
-
-## Tip: improve formual readibility
-
+::: {.callout-tip collapse="true" title="Tip: improve formual readibility"}
 In Excel, you can use `ALT+ENTRY` to insert a carriage return to go to the next line. This does not affect the execution of your formulas, but greatly increases the readability. The same goes for inserting spaces around operators. Contrast these two formulas:
 
 ![](images/im-129-formula-style.png)
@@ -752,8 +722,7 @@ To create a new export, first fill the [Exports](../reference/exports_sheet/qmd)
 
 - You can define the order in which variables are displayed in exports by entering numbers in the export column. If two variables have the same number (in the same export column), they will be exported in the order they are defined in the setup (from top to bottom).
 
-::: {.callout-tip}
-## Tip: create anonymous exports
+::: {.callout-tip title="Tip: create anonymous exports"}
 If you wish to create an anonymous export, i.e. one containing no personal identifier, you can filter the "personal identifier" column to *yes* and check that the column corresponding to the anonymous export is empty.
 :::
 
