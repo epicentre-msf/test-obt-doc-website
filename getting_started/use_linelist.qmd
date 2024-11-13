@@ -17,50 +17,49 @@ OutbreakTools (OBT) linelist are linelist created using the OBT solution. They a
 
 1.	Download the empty linelist template in the language of your choice.^[you can expect English and French as default, but Spanish, Portuguese or Arabic translations have been developed when needed, don't hesitate to ask.]  
 
-2.	[Prepare geographic information](..how_to/import_geobase.qmd)
-
-  a.	Go to the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp) and download the geo-base for the area of interest (it can be cross-border).  
+2.	[Prepare geographic information](../how_to/import_geobase.qmd):
+    a)	Go to the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp) and download the geo-base for the area of interest (it can be cross-border).  
+    b)	In the linelist, go to the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) and click on the ["Import geobase" button](../reference/ribbons.qmd#sec-import-geobase)  
   
-  b.	In the linelist, go to the [OutbreakTools menu](../reference/ribbons.qmdsec-linelist-ribbon) and click on the ["Import geobase" button](../reference/ribbons.qmd#sec-import-geobase)  
   
-3.	Set up the day of the week: "Week start" button in the [OutbreakTools menu](../reference/ribbons.qmdsec-linelist-ribbon)
+3.	Set up the day of the week: "Week start" button in the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon)
 
-4.	Optional:  
-    a.	Modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../reference/ribbons.qmdsec-linelist-ribbon)  
-    b.	Prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../reference/ribbons.qmdsec-linelist-ribbon))
+4. Optionaly: modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon)  
+
+5.	Optionaly: prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon))
     
-5.	Send the linelist to the sites. There should be 1 linelist per site.  
+5.	Send the linelist to the sites. There should be one linelist per site.  
 
-6.	Each site should fill the Info sheet in their linelist before entering patient data.
+6.	Each site should fill the *Info sheet* in their linelist before entering patient data.
 
 After data has been encoded in the linelist, you can [export data and send it to Epicentre](../how_to/send_data_to_dashboard.qmd) for visualisation on an dashboard if a dashboard is paired with the linelist (which is the default for intersection approved linelists).
 
 
-Current dashboards include: cholera, measles, hepatitis E, diphtheria, mpox. Other are added as OutbreakTools linelist available grow.
+**Current dashboards include**: cholera, measles, hepatitis E, diphtheria, mpox. Other are added as OutbreakTools linelist available grow.
 
 
 ## Working with the file
 
 ### Save the file locally
-To avoid synchronization problems, it is advised that you do not synchronize it with OneDrive while the Excel file is opened.
+To avoid synchronization problems, it is advised that you do not synchronise it with OneDrive while the Excel file is opened.
 
 ### Use the Excel Desktop version
 Most of the functionalities of the linelist are not supported by the internet Excel version.
 
 
-### Unprotect the file and authorize macros
+### Unprotect the file and authorise macros
 
 The OubreakTools linelist rely on macros for functionalities, so at minima the macro needs to be enabled, but sometimes more steps are needed to authorise the use.
 
-1.	Make sure the file is not *protected*^[This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows apply an extra layer of blocking]: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.
+1.	Make sure the file is not *protected*^[This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows applies an extra layer of blocking]: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.
  
 2.	Open the file (a password may be needed at this stage)
 
-3.	If VBA macros are already in you Excel, you may need to authorize VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros [authorise VBA macros in options](https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). You will probably need to restart the file after that for the changes to be taken into account.
+3.	If VBA macros are already in you Excel, you may need to authorise VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros [authorise VBA macros in options](https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). You will probably need to restart the file after that for the changes to be taken into account.
 
 ## The OutbreakTools ribbon
 
-Most of the important features of the linelist can be accessed through the [OutbreakTools Menu](../reference/ribbons.qmdsec-linelist-ribbon) at the top of Excel interface. Go and explore it!
+Most of the important features of the linelist can be accessed through the [OutbreakTools Menu](../reference/ribbons.qmd#sec-linelist-ribbon) at the top of Excel interface. Go and explore it!
  
  
 ## Structure of the file
@@ -71,10 +70,10 @@ At minima, an OutbreakTools linelist will contain these sheets:
 2.	At least one *data entry sheet* to enter patient data  
 3.	Some or all of the following analyses sheets containing basic exploration of data:  
 
-    - Uni and bivariate analyses
-    - Temporal analyses (epicurves and their associated tables)
-    - Spatial analyses (top X locations of cases)
-    - Spatio-temporal analyses (epicurves for chosen locations)
+  - Uni and bivariate analyses
+  - Temporal analyses (epicurves and their associated tables)
+  - Spatial analyses (top X locations of cases)
+  - Spatio-temporal analyses (epicurves for chosen locations)
     
 4.	A Custom dropdown sheet where the user can define categories for some specific variables
 5.	A Custom tables sheet where the user can create a pivot table of the data
@@ -83,7 +82,7 @@ At minima, an OutbreakTools linelist will contain these sheets:
 
 ## Enter data for locations
 
-Geographical location are encoded using four columns that can accommodate up to four administrative levels, and these columns have a special status in OutbreakTools linelists. You can recognize them by the orange background of their labels. 
+Geographical location are encoded using four columns that can accommodate up to four administrative levels, and these columns have a special status in OutbreakTools linelists. You can recognise them by the orange background of their labels. 
 
 When you import a geobase in a linelist:
 
