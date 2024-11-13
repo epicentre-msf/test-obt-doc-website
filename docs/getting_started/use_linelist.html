@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Custom formulas – OutbreakTools documentation</title>
+<title>Getting started with the linelist – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../reference/dictionary_sheet.html" rel="next">
-<link href="../reference/choices_sheet.html" rel="prev">
 <link href="../images/icon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -42,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -106,15 +106,15 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
         <li>
     <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download the tools</span></a>
+ <span class="dropdown-text">Download and prepare the tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../getting_started/install.html">
- <span class="dropdown-text">Install the tools</span></a>
+    <a class="dropdown-item" href="../getting_started/workflow.html">
+ <span class="dropdown-text">General workflow</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Create a dictionary</span></a>
+ <span class="dropdown-text">Prepare a linelist setup</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/choices_sheet.html">
- <span class="dropdown-text">Choice sheet</span></a>
+ <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/analyses_sheet.html">
@@ -147,28 +147,66 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/ribbons.html">
+ <span class="dropdown-text">Ribbon tabs</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Tutoriels</span>
-    </span>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How to</span>
+ <span class="menu-text">How-to</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Export subset of geo columns</span></a>
+ <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Create two data entry tables</span></a>
+ <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/add_language.html">
+ <span class="dropdown-text">Setup - Add a new linelist language</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_setup.html">
+ <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/import_geobase.html">
+ <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
+ <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
+ <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cheatsheet</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
+        <li>
+    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
+ <span class="dropdown-text">Variable controls</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cheatsheets/analyses.html">
+ <span class="dropdown-text">Analyses</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html"> 
+<span class="menu-text">Tutoriel</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -176,160 +214,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/custom_formulas.html">Custom formulas</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tables Management</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/compile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Compile a linelist</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/create_dic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create dictionary</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/download.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Download tools</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/install.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Install the tools</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">How To</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../how_to/export_subset_geo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Export a subset of geographic columns</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../how_to/link_tables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create linelists with more than one entry sheet</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/analyses_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define basic analyses</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/choices_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define variable categories</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/custom_formulas.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Custom formulas</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/exports_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define exports</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/translations_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Generate linelist in several languages</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#custom-formulas" id="toc-custom-formulas" class="nav-link active" data-scroll-target="#custom-formulas">Custom formulas</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/analyses_sheet.html">Reference</a></li><li class="breadcrumb-item"><a href="../reference/custom_formulas.html">Custom formulas</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Custom formulas</h1>
+<h1 class="title">Getting started with the linelist</h1>
 </div>
 
 
@@ -346,19 +244,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="custom-formulas" class="level2">
-<h2 class="anchored" data-anchor-id="custom-formulas">Custom formulas</h2>
-<p><em>EPIWEEK</em>: returns the week number.</p>
-<p><em>N</em>: count the number of lines, mostly used in the analyses</p>
-<p><em>DATE_RANGE</em>: range of a date column, mostly used in the global summary table</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imgs/im-125-custom-formulas.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -781,29 +668,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../reference/choices_sheet.html" class="pagination-link" aria-label="Define variable categories">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Define variable categories</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../reference/dictionary_sheet.html" class="pagination-link" aria-label="Dictionary: define linelist tables and their variables">
-        <span class="nav-page-text">Dictionary: define linelist tables and their variables</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Developed by <a href="https://epicentre.msf.org/">Epicentre</a></p>
+<p>Developed by <a href="https://epicentre.msf.org/"><img src="images/epicentre.png" class="img-fluid" alt="Epicentre logo" width="65"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+<p>This website is built with <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://github.com" target="_blank"><i class="fa-brands fa-github" title="GitHub octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html" target="_blank"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/" target="_blank">Quarto</a></p>
 </div>
   </div>
 </footer>

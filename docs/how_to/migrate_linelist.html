@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Install the tools – OutbreakTools documentation</title>
+<title>Migrate linelist data – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../how_to/export_subset_geo.html" rel="next">
-<link href="../getting_started/download.html" rel="prev">
 <link href="../images/icon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -42,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -106,15 +106,15 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
         <li>
     <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download the tools</span></a>
+ <span class="dropdown-text">Download and prepare the tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../getting_started/install.html">
- <span class="dropdown-text">Install the tools</span></a>
+    <a class="dropdown-item" href="../getting_started/workflow.html">
+ <span class="dropdown-text">General workflow</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Create a dictionary</span></a>
+ <span class="dropdown-text">Prepare a linelist setup</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../getting_started/compile.html">
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/choices_sheet.html">
- <span class="dropdown-text">Choice sheet</span></a>
+ <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../reference/analyses_sheet.html">
@@ -147,28 +147,66 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../reference/ribbons.html">
+ <span class="dropdown-text">Ribbon tabs</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Tutoriels</span>
-    </span>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How to</span>
+ <span class="menu-text">How-to</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Export subset of geo columns</span></a>
+ <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Create two data entry tables</span></a>
+ <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/add_language.html">
+ <span class="dropdown-text">Setup - Add a new linelist language</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_setup.html">
+ <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/import_geobase.html">
+ <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
+ <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
+ <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cheatsheet</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
+        <li>
+    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
+ <span class="dropdown-text">Variable controls</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cheatsheets/analyses.html">
+ <span class="dropdown-text">Analyses</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html"> 
+<span class="menu-text">Tutoriel</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -176,154 +214,27 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting_started/compile.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../getting_started/install.html">Install the tools</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tables Management</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/compile.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Compile a linelist</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/create_dic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create dictionary</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/download.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Download tools</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../getting_started/install.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Install the tools</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">How To</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../how_to/export_subset_geo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Export a subset of geographic columns</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../how_to/link_tables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Create linelists with more than one entry sheet</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/analyses_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define basic analyses</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/choices_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define variable categories</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/custom_formulas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Custom formulas</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/dictionary_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dictionary: define linelist tables and their variables</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/exports_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Define exports</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../reference/translations_sheet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Generate linelist in several languages</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#migrate-the-linelist-to-a-newer-version" id="toc-migrate-the-linelist-to-a-newer-version" class="nav-link active" data-scroll-target="#migrate-the-linelist-to-a-newer-version">Migrate the linelist to a newer version</a></li>
+  <li><a href="#make-a-master-linelist" id="toc-make-a-master-linelist" class="nav-link" data-scroll-target="#make-a-master-linelist">Make a master linelist</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../getting_started/compile.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../getting_started/install.html">Install the tools</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Install the tools</h1>
+<h1 class="title">Migrate linelist data</h1>
 </div>
 
 
@@ -340,11 +251,131 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The good news is that there is nothing to install. That being said, there are a couple of advice for your setup…</p>
+<p>OutbreakTools linelist have handy functionalities to import and export data. Whith them you can:</p>
+<ul>
+<li>upgrade to a newer version of a given linelist file</li>
+<li>move data to a the same version of a linelist, but in an uncorrupted file</li>
+<li>assemble data from several sites using the same linelist</li>
+</ul>
+<p>If no breaking changes were introduced (see <a href="#imp-breaking-changes" class="quarto-xref">Important&nbsp;1</a>), migrating data from one linelist to the other is straightforward:</p>
+<ul>
+<li>you export patient data, the geobase, the geobase history and as many metadata as possible<br>
+</li>
+<li>you reimport these into a new file, which may or may not be empty</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../how_to/images/img-005-migration-linelist.png" class="img-fluid figure-img"></p>
+<figcaption>Import section</figcaption>
+</figure>
+</div>
+<p>If the new file is empty, the data is simply copied into the file. Is the new file already contains data, the new data is pasted under the existing data (variable by variable).</p>
+<div id="imp-breaking-changes" class="callout callout-style-default callout-important callout-titled" title="About breaking changes">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important&nbsp;1: About breaking changes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The migration is based on exporting data, and re-importing it by <em>matching the variable names</em>. Consequently:</p>
+<ul>
+<li>if a variable name was changed, the data from the original linelist will not be imported in the new linelist (the label can change though, if needed to clarify something)<br>
+</li>
+<li>if the categories in a categorical variable were changed, the data will not be modified, you will have to do the matching manually in the linelist or in the export file before importing<br>
+</li>
+<li>the script blindly copies and paste columns based on variable names, so there is not duplication detections: if you import twice the same data in a linelist, you will have to clean you duplicated rows manually.</li>
+</ul>
+<p>If you modify variable names or categories within variables, that would be a <strong>breaking change</strong>, that needs special handling (<em>i.e.</em> you modifying the column name and the categories manually in the export file before importing).</p>
+<p>Changing the order of variables is not a breaking change though, because the variables are imported one by one and matched by name, not by position.</p>
+</div>
+</div>
+<section id="migrate-the-linelist-to-a-newer-version" class="level2">
+<h2 class="anchored" data-anchor-id="migrate-the-linelist-to-a-newer-version">Migrate the linelist to a newer version</h2>
+<p>New linelist versions are often generated for a given disease:</p>
+<ul>
+<li><p>the variable dictionary for this specific linelist might get updated as a request of epidemiologists or the Epinetwork: added variables, improved labels, additional analyses…</p></li>
+<li><p>the functionalities of the OutbreakTools itself may improve (bug fixes or addition of new functionalities<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>) and all linelist in use would benefit getting updated.</p></li>
+</ul>
+<p>Here, typically, the new file is a new version of the linelist, and it is empty (it might also be an empty version of the same linelist if you suspect that your current file is corrupted and behaves weirdly).</p>
+<p>Steps:</p>
+<ol type="1">
+<li><p>Clear data filters</p></li>
+<li><p>Go to the <a href="../reference/ribbons.html#sec-linelist-advanced">OutbreakTools menu</a> of this setup file and click on the button “Export for migration”.</p></li>
+<li><p>Tick all the boxes you want (usually, “All data” + “Geobase”). This will create three files in the folder of your choice:</p>
+<ol type="a">
+<li>A file containing the data</li>
+<li>A file containing the geobase <em>and the geobase history</em></li>
+<li>Optionaly, a file containing <em>uniquely the geobase history</em>, which we will ignore now.</li>
+</ol></li>
+<li><p>Open a new, emtpy linelist file</p></li>
+<li><p>Go to the <a href="../reference/ribbons.html#sec-import-data">import section of the OutbreakTools menu</a>. Use the “Import data” button to import the data export file, and the “Import geobase” button to import the geobase files (which contains the history, if an history existed).</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
+<figcaption>Export for migration</figcaption>
+</figure>
+</div>
+<p>Once you are used to the steps, migrating data should take you only a couple of minutes.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip: export a subset of data">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip: export a subset of data
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Here we described a case where you wanted to migrate the whole data. If you need to split the data between two linelists (maybe before and after a date, or active / inactive cohort), you can use filters on patient data to only export a <em>subset</em> of the rows.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="make-a-master-linelist" class="level2">
+<h2 class="anchored" data-anchor-id="make-a-master-linelist">Make a master linelist</h2>
+<p>It is possible to gather data from several linelists (with the same version of the dictionary). There are several use cases:</p>
+<ul>
+<li><p>several facilities enter data in their own linelist, and the epidemiologist or medCo would like to study the analyses at the region or mission level, pooling data from all sites. It is possible to make a temporary master linelist to do that.</p></li>
+<li><p>the caseload is high and you would like two data encoders to work on the linelist. You can split the daily work between themselves: one completes existing rows, adding the outcome status for example (main file), while the other encodes new patients (new rows). Every night they import the new patients into the main file. The next morning, the person encoding “new patients” starts with a new <strong>empty</strong> file for new lines.</p></li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p>Export the data from each facility linelist using the “Export data” button from the “Export section” of the OutbreakTools ribbon. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
+<li><p>Get an empty linelist file. This will become your temporary master linelist.</p></li>
+<li><p>Import the all the exports into the master file one by one, using the “Import data” button, from the Import section of the OutbreakTools ribbon. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
+<li><p>Refresh analyses (always!) before examining the analyses.</p></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled" title="Warning: do not modify data in this file">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning: do not modify data in this file
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This master-linelist should not be used to enter more data/clean data, as these change will not be reflected on the site linelists. It should only be used for perusing the analyses at a higher scale.</p>
+<p>Similarly, you should not send a pooled export for the dashboard, as the scripts are encoded to import the site one by one, keeping the site metadata.</p>
+</div>
+</div>
 
 
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>the later often generating a couple of the former for a while<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -765,29 +796,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../getting_started/download.html" class="pagination-link" aria-label="Download tools">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Download tools</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../how_to/export_subset_geo.html" class="pagination-link" aria-label="Export a subset of geographic columns">
-        <span class="nav-page-text">Export a subset of geographic columns</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Developed by <a href="https://epicentre.msf.org/">Epicentre</a></p>
+<p>Developed by <a href="https://epicentre.msf.org/"><img src="images/epicentre.png" class="img-fluid" alt="Epicentre logo" width="65"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+<p>This website is built with <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://github.com" target="_blank"><i class="fa-brands fa-github" title="GitHub octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html" target="_blank"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/" target="_blank">Quarto</a></p>
 </div>
   </div>
 </footer>

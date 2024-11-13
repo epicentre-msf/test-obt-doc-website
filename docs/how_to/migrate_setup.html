@@ -160,27 +160,31 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
     <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Export subset of geo columns</span></a>
+ <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Create two data entry tables</span></a>
+ <span class="dropdown-text">Setup - Create two data entry tables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Add a new linelist language</span></a>
+ <span class="dropdown-text">Setup - Add a new linelist language</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Migrate a setup to an upgraded version</span></a>
+ <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Import a geobase in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Show or hide variables in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
+ <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
     </ul>
   </li>
@@ -240,7 +244,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Explain how to migrate one setup to a new version</p>
+<ol type="1">
+<li>Get a new, empty <strong>setup file</strong></li>
+<li>Go to the <a href="../reference/ribbons.html#sec-setup-ribbon">OutbreakTools menu</a> of this setup file and click on the button “Import data from another setup”.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../reference/images/img-003-ribbon-setup-import.png" class="img-fluid figure-img"></p>
+<figcaption>Import section</figcaption>
+</figure>
+</div>
+<p>It opens a popup windowto select the file to import data from.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../reference/images/img-004-import-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Select what to import from the original by ticking the boxes. If you are doing a standard <strong>setup file</strong> upgrade, you should tick all the boxes to iport everything.</li>
+<li>Decide if you want to run a checkup of the <strong>setup</strong> file after import by ticking the box or not (you probably want to, but you can also <a href="../reference/ribbons.html#sec-check-setup">do it</a> at a later stage)</li>
+<li>Click on the “Import” button and wait.</li>
+</ol>
 
 
 

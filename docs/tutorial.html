@@ -160,27 +160,31 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
         <li>
     <a class="dropdown-item" href="./how_to/export_subset_geo.html">
- <span class="dropdown-text">Export subset of geo columns</span></a>
+ <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how_to/link_tables.html">
- <span class="dropdown-text">Create two data entry tables</span></a>
+ <span class="dropdown-text">Setup - Create two data entry tables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how_to/add_language.html">
- <span class="dropdown-text">Add a new linelist language</span></a>
+ <span class="dropdown-text">Setup - Add a new linelist language</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how_to/migrate_setup.html">
- <span class="dropdown-text">Migrate a setup to an upgraded version</span></a>
+ <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how_to/import_geobase.html">
- <span class="dropdown-text">Import a geobase in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how_to/show_hide_variables.html">
- <span class="dropdown-text">Show or hide variables in the linelist</span></a>
+ <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./how_to/migrate_linelist.html">
+ <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
   </li>  
     </ul>
   </li>
@@ -303,19 +307,20 @@ Note
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Outbreak-tools is a set of tools to facilitate the creation and maintainance of Excel linelists. In particular, you can easily:</p>
 <ul>
-<li>Define different types of variables (dropdown lists, Excel formulas) their format and data validation rules.</li>
-<li>Print a register book that perfectly match your linelist. Translate your linelist into several languages.</li>
-<li>Use pre-defined geo databases for patient origin.</li>
-<li>Display custom analyses (univariate, bivariate, temporal, spatial) as tables and graphs.<br>
+<li>define different types of variables (dropdown lists, Excel formulas) their format and data validation rules</li>
+<li>print a register book that perfectly match your linelist. Translate your linelist into several languages</li>
+<li>use pre-defined geo databases for patient origin<br>
 </li>
-<li>Export the entire data or selected variables/lines.</li>
-<li>Migrate the data to an updated version of the linelist.</li>
+<li>display custom analyses (univariate, bivariate, temporal, spatial) as tables and graphs<br>
+</li>
+<li>export the entire data or selected variables/lines</li>
+<li>migrate the data to an updated version of the linelist</li>
 </ul>
 <p>The linelist is defined in a configuration file called <em>setup</em>. This <em>setup</em> file is then loaded into another file that designs the linelist (the <em>designer</em>). The designer creates the linelist, based on the configurations of the <em>setup</em>.</p>
 <p>There are 3 steps to creating a linelist:</p>
 <ol type="1">
 <li><p>Open the setup file and define your needs. The configuration of the file is inspired from Kobo’s XLS forms. No in-depth knowledge of Excel is required. A setup file can be used to create linelists in several languages.</p></li>
-<li><p>Download geographic data for the targeted area: There is a <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geo-App</a> available online to download the geobase for the region of interest (new users must <a href="https://reports.msf.net/signup/">register</a>). The Geo-App is updated as new geographical information becomes available.</p></li>
+<li><p>Download geographic data for the targeted area: there is a <a href="https://reports.msf.net/secure/app/outbreak-tools-geoapp">Geo-App</a> available online to download the geobase for the region of interest (new users must <a href="https://reports.msf.net/signup/">register</a>). The Geo-App is updated as new geographical information becomes available.</p></li>
 <li><p>Open the designer, load the setup and geobase files, set the options (languages etc) and generate your linelist.</p></li>
 </ol>
 </section>
@@ -332,10 +337,12 @@ Note
 </section>
 <section id="unlock-files-if-necessary" class="level3">
 <h3 class="anchored" data-anchor-id="unlock-files-if-necessary">Unlock files if necessary</h3>
-<p>Sometimes Excel files with macro downloaded from the web are automatically blocked for security reasons. You can unblock the files by:</p>
+<p>Sometimes Excel files with macro downloaded from the web are automatically “blocked” for security reasons. You can unblock the files with the following steps:</p>
 <ol type="1">
 <li>Right click on the file</li>
-<li>Select “Properties” 3- Check the <em>Unblock</em> box on the bottom right.</li>
+<li>Select “Properties”<br>
+</li>
+<li>Check the <em>Unblock</em> box on the bottom right (if you don’t see such a button on the bottom right it means that the file is already unprotected - for this level of protections).</li>
 </ol>
 </section>
 <section id="activate-macros-before-exercises" class="level3">
@@ -358,13 +365,13 @@ Note
 <ul>
 <li><p>Open the linelist <code>linelist_measles_en_ex1.xlsb</code> located in the <code>linelist</code> folder. The file password is 5678. It contains a mock measles dataset.</p></li>
 <li><p>Take a quick look at the different sheets to get an overview of the structure of the file.</p></li>
-<li><p>In the <em>Linelist patients</em> sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients’ origin (see <em>Data table</em> section of the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
-<li><p>Explore univariate, bivariate, temporal and spatial analyses. Use button “Refresh analyses” in the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a> to update the analyses.</p></li>
+<li><p>In the <em>Linelist patients</em> sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients’ origin (see <em>Data table</em> section of the <a href="./reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
+<li><p>Explore univariate, bivariate, temporal and spatial analyses. Use button “Refresh analyses” in the <a href="./reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a> to update the analyses.</p></li>
 <li><p>In the temporal analysis, change the start/end dates as well as the time unit of the analysis.</p></li>
 <li><p>In the spatial analysis, change the administrative level and divide by the population size to get attack rates (note we don’t have population estimates below the health-zone level).</p></li>
 <li><p>Go back to the <em>Linelist patients</em> and use the filters to show only patients under 2 years of age. Then go back to the analyses sheets and recalculate (use button “Refresh analyses”).</p></li>
-<li><p>Export the filtered data using the <code>anonymous export for MSF</code> (see <em>Export button</em> in the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>). Open and browse the exported file.</p></li>
-<li><p>Finally, print a register book for the <code>Linelist patients</code> (see the <em>Register book</em> section of the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
+<li><p>Export the filtered data using the <code>anonymous export for MSF</code> (see <em>Export button</em> in the <a href="./reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>). Open and browse the exported file.</p></li>
+<li><p>Finally, print a register book for the <code>Linelist patients</code> (see the <em>Register book</em> section of the <a href="./reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
 </ul>
 </section>
 <section id="exercise-2-adding-new-variables" class="level2">
@@ -378,8 +385,8 @@ Note
 <li>A variable called <code>vacci_measles_doses</code> (Number of doses received) which is a numeric variable.</li>
 <li>Create a data validation rule to ensure that this variable remains between 0 and 4.</li>
 </ul></li>
-<li><p>Translate newly added labels into French (see the <a href="../reference/ribbons.qmd#sec-setup-ribbon">Setup Options ribbon</a> and the <a href="../reference/translations_sheet.qmd">Setup Translation sheet</a>).</p></li>
-<li><p>Check the setup for potential errors (see the <a href="../reference/ribbons.qmd#sec-setup-ribbon">Setup Options ribbon</a>).</p></li>
+<li><p>Translate newly added labels into French (see the <a href="./reference/ribbons.html#sec-setup-ribbon">Setup Options ribbon</a> and the <a href="./reference/translations_sheet.html">Setup Translation sheet</a>).</p></li>
+<li><p>Check the setup for potential errors (see the <a href="./reference/ribbons.html#sec-setup-ribbon">Setup Options ribbon</a>).</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -414,8 +421,8 @@ Warning for Mac users
 <ul>
 <li>You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
 <ul>
-<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters (see the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">linelist options ribbon</a>). Then, export the data (use the <em>Export data</em> button in the same ribbon) to a location of your choice. This migration file contains all your data.</p></li>
-<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="../reference/ribbons.qmd#sec-linelist-ribbon">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
+<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters (see the <a href="./reference/ribbons.html#sec-linelist-ribbon">linelist options ribbon</a>). Then, export the data (use the <em>Export data</em> button in the same ribbon) to a location of your choice. This migration file contains all your data.</p></li>
+<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="./reference/ribbons.html#sec-linelist-ribbon">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
 </ul></li>
 </ul>
 </section>
