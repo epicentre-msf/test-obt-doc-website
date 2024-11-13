@@ -34,9 +34,9 @@ website:
     search: true
     logo: images/icon.png
     
-    left:
-     - text: About
-       href: about.qmd
+    # left:
+    #  - text: About
+    #    href: index.qmd
         
     right: 
       - text: Getting started
