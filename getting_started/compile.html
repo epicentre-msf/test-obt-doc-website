@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-080e4e364ec5d7a86746b70810c20360.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -126,28 +126,28 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/choices_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
  <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
  <span class="dropdown-text">Analyses sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/exports_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
  <span class="dropdown-text">Export sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/translations_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/ribbons.html">
- <span class="dropdown-text">Ribbon tabs</span></a>
+    <a class="dropdown-item" href="../setup_reference/ribbons.html">
+ <span class="dropdown-text">Ribbon menu</span></a>
   </li>  
     </ul>
   </li>
@@ -309,7 +309,7 @@ Figure&nbsp;3: Customise linelist
 </div>
 <section id="change-style" class="level3">
 <h3 class="anchored" data-anchor-id="change-style">Change style</h3>
-<p>You can select the other “Linelist design” using the dropdown menu (see the <a href="../reference/ribbons.html#sec-setup-styles">ribbon</a> to import your own style)</p>
+<p>You can select the other “Linelist design” using the dropdown menu (see the <a href="../setup_reference/ribbons.html#sec-setup-styles">ribbon</a> to import your own style)</p>
 </section>
 <section id="import-a-geobase" class="level3">
 <h3 class="anchored" data-anchor-id="import-a-geobase">Import a geobase</h3>
@@ -336,7 +336,7 @@ Note
 </section>
 <section id="advanced-customisations" class="level2">
 <h2 class="anchored" data-anchor-id="advanced-customisations">Advanced customisations</h2>
-<p>There are a couple more customisations available through the <a href="../reference/ribbons.html#sec-designer-ribbon">OutbreakTools option ribbon</a>.</p>
+<p>There are a couple more customisations available through the <a href="../setup_reference/ribbons.html#sec-designer-ribbon">OutbreakTools option ribbon</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/img-003-ribbon-designer.png" class="img-fluid figure-img"></p>
@@ -348,7 +348,7 @@ Note
 <h2 class="anchored" data-anchor-id="compilation-advice">Compilation advice</h2>
 <p>The linelist compilation relies on Excel VBA and can be a bit <em>finicky.</em> Here is some advice.</p>
 <ul>
-<li><p><a href="../reference/ribbons.html#sec-check-setup">Run the checks</a> on the setup before attempting compilation to verify that everything is ready.</p></li>
+<li><p><a href="../setup_reference/ribbons.html#sec-check-setup">Run the checks</a> on the setup before attempting compilation to verify that everything is ready.</p></li>
 <li><p>Make sure there are no hidden columns or filters on the sheets of the <strong>setup file</strong>.</p></li>
 <li><p>Pause Onedrive or work in a non-synchronised folder (see <a href="../getting_started/create_dic.html#sec-get-tools-ready">here</a> for more information)</p></li>
 <li><p>The compilation is sensitive to RAM limitations: if it fails it might be worth closing a couple of greedy applications and try again.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
@@ -463,8 +463,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -575,7 +573,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
