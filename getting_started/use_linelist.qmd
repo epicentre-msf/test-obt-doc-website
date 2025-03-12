@@ -21,12 +21,13 @@ OutbreakTools (OBT) linelist are linelist created using the OBT solution. They a
     a)	Go to the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp) and download the geo-base for the area of interest (it can be cross-border).  
     b)	In the linelist, go to the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon) and click on the ["Import geobase" button](../setup_reference/ribbons.qmd#sec-import-geobase)  
   
-  
+![Prepare geo data](../getting_started/images/img-006-geobase-process.png){fig-align="center"}
+
 3.	Set up the day of the week: "Week start" button in the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon)
 
-4. Optionaly: modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon)  
+4. Optional: modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon)  
 
-5.	Optionaly: prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon))
+5.	Optional: prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon))
     
 5.	Send the linelist to the sites. There should be one linelist per site.  
 
@@ -41,7 +42,8 @@ After data has been encoded in the linelist, you can [export data and send it to
 ## Working with the file
 
 ### Save the file locally
-To avoid synchronization problems, it is advised that you do not synchronise it with OneDrive while the Excel file is opened.
+
+OneDrive cannot live synchronise macro-enable Excel files *while you are using them*^[One drive does syncrhornise the file once you saved and closed it though]. If OneDrive is causing syncrhonisation issues, turn if off for a while or save the file is a folder nor syncrhonised by OneDrive.
 
 ### Use the Excel Desktop version
 Most of the functionalities of the linelist are not supported by the internet Excel version.
@@ -51,11 +53,13 @@ Most of the functionalities of the linelist are not supported by the internet Ex
 
 The OubreakTools linelist rely on macros for functionalities, so at minima the macro needs to be enabled, but sometimes more steps are needed to authorise the use.
 
-1.	Make sure the file is not *protected*^[This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows applies an extra layer of blocking]: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.
+1.	Make sure the file is **unlocked**^[This is distinct from the password protection that is customs for linelists: sometimes when a file comes from the internet through mail or Teams, Windows applies an extra layer of blocking]: right click on the file you saved on your computer, and go to the “Properties” popup. If you can see an “Unprotect” checkbox at the bottom right, tick it. If you do not see such a checkbox, it means the file is unprotected.
+ 
+![File property window](../getting_started/images/img-007-unblock.png){fig-align="center"}
  
 2.	Open the file (a password may be needed at this stage)
 
-3.	If VBA macros are already in you Excel, you may need to authorise VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros [authorise VBA macros in options](https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). You will probably need to restart the file after that for the changes to be taken into account.
+3.	If VBA macros are already in you Excel, you may need to authorise VBA macros for this file when you first open it (popup windows, yellow or red band above the sheet). If you have never enabled macros, [authorise VBA macros in options](https://support.microsoft.com/en-us/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). You will probably need to restart the file after that for the changes to be taken into account.
 
 ## The OutbreakTools ribbon
 
@@ -100,7 +104,7 @@ The first tab of the [GeoHelper popup window](../setup_reference/ribbons.qmd#sec
 
 Custom dropdowns columns are categorical columns for which the dropdown menu categories are defined by the user. They are useful for variables that rely on local, field specific information.
 
-To define categories:  
+**To define categories:**  
 
 1.	Click on the column label to go to the *Custom dropdown* sheet where you can define the content of the dropdown menu^[You can also navigate to that sheet using the bottom tabs, as you would do any other sheet].
 
