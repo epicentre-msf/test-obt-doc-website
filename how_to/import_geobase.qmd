@@ -5,6 +5,8 @@ title: "Import a geobase in the linelist"
 
 ## Download a geobase {#sec-geobase-download}
 
+![Import geobase](../getting_started/images/img-006-geobase-process.png){fig-align="center"}
+
 1.	In you internet browser, go to the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp). 
 
 2. Use your account to connect. If you do not have one already, create one [here]( https://reports.msf.net/signup/) first then connect to the Geoapp.
@@ -13,7 +15,9 @@ title: "Import a geobase in the linelist"
 
 4. Click on the regions you require geo data for. Selected regions turn red. If you want to select the whole country, click the "Select all regions" button under the country dropdown menu. Once one region has been selected, buttons to inspect and download the data will appear below the country dropdown menu.
 
-5. Clicking the "Download Geobase" button to download the data for the selected regions in an excel format that can be directly imported into an OutbreakTools Linelist.
+![Import geobase](../how_to/images/img-004-geobase.png){fig-align="center"}
+
+5. Click on the "Download Geobase" button to download the data for the selected regions in an excel format that can be directly imported into an OutbreakTools Linelist.
 
 
 ::: {.callout-note}
