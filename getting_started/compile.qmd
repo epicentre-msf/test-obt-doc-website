@@ -36,7 +36,7 @@ There are a couple of extra steps you can take.
 ![Customise linelist](../getting_started/images/img-005-designer-compile-para.png){#fig-setup-ribbon fig-align="center"}
 
 ### Change style
-You can select the other "Linelist design" using the dropdown menu (see the [ribbon](../reference/ribbons.qmd#sec-setup-styles) to import your own style)
+You can select the other "Linelist design" using the dropdown menu (see the [ribbon](../setup_reference/ribbons.qmd#sec-setup-styles) to import your own style)
 
 
 ### Import a geobase
@@ -58,7 +58,7 @@ To do that, just fill the passwords in the little blue boxes before compiling.
 
 ## Advanced customisations
 
-There are a couple more customisations available through the [OutbreakTools option ribbon](../reference/ribbons.qmd#sec-designer-ribbon).
+There are a couple more customisations available through the [OutbreakTools option ribbon](../setup_reference/ribbons.qmd#sec-designer-ribbon).
 
 ![OutbreakTools tab in the designer file](../images/img-003-ribbon-designer.png){fig-align="center"}
 
@@ -66,7 +66,7 @@ There are a couple more customisations available through the [OutbreakTools opti
 
 The linelist compilation relies on Excel VBA and can be a bit *finicky.* Here is some advice.
 
-- [Run the checks](../reference/ribbons.qmd#sec-check-setup) on the setup before attempting compilation to verify that everything is ready.
+- [Run the checks](../setup_reference/ribbons.qmd#sec-check-setup) on the setup before attempting compilation to verify that everything is ready.
 
 - Make sure there are no hidden columns or filters on the sheets of the **setup file**.
 

@@ -41,7 +41,7 @@ This button clears filters. It is usefull if you have applied Excel filters in s
 
 ### Translation
 
-This section provides functionalities for the [Translation sheet](../reference/translations_sheet.qmd).
+This section provides functionalities for the [Translation sheet](../setup_reference/translations_sheet.qmd).
 
 ![Translation section](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 
@@ -64,9 +64,9 @@ The script will scrap the setup and import all the fields to be translated into 
 
 At the end, it will open a popup window with information on the update of the translation table.
 
-![Message of end of translation update](../reference/images/im-112-translations-sheet.png){fig-align="center"}
+![Message of end of translation update](../setup_reference/images/im-112-translations-sheet.png){fig-align="center"}
 
-Go to the [Translation sheet](../reference/translations_sheet.qmd) for more information on translations.
+Go to the [Translation sheet](../setup_reference/translations_sheet.qmd) for more information on translations.
 
 
 ### Import
@@ -185,13 +185,13 @@ The designer comes with two default styles for linelist themes. It is possible t
 
 ### Data table {#sec-data-table}
 
-![Buttons acting on data entry tables](../reference/images/img-006-ll-table-management.png){fig-align="center"}
+![Buttons acting on data entry tables](../setup_reference/images/img-006-ll-table-management.png){fig-align="center"}
 
 #### Show / Hide variables
 
 Clicking on the "Show/hide variables" button opens a window listing all the variables in this linelist sheet. 
 
-![Show hide button and pop-up window](../reference/images/img-012-ll-show-hide.png){fig-align="center"}
+![Show hide button and pop-up window](../setup_reference/images/img-012-ll-show-hide.png){fig-align="center"}
 
 Variable can have three visibility status:
 
@@ -244,9 +244,9 @@ You can manually modify the width of columns in the linelist table to adjust to 
 
 #### GeoHelper {#sec-geo-helper}
 
-The **GeoHelper** is a popup window that helps you entering geographic data surch as the origin of the patient or the name of the facility (if the ["hf" control was used for the variable](../reference/dictionary_sheet.qmd#sec-geo-data)). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.
+The **GeoHelper** is a popup window that helps you entering geographic data such as the origin of the patient or the name of the facility (if the ["hf" control was used for the variable](../setup_reference/dictionary_sheet.qmd#sec-geo-data)). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.
 
-To use it, place your cursor in a "geo" or "hf" column (you can recognise them thanks to the orange headers), in the *admin 1 level*. Click on the "Geohelper" button, or hit the shortcut `Ctrl + Shift + G`. It opens a window, with several tabs, depending on whether you are in a "geo" (described by four visible columns) or in "hf" (decribed by one isible column).
+To use it, place your cursor in a "geo" or "hf" column (you can recognise them thanks to the orange headers), in the *admin 1 level*. Click on the "GeoHelper" button, or hit the shortcut `Ctrl + Shift + G`. It opens a window, with several tabs, depending on whether you are in a "geo" (described by four visible columns) or in "hf" (described by one visible column).
 
 If you are in a "geo" section, you will have three tabs that you can use to select administrative levels.
 
@@ -258,14 +258,14 @@ Once the location has been found, select it and click on “OK”.
 
 ### Refresh analyses
 
-![Refresh analyses button](../reference/images/img-007-ll-refresh-analyses.png){fig-align="center"}
+![Refresh analyses button](../setup_reference/images/img-007-ll-refresh-analyses.png){fig-align="center"}
 
 Hit the "Refresh analyses" button to update analyses on all analyses sheets in one go. You should use it whenever you entered new data or when you applied filters to existing data and want to see the analyses on this subset of data.^[Do not forget to remove the filters and refresh the analyses at the end to not be confused but the numbers in a couple of days]
 
 
 ### Imports {#sec-import-data}
 
-![Imports section](../reference/images/img-008-ll-imports.png){fig-align="center"}
+![Imports section](../setup_reference/images/img-008-ll-imports.png){fig-align="center"}
 
 #### Import data
 
@@ -299,11 +299,11 @@ Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to dow
 
 The regular exports buttons are available in the "Export section" of the ribbon, and the "Export for migration" is available in the [Advanced](#sec-linelist-advanced) section of the ribbon. 
 
-![Exports section](../reference/images/img-009-ll-exports.png){fig-align="center"}
+![Exports section](../setup_reference/images/img-009-ll-exports.png){fig-align="center"}
 
 #### Export data
 
-OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the [setup file ](../reference/exports_sheet.qmd) that is used to generate the linelist. 
+OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the [setup file ](../setup_reference/exports_sheet.qmd) that is used to generate the linelist. 
 
 While Epicentre linelists should have at minima be an "Anonymous export for MSF” button, the other available exports differ between linelists created.
 
@@ -330,7 +330,7 @@ If the analysis are made on filtered data, the tables will be exported as such.
 
 You can print a register directly based on the linelist.
 
-![Register and case report form section](../reference/images/img-010-ll-register.png){fig-align="center"}
+![Register and case report form section](../setup_reference/images/img-010-ll-register.png){fig-align="center"}
 
 The features from this category *only work if you are on a data entry sheet*, otherwise you get an error message.
 
@@ -358,7 +358,7 @@ Once ready, you can use the "Print" button to open the print preview view (wheth
 ### Advanced {#sec-linelist-advanced}
 
 
-![Advanced button and pop-up window](../reference/images/img-011-ll-advanced.png){fig-align="center"}
+![Advanced button and pop-up window](../setup_reference/images/img-011-ll-advanced.png){fig-align="center"}
 
 
 #### Export for migration
@@ -367,7 +367,7 @@ This button exports raw data and metadata for migration to another linelist file
 
 You can choose to export the patient data, the geobase and the history of the geobase (history list in the GeoHelper), by ticking the matching cases. There are also options to include metadata on the state of hidden/shown columns (to not have to redo the full setup in the new file), and the updated labels of the custom variables, if you used these variables.	
 
-![Export for migration](../reference/images/img-013-ll-export-migration.png){fig-align="center"}
+![Export for migration](../setup_reference/images/img-013-ll-export-migration.png){fig-align="center"}
 
 
 After selecting the options and clicking on “Export”, a window pops-up for saving the export. Select the folder and click on “OK”. Once finished a message appears to ask if you want to close the window.

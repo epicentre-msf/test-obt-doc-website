@@ -60,22 +60,22 @@ website:
       - text: Setup file reference
         menu: 
           - text: Dictionary sheet
-            href: reference/dictionary_sheet.qmd
+            href: setup_reference/dictionary_sheet.qmd
             
           - text: Choices sheet
-            href: reference/choices_sheet.qmd
+            href: setup_reference/choices_sheet.qmd
           
           - text: Analyses sheet
-            href: reference/analyses_sheet.qmd
+            href: setup_reference/analyses_sheet.qmd
           
           - text: Export sheet
-            href: reference/exports_sheet.qmd
+            href: setup_reference/exports_sheet.qmd
           
           - text: Translation sheet
-            href: reference/translations_sheet.qmd
+            href: setup_reference/translations_sheet.qmd
             
-          - text: Ribbon tabs
-            href: reference/ribbons.qmd
+          - text: Ribbon menu
+            href: setup_reference/ribbons.qmd
             
 
       - text: How-to 

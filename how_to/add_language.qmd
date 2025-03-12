@@ -19,7 +19,7 @@ Both levels of translation are selected during the [compilation](../getting_star
 
 ## Add a new language to a setup
 
-Go to the [OutbreakTools tab](../reference/ribbons.qmd#sec-setup-ribbon) of the setup top ribbon. One section contains buttons for translation:
+Go to the [OutbreakTools tab](../setup_reference/ribbons.qmd#sec-setup-ribbon) of the setup top ribbon. One section contains buttons for translation:
 
 ![Translation section in the OutbreakTools tab](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 
@@ -29,7 +29,7 @@ To add a new linelist language:
 
 2. Fill the name of the language you want to add in the rectangular box
 
-3. Click on the "Add language" button: it will add a new empty column on the right of the column(s) already present in the [Translation sheet](../reference/translations_sheet.qmd), and open the
+3. Click on the "Add language" button: it will add a new empty column on the right of the column(s) already present in the [Translation sheet](../setup_reference/translations_sheet.qmd), and open the
 
 4. Provide translation for each string of text.
 
@@ -38,4 +38,4 @@ To add a new linelist language:
 You can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.
 :::
 
-To know more about translations, go to the [Tranlation sheet](../reference/translations_sheet.qmd).
+To know more about translations, go to the [Tranlation sheet](../setup_reference/translations_sheet.qmd).

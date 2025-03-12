@@ -6,7 +6,7 @@ title: "Export a subset of geographic columns"
 
 You need to create a MoH export with only the admin 3 and 4 columns. Or with admin 1 to 4, but in a different order form the linelist.
 
-But in the **setup file** geographic columns are represented by [one *"geo"* variable](../reference/dictionary_sheet.qmd#geo-variable), which is translated in 4 columns in the generated linelist^[Admins levels 1, 2, 3 and 4, with cascading dropdown menus]. In the **setup file**, if you indicate that this "*geo*" variable should be exported for a given export, the linelist export will contain the four admin levels columns^[ And more if you choose to export p-codes, see the "*Exports*" sheet options in the **setup file**].
+But in the **setup file** geographic columns are represented by [one *"geo"* variable](../setup_reference/dictionary_sheet.qmd#geo-variable), which is translated in 4 columns in the generated linelist^[Admins levels 1, 2, 3 and 4, with cascading dropdown menus]. In the **setup file**, if you indicate that this "*geo*" variable should be exported for a given export, the linelist export will contain the four admin levels columns^[ And more if you choose to export p-codes, see the "*Exports*" sheet options in the **setup file**].
 
 
 ## Solution

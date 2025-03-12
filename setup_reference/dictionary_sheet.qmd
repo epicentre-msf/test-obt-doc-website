@@ -2,7 +2,7 @@
 title: "Dictionary sheet: define linelist tables and their variables"
 ---
 
-The metadata about linelist variable, which is commonly called the *variable dictionary* is stored in two of the **setup file** sheets, the *Dictionary* sheet and the [*Choices* sheet](../reference/choices_sheet.qmd). Most of the variable attributes/metadata are stored in the *Dictionary* sheet, while only the categories of categorical variables are stored in the *Choices* sheet.
+The metadata about linelist variable, which is commonly called the *variable dictionary* is stored in two of the **setup file** sheets, the *Dictionary* sheet and the [*Choices* sheet](../setup_reference/choices_sheet.qmd). Most of the variable attributes/metadata are stored in the *Dictionary* sheet, while only the categories of categorical variables are stored in the *Choices* sheet.
 
 Variable metadata on the *Dictionary* sheet are organised in one (big) table in which **one line corresponds to one variable**. This table is divided in sections:
 
@@ -35,7 +35,7 @@ When compiling the setup, make sure that all the columns from this sheet are unh
 
 ### Variable Name
 
-This is a free text field used to **uniquely identify the variables**. The name can be used to refer to the variable in formulas or in the [*Analyses* sheet](../reference/analyses_sheet.qmd).
+This is a free text field used to **uniquely identify the variables**. The name can be used to refer to the variable in formulas or in the [*Analyses* sheet](../setup_reference/analyses_sheet.qmd).
 
 ![](images/im-004-variable-names-and-labels.png){fig-align="center"}
 
@@ -157,7 +157,7 @@ This is a free text field that contains the *name of the sheet* in which the var
 In general, your linelists will contain at least a patient data sheet, and an info/metadata sheet.
 
 ::: {.callout-note collapse="true" title="Note on linelist sheets"}
-The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../reference/analyses_sheet.qmd).
+The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include [analyses](../setup_reference/analyses_sheet.qmd).
 :::
 
 ### Sheet Type {#sec-sheet-types}
@@ -228,7 +228,7 @@ This is a dropdown field that contains four options for defining the **visibilit
 
 -   *hidden*: variable hidden by default, it cannot be displayed in the linelist
 
-Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
+Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
 
 ::: {.callout-note collapse="true" title="Note on showing and hiding columns manually"}
 Technically, the linelist user can forcefully hide/un-hide columns.
@@ -265,7 +265,7 @@ This column has two uses:
 
 - it allows the setup developer to quickly identify variables containing personal data in its dictionary  
 
-- it is used to remove variables automatically from the exports if such a behaviour is needed (see the [Exports sheet](../reference/exports_sheet.qmd)).
+- it is used to remove variables automatically from the exports if such a behaviour is needed (see the [Exports sheet](../setup_reference/exports_sheet.qmd)).
 
 ### Thinking about variables
 
@@ -411,7 +411,7 @@ The difference is that in the created linelist, the user can use the dropdown me
 **Example**: if the user selects "Azythromicin", then "Ampicilin" from a dropdown menu, the value "Azythromicin, Ampicilin" will be stored in the cell.
 
 ::: {.callout-warning title="Warning: cannot be used for analyses"}
-A choice_multiple column cannot be used in the [Analyses sheets](../reference/analyses_sheet.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
+A choice_multiple column cannot be used in the [Analyses sheets](../setup_reference/analyses_sheet.qmd) as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.
 :::
 
 ::: {.callout-tip title="Tip: inform the linelist user"}
@@ -547,7 +547,7 @@ Read more about writing the formula in the [Control details](#sec-formulas) colu
 
 ##### choice_formula
 
-This control indicates the use of the `CHOICE_FORMULA` function, another custom function. This function is a special case of the `CASE_WHEN` formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the [Choices](../reference/choices_sheet.qmd) sheet.
+This control indicates the use of the `CHOICE_FORMULA` function, another custom function. This function is a special case of the `CASE_WHEN` formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the [Choices](../setup_reference/choices_sheet.qmd) sheet.
 
 Columns generated with this control can be used in univariate or bivariate tables, as the number of possible categories is known in advance.
 
@@ -557,7 +557,7 @@ Read more about writing the formula in the [Control details](#sec-var-control-de
 
 This is a free text field, which accepts three types of values: 
 
-- the name of a *list* (defined in the [Choices](../reference/choices_sheet.qmd) sheet), 
+- the name of a *list* (defined in the [Choices](../setup_reference/choices_sheet.qmd) sheet), 
 - the name of a *variable* (defined in the *Dictionary* sheet)
 - a [*formula*](#sec-formulas).
 
@@ -580,7 +580,7 @@ This is a free text field, which accepts three types of values:
 
 When the controls "choice_manual", "choice_multiple" (and optionally "choice_custom") are selected in the [Control](#sec-var-control) column, you need to define the values the dropdown menu will contain (*i.e.* the *categories*). 
 
-These values are specified in the [Choices sheet](../reference/choices_sheet.qmd). Categories of a same variable are bundled into named *lists*. The name of the list is then entered in the "Control details" column of the *Dictionary* sheet.
+These values are specified in the [Choices sheet](../setup_reference/choices_sheet.qmd). Categories of a same variable are bundled into named *lists*. The name of the list is then entered in the "Control details" column of the *Dictionary* sheet.
 
 ![](images/im-041-choices.png)
 
@@ -711,9 +711,9 @@ This is a *yes/no* dropdown menu field. If the variable should have unique value
 
 OutbreakTools linelist have extensive data export functionalities. It is possible to define several personalised exports from the setup.
 
-To define a specific export, you need to fill both the "Export" section in the *Dictionary* sheet and the [Exports](../reference/exports_sheet/qmd) sheet. The *Export* sheet contains metadata for each export, while the "Export" columns in the *Dictionary* sheet allows to decide individually for each variable whether to export it or not in a given export.
+To define a specific export, you need to fill both the "Export" section in the *Dictionary* sheet and the [Exports](../setup_reference/exports_sheet/qmd) sheet. The *Export* sheet contains metadata for each export, while the "Export" columns in the *Dictionary* sheet allows to decide individually for each variable whether to export it or not in a given export.
 
-To create a new export, first fill the [Exports](../reference/exports_sheet/qmd) sheet, which will add corresponding columns to the *Dictionary* sheet.
+To create a new export, first fill the [Exports](../setup_reference/exports_sheet/qmd) sheet, which will add corresponding columns to the *Dictionary* sheet.
 
 
 ### Rules
