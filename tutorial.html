@@ -101,37 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="./setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -302,13 +275,13 @@ Note
 <ul>
 <li><p>Open the linelist <code>linelist_measles_en_ex1.xlsb</code> located in the <code>linelist</code> folder. The file password is 5678. It contains a mock measles dataset.</p></li>
 <li><p>Take a quick look at the different sheets to get an overview of the structure of the file.</p></li>
-<li><p>In the <em>Linelist patients</em> sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients’ origin (see <em>Data table</em> section of the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
-<li><p>Explore univariate, bivariate, temporal and spatial analyses. Use button “Refresh analyses” in the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a> to update the analyses.</p></li>
+<li><p>In the <em>Linelist patients</em> sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients’ origin (see <em>Data table</em> section of the <a href="./reference/ribbons_linelist.html">OutbreakTools ribbon</a>).</p></li>
+<li><p>Explore univariate, bivariate, temporal and spatial analyses. Use button “Refresh analyses” in the <a href="./reference/ribbons_linelist.html">OutbreakTools ribbon</a> to update the analyses.</p></li>
 <li><p>In the temporal analysis, change the start/end dates as well as the time unit of the analysis.</p></li>
 <li><p>In the spatial analysis, change the administrative level and divide by the population size to get attack rates (note we don’t have population estimates below the health-zone level).</p></li>
 <li><p>Go back to the <em>Linelist patients</em> and use the filters to show only patients under 2 years of age. Then go back to the analyses sheets and recalculate (use button “Refresh analyses”).</p></li>
-<li><p>Export the filtered data using the <code>anonymous export for MSF</code> (see <em>Export button</em> in the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>). Open and browse the exported file.</p></li>
-<li><p>Finally, print a register book for the <code>Linelist patients</code> (see the <em>Register book</em> section of the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">OutbreakTools ribbon</a>).</p></li>
+<li><p>Export the filtered data using the <code>anonymous export for MSF</code> (see <em>Export button</em> in the <a href="./reference/ribbons_linelist.html">OutbreakTools ribbon</a>). Open and browse the exported file.</p></li>
+<li><p>Finally, print a register book for the <code>Linelist patients</code> (see the <em>Register book</em> section of the <a href="./reference/ribbons_linelist.html">OutbreakTools ribbon</a>).</p></li>
 </ul>
 </section>
 <section id="exercise-2-adding-new-variables" class="level2">
@@ -322,8 +295,8 @@ Note
 <li>A variable called <code>vacci_measles_doses</code> (Number of doses received) which is a numeric variable.</li>
 <li>Create a data validation rule to ensure that this variable remains between 0 and 4.</li>
 </ul></li>
-<li><p>Translate newly added labels into French (see the <a href="./setup_reference/ribbons.html#sec-setup-ribbon">Setup Options ribbon</a> and the <a href="./setup_reference/translations_sheet.html">Setup Translation sheet</a>).</p></li>
-<li><p>Check the setup for potential errors (see the <a href="./setup_reference/ribbons.html#sec-setup-ribbon">Setup Options ribbon</a>).</p></li>
+<li><p>Translate newly added labels into French (see the <a href="./reference/ribbons_setup.html">Setup Options ribbon</a> and the <a href="./reference/translations_sheet.html">Setup Translation sheet</a>).</p></li>
+<li><p>Check the setup for potential errors (see the <a href="./reference/ribbons_setup.html">Setup Options ribbon</a>).</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -358,8 +331,8 @@ Warning for Mac users
 <ul>
 <li>You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
 <ul>
-<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters (see the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">linelist options ribbon</a>). Then, export the data (use the <em>Export data</em> button in the same ribbon) to a location of your choice. This migration file contains all your data.</p></li>
-<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="./setup_reference/ribbons.html#sec-linelist-ribbon">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
+<li><p>First, go back to the linelist <code>linelist_measles_en_ex1.xlsb</code> and remove all filters (see the <a href="./reference/ribbons_linelist.html">linelist options ribbon</a>). Then, export the data (use the <em>Export data</em> button in the same ribbon) to a location of your choice. This migration file contains all your data.</p></li>
+<li><p>Second, go back to the new linelist <code>linelist_measles_en_ex2.xlsb</code> and import the migration file (see the button “Import data” from the <a href="./reference/ribbons_linelist.html">linelist options ribbon</a>). Look at the importation report and browse the data in the new linelist.</p></li>
 </ul></li>
 </ul>
 </section>

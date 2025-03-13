@@ -102,37 +102,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -249,7 +222,7 @@ Important&nbsp;1: About breaking changes
 <p>Steps:</p>
 <ol type="1">
 <li><p>Clear data filters</p></li>
-<li><p>Go to the <a href="../setup_reference/ribbons.html#sec-linelist-advanced">OutbreakTools menu</a> of this setup file and click on the button “Export for migration”.</p></li>
+<li><p>Go to the <a href="../reference/ribbons_linelist.html#sec-linelist-advanced">OutbreakTools menu</a> of this setup file and click on the button “Export for migration”.</p></li>
 <li><p>Tick all the boxes you want (usually, “All data” + “Geobase”). This will create three files in the folder of your choice:</p>
 <ol type="a">
 <li>A file containing the data</li>
@@ -257,11 +230,11 @@ Important&nbsp;1: About breaking changes
 <li>Optionaly, a file containing <em>uniquely the geobase history</em>, which we will ignore now.</li>
 </ol></li>
 <li><p>Open a new, emtpy linelist file</p></li>
-<li><p>Go to the <a href="../setup_reference/ribbons.html#sec-import-data">import section of the OutbreakTools menu</a>. Use the “Import data” button to import the data export file, and the “Import geobase” button to import the geobase files (which contains the history, if an history existed).</p></li>
+<li><p>Go to the <a href="../reference/ribbons_linelist.html#sec-import-data">import section of the OutbreakTools menu</a>. Use the “Import data” button to import the data export file, and the “Import geobase” button to import the geobase files (which contains the history, if an history existed).</p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
 <figcaption>Export for migration</figcaption>
 </figure>
 </div>
@@ -292,9 +265,9 @@ Tip: export a subset of data
 </ul>
 <p><strong>Steps:</strong></p>
 <ol type="1">
-<li><p>Export the data from each facility linelist using the “Export data” button from the the <a href="../setup_reference/ribbons.html#sec-export-data">OutbreakTools menu</a>. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
+<li><p>Export the data from each facility linelist using the “Export data” button from the the <a href="../reference/ribbons_linelist.html#sec-export-data">OutbreakTools menu</a>. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
 <li><p>Get an empty linelist file. This will become your temporary master linelist.</p></li>
-<li><p>Import the all the exports into the master file one by one, using the “Import data” button from the <a href="../setup_reference/ribbons.html#sec-import-data">OutbreakTools menu</a>. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
+<li><p>Import the all the exports into the master file one by one, using the “Import data” button from the <a href="../reference/ribbons_linelist.html#sec-import-data">OutbreakTools menu</a>. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
 <li><p>Refresh analyses (always!) before examining the analyses.</p></li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled" title="Warning: do not modify data in this file">
