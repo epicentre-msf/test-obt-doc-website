@@ -1,5 +1,7 @@
 ---
 title: "Choices sheet: define variable categories"
+category: 
+  - Setup
 ---
 
 This sheet is used to define the **dropdown menus categories** to be used for categorical variables, or the possible values for "choice_formula" type variables. 
@@ -16,7 +18,7 @@ This sheet is used to define the **dropdown menus categories** to be used for ca
 
 ## List Name
 
-This is a free text field used to define a dropdown list. Lines with the same *name* filled belong to the same list. This name is used in the *Dictionary* sheet to identify the dropdown list to be used for a given variable, in the [Control details](../setup_reference/dictionary_sheet.qmd#sec-var-control-details) column.
+This is a free text field used to define a dropdown list. Lines with the same *name* filled belong to the same list. This name is used in the *Dictionary* sheet to identify the dropdown list to be used for a given variable, in the [Control details](../reference/dictionary_sheet.qmd#sec-var-control-details) column.
 
 
 ![](images/im-041-choices.png)   

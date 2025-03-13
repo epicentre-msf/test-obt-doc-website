@@ -43,7 +43,7 @@ The **setup file** has a dedicated OutbreakTools section in the top option ribbo
 
 ![OutbreakTools tab in the **setup file**](../images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
 
-Go to the [reference](../setup_reference/ribbons.qmd) to know more about the ribbon buttons.
+Go to the [reference](../reference/ribbons.qmd) to know more about the ribbon buttons.
 
 
 

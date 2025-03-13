@@ -1,5 +1,7 @@
 ---
 title: "Custom formulas"
+category: 
+  - Setup
 ---
 
 

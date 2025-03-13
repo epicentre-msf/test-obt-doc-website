@@ -16,7 +16,7 @@ When it comes to **text input** variables, there are two primary methods for dat
 
 In Excel, the controlled approach for text variables is typically implemented with **dropdown menus**, which allow data entry of pre-defined categories. OutbreakTools offers multiple ways to create dropdown menus, depending on whether you have predefined categories or not. 
 
-The columns [Control](../setup_reference/dictionary_sheet.qmd#sec-var-control) together with [Control details](../setup_reference/dictionary_sheet.qmd#sec-var-control-details) are use to constrain the values that a text variable can take, or provide with a formula in the case of a calculated variable.
+The columns [Control](../reference/dictionary_sheet.qmd#sec-var-control) together with [Control details](../reference/dictionary_sheet.qmd#sec-var-control-details) are use to constrain the values that a text variable can take, or provide with a formula in the case of a calculated variable.
 
 +----------------------+---------------------------+----------------+
 | Sort of variable     | Controls                  | Data entry in  |
@@ -42,12 +42,12 @@ If no control is selected, the text variable is free text.
 :::
 
 ::: {.callout-note}
-The variables that contain geographic information are treated as a special case of categorical variable and have their own [dedicated control](../setup_reference/dictionary_sheet.qmd#sec-geo-data).
+The variables that contain geographic information are treated as a special case of categorical variable and have their own [dedicated control](../reference/dictionary_sheet.qmd#sec-geo-data).
 :::
 
 
 ::: {.callout-note}
-For non text variable (integers, decimals, dates) is is possible to restrict values using [data validation](../setup_reference/dictionary_sheet.qmd#sec-data-validation)
+For non text variable (integers, decimals, dates) is is possible to restrict values using [data validation](../reference/dictionary_sheet.qmd#sec-data-validation)
 :::
 
 

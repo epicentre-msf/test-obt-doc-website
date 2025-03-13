@@ -19,15 +19,15 @@ OutbreakTools (OBT) linelist are linelist created using the OBT solution. They a
 
 2.	[Prepare geographic information](../how_to/import_geobase.qmd):
     a)	Go to the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp) and download the geo-base for the area of interest (it can be cross-border).  
-    b)	In the linelist, go to the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon) and click on the ["Import geobase" button](../setup_reference/ribbons.qmd#sec-import-geobase)  
+    b)	In the linelist, go to the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) and click on the ["Import geobase" button](../reference/ribbons.qmd#sec-import-geobase)  
   
 ![Prepare geo data](../getting_started/images/img-006-geobase-process.png){fig-align="center"}
 
-3.	Set up the day of the week: "Week start" button in the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon)
+3.	Set up the day of the week: "Week start" button in the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon)
 
-4. Optional: modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon)  
+4. Optional: modify variable visibility: "Show/Hide variables" button from the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon)  
 
-5.	Optional: prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon))
+5.	Optional: prepare and print a register and/or Case Report Form to enter data on paper ("Register and Case report form" section of the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon))
     
 5.	Send the linelist to the sites. There should be one linelist per site.  
 
@@ -63,7 +63,7 @@ The OubreakTools linelist rely on macros for functionalities, so at minima the m
 
 ## The OutbreakTools ribbon
 
-Most of the important features of the linelist can be accessed through the [OutbreakTools Menu](../setup_reference/ribbons.qmd#sec-linelist-ribbon) at the top of Excel interface. Go and explore it!
+Most of the important features of the linelist can be accessed through the [OutbreakTools Menu](../reference/ribbons.qmd#sec-linelist-ribbon) at the top of Excel interface. Go and explore it!
  
  
 ## Structure of the file
@@ -93,10 +93,10 @@ When you import a geobase in a linelist:
 - The labels of the columns are updated with the administrative levels present in the geobase (e.g. “adm1_name” will change to “Province” for DRC).
 - The categories of the dropdown menus update.  
 
-You can fill the variables either by using the cascading dropdown menus, or by using the [GeoHelper button](../setup_reference/ribbons.qmd#sec-geo-helper) from the OutbreakTools menu.
+You can fill the variables either by using the cascading dropdown menus, or by using the [GeoHelper button](../reference/ribbons.qmd#sec-geo-helper) from the OutbreakTools menu.
 
 :::{.callout-note title="Search options in the Geohelper"}
-The first tab of the [GeoHelper popup window](../setup_reference/ribbons.qmd#sec-geo-helper) allows you to pick the location level after level; the second tab allows you to search for a name in the geobase and the third tab displays the past values previously picked in the GeoHelper.
+The first tab of the [GeoHelper popup window](../reference/ribbons.qmd#sec-geo-helper) allows you to pick the location level after level; the second tab allows you to search for a name in the geobase and the third tab displays the past values previously picked in the GeoHelper.
 :::
 
 

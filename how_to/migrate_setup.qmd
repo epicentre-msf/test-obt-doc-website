@@ -6,15 +6,15 @@ categories:
 ---
 
 1. Get a new, empty **setup file**
-2. Go to the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-setup-ribbon) of this setup file and click on the button "Import data from another setup".
+2. Go to the [OutbreakTools menu](../reference/ribbons.qmd#sec-setup-ribbon) of this setup file and click on the button "Import data from another setup".
 
-![Import section](../setup_reference/images/img-003-ribbon-setup-import.png){fig-align="center"}
+![Import section](../reference/images/img-003-ribbon-setup-import.png){fig-align="center"}
 
 It opens a popup windowto select the file to import data from.
 
-![](../setup_reference/images/img-004-import-setup.png){fig-align="center"}
+![](../reference/images/img-004-import-setup.png){fig-align="center"}
 
 
 3. Select what to import from the original by ticking the boxes. If you are doing a standard **setup file** upgrade, you should tick all the boxes to iport everything.
-4. Decide if you want to run a checkup of the **setup** file after import by ticking the box or not (you probably want to, but you can also [do it](../setup_reference/ribbons.qmd#sec-check-setup) at a later stage)
+4. Decide if you want to run a checkup of the **setup** file after import by ticking the box or not (you probably want to, but you can also [do it](../reference/ribbons.qmd#sec-check-setup) at a later stage)
 5. Click on the "Import" button and wait.

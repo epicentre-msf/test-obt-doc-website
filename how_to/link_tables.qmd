@@ -27,13 +27,13 @@ Sometimes you need to refer to data from another table, whether it is to use in 
 
 It is straightforward to use the values of **vlist1D** variable in a formula: just use the name of the variable in the formula[^2].
 
-[^2]: These variables can take only one value, see [the different sorts of tables](../setup_reference/dictionary_sheet.qmd#sec-sheet-types) for more information.
+[^2]: These variables can take only one value, see [the different sorts of tables](../reference/dictionary_sheet.qmd#sec-sheet-types) for more information.
 
 **Example**: the linelist user wants a variable with the name of the health structure in the data but in your setup, one site fills one excel file. In this case, you can create a calculated column that gets the name of the facility from a metadata sheet so that data encoders do not have to fill the name of the health structure again and again and again:
 
 > IF(ISBLANK(case_id), "", info_facility_name)
 
-See the page on [formulas](../setup_reference/dictionary_sheet.qmd#sec-formula) and [formulas controls](../setup_reference/dictionary_sheet.qmd#sec-formula-control)
+See the page on [formulas](../reference/dictionary_sheet.qmd#sec-formula) and [formulas controls](../reference/dictionary_sheet.qmd#sec-formula-control)
 
 ### Link two tables
 
@@ -58,7 +58,7 @@ A safer way is to create a categorical variable in the *Readmission* sheet whose
 
 ![Use of list_auto to link two columns](../images/im-130-list-auto-3.png){fig-align="center"}
 
-Seethe section on [list_auto](/setup_reference/dictionary_sheet.qmd#sec-list-auto) and its [control](../setup_reference/dictionary_sheet.qmd#sec-var-control-details) for a description on how to use the **list_auto** control.
+Seethe section on [list_auto](/reference/dictionary_sheet.qmd#sec-list-auto) and its [control](../reference/dictionary_sheet.qmd#sec-var-control-details) for a description on how to use the **list_auto** control.
 
 #### Import values from the other table with VALUE_OF
 

@@ -87,9 +87,9 @@ If you’re going to run the designer to build a linelist, you’ll need to enab
 
 - Take a quick look at the different sheets to get an overview of the structure of the file.
 
-- In the *Linelist patients* sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients' origin (see *Data table* section of the [OutbreakTools ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon)).
+- In the *Linelist patients* sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patients' origin (see *Data table* section of the [OutbreakTools ribbon](reference/ribbons.qmd#sec-linelist-ribbon)).
 
-- Explore univariate, bivariate, temporal and spatial analyses. Use button "Refresh analyses" in the [OutbreakTools ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon) to update the analyses.
+- Explore univariate, bivariate, temporal and spatial analyses. Use button "Refresh analyses" in the [OutbreakTools ribbon](reference/ribbons.qmd#sec-linelist-ribbon) to update the analyses.
 
 - In the temporal analysis, change the start/end dates as well as the time unit of the analysis.
 
@@ -97,9 +97,9 @@ If you’re going to run the designer to build a linelist, you’ll need to enab
 
 - Go back to the *Linelist patients* and use the filters to show only patients under 2 years of age. Then go back to the analyses sheets and recalculate (use button "Refresh analyses").
 
-- Export the filtered data using the `anonymous export for MSF` (see *Export button* in the [OutbreakTools ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon)). Open and browse the exported file.
+- Export the filtered data using the `anonymous export for MSF` (see *Export button* in the [OutbreakTools ribbon](reference/ribbons.qmd#sec-linelist-ribbon)). Open and browse the exported file.
 
-- Finally, print a register book for the `Linelist patients` (see the *Register book* section of the [OutbreakTools ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon)).
+- Finally, print a register book for the `Linelist patients` (see the *Register book* section of the [OutbreakTools ribbon](reference/ribbons.qmd#sec-linelist-ribbon)).
 
 
 ## Exercise 2: Adding new variables
@@ -114,9 +114,9 @@ Now, we would like to add the following variables:
     - A variable called `vacci_measles_doses` (Number of doses received) which is a numeric variable.
     - Create a data validation rule to ensure that this variable remains between 0 and 4.  
 
-- Translate newly added labels into French (see  the [Setup Options ribbon](setup_reference/ribbons.qmd#sec-setup-ribbon) and the [Setup Translation sheet](setup_reference/translations_sheet.qmd)).
+- Translate newly added labels into French (see  the [Setup Options ribbon](reference/ribbons.qmd#sec-setup-ribbon) and the [Setup Translation sheet](reference/translations_sheet.qmd)).
 
-- Check the setup for potential errors (see  the [Setup Options ribbon](setup_reference/ribbons.qmd#sec-setup-ribbon)).
+- Check the setup for potential errors (see  the [Setup Options ribbon](reference/ribbons.qmd#sec-setup-ribbon)).
 
 ::: {.callout-note}
 You should normally have a configuration file identical to `setup_measles_exercise_two.xlsb` in the `setup` folder. You can also start from this file if you like.
@@ -135,9 +135,9 @@ You might experience screen flickering during the linelist creation process.
 
 
 - You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
-  - First, go back to the linelist `linelist_measles_en_ex1.xlsb` and remove all filters (see the [linelist options ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon)). Then, export the data (use the *Export data* button in the same ribbon) to a location of your choice. This migration file contains all your data.
+  - First, go back to the linelist `linelist_measles_en_ex1.xlsb` and remove all filters (see the [linelist options ribbon](reference/ribbons.qmd#sec-linelist-ribbon)). Then, export the data (use the *Export data* button in the same ribbon) to a location of your choice. This migration file contains all your data.
   
-  - Second, go back to the new linelist `linelist_measles_en_ex2.xlsb` and import the migration file (see the button "Import data" from the [linelist options ribbon](setup_reference/ribbons.qmd#sec-linelist-ribbon)). Look at the importation report and browse the data in the new linelist.
+  - Second, go back to the new linelist `linelist_measles_en_ex2.xlsb` and import the migration file (see the button "Import data" from the [linelist options ribbon](reference/ribbons.qmd#sec-linelist-ribbon)). Look at the importation report and browse the data in the new linelist.
 
 
 ## Exercise 3: Adding new analyses

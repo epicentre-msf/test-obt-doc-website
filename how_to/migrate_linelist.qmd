@@ -53,7 +53,7 @@ Steps:
 
 1. Clear data filters	
 
-2. Go to the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-linelist-advanced) of this setup file and click on the button "Export for migration".
+2. Go to the [OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-advanced) of this setup file and click on the button "Export for migration".
 
 3. Tick all the boxes you want (usually, "All data" + "Geobase"). This will create three files in the folder of your choice: 
     a.	A file containing the data
@@ -62,10 +62,10 @@ Steps:
 
 4. Open a new, emtpy linelist file
 
-5. Go to the [import section of the OutbreakTools menu](../setup_reference/ribbons.qmd#sec-import-data). Use the "Import data" button to import the data export file, and the "Import geobase" button to import the geobase files (which contains the history, if an history existed).
+5. Go to the [import section of the OutbreakTools menu](../reference/ribbons.qmd#sec-import-data). Use the "Import data" button to import the data export file, and the "Import geobase" button to import the geobase files (which contains the history, if an history existed).
 
 
-![Export for migration](../setup_reference/images/img-013-ll-export-migration.png){fig-align="center"}
+![Export for migration](../reference/images/img-013-ll-export-migration.png){fig-align="center"}
 
 Once you are used to the steps, migrating data should take you only a couple of minutes.
 
@@ -87,11 +87,11 @@ It is possible to gather data from several linelists (with the same version of t
 
 **Steps:**
 
-1.	Export the data from each facility linelist using the "Export data" button from the the [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-export-data). Since you only want to pool patient data, there is no need to use the "Export for migration" button as you don't care for metadata in this context: the anonymous export is enough.  
+1.	Export the data from each facility linelist using the "Export data" button from the the [OutbreakTools menu](../reference/ribbons.qmd#sec-export-data). Since you only want to pool patient data, there is no need to use the "Export for migration" button as you don't care for metadata in this context: the anonymous export is enough.  
 
 2.	Get an empty linelist file. This will become your temporary master linelist.
 
-3.	Import the all the exports into the master file one by one, using the "Import data" button from the  [OutbreakTools menu](../setup_reference/ribbons.qmd#sec-import-data). When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.
+3.	Import the all the exports into the master file one by one, using the "Import data" button from the  [OutbreakTools menu](../reference/ribbons.qmd#sec-import-data). When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.
 
 4.	Refresh analyses (always!) before examining the analyses.
 

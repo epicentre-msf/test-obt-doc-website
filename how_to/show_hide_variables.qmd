@@ -10,13 +10,13 @@ TODO (copied stuff en vrac)
 
 ## Visibility status
 
-In OutbreakTools, there are several visibility status, which can be modified using a button in the [OutbreakTools Menu](../setup_reference/ribbons.qmdsec-linelist-ribbon):
+In OutbreakTools, there are several visibility status, which can be modified using a button in the [OutbreakTools Menu](../reference/ribbons.qmd#sec-linelist-ribbon):
 
 - **mandatory**: the columns cannot be hidden using the Show/Hide 
 - **hiden**: the columns are internal and cannot be shows using the Show/Hide
 - **optional**: the linelist user can decide to show or hide the variable based on their needs.
 
-These linelist status correspond to the **setup file** [status property](../setup_reference/dictionary_sheet.qmd#sec-visibility-status), with the subtility that the setup user can decide for optional columns to show them by default (*optional, visible*) or hide them by default (*optional, hidden*), based on the expected frequency of use of the variable.
+These linelist status correspond to the **setup file** [status property](../reference/dictionary_sheet.qmd#sec-visibility-status), with the subtility that the setup user can decide for optional columns to show them by default (*optional, visible*) or hide them by default (*optional, hidden*), based on the expected frequency of use of the variable.
 
 
 
@@ -25,7 +25,7 @@ These linelist status correspond to the **setup file** [status property](../setu
 
 Clicking on the "Show/hide variables" button opens a window listing all the variables in the current sheet. 
 
-![OutbreakTools tab in the created linelist](../setup_reference/images/img-012-ll-show-hide.png){fig-align="center"}
+![OutbreakTools tab in the created linelist](../reference/images/img-012-ll-show-hide.png){fig-align="center"}
 
 
 

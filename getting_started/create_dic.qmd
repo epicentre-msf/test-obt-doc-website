@@ -19,7 +19,7 @@ The first step is to create the **variable dictionary**. The other steps are opt
 
 ### Create the variable dictionary 📘
 
-Aka fill the [Dictionary](../setup_reference/dictionary_sheet.qmd) and [Choices](../setup_reference/choices_sheet.qmd) sheets. The first sheet is a database about all the *variables* present in the linelist you want to create. The *Choices* sheet contains the categories for categorical variables.
+Aka fill the [Dictionary](../reference/dictionary_sheet.qmd) and [Choices](../reference/choices_sheet.qmd) sheets. The first sheet is a database about all the *variables* present in the linelist you want to create. The *Choices* sheet contains the categories for categorical variables.
 
 The different sections of the *Dictionary* sheet will define, for each variable:
 
@@ -37,16 +37,16 @@ When you have first draft of your dictionary, go to the [OutbreakTools ribbon](.
 
 ### Fill other sheets as needed
 
-Fill the [Exports](../setup_reference/exports_sheet.qmd) sheet to **define one or more personalised exports**: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.
+Fill the [Exports](../reference/exports_sheet.qmd) sheet to **define one or more personalised exports**: their names, pseudo-anonymisation, the label of their button, whether to export variable names or labels, how much metadata to export etc.
 
-Fill the [Analyses](../setup_reference/analyses_sheet.qmd) sheet to **define basic analyses** to include in the linelist:
+Fill the [Analyses](../reference/analyses_sheet.qmd) sheet to **define basic analyses** to include in the linelist:
 
 - uni and bivariate analyses (figures and tables)  
 - temporal analyses (epicurves and corresponding tables)  
 - spatial analyses: top X location with... (most case, most deceased, most...)  
 - spatio-temporal analyses: temporal analyses but for a couple of user-specified places  
 
-Fill the [Translations](../setup_reference/analyses_sheet.qmd) sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
+Fill the [Translations](../reference/analyses_sheet.qmd) sheet to translate strings of text so that the **linelist can automatically be built in other languages** than the one in the setup.
 
 As for when defining the dictionary, check for errors regularly with the "Check current setup for errors".
 
@@ -79,5 +79,5 @@ Reverse to the original state by going to the "Advanced" section of the Outbreak
 
 If you spend time entering false data to check your linelist, you can save this data for your next test, to avoid spending time re-entering it. 
 
-To do that, go to the "Advanced" section of the [OutbreakTools ribbon](../setup_reference/ribbons.qmd#sec-linelist-ribbon) and click on the "Export for migration" button. This will create a data export, that can be later imported in a new empty linelist by clicking on the "Import data" button from the same ribbon.
+To do that, go to the "Advanced" section of the [OutbreakTools ribbon](../reference/ribbons.qmd#sec-linelist-ribbon) and click on the "Export for migration" button. This will create a data export, that can be later imported in a new empty linelist by clicking on the "Import data" button from the same ribbon.
 :::

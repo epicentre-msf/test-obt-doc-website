@@ -40,5 +40,5 @@ You can select one or more countries. And you can select one or more regions of 
 Once you have downloaded a geobase from the [Geoapp](https://reports.msf.net/secure/app/outbreak-tools-geoapp), you can import it in an OBT linelist.
 
 1. Open the linelist
-2. Go to the [OutbreakTools Menu](../setup_reference/ribbons.qmdsec-linelist-ribbon)
-3. Click on the ["Import geobase" button](../setup_reference/ribbons.qmd#sec-import-geobase)
+2. Go to the [OutbreakTools Menu](../reference/ribbons.qmdsec-linelist-ribbon)
+3. Click on the ["Import geobase" button](../reference/ribbons.qmd#sec-import-geobase)
