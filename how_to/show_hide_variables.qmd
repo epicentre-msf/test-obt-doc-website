@@ -1,5 +1,8 @@
 ---
 title: "Show or hide variables"
+description: Use the OBT ribbon to change the visibility status of columns
+categories: 
+  - Linelist
 ---
 
 TODO (copied stuff en vrac)

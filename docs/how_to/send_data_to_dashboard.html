@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Export data and send it to Epicentre for compilation and visualisation on a dashboard">
 
 <title>Send data to the dashboard – OutbreakTools documentation</title>
 <style>
@@ -36,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-34669f3799ed40b8c913da35365b47d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -93,118 +94,53 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Getting started</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
-        <li>
-    <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download and prepare the tools</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_linelist.html"> 
+<span class="menu-text">Getting started with the linelist</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/workflow.html">
- <span class="dropdown-text">General workflow</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_obt.html"> 
+<span class="menu-text">Getting started with OBT</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Prepare a linelist setup</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/compile.html">
- <span class="dropdown-text">Compile a linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/use_linelist.html">
- <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Setup file reference</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/choices_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
  <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
  <span class="dropdown-text">Analyses sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/exports_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
  <span class="dropdown-text">Export sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/translations_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/ribbons.html">
- <span class="dropdown-text">Ribbon tabs</span></a>
+    <a class="dropdown-item" href="../setup_reference/ribbons.html">
+ <span class="dropdown-text">Ribbon menu</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How-to</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
-        <li>
-    <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../how_to/home_how_to.html"> 
+<span class="menu-text">How-to</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../cheatsheets/home_cheatsheets.html"> 
+<span class="menu-text">Cheatsheets</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Setup - Add a new linelist language</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
- <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
- <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Cheatsheet</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
- <span class="dropdown-text">Variable controls</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/analyses.html">
- <span class="dropdown-text">Analyses</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../tutorial.html"> 
 <span class="menu-text">Tutoriel</span></a>
@@ -221,8 +157,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Table of content</h2>
+   
+  <ul>
+  <li><a href="#steps" id="toc-steps" class="nav-link active" data-scroll-target="#steps">Steps</a>
+  <ul>
+  <li><a href="#prepare-data" id="toc-prepare-data" class="nav-link" data-scroll-target="#prepare-data">Prepare data</a></li>
+  <li><a href="#export-and-send" id="toc-export-and-send" class="nav-link" data-scroll-target="#export-and-send">Export and send</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -230,8 +176,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Send data to the dashboard</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Linelist</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Export data and send it to Epicentre for compilation and visualisation on a dashboard
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -246,34 +200,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>OutbreakTools linelists have functionalities to export data. OutbreakTools linelists developped by the EpiDS team are usually paired with a dashboard, at least in the case of intersection linelists or big multi-sections projects. As a consequence, all linelists created by the EpiDS team can generate password-protected anonymous data, ready to be sent to Epicentre for compilation and visualisation.</p>
-<p>If you are using a linelist for which a dashboard was developed, you can send data to Epicentre. The scripts run automatically every hours, so you can choose the frequency at which you send the data depending on the needs (some cholera projects at the peak of outbreak have sent data up to twice a day, but in many cases once a week is good enough, YMMV).</p>
-<p>Steps:</p>
-<ol type="1">
+<p>If you are using a linelist for which a dashboard was developed, you can send password-protected anonymous data to Epicentre. The scripts run automatically every hour, so you can choose the frequency at which you send the data depending on your needs<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../how_to/images/img-006-export-dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Send data to dashboard</figcaption>
+</figure>
+</div>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps</h2>
+<section id="prepare-data" class="level3">
+<h3 class="anchored" data-anchor-id="prepare-data">Prepare data</h3>
+<ul>
 <li><p>Clean your data as much as you can. Pay special attention to dates (date format, date in the future, impossible dates…) and geographic data (see <a href="#nte-geomatching" class="quarto-xref">Note&nbsp;1</a>)</p></li>
-<li><p>Make sure that the general information metadata is properly filled (country, site name, section…) as this data is used by the compilation script.</p></li>
-<li><p>Clear filters: you need to send the whole dataset, not only the current week. (see <a href="#imp-whole-data" class="quarto-xref">Important&nbsp;1</a>) and if you know that automatic calculations get stuck sometimes, hit F9/“Recalculate now” Excel button to update all formulas.</p></li>
-<li><p>Export data using the “Export data” button of the <a href="../reference/ribbons.html#sec-export-data">OutbreakTools menu</a>, and chose the “Anonymous export to MSF” option (or a similar name). You will be prompted for a place to save the genarated export.</p></li>
-<li><p>Send the data to epi-data@epicentre.msf.org <strong>without renaming the file</strong>.</p></li>
-<li><p>Rince and repeat for all the sites/linelists.</p></li>
-</ol>
-<p>The file generated is a password protected excel file, which you can open if you want to see what it looks like. It has the Info sheet and patient data, as well as some automatically generated metadata (language, linelist version etc.). <strong>The name of the export file is generated automatically based on the matadata you filled</strong> so make sure these data are filled correctly once and for all.</p>
-<p>If their metadata are filled correctly, you can send several exports in the same mail (from different sites, or even different diseases), the scripts will parse the name to sort the files on our side.</p>
-<div id="nte-geomatching" class="callout callout-style-default callout-note callout-titled" title="Geodata matching">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note&nbsp;1: Geodata matching
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The dashboard display a map, where you can visualise data at several administrative levels (1 to 4), but it depends on the resolution of the data you and other send). For patients to appear on the map at a given resolution level, their geolocations needs to match the geobase for this level because the geobase loaded with the linelist corresponds to shapes used to create maps.</p>
-<p>If a place of origin cannot be matched for a given level (<em>e.g.</em> health area), the patient will not be included on the map at the “health area” level resolution If the above level (here the health zone) is matched, the patient will be accounted in the health zone resolution map.</p>
-<p>The patient will be counted in other tables/graphs as long as the relevant information is filled, regardless of the geomatching.</p>
-</div>
-</div>
+<li><p>Make sure that the general information metadata is properly filled (country, site name, section…) as this data is used in the dashboard.</p></li>
+<li><p>Clear filters: you want to send the whole dataset, not only the current week. (see <a href="#imp-whole-data" class="quarto-xref">Important&nbsp;1</a>). If you know that automatic calculations get stuck sometimes, hit F9/“Recalculate now” Excel button to force formula updates.</p></li>
+</ul>
+</section>
+<section id="export-and-send" class="level3">
+<h3 class="anchored" data-anchor-id="export-and-send">Export and send</h3>
+<ul>
+<li><p>Export data using the “Export data” button of the <a href="../setup_reference/ribbons.html#sec-export-data">OutbreakTools menu</a>, and chose the “Anonymous export to MSF” option (or a similar name). You will be prompted for a place to save the genarated export.</p></li>
+<li><p>Send the data to <em>epi-data [at] epicentre.msf.org</em> <strong>without renaming the file</strong>.</p></li>
+<li><p>Rince and repeat for all the linelists you have.</p></li>
+</ul>
+<p>The file generated is a password protected excel file, whose password is provided at export. It has the Info sheet and patient data, as well as some automatically generated metadata (language, linelist version etc.).</p>
+<p><strong>The name of the export file is generated automatically based on the matadata you filled</strong> so make sure these data are filled correctly once and for all. Consequently, if their metadata are filled correctly, you can send several exports in the same mail (from different sites, or even different diseases), the scripts will parse the name to sort the files on our end</p>
 <div id="imp-whole-data" class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -284,14 +236,38 @@ Important&nbsp;1
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Only the last occurrence of data you send is loaded on the dashboard.</p>
-<p>Consequently, it is perfectly fine to correct past data even if you sent it previously: past exports will be ignored.</p>
+<p>Only the last occurrence of data you sent is loaded on the dashboard.</p>
+<p>Consequently, it is perfectly fine to clean and amend past data even if you sent it previously (past exports will be ignored).</p>
+<p>If you need to archive older data to work on a smaller and lighter linelist, contact the EpiDS team to make the setup so that both new and archive data go to the dashboard.</p>
+</div>
+</div>
+<div id="nte-geomatching" class="callout callout-style-default callout-note callout-titled" title="Geodata matching">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note&nbsp;1: Geodata matching
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The dashboard displays a <strong>map</strong>, where you can visualise data at several administrative levels (1 to 4), but it depends on the resolution of the data you and other send). For patients to appear on the map at a given resolution level, <em>their geolocations needs to match the geobase for this level</em> because the geobase loaded with the linelist corresponds to shapes used to create maps.</p>
+<p>If a place of origin cannot be matched for a given level (<em>e.g.</em> health area), the patient will not be included on the map at the “health area” level resolution If the above level (here the health zone) is matched, the patient will be accounted in the health zone resolution map.</p>
+<p>The patient will be counted in other tables/graphs as long as the relevant information is filled, regardless of the geomatching.</p>
 </div>
 </div>
 
 
+</section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>e.g.&nbsp;twice a day for a cholera outbreak at its peak, or once every week etc.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -374,8 +350,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -486,7 +460,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

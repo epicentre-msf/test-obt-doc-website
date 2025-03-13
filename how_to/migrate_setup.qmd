@@ -1,5 +1,8 @@
 ---
 title: "Migrate setup data"
+description: Migrate the content of a setup file to a new setup file
+categories: 
+  - Setup
 ---
 
 1. Get a new, empty **setup file**

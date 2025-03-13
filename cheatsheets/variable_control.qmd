@@ -1,5 +1,8 @@
 ---
 title: "Variables in OutbreakTools"
+description: Summary of variable type and control in OBT
+categories: 
+  - Setup
 ---
 
 ## Categorical and calculated variables

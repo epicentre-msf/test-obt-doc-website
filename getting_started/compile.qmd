@@ -1,5 +1,6 @@
 ---
 title: "Compile a linelist"
+description: Compile a linelist from the dictionary and the designer file
 ---
 
 The **designer file** reads a **setup file**, compiles it and generates a **linelist file**.

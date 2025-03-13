@@ -1,5 +1,8 @@
 ---
 title: "Add a new language"
+description: Add a new language to a setup file
+categories: 
+  - Setup
 ---
 
 ## A note about languages

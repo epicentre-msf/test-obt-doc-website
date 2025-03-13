@@ -33,7 +33,7 @@ OutbreakTools (OBT) linelist are linelist created using the OBT solution. They a
 
 6.	Each site should fill the *Info sheet* in their linelist before entering patient data.
 
-After data has been encoded in the linelist, you can [export data and send it to Epicentre](../how_to/send_data_to_dashboard.qmd) for visualisation on an dashboard if a dashboard is paired with the linelist (which is the default for intersection approved linelists).
+After data has been encoded in the linelist, you can [export data and send it to Epicentre](../how_to/send_data_to_dashboard.qmd) for visualisation on an dashboard if the corresponding dashboards exist (which is usually the case for intersection approved linelists).
 
 
 **Current dashboards include**: cholera, measles, hepatitis E, diphtheria, mpox, meningitis. Other are added as the list of available OutbreakTools linelists grow.

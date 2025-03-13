@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Move data from one linelist file to another">
 
 <title>Migrate linelist data – OutbreakTools documentation</title>
 <style>
@@ -36,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-34669f3799ed40b8c913da35365b47d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -93,118 +94,53 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Getting started</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
-        <li>
-    <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download and prepare the tools</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_linelist.html"> 
+<span class="menu-text">Getting started with the linelist</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/workflow.html">
- <span class="dropdown-text">General workflow</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_obt.html"> 
+<span class="menu-text">Getting started with OBT</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Prepare a linelist setup</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/compile.html">
- <span class="dropdown-text">Compile a linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/use_linelist.html">
- <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Setup file reference</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/choices_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
  <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
  <span class="dropdown-text">Analyses sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/exports_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
  <span class="dropdown-text">Export sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/translations_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/ribbons.html">
- <span class="dropdown-text">Ribbon tabs</span></a>
+    <a class="dropdown-item" href="../setup_reference/ribbons.html">
+ <span class="dropdown-text">Ribbon menu</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How-to</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
-        <li>
-    <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../how_to/home_how_to.html"> 
+<span class="menu-text">How-to</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../cheatsheets/home_cheatsheets.html"> 
+<span class="menu-text">Cheatsheets</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Setup - Add a new linelist language</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
- <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
- <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Cheatsheet</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
- <span class="dropdown-text">Variable controls</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/analyses.html">
- <span class="dropdown-text">Analyses</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../tutorial.html"> 
 <span class="menu-text">Tutoriel</span></a>
@@ -237,8 +173,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Migrate linelist data</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Linelist</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Move data from one linelist file to another
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -305,7 +249,7 @@ Important&nbsp;1: About breaking changes
 <p>Steps:</p>
 <ol type="1">
 <li><p>Clear data filters</p></li>
-<li><p>Go to the <a href="../reference/ribbons.html#sec-linelist-advanced">OutbreakTools menu</a> of this setup file and click on the button “Export for migration”.</p></li>
+<li><p>Go to the <a href="../setup_reference/ribbons.html#sec-linelist-advanced">OutbreakTools menu</a> of this setup file and click on the button “Export for migration”.</p></li>
 <li><p>Tick all the boxes you want (usually, “All data” + “Geobase”). This will create three files in the folder of your choice:</p>
 <ol type="a">
 <li>A file containing the data</li>
@@ -313,11 +257,11 @@ Important&nbsp;1: About breaking changes
 <li>Optionaly, a file containing <em>uniquely the geobase history</em>, which we will ignore now.</li>
 </ol></li>
 <li><p>Open a new, emtpy linelist file</p></li>
-<li><p>Go to the <a href="../reference/ribbons.html#sec-import-data">import section of the OutbreakTools menu</a>. Use the “Import data” button to import the data export file, and the “Import geobase” button to import the geobase files (which contains the history, if an history existed).</p></li>
+<li><p>Go to the <a href="../setup_reference/ribbons.html#sec-import-data">import section of the OutbreakTools menu</a>. Use the “Import data” button to import the data export file, and the “Import geobase” button to import the geobase files (which contains the history, if an history existed).</p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
+<p><img src="../setup_reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
 <figcaption>Export for migration</figcaption>
 </figure>
 </div>
@@ -348,9 +292,9 @@ Tip: export a subset of data
 </ul>
 <p><strong>Steps:</strong></p>
 <ol type="1">
-<li><p>Export the data from each facility linelist using the “Export data” button from the the <a href="../reference/ribbons.html#sec-export-data">OutbreakTools menu</a>. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
+<li><p>Export the data from each facility linelist using the “Export data” button from the the <a href="../setup_reference/ribbons.html#sec-export-data">OutbreakTools menu</a>. Since you only want to pool patient data, there is no need to use the “Export for migration” button as you don’t care for metadata in this context: the anonymous export is enough.</p></li>
 <li><p>Get an empty linelist file. This will become your temporary master linelist.</p></li>
-<li><p>Import the all the exports into the master file one by one, using the “Import data” button from the <a href="../reference/ribbons.html#sec-import-data">OutbreakTools menu</a>. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
+<li><p>Import the all the exports into the master file one by one, using the “Import data” button from the <a href="../setup_reference/ribbons.html#sec-import-data">OutbreakTools menu</a>. When a warning pop up opens, tell it that you want to add the data at the bottom of the existing data.</p></li>
 <li><p>Refresh analyses (always!) before examining the analyses.</p></li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled" title="Warning: do not modify data in this file">
@@ -460,8 +404,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -572,7 +514,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

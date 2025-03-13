@@ -37,25 +37,15 @@ website:
     # left:
     #  - text: About
     #    href: index.qmd
-        
+    
     right: 
-      - text: Getting started
-        menu: 
-          - text: Download and prepare the tools
-            href: getting_started/download.qmd
+      - text: Getting started with the linelist
+        href: getting_started/home_linelist.qmd
+    
+      - text: Getting started with OBT
+        href: getting_started/home_obt.qmd
           
-          - text: General workflow
-            href: getting_started/workflow.qmd
-          
-          - text: Prepare a linelist setup
-            href: getting_started/create_dic.qmd
-          
-          - text: Compile a linelist
-            href: getting_started/compile.qmd
-            
-          - text: Use an OutbreakTools linelist
-            href: getting_started/use_linelist.qmd
-            
+
       
       - text: Setup file reference
         menu: 
@@ -79,38 +69,10 @@ website:
             
 
       - text: How-to 
-        menu:
-          - text: Setup - Export subset of geo columns
-            href: how_to/export_subset_geo.qmd
+        href: how_to/home_how_to.qmd
 
-          - text: Setup - Create two data entry tables
-            href: how_to/link_tables.qmd
-            
-          - text: Setup - Add a new linelist language
-            href: how_to/add_language.qmd
-            
-          - text: Setup - Migrate a setup to an upgraded version
-            href: how_to/migrate_setup.qmd            
-            
-          - text: Linelist - Import a geobase in the linelist
-            href: how_to/import_geobase.qmd
-            
-          - text: Linelist - Show or hide variables in the linelist
-            href: how_to/show_hide_variables.qmd
-            
-          - text: Linelist - Migrate linelist data
-            href: how_to/migrate_linelist.qmd
-            
-          - text: Linelist - Send data to the dashboard
-            href: how_to/send_data_to_dashboard.qmd
-            
-      - text: Cheatsheet
-        menu:
-          - text: Variable controls
-            href: cheatsheets/variable_control.qmd
-            
-          - text: Analyses
-            href: cheatsheets/analyses.qmd
+      - text: Cheatsheets
+        href: cheatsheets/home_cheatsheets.qmd
             
       - text: Tutoriel
         href: tutorial.qmd

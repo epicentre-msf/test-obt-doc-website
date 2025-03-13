@@ -1,5 +1,8 @@
 ---
 title: "Cheatsheet analyses"
+description: Pick the correct analyses type in the setup file
+categories: 
+  - Setup
 ---
 
 ## Choosing analyses

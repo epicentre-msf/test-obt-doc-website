@@ -1,5 +1,8 @@
 ---
 title: "Create linelists with more than one entry sheets"
+description: Define linelists with several tables which may nor may not be connected
+categories: 
+  - Setup
 ---
 
 You want the linelist to contain several data entry sheets. The important thing to think about is how the tables should be linked, if at all.

@@ -1,5 +1,6 @@
 ---
 title: "General workflow and files"
+description: Learn about the general workflow to prepare a linelist dictionary and generate a new linelist file
 ---
 
 ## Workflow

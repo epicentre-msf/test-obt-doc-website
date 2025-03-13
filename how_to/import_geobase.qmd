@@ -1,5 +1,8 @@
 ---
 title: "Import a geobase in the linelist"
+description: Connect to the GeoApp to download a geobase and import it in the linelist
+categories: 
+  - Linelist
 ---
 
 

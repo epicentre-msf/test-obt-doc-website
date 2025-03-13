@@ -1,5 +1,6 @@
 ---
-title: "Create dictionary"
+title: "Create a dictionary"
+description: Create a linelist dictionary (setup file) that contains the specification of your linelist
 ---
 
 ## Get the tools ready 🛠 {#sec-get-tools-ready}

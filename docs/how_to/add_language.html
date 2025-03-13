@@ -2,10 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Add a new language to a setup file">
 
 <title>Add a new language – OutbreakTools documentation</title>
 <style>
@@ -36,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-34669f3799ed40b8c913da35365b47d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -93,118 +94,53 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Getting started</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
-        <li>
-    <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download and prepare the tools</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_linelist.html"> 
+<span class="menu-text">Getting started with the linelist</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/workflow.html">
- <span class="dropdown-text">General workflow</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_obt.html"> 
+<span class="menu-text">Getting started with OBT</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Prepare a linelist setup</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/compile.html">
- <span class="dropdown-text">Compile a linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/use_linelist.html">
- <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Setup file reference</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
         <li>
-    <a class="dropdown-item" href="../reference/dictionary_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
  <span class="dropdown-text">Dictionary sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/choices_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
  <span class="dropdown-text">Choices sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/analyses_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
  <span class="dropdown-text">Analyses sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/exports_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
  <span class="dropdown-text">Export sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/translations_sheet.html">
+    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
  <span class="dropdown-text">Translation sheet</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../reference/ribbons.html">
- <span class="dropdown-text">Ribbon tabs</span></a>
+    <a class="dropdown-item" href="../setup_reference/ribbons.html">
+ <span class="dropdown-text">Ribbon menu</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How-to</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
-        <li>
-    <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../how_to/home_how_to.html"> 
+<span class="menu-text">How-to</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../cheatsheets/home_cheatsheets.html"> 
+<span class="menu-text">Cheatsheets</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Setup - Add a new linelist language</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
- <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
- <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Cheatsheet</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
- <span class="dropdown-text">Variable controls</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/analyses.html">
- <span class="dropdown-text">Analyses</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../tutorial.html"> 
 <span class="menu-text">Tutoriel</span></a>
@@ -237,8 +173,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Add a new language</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Setup</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Add a new language to a setup file
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -266,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="add-a-new-language-to-a-setup" class="level2">
 <h2 class="anchored" data-anchor-id="add-a-new-language-to-a-setup">Add a new language to a setup</h2>
-<p>Go to the <a href="../reference/ribbons.html#sec-setup-ribbon">OutbreakTools tab</a> of the setup top ribbon. One section contains buttons for translation:</p>
+<p>Go to the <a href="../setup_reference/ribbons.html#sec-setup-ribbon">OutbreakTools tab</a> of the setup top ribbon. One section contains buttons for translation:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/img-003-ribbon-setup-translations.png" class="img-fluid figure-img"></p>
@@ -277,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>Click on the “Update translation table”, which is going to scrap all text bits from the setup and add them to the translation table (even if there is only one language in the sheet). This step can be done at a later stage, and each time you modify or add a label in the setup.</p></li>
 <li><p>Fill the name of the language you want to add in the rectangular box</p></li>
-<li><p>Click on the “Add language” button: it will add a new empty column on the right of the column(s) already present in the <a href="../reference/translations_sheet.html">Translation sheet</a>, and open the</p></li>
+<li><p>Click on the “Add language” button: it will add a new empty column on the right of the column(s) already present in the <a href="../setup_reference/translations_sheet.html">Translation sheet</a>, and open the</p></li>
 <li><p>Provide translation for each string of text.</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -293,7 +237,7 @@ Tip
 <p>You can use Deepl or Google translate on bits of the column to provide for first draft, and ask a collegue to review the translation afterwards.</p>
 </div>
 </div>
-<p>To know more about translations, go to the <a href="../reference/translations_sheet.html">Tranlation sheet</a>.</p>
+<p>To know more about translations, go to the <a href="../setup_reference/translations_sheet.html">Tranlation sheet</a>.</p>
 
 
 </section>
@@ -381,8 +325,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -493,7 +435,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
