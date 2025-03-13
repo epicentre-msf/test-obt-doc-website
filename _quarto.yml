@@ -45,29 +45,9 @@ website:
       - text: Getting started with OBT
         href: getting_started/home_obt.qmd
           
-
-      
-      - text: Setup file reference
-        menu: 
-          - text: Dictionary sheet
-            href: reference/dictionary_sheet.qmd
-            
-          - text: Choices sheet
-            href: reference/choices_sheet.qmd
-          
-          - text: Analyses sheet
-            href: reference/analyses_sheet.qmd
-          
-          - text: Export sheet
-            href: reference/exports_sheet.qmd
-          
-          - text: Translation sheet
-            href: reference/translations_sheet.qmd
-            
-          - text: Ribbon menu
-            href: reference/ribbons.qmd
-            
-
+      - text: Reference
+        href: reference/home_reference.qmd
+        
       - text: How-to 
         href: how_to/home_how_to.qmd
 
