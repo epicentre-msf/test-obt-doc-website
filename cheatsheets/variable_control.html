@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Summary of variable type and control in OBT">
 
 <title>Variables in OutbreakTools – OutbreakTools documentation</title>
 <style>
@@ -39,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-080e4e364ec5d7a86746b70810c20360.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ebdf0ca262df13d40862953b34848f40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -93,33 +94,14 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Getting started</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-getting-started">    
-        <li>
-    <a class="dropdown-item" href="../getting_started/download.html">
- <span class="dropdown-text">Download and prepare the tools</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_linelist.html"> 
+<span class="menu-text">Getting started with the linelist</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/workflow.html">
- <span class="dropdown-text">General workflow</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../getting_started/home_obt.html"> 
+<span class="menu-text">Getting started with OBT</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/create_dic.html">
- <span class="dropdown-text">Prepare a linelist setup</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/compile.html">
- <span class="dropdown-text">Compile a linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../getting_started/use_linelist.html">
- <span class="dropdown-text">Use an OutbreakTools linelist</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Setup file reference</span>
@@ -151,60 +133,14 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-how-to" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">How-to</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to">    
-        <li>
-    <a class="dropdown-item" href="../how_to/export_subset_geo.html">
- <span class="dropdown-text">Setup - Export subset of geo columns</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../how_to/home_how_to.html"> 
+<span class="menu-text">How-to</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/link_tables.html">
- <span class="dropdown-text">Setup - Create two data entry tables</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../cheatsheets/home_cheatsheets.html"> 
+<span class="menu-text">Cheatsheets</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/add_language.html">
- <span class="dropdown-text">Setup - Add a new linelist language</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_setup.html">
- <span class="dropdown-text">Setup - Migrate a setup to an upgraded version</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/import_geobase.html">
- <span class="dropdown-text">Linelist - Import a geobase in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/show_hide_variables.html">
- <span class="dropdown-text">Linelist - Show or hide variables in the linelist</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/migrate_linelist.html">
- <span class="dropdown-text">Linelist - Migrate linelist data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../how_to/send_data_to_dashboard.html">
- <span class="dropdown-text">Linelist - Send data to the dashboard</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cheatsheet" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Cheatsheet</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cheatsheet">    
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/variable_control.html">
- <span class="dropdown-text">Variable controls</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../cheatsheets/analyses.html">
- <span class="dropdown-text">Analyses</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../tutorial.html"> 
 <span class="menu-text">Tutoriel</span></a>
@@ -237,8 +173,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Variables in OutbreakTools</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Setup</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Summary of variable type and control in OBT
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
