@@ -1,197 +1,26 @@
 ---
-title: "Ribbons"
+title: "Linelist ribbon"
+description: Get to know the linelist OBT menu
+categories: 
+  - Linelist
 ---
 
-Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/) that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this ribbon with OutbreakTools functionalities.
-
-## Setup {#sec-setup-ribbon}
-
-![OutbreakTools tab in the **setup file**](../images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
-
-### Table management
-
-The buttons of this section provide action on tables within the setup: main table on the *Dictionary sheet*, table for choices, table for exports, tables for analyses etc.
-
-![Table management section](images/img-003-ribbon-setup-table.png){fig-align="center"}
-
-#### Add rows
-
-This button insert rows at the bottom of the table in the current sheet.
-
-
-When this functionality is used in the *Analyses* sheet, you can use the drop-down menu in *cell A1* to choose whether you want to add rows to all tables or just one in particular.
-
-![Button to add or remove rows of diffeent analyses tables](../images/im-115-table-managment.png){fig-align="center"}
-
-
-#### Resize table in the current sheet
-
-This button remove empty rows (whether at the end or in the middle).
-
-
-When this functionality is used in the *Analyses* sheet, you can use the drop-down menu in *cell A1* to choose whether you want to remove empty rows to all tables or just one in particular.
-
-![Button to add or remove rows of diffeent analyses tables](../images/im-117-table-managment.png){fig-align="center"}
-
-
-#### Remove filters
-
-This button clears filters. It is usefull if you have applied Excel filters in several columns, no need to track them all one by one, just clear them in one go.
-
-
-### Translation
-
-This section provides functionalities for the [Translation sheet](../setup_reference/translations_sheet.qmd).
-
-![Translation section](images/img-003-ribbon-setup-translations.png){fig-align="center"}
-
-
-
-#### Add language
-
-This button adds a new column to translations sheet, to add a new linelist language.
-
-1. Fill the name of the language in the box
-2. Click on the button: it will add a new empty column on the right of the columns already present.
-
-[More information to add a language](../how_to/add_language.qmd)
-
-#### Update translation table
-
-Click on this button to update the whole translation table. You can use it whether there is only one language or more.
-
-The script will scrap the setup and import all the fields to be translated into the table, listed in alphabetical order.
-
-At the end, it will open a popup window with information on the update of the translation table.
-
-![Message of end of translation update](../setup_reference/images/im-112-translations-sheet.png){fig-align="center"}
-
-Go to the [Translation sheet](../setup_reference/translations_sheet.qmd) for more information on translations.
-
-
-### Import
-
-These buttons allow to import data into an empty setup.
-
-![Import section](images/img-003-ribbon-setup-import.png){fig-align="center"}
-
-#### Import data from another setup
-
-Use this button to migrate data from one **setup file** to another empty setup file^[An upgraded version, or an empty file fo the same version in case the original file got corrupted.].
-
-1. Click on the button; it opens a popup window
-2. Click on the "Load another setup file" button. It will open a window to select the file to import data from.
-3. Select what to import from the original by ticking the boxes.
-4. Decide if you want to run a checkup of the **setup** file after import by ticking the box or not
-5. Click on the "Import" button and wait.
-
-![](images/img-004-import-setup.png){fig-align="center"}
-
-::: {.callout-note}
-If you are migrating a setup to a new **setup file**, you should check all boxes to import everything.
-
-You can run the coherence checks now, or do it at a later stage with the [Check setup button](#sec-check-setup)
-:::
-
-
-#### Import from disease (in developpment)
-
-This button is used to import a "disease setup" from a disease **Master file**. This file is being piloted for Epinetwork discussions.
-
-
-### Advanced {#sec-advanced}
-
-![Advanced section](images/img-003-ribbon-setup-advanced.png){fig-align="center"}
-
-#### Check current setup for errors {#sec-check-setup}
-
-The **setup file** comes with a series of checks on its content to help you debug your dictionary. After adding major components to your **setup file**, or before compiling a linelist with the designer, you ~~can~~ should click on the button "*Check current setup for errors*" to see any errors in the *"\_\_checkRep*" sheet.
-
-There is a table for each sheet or section (in the case of analyses), with the following three columns:
-
--   **Incoherences Type** preceded by the name of the sheet,  
-
--   **Where?**, which shows the name of the sheet or section and the line where the incoherence is located,  
-
--   **Details**, which gives details of the incoherence.
-
-
-There are several types information that could appear in the Incoherence column:
-
--   **Info** (in grey): this is not an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.    
-
--   **Warning** (in yellow): these are problems that need to be fixed because there is a real inconsistency or problem. It could be an error in a formula, for example.^[Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated columns after compilation!]  
-
--   **Note** (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).
-
-![](../images/im-121-check-current-setup-for-errors.png){fig-align="center"}
-
-#### Clear data in current setup
-
-This feature allows you to delete all the data entered in the **setup file**. 
-
-1. Click on the button; it opens a popup window to decide which part of the setup you want to clear
-2. Tick boxes to select sheets to clean
-3. Click on the "Clear" button. It will open a window to ask you if you are very sure.
-
-![](images/img-005-clear-setup.png){fig-align="center"}
-
-
-### Dev 
-
-The dev tab is for the OBT developer and you can ignore it.
-
-## Designer  {#sec-designer-ribbon}
-
-![OutbreakTools tab in the designer](../images/img-003-ribbon-designer.png){fig-align="center"}
-
-### Manage the designer
-
-#### Clear the geobase
-
-Remove any geobase that was loaded in the designer.
-
-#### Clear entries
-
-Remove all user entered data from fields.
-
-#### Language of the designer
-
-Use the dropdown menu to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese. 
-
-
-
-### Imports
-
-#### Import translations
-
-If the user wishes to modify the linelist interface translations, it is possible to ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.
-
-#### Import passwords
-
-The designer is loaded with a pasword table, with private and public keys to protect export if the user want a password-protected export. However, the designer is on Github, in a public repo, so if you compile a linelist that needs a password protection, it is best to ask for the config file to EpiDS/Yves Amevoin and import it using the "Import button".
-
-#### Import styles {#sec-setup-styles}
-
-The designer comes with two default styles for linelist themes. It is possible to personalise it. To do that, ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.
-
+Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/) that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this menu containing OutbreakTools functionalities.
 
 
 ## Linelist  {#sec-linelist-ribbon}
 
-
 ![OutbreakTools tab in the created linelist](../images/img-002-ribbon-linelist.png){fig-align="center"}
 
+## Data table {#sec-data-table}
 
-### Data table {#sec-data-table}
+![Buttons acting on data entry tables](../reference/images/img-006-ll-table-management.png){fig-align="center"}
 
-![Buttons acting on data entry tables](../setup_reference/images/img-006-ll-table-management.png){fig-align="center"}
-
-#### Show / Hide variables
+### Show / Hide variables
 
 Clicking on the "Show/hide variables" button opens a window listing all the variables in this linelist sheet. 
 
-![Show hide button and pop-up window](../setup_reference/images/img-012-ll-show-hide.png){fig-align="center"}
+![Show hide button and pop-up window](../reference/images/img-012-ll-show-hide.png){fig-align="center"}
 
 Variable can have three visibility status:
 
@@ -209,31 +38,31 @@ The button will change to “Show all optional variables”, to allow the revers
 :::
 
 
-#### Add rows
+### Add rows
 
 By default, the linelist has 200 empty lines. But you can add more when these are filled. Click on the "Add Rows" button to add 200 new empty rows.
 
-#### Resize table
+### Resize table
 
 You can resize the table to remove empty rows at the bottom of the table on the linelist sheet. Click on the “Resize table" button to remove any empty row.
 
-#### Clear all filters
+### Clear all filters
 
 To remove all the filters at once, click on  the "Clear all filters" button. This is useful if you applied filters to several columns scattered left and right of the table and want to reverse to the full view without missing a sneaky filter somewhere.
 
-#### Sort the variable
+### Sort the variable
 
 If you need to visualize your data by sorting on specific variables (date of notification for example), you need to use the sorting function. Place the cursor in a cell of the column you want to sort (from line 9) and click on the button.
 
 The first time you click, you have a message to confirm the action, once you click *yes*, you cannot undo it. The first time it sorts by ascending order, if you click again, it will sort by descending order. 
 
-#### Week start
+### Week start
 
 Chose the day that starts the week in your country using the “Week start” button. The selected value will be applied to the whole linelist (calculated epiweeks, as well as in the analyses).
 
 When you click on the button, a pop up window appears, where you can select the day of the week. Then close the window.
 
-#### Autofit columns
+### Autofit columns
 
 Use this button to improve column width so that the columns take less space. The fit takes into account the label, the length of categories of the variable (if any) and the name of the variable (hidden). 
 
@@ -242,9 +71,9 @@ You can manually modify the width of columns in the linelist table to adjust to 
 :::
 
 
-#### GeoHelper {#sec-geo-helper}
+### GeoHelper {#sec-geo-helper}
 
-The **GeoHelper** is a popup window that helps you entering geographic data such as the origin of the patient or the name of the facility (if the ["hf" control was used for the variable](../setup_reference/dictionary_sheet.qmd#sec-geo-data)). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.
+The **GeoHelper** is a popup window that helps you entering geographic data such as the origin of the patient or the name of the facility (if the ["hf" control was used for the variable](../reference/dictionary_sheet.qmd#sec-geo-data)). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.
 
 To use it, place your cursor in a "geo" or "hf" column (you can recognise them thanks to the orange headers), in the *admin 1 level*. Click on the "GeoHelper" button, or hit the shortcut `Ctrl + Shift + G`. It opens a window, with several tabs, depending on whether you are in a "geo" (described by four visible columns) or in "hf" (described by one visible column).
 
@@ -256,18 +85,20 @@ If you are in a "geo" section, you will have three tabs that you can use to sele
 
 Once the location has been found, select it and click on “OK”.
 
-### Refresh analyses
 
-![Refresh analyses button](../setup_reference/images/img-007-ll-refresh-analyses.png){fig-align="center"}
+
+## Refresh analyses
+
+![Refresh analyses button](../reference/images/img-007-ll-refresh-analyses.png){fig-align="center"}
 
 Hit the "Refresh analyses" button to update analyses on all analyses sheets in one go. You should use it whenever you entered new data or when you applied filters to existing data and want to see the analyses on this subset of data.^[Do not forget to remove the filters and refresh the analyses at the end to not be confused but the numbers in a couple of days]
 
 
-### Imports {#sec-import-data}
+## Imports {#sec-import-data}
 
-![Imports section](../setup_reference/images/img-008-ll-imports.png){fig-align="center"}
+![Imports section](../reference/images/img-008-ll-imports.png){fig-align="center"}
 
-#### Import data
+### Import data
 
 The « Import Data » button allows you to import data in the linelist. This data must be in a special format typically produced by exporting data from another OutbreakTools linelist for the same disease.
 
@@ -284,7 +115,7 @@ Make sure the data is not overlapping before importing, as the import will just 
 :::
 
 
-#### Import geobase {#sec-import-geobase}
+### Import geobase {#sec-import-geobase}
 
 "Import geobase" allows you to import a geobase in the linelist. If the current linelist had already a geobase, it will be replaced.
 
@@ -295,15 +126,15 @@ The import of the geobase does not affect the data already entered in the lineli
 Go [here](../how_to/import_geobase.qmd#sec-geobase-download) to learn how to download a geobase.
 
 
-### Exports {#sec-export-data}
+## Exports {#sec-export-data}
 
 The regular exports buttons are available in the "Export section" of the ribbon, and the "Export for migration" is available in the [Advanced](#sec-linelist-advanced) section of the ribbon. 
 
-![Exports section](../setup_reference/images/img-009-ll-exports.png){fig-align="center"}
+![Exports section](../reference/images/img-009-ll-exports.png){fig-align="center"}
 
-#### Export data
+### Export data
 
-OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the [setup file ](../setup_reference/exports_sheet.qmd) that is used to generate the linelist. 
+OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the [setup file ](../reference/exports_sheet.qmd) that is used to generate the linelist. 
 
 While Epicentre linelists should have at minima be an "Anonymous export for MSF” button, the other available exports differ between linelists created.
 
@@ -318,7 +149,7 @@ If you forgot the password, click on the "Export Button" again, and then click o
 Click on the button "Generate new password" to change the password used by default.
 
 
-#### Export analyses
+### Export analyses
 
 You can export all the tables from the analysis sheets in one document by using the “Export the analysis sheets” button and selecting the directory where you want to save them. 
 
@@ -326,11 +157,11 @@ You can export all the tables from the analysis sheets in one document by using 
 If the analysis are made on filtered data, the tables will be exported as such.
 :::
 
-### Register and Case report form
+## Register and Case report form
 
 You can print a register directly based on the linelist.
 
-![Register and case report form section](../setup_reference/images/img-010-ll-register.png){fig-align="center"}
+![Register and case report form section](../reference/images/img-010-ll-register.png){fig-align="center"}
 
 The features from this category *only work if you are on a data entry sheet*, otherwise you get an error message.
 
@@ -355,19 +186,19 @@ Once customized, you can close the sheet by clicking the red cross, all your mod
 Once ready, you can use the "Print" button to open the print preview view (whether you are on the register sheet or the linelist sheet). All the variables to be printed fit one page (landscape). If you are satisfied, you can print.
 
 
-### Advanced {#sec-linelist-advanced}
+## Advanced {#sec-linelist-advanced}
 
 
-![Advanced button and pop-up window](../setup_reference/images/img-011-ll-advanced.png){fig-align="center"}
+![Advanced button and pop-up window](../reference/images/img-011-ll-advanced.png){fig-align="center"}
 
 
-#### Export for migration
+### Export for migration
 
 This button exports raw data and metadata for migration to another linelist file.^[Whether that is to upgrade versions, move out of a corrupt file or create a temporary master-linelist]
 
 You can choose to export the patient data, the geobase and the history of the geobase (history list in the GeoHelper), by ticking the matching cases. There are also options to include metadata on the state of hidden/shown columns (to not have to redo the full setup in the new file), and the updated labels of the custom variables, if you used these variables.	
 
-![Export for migration](../setup_reference/images/img-013-ll-export-migration.png){fig-align="center"}
+![Export for migration](../reference/images/img-013-ll-export-migration.png){fig-align="center"}
 
 
 After selecting the options and clicking on “Export”, a window pops-up for saving the export. Select the folder and click on “OK”. Once finished a message appears to ask if you want to close the window.
@@ -379,16 +210,16 @@ The export creates three files:
 - a file containing only the GeoHelper **history** (in case you want to upgrade to a new version of the geobase but wished to keep your GeoHelper history)
 
 
-#### Import geobase history
+### Import geobase history
 
 This button allows you to import a file containing the history of the geobase (such a file was created by exporting the data from migration, see above).
 
-#### Last Import Report
+### Last Import Report
 
 The button allows you to display the report from the last import made.
 
 
-#### Delete data or geobase history
+### Delete data or geobase history
 
 This are a dangerous buttons that allows you to delete data or geobase history from the linelist.
 
@@ -398,7 +229,7 @@ This are a dangerous buttons that allows you to delete data or geobase history f
 "Delete geobase history" allows you to empty the table with the geobase history so the list of suggestion of the history method from the GeoHelper will be empty. 
 
 
-#### Restore the state of hidden columns
+### Restore the state of hidden columns
 
 This button allows you to restore the state of hidden columns (i.e. hide them all again) if, for any reasons these columns had been shown.
 
