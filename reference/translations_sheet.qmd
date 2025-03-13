@@ -1,6 +1,6 @@
 ---
 title: "Generate linelist in several languages"
-category: 
+categories: 
   - Setup
 ---
 
@@ -14,7 +14,7 @@ The columns headings can be modified. It is important to name the languages in t
 
 ## Update the translation table
 
-Click on the button *"Update translation table"* from the [Setup Options ribbon](../reference/ribbons.qmd#sec-setup-ribbon) to scrap the file and import all the fields to be translated into the table. They are listed in alphabetical order.
+Click on the button *"Update translation table"* from the [Setup Options ribbon](../reference/ribbons_.qmd#sec-setup-ribbon_setup.qmd) to scrap the file and import all the fields to be translated into the table. They are listed in alphabetical order.
 
 ## Add a new language
 

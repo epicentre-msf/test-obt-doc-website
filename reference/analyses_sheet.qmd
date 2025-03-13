@@ -1,6 +1,6 @@
 ---
 title: "Define basic analyses"
-category: 
+categories: 
   - Setup
 ---
 

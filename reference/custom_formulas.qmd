@@ -1,6 +1,6 @@
 ---
 title: "Custom formulas"
-category: 
+categories: 
   - Setup
 ---
 

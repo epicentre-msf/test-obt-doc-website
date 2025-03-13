@@ -22,7 +22,7 @@ Both levels of translation are selected during the [compilation](../getting_star
 
 ## Add a new language to a setup
 
-Go to the [OutbreakTools tab](../reference/ribbons.qmd#sec-setup-ribbon) of the setup top ribbon. One section contains buttons for translation:
+Go to the [OutbreakTools tab](../reference/ribbons_setup.qmd) of the setup top ribbon. One section contains buttons for translation:
 
 ![Translation section in the OutbreakTools tab](images/img-003-ribbon-setup-translations.png){fig-align="center"}
 

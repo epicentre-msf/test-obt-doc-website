@@ -7,17 +7,16 @@ categories:
 
 Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/) that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this menu containing OutbreakTools functionalities.
 
-## Setup {#sec-setup-ribbon}
 
 ![OutbreakTools tab in the **setup file**](../images/img-003-ribbon-setup.png){#fig-setup-ribbon fig-align="center"}
 
-### Table management
+## Table management
 
 The buttons of this section provide action on tables within the setup: main table on the *Dictionary sheet*, table for choices, table for exports, tables for analyses etc.
 
 ![Table management section](images/img-003-ribbon-setup-table.png){fig-align="center"}
 
-#### Add rows
+### Add rows
 
 This button insert rows at the bottom of the table in the current sheet.
 
@@ -27,7 +26,7 @@ When this functionality is used in the *Analyses* sheet, you can use the drop-do
 ![Button to add or remove rows of diffeent analyses tables](../images/im-115-table-managment.png){fig-align="center"}
 
 
-#### Resize table in the current sheet
+### Resize table in the current sheet
 
 This button remove empty rows (whether at the end or in the middle).
 
@@ -37,12 +36,12 @@ When this functionality is used in the *Analyses* sheet, you can use the drop-do
 ![Button to add or remove rows of diffeent analyses tables](../images/im-117-table-managment.png){fig-align="center"}
 
 
-#### Remove filters
+### Remove filters
 
 This button clears filters. It is usefull if you have applied Excel filters in several columns, no need to track them all one by one, just clear them in one go.
 
 
-### Translation
+## Translation
 
 This section provides functionalities for the [Translation sheet](../reference/translations_sheet.qmd).
 
@@ -50,7 +49,7 @@ This section provides functionalities for the [Translation sheet](../reference/t
 
 
 
-#### Add language
+### Add language
 
 This button adds a new column to translations sheet, to add a new linelist language.
 
@@ -59,7 +58,7 @@ This button adds a new column to translations sheet, to add a new linelist langu
 
 [More information to add a language](../how_to/add_language.qmd)
 
-#### Update translation table
+### Update translation table
 
 Click on this button to update the whole translation table. You can use it whether there is only one language or more.
 
@@ -72,13 +71,13 @@ At the end, it will open a popup window with information on the update of the tr
 Go to the [Translation sheet](../reference/translations_sheet.qmd) for more information on translations.
 
 
-### Import
+## Import
 
 These buttons allow to import data into an empty setup.
 
 ![Import section](images/img-003-ribbon-setup-import.png){fig-align="center"}
 
-#### Import data from another setup
+### Import data from another setup
 
 Use this button to migrate data from one **setup file** to another empty setup file^[An upgraded version, or an empty file fo the same version in case the original file got corrupted.].
 
@@ -97,16 +96,16 @@ You can run the coherence checks now, or do it at a later stage with the [Check 
 :::
 
 
-#### Import from disease (in developpment)
+### Import from disease (in developpment)
 
 This button is used to import a "disease setup" from a disease **Master file**. This file is being piloted for Epinetwork discussions.
 
 
-### Advanced {#sec-advanced}
+## Advanced {#sec-advanced}
 
 ![Advanced section](images/img-003-ribbon-setup-advanced.png){fig-align="center"}
 
-#### Check current setup for errors {#sec-check-setup}
+### Check current setup for errors {#sec-check-setup}
 
 The **setup file** comes with a series of checks on its content to help you debug your dictionary. After adding major components to your **setup file**, or before compiling a linelist with the designer, you ~~can~~ should click on the button "*Check current setup for errors*" to see any errors in the *"\_\_checkRep*" sheet.
 
@@ -129,7 +128,7 @@ There are several types information that could appear in the Incoherence column:
 
 ![](../images/im-121-check-current-setup-for-errors.png){fig-align="center"}
 
-#### Clear data in current setup
+### Clear data in current setup
 
 This feature allows you to delete all the data entered in the **setup file**. 
 
@@ -140,6 +139,6 @@ This feature allows you to delete all the data entered in the **setup file**.
 ![](images/img-005-clear-setup.png){fig-align="center"}
 
 
-### Dev 
+## Dev 
 
 The dev tab is for the OBT developer and you can ignore it.

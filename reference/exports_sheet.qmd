@@ -1,6 +1,6 @@
 ---
 title: "Define exports"
-category: 
+categories: 
   - Setup
 ---
 
@@ -29,7 +29,7 @@ In line "1", we define the parameters for export 1, whose variables to be export
 
 ![](../reference/images/im-090-export-number.png){fig-align="center"}
 
-Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the [ribbon help](../reference/ribbons.qmd#sec-setup-ribbon).
+Note that you can use the "*Add rows to table in current sheet*" button or the "*Resize tables in current sheet*" button to add more exports or removed empty rows (see the [ribbon help](../reference/ribbons_setup.qmd).
 
 
 ## Status

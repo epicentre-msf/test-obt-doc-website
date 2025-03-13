@@ -1,6 +1,6 @@
 ---
 title: "Dictionary sheet: define linelist tables and their variables"
-category: 
+categories: 
   - Setup
 ---
 
@@ -230,7 +230,7 @@ This is a dropdown field that contains four options for defining the **visibilit
 
 -   *hidden*: variable hidden by default, it cannot be displayed in the linelist
 
-Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../reference/ribbons.qmd#sec-linelist-ribbon) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
+Variables can be shown or hidden using the "Show/Hide" button of the [linelist OutbreakTools menu](../reference/ribbons_linelist.qmd) in the **linelist file**. See the [how to](../how_to/show_hide_variables.qmd).
 
 ::: {.callout-note collapse="true" title="Note on showing and hiding columns manually"}
 Technically, the linelist user can forcefully hide/un-hide columns.
