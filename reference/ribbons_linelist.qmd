@@ -8,8 +8,6 @@ categories:
 Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/) that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this menu containing OutbreakTools functionalities.
 
 
-## Linelist  {#sec-linelist-ribbon}
-
 ![OutbreakTools tab in the created linelist](../images/img-002-ribbon-linelist.png){fig-align="center"}
 
 ## Data table {#sec-data-table}

@@ -5,20 +5,16 @@ categories:
   - Linelist
 ---
 
-TODO (copied stuff en vrac)
-
 
 ## Visibility status
 
-In OutbreakTools, there are several visibility status, which can be modified using a button in the [OutbreakTools Menu](../reference/ribbons.qmd#sec-linelist-ribbon):
+In OutbreakTools, there are several visibility status, which can be modified using a button in the [OutbreakTools Menu](../reference/ribbons_linelist.qmd):
 
 - **mandatory**: the columns cannot be hidden using the Show/Hide 
 - **hiden**: the columns are internal and cannot be shows using the Show/Hide
 - **optional**: the linelist user can decide to show or hide the variable based on their needs.
 
-These linelist status correspond to the **setup file** [status property](../reference/dictionary_sheet.qmd#sec-visibility-status), with the subtility that the setup user can decide for optional columns to show them by default (*optional, visible*) or hide them by default (*optional, hidden*), based on the expected frequency of use of the variable.
-
-
+These linelist status are derived from the **setup file** [status property](../reference/dictionary_sheet.qmd#sec-visibility-status).
 
 
 ## Show and hide variables
@@ -28,13 +24,9 @@ Clicking on the "Show/hide variables" button opens a window listing all the vari
 ![OutbreakTools tab in the created linelist](../reference/images/img-012-ll-show-hide.png){fig-align="center"}
 
 
-
-The *optional, hidden* variables in the **setup file** appear as
-*Hidden* by default. However, the user can change the status by
-choosing *Show*, in which case the column will become visible.
+The *optional, hidden* variables in the **setup file** appear as *Hidden* by default. However, the user can change the status by choosing *Show*, in which case the column will become visible.
 
 ![](../how_to/images/im-027-example.png)
-
 
 
 ![](../how_to/images/im-028-example.png)
@@ -43,15 +35,17 @@ choosing *Show*, in which case the column will become visible.
 The "Notification year" variable does not appear in the list of
 variables because it is in "hidden" status in the **setup file**.
 
-The *optional, visible* variables in the **setup file** appear as
-*Shown* by default. However, you can change the status by choosing
-*Hide*, in which case the column will no longer be visible.
+The *optional, visible* variables in the **setup file** appear as *Shown* by default. However, you can change the status by choosing *Hide*, in which case the column will no longer be visible.
 
 
 ![](../how_to/images/im-029-example.png)
 
 *Mandatory* variables in the **setup file** appear as *Mandatory in the
 "Show/Hide" pop up, and cannot be hidden.
+
+:::{.callout-note}
+Columns that were defined as *hidden* in the setup file will not appear in the Show/Hide. They were deemed unlikely top be of interest to the linelist user (calculated columns used to apply formatting for example).
+:::
 
 
 ::: {.callout-warning collapse="true"}
