@@ -1,5 +1,6 @@
 ---
-title: "Generate linelist in several languages"
+title: "Translation sheet"
+description: Generate a linelist in several languages
 categories: 
   - Setup
 ---

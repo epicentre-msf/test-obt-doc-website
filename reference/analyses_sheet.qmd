@@ -1,5 +1,6 @@
 ---
-title: "Define basic analyses"
+title: "Analyses sheet"
+description: Define basic analyses
 categories: 
   - Setup
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Linelist ribbon"
-description: Get to know the linelist OBT menu
+description: The special OBT menu
 categories: 
   - Linelist
 ---

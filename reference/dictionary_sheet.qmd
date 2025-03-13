@@ -1,5 +1,6 @@
 ---
-title: "Dictionary sheet: define linelist tables and their variables"
+title: "Dictionary sheet"
+description: Define linelist tables and their variables
 categories: 
   - Setup
 ---

@@ -1,5 +1,6 @@
 ---
-title: "Choices sheet: define variable categories"
+title: "Choices sheet:"
+description:  Define variable categories
 categories: 
   - Setup
 ---
