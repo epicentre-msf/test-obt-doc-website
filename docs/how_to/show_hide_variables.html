@@ -102,37 +102,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -197,23 +170,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>TODO (copied stuff en vrac)</p>
 <section id="visibility-status" class="level2">
 <h2 class="anchored" data-anchor-id="visibility-status">Visibility status</h2>
-<p>In OutbreakTools, there are several visibility status, which can be modified using a button in the <a href="../setup_reference/ribbons.qmdsec-linelist-ribbon">OutbreakTools Menu</a>:</p>
+<p>In OutbreakTools, there are several visibility status, which can be modified using a button in the <a href="../reference/ribbons_linelist.html">OutbreakTools Menu</a>:</p>
 <ul>
 <li><strong>mandatory</strong>: the columns cannot be hidden using the Show/Hide</li>
 <li><strong>hiden</strong>: the columns are internal and cannot be shows using the Show/Hide</li>
 <li><strong>optional</strong>: the linelist user can decide to show or hide the variable based on their needs.</li>
 </ul>
-<p>These linelist status correspond to the <strong>setup file</strong> <a href="../setup_reference/dictionary_sheet.html#sec-visibility-status">status property</a>, with the subtility that the setup user can decide for optional columns to show them by default (<em>optional, visible</em>) or hide them by default (<em>optional, hidden</em>), based on the expected frequency of use of the variable.</p>
+<p>These linelist status are derived from the <strong>setup file</strong> <a href="../reference/dictionary_sheet.html#sec-visibility-status">status property</a>.</p>
 </section>
 <section id="show-and-hide-variables" class="level2">
 <h2 class="anchored" data-anchor-id="show-and-hide-variables">Show and hide variables</h2>
 <p>Clicking on the “Show/hide variables” button opens a window listing all the variables in the current sheet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-012-ll-show-hide.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-012-ll-show-hide.png" class="img-fluid figure-img"></p>
 <figcaption>OutbreakTools tab in the created linelist</figcaption>
 </figure>
 </div>
@@ -224,8 +196,21 @@ ul.task-list li input[type="checkbox"] {
 <p>The <em>optional, visible</em> variables in the <strong>setup file</strong> appear as <em>Shown</em> by default. However, you can change the status by choosing <em>Hide</em>, in which case the column will no longer be visible.</p>
 <p><img src="../how_to/images/im-029-example.png" class="img-fluid"></p>
 <p><em>Mandatory</em> variables in the <strong>setup file</strong> appear as *Mandatory in the “Show/Hide” pop up, and cannot be hidden.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Columns that were defined as <em>hidden</em> in the setup file will not appear in the Show/Hide. They were deemed unlikely top be of interest to the linelist user (calculated columns used to apply formatting for example).</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -234,7 +219,7 @@ Note on showing and hiding columns manually
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Technically, the linelist user can forcefully hide/un-hide columns.</p>
 <p>Un-hiding hidden (usually calculated) columns is usually desirable during linelist debug or to go check data that may interest you (<em>e.g</em>. a hidden calculated epiweek of exit). You can hide them after consultation without consequences on the rest of the linelist.</p>

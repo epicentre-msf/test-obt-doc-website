@@ -101,37 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -202,7 +175,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Define basic analyses</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Setup</div>
+  </div>
+  </div>
 
 
 
@@ -235,25 +211,25 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="global-summary" class="level2">
 <h2 class="anchored" data-anchor-id="global-summary">Global Summary</h2>
-<p><img src="../setup_reference/images/im-061-global-summary.png" class="img-fluid"></p>
+<p><img src="../reference/images/im-061-global-summary.png" class="img-fluid"></p>
 <p>The “Global Summary” table summarises certain indicators for the current epidemic. It has 3 columns:</p>
 <ul>
 <li><p><strong>Summary Label</strong>: free text field for entering a short but explicit <em>label</em> describing the analysis</p></li>
-<li><p><strong>Summary function</strong>: free text field for entering the <em>Excel formula</em> that will display the desired indicator. See the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a>.</p></li>
-<li><p><strong>Format</strong>: dropdown menu for defining the **display format* of the expected result (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a>)</p></li>
+<li><p><strong>Summary function</strong>: free text field for entering the <em>Excel formula</em> that will display the desired indicator. See the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a>.</p></li>
+<li><p><strong>Format</strong>: dropdown menu for defining the **display format* of the expected result (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a>)</p></li>
 </ul>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
 <p>Definition in the <strong>setup file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-062-example-global-summary-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-062-example-global-summary-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Display in the <strong>linelist</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-063-example-global-summary-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-063-example-global-summary-en.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -263,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The “Univariate Analysis” table is used to describe analyses based on a single variable.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-064-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-064-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>It has 10 columns:</p>
@@ -271,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Table title</strong>: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.</p>
 <p><strong>Group by variable (row)</strong>: this is a static dropdown menu containing the variables that can be analysed. Only categorical variables with <em>known modalities</em> can be used (<em>i.e.</em> “choice_manual” and “choice_formula” variables).</p>
 <p><strong>Add missing data</strong>: this is a <em>yes/no</em> field used to indicate whether you want to count missing data for the selected variable.</p>
-<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
+<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -291,7 +267,7 @@ Tip
 </div>
 </div>
 <p><strong>Summary label</strong>: this is a free field which corresponds to the label which will be displayed above the results column.</p>
-<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a> for more information)</p>
+<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a> for more information)</p>
 <p><strong>Add percentage</strong>: this is a <em>yes/no</em> field used to indicate whether you want to see the results as a percentage as well as a value. If “<em>yes</em>”, a “%” column will be added to the right of the “summary function” column in the linelist.</p>
 <p><strong>Add graph</strong>: this is a <em>yes/no</em> field used to indicate whether you want a vertical bar graph near the table.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -322,7 +298,7 @@ Note
 <p>A “Note” message will be displayed in the <em>“__checkRep</em>” sheet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-065-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-065-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div>
@@ -331,14 +307,14 @@ Note
 <h3 class="anchored" data-anchor-id="example-1">Example</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-066-example-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-066-example-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Definition in the <strong>setup file</strong>:</p>
 <p>Display in the <strong>linelist</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-067-example-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-067-example-univariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -429,7 +405,7 @@ Note
 <p>The “Bivariate Analysis” table is used to describe analyses that cross two variables.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-068-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-068-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>It has the following columns:</p>
@@ -444,7 +420,7 @@ Note
 <li><em>column</em>: missing is are added to variables in columns</li>
 <li><em>all</em>: missing data is added to both column and row variables</li>
 </ul>
-<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
+<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -459,7 +435,7 @@ Tip
 </div>
 </div>
 <p><strong>Summary label</strong>: this is a free field which corresponds to the label which will be displayed above the results column.</p>
-<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
+<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
 <p><strong>Add percentage</strong>: this is a <em>yes/no</em> field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.</p>
 <p><strong>Add graph</strong>: this is a <em>yes/no</em> field used to indicate whether you want a vertical bar graph.</p>
 <p>If the previous “Add percentage” option is set to “yes”, the percentage will be displayed on the secondary vertical axis of the graph.</p>
@@ -483,13 +459,13 @@ Note
 <p>Definition in the <strong>setup file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-069-example-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-069-example-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Display in the <strong>linelist</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-070-example-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-070-example-bivariate-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -594,7 +570,7 @@ Note
 <h3 class="anchored" data-anchor-id="time-series-analysis-1">Time series analysis</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-071-time-series-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-071-time-series-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>The first table is used to define the different tables. It has 12 columns, and one line represents <em>one summary per variable</em>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> If you take the option to add a total or missing values, or if the variable is categorical, the table created will have several columns.</p>
@@ -617,7 +593,7 @@ Warning
 <p><strong>Group by variable (column)</strong>: this is a static dropdown menu containing the variables that can be analysed. Only categorical variables with <em>known modalities</em> can be used (<em>i.e.</em> “choice_manual” and “choice_formula” variables). It is also possible to leave this field empty, and define the analysis solely on the basis of a formula in the “Summary function” field (for example, taking the median delay before admission across time, without any grouping).</p>
 <p><strong>Title (header)</strong>: this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the “summary label” (described below), the label of the “time variable (row)” and the label of the variable to be analysed (“Group by variable (column)”, if any).</p>
 <p><strong>Add missing data</strong>: this is a <em>yes/no</em> field which allows you to indicate whether you want to count missing data for the selected variable. If <em>yes</em> is selected, a column with the missing values will be added to the right of the other columns created for each mode of the variable to be analysed.</p>
-<p><strong>Summary function</strong>: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “<em>=</em>” sign and in English, whatever the language in which the <strong>setup file</strong> is written (See the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more information).</p>
+<p><strong>Summary function</strong>: this is a free field in which to enter the formula corresponding to the desired analysis. The formula must always be written without the “<em>=</em>” sign and in English, whatever the language in which the <strong>setup file</strong> is written (See the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more information).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -633,7 +609,7 @@ Tip
 </div>
 </div>
 <p><strong>Summary label</strong>: this is a free field which corresponds to the label used to create the “Title header” and which is used to label the column containing the results of the “summary function”.</p>
-<p><strong>Format</strong>: this is a static dropdown menu with a preselection of possible display formats (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
+<p><strong>Format</strong>: this is a static dropdown menu with a preselection of possible display formats (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
 <p><strong>Add percentage</strong>: this is a static dropdown menu with 3 options:</p>
 <ul>
 <li><p><em>No</em>: no percentage is added</p></li>
@@ -726,7 +702,7 @@ Tip
 <h3 class="anchored" data-anchor-id="labels-for-time-series-graphs">Labels for Time Series Graphs</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-072-labels-for-time-series-graphs.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-072-labels-for-time-series-graphs.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>The second Time Series table is used to define the titles and order of the graphs associated with the time series defined above.</p>
@@ -773,7 +749,7 @@ Tip
 <p>This table is used to define the characteristics of each graph.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-073-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-073-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>One line represent one <strong>series</strong> to plot on a graph, and a graph can have one or more series. A graph with the number of each outcome over time would thus be represented by as many lines as there are of types of outcomes (or as there are modalities that you wish to show on the graph).</p>
@@ -884,29 +860,29 @@ Tip
 <h3 class="anchored" data-anchor-id="example-3">Example</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-074-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-074-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Definition in the <strong>setup file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-075-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-075-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Display in the <strong>linelist</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-076-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-076-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-077-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-077-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-078-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-078-example-graph-on-time-series.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -928,17 +904,17 @@ Tip
 <h2 class="anchored" data-anchor-id="spatial-analysis">Spatial Analysis</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-081-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-081-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>The spatial analyses are described in a table with 11 columns. They are described in a similar way to the bivariate analyses, the difference being that the variables chosen for the rows are necessarily variables containing geographical data.</p>
 <p><strong>Section</strong>: this is a free field used to define blocks of analyses on the same theme. It will also be possible to navigate between sections in the linelist using the “Go to section” dropdown menu.</p>
 <p><strong>Table Title</strong>: this is a free field for entering the name of the table with the analyses. It should be fairly explicit and short.</p>
-<p><strong>Geo/HF variable (row)</strong>: this is a dynamic dropdown menu containing all variables of type <a href="../setup_reference/dictionary_sheet.html#sec-geo-data">“hf” or “geo”</a>.</p>
+<p><strong>Geo/HF variable (row)</strong>: this is a dynamic dropdown menu containing all variables of type <a href="../reference/dictionary_sheet.html#sec-geo-data">“hf” or “geo”</a>.</p>
 <p><strong>N geo max</strong>: This is the maximum number of lines you want to see for each analysis. (e.g.&nbsp;if you want a top 10, enter 10).</p>
 <p><strong>Group by variable (row)</strong>: this is a static dropdown menu containing the variables that can be analysed. In other words, variables with known modalities, i.e.&nbsp;choice_manual and choice_formula variables. If the field remains empty, we will just count the number of occurrences per modality of the chosen time variable and these are the Ns (defined with the “N geo max” variable).</p>
 <p><strong>Add missing data</strong>: this is a <em>yes/no</em> field used to indicate whether you want to count missing data for the selected variable.</p>
-<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
+<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -953,7 +929,7 @@ Tip
 </div>
 </div>
 <p><strong>Summary label</strong>: this is a free field which corresponds to the label which will be displayed above the results column.</p>
-<p><strong>Format</strong>: this is a static dropdown menu containing a pre-selection of possible display formats (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
+<p><strong>Format</strong>: this is a static dropdown menu containing a pre-selection of possible display formats (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
 <p><strong>Add percentage</strong>: this is a <em>yes/no</em> field used to indicate whether you want to see the results as a percentage as well as a value. If yes, a “%” column will be added to the right of the “summary function” column in the linelist.</p>
 <p><strong>Add graph</strong>: this is a <em>yes/no</em> field used to indicate whether you want a vertical bar graph.</p>
 <p>If the previous “Add percentage” option is set to <em>yes</em>, the percentage will be displayed on the secondary vertical axis of the graph.</p>
@@ -977,13 +953,13 @@ Note
 <p>Definition in the <strong>setup file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-082-example-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-082-example-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Display in the <strong>linelist</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-083-example-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-083-example-spatial-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -999,19 +975,19 @@ Note
 <h3 class="anchored" data-anchor-id="specification-for-spatio-temporal-analysis">Specification for Spatio-Temporal Analysis</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-084-specification-for-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-084-specification-for-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>The table has 3 columns:</p>
 <p><strong>Section</strong>: this is a free field which can be used to combine analyses on a theme in a single table, for example patient characteristics over time. Each section corresponds to a table in the linelist. They are displayed one above the other, and it is possible to navigate between them using the “Go to section” dropdown menu.</p>
 <p><strong>N geo max</strong>: This is the maximum number of lines you want to see for each analysis. (e.g.&nbsp;if you want a top 10, enter 10).</p>
-<p><strong>Spatial type</strong>: this is a static dropdown menu with two options, <em>geo</em> or <em>hf</em>. This defines the type of <a href="../setup_reference/dictionary_sheet.html#sec-geo-data">geographic variable</a> to be used in the section (a geo variable or a health facility).</p>
+<p><strong>Spatial type</strong>: this is a static dropdown menu with two options, <em>geo</em> or <em>hf</em>. This defines the type of <a href="../reference/dictionary_sheet.html#sec-geo-data">geographic variable</a> to be used in the section (a geo variable or a health facility).</p>
 </section>
 <section id="spatio-temporal-analysis-1" class="level3">
 <h3 class="anchored" data-anchor-id="spatio-temporal-analysis-1">Spatio-Temporal Analysis</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-085-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-085-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>The table has 10 columns:</p>
@@ -1021,7 +997,7 @@ Note
 <p><strong>N geo max</strong>: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.</p>
 <p><strong>Title (header)</strong>: this is a calculated field. It is the name which will be displayed at the top of the table, above the corresponding analyses. It is made up of the summary label (described below), the label of the time variable (row) and the label of the selected geographic variable (column).</p>
 <p><strong>Spatial type</strong>: this field is automatically filled in on the basis of the section selected and defined in the previous “Specifications for Spatio-Temporal Analysis” table.</p>
-<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../setup_reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
+<p><strong>Summary function</strong>: this is a free field in which to enter the <em>formula</em> corresponding to the desired analysis. The formula must always be written without the “=” sign and in English, whatever the language in which the <strong>setup file</strong> is written (see the <a href="../reference/dictionary_sheet.html#sec-formulas">formula specifications here</a> for more informations on formulas).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1036,7 +1012,7 @@ Tip
 </div>
 </div>
 <p><strong>Summary label</strong>: this is a free field which corresponds to the label which will be displayed above the results column.</p>
-<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../setup_reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
+<p><strong>Format</strong>: this is a static dropdown menu with a pre-selection of possible display formats (see variable <a href="../reference/dictionary_sheet.html#sec-var-format">format</a> for more information).</p>
 <p><strong>Add graph</strong>: this is a <em>yes/no</em> field used to indicate whether you want a vertical bar graph.</p>
 </section>
 <section id="example-5" class="level3">
@@ -1044,13 +1020,13 @@ Tip
 <p>Definition in the <strong>setup file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-086-example-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-086-example-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Display in the <strong>linelist file</strong>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/im-087-example-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="../reference/images/im-087-example-spatio-temporal-analysis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Get to know the linelist OBT menu">
 
-<title>Ribbons – OutbreakTools documentation</title>
+<title>Linelist ribbon – OutbreakTools documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,37 +102,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -161,52 +135,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of content</h2>
    
   <ul>
-  <li><a href="#sec-setup-ribbon" id="toc-sec-setup-ribbon" class="nav-link active" data-scroll-target="#sec-setup-ribbon">Setup</a>
-  <ul>
-  <li><a href="#table-management" id="toc-table-management" class="nav-link" data-scroll-target="#table-management">Table management</a>
-  <ul>
-  <li><a href="#add-rows" id="toc-add-rows" class="nav-link" data-scroll-target="#add-rows">Add rows</a></li>
-  <li><a href="#resize-table-in-the-current-sheet" id="toc-resize-table-in-the-current-sheet" class="nav-link" data-scroll-target="#resize-table-in-the-current-sheet">Resize table in the current sheet</a></li>
-  <li><a href="#remove-filters" id="toc-remove-filters" class="nav-link" data-scroll-target="#remove-filters">Remove filters</a></li>
-  </ul></li>
-  <li><a href="#translation" id="toc-translation" class="nav-link" data-scroll-target="#translation">Translation</a>
-  <ul>
-  <li><a href="#add-language" id="toc-add-language" class="nav-link" data-scroll-target="#add-language">Add language</a></li>
-  <li><a href="#update-translation-table" id="toc-update-translation-table" class="nav-link" data-scroll-target="#update-translation-table">Update translation table</a></li>
-  </ul></li>
-  <li><a href="#import" id="toc-import" class="nav-link" data-scroll-target="#import">Import</a>
-  <ul>
-  <li><a href="#import-data-from-another-setup" id="toc-import-data-from-another-setup" class="nav-link" data-scroll-target="#import-data-from-another-setup">Import data from another setup</a></li>
-  <li><a href="#import-from-disease-in-developpment" id="toc-import-from-disease-in-developpment" class="nav-link" data-scroll-target="#import-from-disease-in-developpment">Import from disease (in developpment)</a></li>
-  </ul></li>
-  <li><a href="#sec-advanced" id="toc-sec-advanced" class="nav-link" data-scroll-target="#sec-advanced">Advanced</a>
-  <ul>
-  <li><a href="#sec-check-setup" id="toc-sec-check-setup" class="nav-link" data-scroll-target="#sec-check-setup">Check current setup for errors</a></li>
-  <li><a href="#clear-data-in-current-setup" id="toc-clear-data-in-current-setup" class="nav-link" data-scroll-target="#clear-data-in-current-setup">Clear data in current setup</a></li>
-  </ul></li>
-  <li><a href="#dev" id="toc-dev" class="nav-link" data-scroll-target="#dev">Dev</a></li>
-  </ul></li>
-  <li><a href="#sec-designer-ribbon" id="toc-sec-designer-ribbon" class="nav-link" data-scroll-target="#sec-designer-ribbon">Designer</a>
-  <ul>
-  <li><a href="#manage-the-designer" id="toc-manage-the-designer" class="nav-link" data-scroll-target="#manage-the-designer">Manage the designer</a>
-  <ul>
-  <li><a href="#clear-the-geobase" id="toc-clear-the-geobase" class="nav-link" data-scroll-target="#clear-the-geobase">Clear the geobase</a></li>
-  <li><a href="#clear-entries" id="toc-clear-entries" class="nav-link" data-scroll-target="#clear-entries">Clear entries</a></li>
-  <li><a href="#language-of-the-designer" id="toc-language-of-the-designer" class="nav-link" data-scroll-target="#language-of-the-designer">Language of the designer</a></li>
-  </ul></li>
-  <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">Imports</a>
-  <ul>
-  <li><a href="#import-translations" id="toc-import-translations" class="nav-link" data-scroll-target="#import-translations">Import translations</a></li>
-  <li><a href="#import-passwords" id="toc-import-passwords" class="nav-link" data-scroll-target="#import-passwords">Import passwords</a></li>
-  <li><a href="#sec-setup-styles" id="toc-sec-setup-styles" class="nav-link" data-scroll-target="#sec-setup-styles">Import styles</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#sec-linelist-ribbon" id="toc-sec-linelist-ribbon" class="nav-link" data-scroll-target="#sec-linelist-ribbon">Linelist</a>
-  <ul>
-  <li><a href="#sec-data-table" id="toc-sec-data-table" class="nav-link" data-scroll-target="#sec-data-table">Data table</a>
+  <li><a href="#sec-data-table" id="toc-sec-data-table" class="nav-link active" data-scroll-target="#sec-data-table">Data table</a>
   <ul>
   <li><a href="#show-hide-variables" id="toc-show-hide-variables" class="nav-link" data-scroll-target="#show-hide-variables">Show / Hide variables</a></li>
-  <li><a href="#add-rows-1" id="toc-add-rows-1" class="nav-link" data-scroll-target="#add-rows-1">Add rows</a></li>
+  <li><a href="#add-rows" id="toc-add-rows" class="nav-link" data-scroll-target="#add-rows">Add rows</a></li>
   <li><a href="#resize-table" id="toc-resize-table" class="nav-link" data-scroll-target="#resize-table">Resize table</a></li>
   <li><a href="#clear-all-filters" id="toc-clear-all-filters" class="nav-link" data-scroll-target="#clear-all-filters">Clear all filters</a></li>
   <li><a href="#sort-the-variable" id="toc-sort-the-variable" class="nav-link" data-scroll-target="#sort-the-variable">Sort the variable</a></li>
@@ -234,7 +166,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#delete-data-or-geobase-history" id="toc-delete-data-or-geobase-history" class="nav-link" data-scroll-target="#delete-data-or-geobase-history">Delete data or geobase history</a></li>
   <li><a href="#restore-the-state-of-hidden-columns" id="toc-restore-the-state-of-hidden-columns" class="nav-link" data-scroll-target="#restore-the-state-of-hidden-columns">Restore the state of hidden columns</a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -243,9 +174,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ribbons</h1>
-</div>
+<h1 class="title">Linelist ribbon</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Linelist</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Get to know the linelist OBT menu
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -260,241 +199,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Recent version of Excel have a top <a href="https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/">ribbon/menu</a> that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this ribbon with OutbreakTools functionalities.</p>
-<section id="sec-setup-ribbon" class="level2">
-<h2 class="anchored" data-anchor-id="sec-setup-ribbon">Setup</h2>
-<div id="fig-setup-ribbon" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-setup-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/img-003-ribbon-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-setup-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: OutbreakTools tab in the <strong>setup file</strong>
-</figcaption>
-</figure>
-</div>
-<section id="table-management" class="level3">
-<h3 class="anchored" data-anchor-id="table-management">Table management</h3>
-<p>The buttons of this section provide action on tables within the setup: main table on the <em>Dictionary sheet</em>, table for choices, table for exports, tables for analyses etc.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-003-ribbon-setup-table.png" class="img-fluid figure-img"></p>
-<figcaption>Table management section</figcaption>
-</figure>
-</div>
-<section id="add-rows" class="level4">
-<h4 class="anchored" data-anchor-id="add-rows">Add rows</h4>
-<p>This button insert rows at the bottom of the table in the current sheet.</p>
-<p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to add rows to all tables or just one in particular.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/im-115-table-managment.png" class="img-fluid figure-img"></p>
-<figcaption>Button to add or remove rows of diffeent analyses tables</figcaption>
-</figure>
-</div>
-</section>
-<section id="resize-table-in-the-current-sheet" class="level4">
-<h4 class="anchored" data-anchor-id="resize-table-in-the-current-sheet">Resize table in the current sheet</h4>
-<p>This button remove empty rows (whether at the end or in the middle).</p>
-<p>When this functionality is used in the <em>Analyses</em> sheet, you can use the drop-down menu in <em>cell A1</em> to choose whether you want to remove empty rows to all tables or just one in particular.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/im-117-table-managment.png" class="img-fluid figure-img"></p>
-<figcaption>Button to add or remove rows of diffeent analyses tables</figcaption>
-</figure>
-</div>
-</section>
-<section id="remove-filters" class="level4">
-<h4 class="anchored" data-anchor-id="remove-filters">Remove filters</h4>
-<p>This button clears filters. It is usefull if you have applied Excel filters in several columns, no need to track them all one by one, just clear them in one go.</p>
-</section>
-</section>
-<section id="translation" class="level3">
-<h3 class="anchored" data-anchor-id="translation">Translation</h3>
-<p>This section provides functionalities for the <a href="../setup_reference/translations_sheet.html">Translation sheet</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-003-ribbon-setup-translations.png" class="img-fluid figure-img"></p>
-<figcaption>Translation section</figcaption>
-</figure>
-</div>
-<section id="add-language" class="level4">
-<h4 class="anchored" data-anchor-id="add-language">Add language</h4>
-<p>This button adds a new column to translations sheet, to add a new linelist language.</p>
-<ol type="1">
-<li>Fill the name of the language in the box</li>
-<li>Click on the button: it will add a new empty column on the right of the columns already present.</li>
-</ol>
-<p><a href="../how_to/add_language.html">More information to add a language</a></p>
-</section>
-<section id="update-translation-table" class="level4">
-<h4 class="anchored" data-anchor-id="update-translation-table">Update translation table</h4>
-<p>Click on this button to update the whole translation table. You can use it whether there is only one language or more.</p>
-<p>The script will scrap the setup and import all the fields to be translated into the table, listed in alphabetical order.</p>
-<p>At the end, it will open a popup window with information on the update of the translation table.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../setup_reference/images/im-112-translations-sheet.png" class="img-fluid figure-img"></p>
-<figcaption>Message of end of translation update</figcaption>
-</figure>
-</div>
-<p>Go to the <a href="../setup_reference/translations_sheet.html">Translation sheet</a> for more information on translations.</p>
-</section>
-</section>
-<section id="import" class="level3">
-<h3 class="anchored" data-anchor-id="import">Import</h3>
-<p>These buttons allow to import data into an empty setup.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-003-ribbon-setup-import.png" class="img-fluid figure-img"></p>
-<figcaption>Import section</figcaption>
-</figure>
-</div>
-<section id="import-data-from-another-setup" class="level4">
-<h4 class="anchored" data-anchor-id="import-data-from-another-setup">Import data from another setup</h4>
-<p>Use this button to migrate data from one <strong>setup file</strong> to another empty setup file<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<ol type="1">
-<li>Click on the button; it opens a popup window</li>
-<li>Click on the “Load another setup file” button. It will open a window to select the file to import data from.</li>
-<li>Select what to import from the original by ticking the boxes.</li>
-<li>Decide if you want to run a checkup of the <strong>setup</strong> file after import by ticking the box or not</li>
-<li>Click on the “Import” button and wait.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-004-import-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you are migrating a setup to a new <strong>setup file</strong>, you should check all boxes to import everything.</p>
-<p>You can run the coherence checks now, or do it at a later stage with the <a href="#sec-check-setup">Check setup button</a></p>
-</div>
-</div>
-</section>
-<section id="import-from-disease-in-developpment" class="level4">
-<h4 class="anchored" data-anchor-id="import-from-disease-in-developpment">Import from disease (in developpment)</h4>
-<p>This button is used to import a “disease setup” from a disease <strong>Master file</strong>. This file is being piloted for Epinetwork discussions.</p>
-</section>
-</section>
-<section id="sec-advanced" class="level3">
-<h3 class="anchored" data-anchor-id="sec-advanced">Advanced</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-003-ribbon-setup-advanced.png" class="img-fluid figure-img"></p>
-<figcaption>Advanced section</figcaption>
-</figure>
-</div>
-<section id="sec-check-setup" class="level4">
-<h4 class="anchored" data-anchor-id="sec-check-setup">Check current setup for errors</h4>
-<p>The <strong>setup file</strong> comes with a series of checks on its content to help you debug your dictionary. After adding major components to your <strong>setup file</strong>, or before compiling a linelist with the designer, you <del>can</del> should click on the button “<em>Check current setup for errors</em>” to see any errors in the <em>“__checkRep</em>” sheet.</p>
-<p>There is a table for each sheet or section (in the case of analyses), with the following three columns:</p>
-<ul>
-<li><p><strong>Incoherences Type</strong> preceded by the name of the sheet,</p></li>
-<li><p><strong>Where?</strong>, which shows the name of the sheet or section and the line where the incoherence is located,</p></li>
-<li><p><strong>Details</strong>, which gives details of the incoherence.</p></li>
-</ul>
-<p>There are several types information that could appear in the Incoherence column:</p>
-<ul>
-<li><p><strong>Info</strong> (in grey): this is not an inconsistency, but simply a piece of information about something that will not block the compilation of the linelist.</p></li>
-<li><p><strong>Warning</strong> (in yellow): these are problems that need to be fixed because there is a real inconsistency or problem. It could be an error in a formula, for example.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
-<li><p><strong>Note</strong> (in blue): this is something that has been defined in the setup, but will not be applied, and is therefore not blocking. For example, in the analyses, certain choices are contradictory by design, such as the display of percentages, which is not authorised when you choose to invert the display of the table (horizontal display instead of vertical).</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/im-121-check-current-setup-for-errors.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="clear-data-in-current-setup" class="level4">
-<h4 class="anchored" data-anchor-id="clear-data-in-current-setup">Clear data in current setup</h4>
-<p>This feature allows you to delete all the data entered in the <strong>setup file</strong>.</p>
-<ol type="1">
-<li>Click on the button; it opens a popup window to decide which part of the setup you want to clear</li>
-<li>Tick boxes to select sheets to clean</li>
-<li>Click on the “Clear” button. It will open a window to ask you if you are very sure.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/img-005-clear-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-</section>
-<section id="dev" class="level3">
-<h3 class="anchored" data-anchor-id="dev">Dev</h3>
-<p>The dev tab is for the OBT developer and you can ignore it.</p>
-</section>
-</section>
-<section id="sec-designer-ribbon" class="level2">
-<h2 class="anchored" data-anchor-id="sec-designer-ribbon">Designer</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/img-003-ribbon-designer.png" class="img-fluid figure-img"></p>
-<figcaption>OutbreakTools tab in the designer</figcaption>
-</figure>
-</div>
-<section id="manage-the-designer" class="level3">
-<h3 class="anchored" data-anchor-id="manage-the-designer">Manage the designer</h3>
-<section id="clear-the-geobase" class="level4">
-<h4 class="anchored" data-anchor-id="clear-the-geobase">Clear the geobase</h4>
-<p>Remove any geobase that was loaded in the designer.</p>
-</section>
-<section id="clear-entries" class="level4">
-<h4 class="anchored" data-anchor-id="clear-entries">Clear entries</h4>
-<p>Remove all user entered data from fields.</p>
-</section>
-<section id="language-of-the-designer" class="level4">
-<h4 class="anchored" data-anchor-id="language-of-the-designer">Language of the designer</h4>
-<p>Use the dropdown menu to change the language of the designer interface. Available languages: English, French, Arabic, Spanish and Portuguese.</p>
-</section>
-</section>
-<section id="imports" class="level3">
-<h3 class="anchored" data-anchor-id="imports">Imports</h3>
-<section id="import-translations" class="level4">
-<h4 class="anchored" data-anchor-id="import-translations">Import translations</h4>
-<p>If the user wishes to modify the linelist interface translations, it is possible to ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.</p>
-</section>
-<section id="import-passwords" class="level4">
-<h4 class="anchored" data-anchor-id="import-passwords">Import passwords</h4>
-<p>The designer is loaded with a pasword table, with private and public keys to protect export if the user want a password-protected export. However, the designer is on Github, in a public repo, so if you compile a linelist that needs a password protection, it is best to ask for the config file to EpiDS/Yves Amevoin and import it using the “Import button”.</p>
-</section>
-<section id="sec-setup-styles" class="level4">
-<h4 class="anchored" data-anchor-id="sec-setup-styles">Import styles</h4>
-<p>The designer comes with two default styles for linelist themes. It is possible to personalise it. To do that, ask for the config file to EpiDS/Yves Amevoin, tweak it and import it with this button.</p>
-</section>
-</section>
-</section>
-<section id="sec-linelist-ribbon" class="level2">
-<h2 class="anchored" data-anchor-id="sec-linelist-ribbon">Linelist</h2>
+<p>Recent version of Excel have a top <a href="https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/">ribbon/menu</a> that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this menu containing OutbreakTools functionalities.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/img-002-ribbon-linelist.png" class="img-fluid figure-img"></p>
 <figcaption>OutbreakTools tab in the created linelist</figcaption>
 </figure>
 </div>
-<section id="sec-data-table" class="level3">
-<h3 class="anchored" data-anchor-id="sec-data-table">Data table</h3>
+<section id="sec-data-table" class="level2">
+<h2 class="anchored" data-anchor-id="sec-data-table">Data table</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-006-ll-table-management.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-006-ll-table-management.png" class="img-fluid figure-img"></p>
 <figcaption>Buttons acting on data entry tables</figcaption>
 </figure>
 </div>
-<section id="show-hide-variables" class="level4">
-<h4 class="anchored" data-anchor-id="show-hide-variables">Show / Hide variables</h4>
+<section id="show-hide-variables" class="level3">
+<h3 class="anchored" data-anchor-id="show-hide-variables">Show / Hide variables</h3>
 <p>Clicking on the “Show/hide variables” button opens a window listing all the variables in this linelist sheet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-012-ll-show-hide.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-012-ll-show-hide.png" class="img-fluid figure-img"></p>
 <figcaption>Show hide button and pop-up window</figcaption>
 </figure>
 </div>
@@ -514,35 +239,35 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You can hide all optional variables in one go by clicking on the “Hide all optional variables” button.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>You can hide all optional variables in one go by clicking on the “Hide all optional variables” button.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>The button will change to “Show all optional variables”, to allow the reverse action.</p>
 </div>
 </div>
 </section>
-<section id="add-rows-1" class="level4">
-<h4 class="anchored" data-anchor-id="add-rows-1">Add rows</h4>
+<section id="add-rows" class="level3">
+<h3 class="anchored" data-anchor-id="add-rows">Add rows</h3>
 <p>By default, the linelist has 200 empty lines. But you can add more when these are filled. Click on the “Add Rows” button to add 200 new empty rows.</p>
 </section>
-<section id="resize-table" class="level4">
-<h4 class="anchored" data-anchor-id="resize-table">Resize table</h4>
+<section id="resize-table" class="level3">
+<h3 class="anchored" data-anchor-id="resize-table">Resize table</h3>
 <p>You can resize the table to remove empty rows at the bottom of the table on the linelist sheet. Click on the “Resize table” button to remove any empty row.</p>
 </section>
-<section id="clear-all-filters" class="level4">
-<h4 class="anchored" data-anchor-id="clear-all-filters">Clear all filters</h4>
+<section id="clear-all-filters" class="level3">
+<h3 class="anchored" data-anchor-id="clear-all-filters">Clear all filters</h3>
 <p>To remove all the filters at once, click on the “Clear all filters” button. This is useful if you applied filters to several columns scattered left and right of the table and want to reverse to the full view without missing a sneaky filter somewhere.</p>
 </section>
-<section id="sort-the-variable" class="level4">
-<h4 class="anchored" data-anchor-id="sort-the-variable">Sort the variable</h4>
+<section id="sort-the-variable" class="level3">
+<h3 class="anchored" data-anchor-id="sort-the-variable">Sort the variable</h3>
 <p>If you need to visualize your data by sorting on specific variables (date of notification for example), you need to use the sorting function. Place the cursor in a cell of the column you want to sort (from line 9) and click on the button.</p>
 <p>The first time you click, you have a message to confirm the action, once you click <em>yes</em>, you cannot undo it. The first time it sorts by ascending order, if you click again, it will sort by descending order.</p>
 </section>
-<section id="week-start" class="level4">
-<h4 class="anchored" data-anchor-id="week-start">Week start</h4>
+<section id="week-start" class="level3">
+<h3 class="anchored" data-anchor-id="week-start">Week start</h3>
 <p>Chose the day that starts the week in your country using the “Week start” button. The selected value will be applied to the whole linelist (calculated epiweeks, as well as in the analyses).</p>
 <p>When you click on the button, a pop up window appears, where you can select the day of the week. Then close the window.</p>
 </section>
-<section id="autofit-columns" class="level4">
-<h4 class="anchored" data-anchor-id="autofit-columns">Autofit columns</h4>
+<section id="autofit-columns" class="level3">
+<h3 class="anchored" data-anchor-id="autofit-columns">Autofit columns</h3>
 <p>Use this button to improve column width so that the columns take less space. The fit takes into account the label, the length of categories of the variable (if any) and the name of the variable (hidden).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -558,9 +283,9 @@ Tip
 </div>
 </div>
 </section>
-<section id="sec-geo-helper" class="level4">
-<h4 class="anchored" data-anchor-id="sec-geo-helper">GeoHelper</h4>
-<p>The <strong>GeoHelper</strong> is a popup window that helps you entering geographic data such as the origin of the patient or the name of the facility (if the <a href="../setup_reference/dictionary_sheet.html#sec-geo-data">“hf” control was used for the variable</a>). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.</p>
+<section id="sec-geo-helper" class="level3">
+<h3 class="anchored" data-anchor-id="sec-geo-helper">GeoHelper</h3>
+<p>The <strong>GeoHelper</strong> is a popup window that helps you entering geographic data such as the origin of the patient or the name of the facility (if the <a href="../reference/dictionary_sheet.html#sec-geo-data">“hf” control was used for the variable</a>). It is mostly used to enter data on the patient data sheet, but it is also useful on the Spatio-Temporal analysis sheet.</p>
 <p>To use it, place your cursor in a “geo” or “hf” column (you can recognise them thanks to the orange headers), in the <em>admin 1 level</em>. Click on the “GeoHelper” button, or hit the shortcut <code>Ctrl + Shift + G</code>. It opens a window, with several tabs, depending on whether you are in a “geo” (described by four visible columns) or in “hf” (described by one visible column).</p>
 <p>If you are in a “geo” section, you will have three tabs that you can use to select administrative levels.</p>
 <ul>
@@ -571,26 +296,26 @@ Tip
 <p>Once the location has been found, select it and click on “OK”.</p>
 </section>
 </section>
-<section id="refresh-analyses" class="level3">
-<h3 class="anchored" data-anchor-id="refresh-analyses">Refresh analyses</h3>
+<section id="refresh-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="refresh-analyses">Refresh analyses</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-007-ll-refresh-analyses.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-007-ll-refresh-analyses.png" class="img-fluid figure-img"></p>
 <figcaption>Refresh analyses button</figcaption>
 </figure>
 </div>
-<p>Hit the “Refresh analyses” button to update analyses on all analyses sheets in one go. You should use it whenever you entered new data or when you applied filters to existing data and want to see the analyses on this subset of data.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Hit the “Refresh analyses” button to update analyses on all analyses sheets in one go. You should use it whenever you entered new data or when you applied filters to existing data and want to see the analyses on this subset of data.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
-<section id="sec-import-data" class="level3">
-<h3 class="anchored" data-anchor-id="sec-import-data">Imports</h3>
+<section id="sec-import-data" class="level2">
+<h2 class="anchored" data-anchor-id="sec-import-data">Imports</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-008-ll-imports.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-008-ll-imports.png" class="img-fluid figure-img"></p>
 <figcaption>Imports section</figcaption>
 </figure>
 </div>
-<section id="import-data" class="level4">
-<h4 class="anchored" data-anchor-id="import-data">Import data</h4>
+<section id="import-data" class="level3">
+<h3 class="anchored" data-anchor-id="import-data">Import data</h3>
 <p>The « Import Data » button allows you to import data in the linelist. This data must be in a special format typically produced by exporting data from another OutbreakTools linelist for the same disease.</p>
 <p>First a window opens to select the file to import. Select it and click on “OK”. At the end, a message will inform you of the success and provide a little import report is you wish so. Inspect it to see if there are any unexpected discrepancies (loosing variables should always be investigated!).</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -621,8 +346,8 @@ Warning
 </div>
 </div>
 </section>
-<section id="sec-import-geobase" class="level4">
-<h4 class="anchored" data-anchor-id="sec-import-geobase">Import geobase</h4>
+<section id="sec-import-geobase" class="level3">
+<h3 class="anchored" data-anchor-id="sec-import-geobase">Import geobase</h3>
 <p>“Import geobase” allows you to import a geobase in the linelist. If the current linelist had already a geobase, it will be replaced.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -640,18 +365,18 @@ Warning
 <p>Go <a href="../how_to/import_geobase.html#sec-geobase-download">here</a> to learn how to download a geobase.</p>
 </section>
 </section>
-<section id="sec-export-data" class="level3">
-<h3 class="anchored" data-anchor-id="sec-export-data">Exports</h3>
+<section id="sec-export-data" class="level2">
+<h2 class="anchored" data-anchor-id="sec-export-data">Exports</h2>
 <p>The regular exports buttons are available in the “Export section” of the ribbon, and the “Export for migration” is available in the <a href="#sec-linelist-advanced">Advanced</a> section of the ribbon.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-009-ll-exports.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-009-ll-exports.png" class="img-fluid figure-img"></p>
 <figcaption>Exports section</figcaption>
 </figure>
 </div>
-<section id="export-data" class="level4">
-<h4 class="anchored" data-anchor-id="export-data">Export data</h4>
-<p>OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the <a href="../setup_reference/exports_sheet.html">setup file</a> that is used to generate the linelist.</p>
+<section id="export-data" class="level3">
+<h3 class="anchored" data-anchor-id="export-data">Export data</h3>
+<p>OutbreakTools linelists have the feature to export data in a separated excel file, to share with partners or perform more advance analyses. The characteristics of the exports (which variables, anonymisation or not, password protected or not etc.) are pre-defined in the <a href="../reference/exports_sheet.html">setup file</a> that is used to generate the linelist.</p>
 <p>While Epicentre linelists should have at minima be an “Anonymous export for MSF” button, the other available exports differ between linelists created.</p>
 <p>To export data, click on the “Export Data” button, which opens a popup window, with several options. At the top, you will see buttons for different exports. After clicking on the desired export, a window pops-up for saving the export. If “Export Filtered Data” is selected, a confirmation message will pop-up first to ask you whether this is what you really want.</p>
 <p>Once the folder has been selected and after clicking “OK”, a new window opens to confirm the export and, if the export is protected, provide the associated password.</p>
@@ -670,8 +395,8 @@ Tip
 </div>
 <p>Click on the button “Generate new password” to change the password used by default.</p>
 </section>
-<section id="export-analyses" class="level4">
-<h4 class="anchored" data-anchor-id="export-analyses">Export analyses</h4>
+<section id="export-analyses" class="level3">
+<h3 class="anchored" data-anchor-id="export-analyses">Export analyses</h3>
 <p>You can export all the tables from the analysis sheets in one document by using the “Export the analysis sheets” button and selecting the directory where you want to save them.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -688,12 +413,12 @@ Warning
 </div>
 </section>
 </section>
-<section id="register-and-case-report-form" class="level3">
-<h3 class="anchored" data-anchor-id="register-and-case-report-form">Register and Case report form</h3>
+<section id="register-and-case-report-form" class="level2">
+<h2 class="anchored" data-anchor-id="register-and-case-report-form">Register and Case report form</h2>
 <p>You can print a register directly based on the linelist.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-010-ll-register.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-010-ll-register.png" class="img-fluid figure-img"></p>
 <figcaption>Register and case report form section</figcaption>
 </figure>
 </div>
@@ -721,21 +446,21 @@ Tip
 <p>Once customized, you can close the sheet by clicking the red cross, all your modifications are saved.</p>
 <p>Once ready, you can use the “Print” button to open the print preview view (whether you are on the register sheet or the linelist sheet). All the variables to be printed fit one page (landscape). If you are satisfied, you can print.</p>
 </section>
-<section id="sec-linelist-advanced" class="level3">
-<h3 class="anchored" data-anchor-id="sec-linelist-advanced">Advanced</h3>
+<section id="sec-linelist-advanced" class="level2">
+<h2 class="anchored" data-anchor-id="sec-linelist-advanced">Advanced</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-011-ll-advanced.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-011-ll-advanced.png" class="img-fluid figure-img"></p>
 <figcaption>Advanced button and pop-up window</figcaption>
 </figure>
 </div>
-<section id="export-for-migration" class="level4">
-<h4 class="anchored" data-anchor-id="export-for-migration">Export for migration</h4>
-<p>This button exports raw data and metadata for migration to another linelist file.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<section id="export-for-migration" class="level3">
+<h3 class="anchored" data-anchor-id="export-for-migration">Export for migration</h3>
+<p>This button exports raw data and metadata for migration to another linelist file.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>You can choose to export the patient data, the geobase and the history of the geobase (history list in the GeoHelper), by ticking the matching cases. There are also options to include metadata on the state of hidden/shown columns (to not have to redo the full setup in the new file), and the updated labels of the custom variables, if you used these variables.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../setup_reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
+<p><img src="../reference/images/img-013-ll-export-migration.png" class="img-fluid figure-img"></p>
 <figcaption>Export for migration</figcaption>
 </figure>
 </div>
@@ -747,27 +472,26 @@ Tip
 <li>a file containing only the GeoHelper <strong>history</strong> (in case you want to upgrade to a new version of the geobase but wished to keep your GeoHelper history)</li>
 </ul>
 </section>
-<section id="import-geobase-history" class="level4">
-<h4 class="anchored" data-anchor-id="import-geobase-history">Import geobase history</h4>
+<section id="import-geobase-history" class="level3">
+<h3 class="anchored" data-anchor-id="import-geobase-history">Import geobase history</h3>
 <p>This button allows you to import a file containing the history of the geobase (such a file was created by exporting the data from migration, see above).</p>
 </section>
-<section id="last-import-report" class="level4">
-<h4 class="anchored" data-anchor-id="last-import-report">Last Import Report</h4>
+<section id="last-import-report" class="level3">
+<h3 class="anchored" data-anchor-id="last-import-report">Last Import Report</h3>
 <p>The button allows you to display the report from the last import made.</p>
 </section>
-<section id="delete-data-or-geobase-history" class="level4">
-<h4 class="anchored" data-anchor-id="delete-data-or-geobase-history">Delete data or geobase history</h4>
+<section id="delete-data-or-geobase-history" class="level3">
+<h3 class="anchored" data-anchor-id="delete-data-or-geobase-history">Delete data or geobase history</h3>
 <p>This are a dangerous buttons that allows you to delete data or geobase history from the linelist.</p>
 <p>“Delete all data” allows you to remove all the data you entered from the workbook. After clicking, you will have a warning message. To confirm the deletion, you will need to enter the full name of the file.</p>
 <p>“Delete geobase history” allows you to empty the table with the geobase history so the list of suggestion of the history method from the GeoHelper will be empty.</p>
 </section>
-<section id="restore-the-state-of-hidden-columns" class="level4">
-<h4 class="anchored" data-anchor-id="restore-the-state-of-hidden-columns">Restore the state of hidden columns</h4>
+<section id="restore-the-state-of-hidden-columns" class="level3">
+<h3 class="anchored" data-anchor-id="restore-the-state-of-hidden-columns">Restore the state of hidden columns</h3>
 <p>This button allows you to restore the state of hidden columns (i.e.&nbsp;hide them all again) if, for any reasons these columns had been shown.</p>
 <p>Note that hidden columns are not supposed to be shown, and the user can thus not modify their visibility state from the regular Show/Hide variables button, hence this button.</p>
 
 
-</section>
 </section>
 </section>
 
@@ -775,11 +499,9 @@ Tip
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>An upgraded version, or an empty file fo the same version in case the original file got corrupted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Note that the checkup does its best, but some formula errors can be missed and create problems in your formulas. Always test the calculated columns after compilation!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>If the linelist has a lot of optional variables shown by default and you wish to make a very minimal linelist, this might be faster than hiding most variables one by one: just unhide the variables that you need if any<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Do not forget to remove the filters and refresh the analyses at the end to not be confused but the numbers in a couple of days<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Whether that is to upgrade versions, move out of a corrupt file or create a temporary master-linelist<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>If the linelist has a lot of optional variables shown by default and you wish to make a very minimal linelist, this might be faster than hiding most variables one by one: just unhide the variables that you need if any<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Do not forget to remove the filters and refresh the analyses at the end to not be confused but the numbers in a couple of days<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Whether that is to upgrade versions, move out of a corrupt file or create a temporary master-linelist<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

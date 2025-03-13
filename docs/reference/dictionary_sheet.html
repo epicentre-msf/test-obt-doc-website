@@ -101,37 +101,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../getting_started/home_obt.html"> 
 <span class="menu-text">Getting started with OBT</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-setup-file-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Setup file reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-setup-file-reference">    
-        <li>
-    <a class="dropdown-item" href="../setup_reference/dictionary_sheet.html">
- <span class="dropdown-text">Dictionary sheet</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../reference/home_reference.html"> 
+<span class="menu-text">Reference</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/choices_sheet.html">
- <span class="dropdown-text">Choices sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/analyses_sheet.html">
- <span class="dropdown-text">Analyses sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/exports_sheet.html">
- <span class="dropdown-text">Export sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/translations_sheet.html">
- <span class="dropdown-text">Translation sheet</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../setup_reference/ribbons.html">
- <span class="dropdown-text">Ribbon menu</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../how_to/home_how_to.html"> 
 <span class="menu-text">How-to</span></a>
@@ -261,7 +234,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Dictionary sheet: define linelist tables and their variables</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Setup</div>
+  </div>
+  </div>
 
 
 
@@ -277,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The metadata about linelist variable, which is commonly called the <em>variable dictionary</em> is stored in two of the <strong>setup file</strong> sheets, the <em>Dictionary</em> sheet and the <a href="../setup_reference/choices_sheet.html"><em>Choices</em> sheet</a>. Most of the variable attributes/metadata are stored in the <em>Dictionary</em> sheet, while only the categories of categorical variables are stored in the <em>Choices</em> sheet.</p>
+<p>The metadata about linelist variable, which is commonly called the <em>variable dictionary</em> is stored in two of the <strong>setup file</strong> sheets, the <em>Dictionary</em> sheet and the <a href="../reference/choices_sheet.html"><em>Choices</em> sheet</a>. Most of the variable attributes/metadata are stored in the <em>Dictionary</em> sheet, while only the categories of categorical variables are stored in the <em>Choices</em> sheet.</p>
 <p>Variable metadata on the <em>Dictionary</em> sheet are organised in one (big) table in which <strong>one line corresponds to one variable</strong>. This table is divided in sections:</p>
 <table class="caption-top table">
 <caption>Sections of variable metadata</caption>
@@ -336,7 +312,7 @@ Warning
 </div>
 <section id="variable-name" class="level3">
 <h3 class="anchored" data-anchor-id="variable-name">Variable Name</h3>
-<p>This is a free text field used to <strong>uniquely identify the variables</strong>. The name can be used to refer to the variable in formulas or in the <a href="../setup_reference/analyses_sheet.html"><em>Analyses</em> sheet</a>.</p>
+<p>This is a free text field used to <strong>uniquely identify the variables</strong>. The name can be used to refer to the variable in formulas or in the <a href="../reference/analyses_sheet.html"><em>Analyses</em> sheet</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/im-004-variable-names-and-labels.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
@@ -555,7 +531,7 @@ Note on linelist sheets
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include <a href="../setup_reference/analyses_sheet.html">analyses</a>.</p>
+<p>The created linelist will contain more sheets than the one you specify in this section, as some of the sheets are added automatically during compilation (an instruction sheet, a sheet for the geobase, etc.) and more sheets can be added if you choose to include <a href="../reference/analyses_sheet.html">analyses</a>.</p>
 </div>
 </div>
 </div>
@@ -631,7 +607,7 @@ Tip: organise variables
 <li><p><em>optional, hidden</em>: variable hidden by default, it can be displayed or hidden by the linelist user</p></li>
 <li><p><em>hidden</em>: variable hidden by default, it cannot be displayed in the linelist</p></li>
 </ul>
-<p>Variables can be shown or hidden using the “Show/Hide” button of the <a href="../setup_reference/ribbons.html#sec-linelist-ribbon">linelist OutbreakTools menu</a> in the <strong>linelist file</strong>. See the <a href="../how_to/show_hide_variables.html">how to</a>.</p>
+<p>Variables can be shown or hidden using the “Show/Hide” button of the <a href="../reference/ribbons_linelist.html">linelist OutbreakTools menu</a> in the <strong>linelist file</strong>. See the <a href="../how_to/show_hide_variables.html">how to</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Note on showing and hiding columns manually">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -670,7 +646,7 @@ Note on showing and hiding columns manually
 <p>This column has two uses:</p>
 <ul>
 <li><p>it allows the setup developer to quickly identify variables containing personal data in its dictionary</p></li>
-<li><p>it is used to remove variables automatically from the exports if such a behaviour is needed (see the <a href="../setup_reference/exports_sheet.html">Exports sheet</a>).</p></li>
+<li><p>it is used to remove variables automatically from the exports if such a behaviour is needed (see the <a href="../reference/exports_sheet.html">Exports sheet</a>).</p></li>
 </ul>
 </section>
 <section id="thinking-about-variables" class="level3">
@@ -856,7 +832,7 @@ Warning: cannot be used for analyses
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A choice_multiple column cannot be used in the <a href="../setup_reference/analyses_sheet.html">Analyses sheets</a> as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.</p>
+<p>A choice_multiple column cannot be used in the <a href="../reference/analyses_sheet.html">Analyses sheets</a> as the designer cannot predict the number of combinations the user will create, and thus cannot create tables with appropriate size.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Tip: inform the linelist user">
@@ -1038,7 +1014,7 @@ Why not using more recent Excel functions?
 </section>
 <section id="choice_formula" class="level5">
 <h5 class="anchored" data-anchor-id="choice_formula">choice_formula</h5>
-<p>This control indicates the use of the <code>CHOICE_FORMULA</code> function, another custom function. This function is a special case of the <code>CASE_WHEN</code> formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the <a href="../setup_reference/choices_sheet.html">Choices</a> sheet.</p>
+<p>This control indicates the use of the <code>CHOICE_FORMULA</code> function, another custom function. This function is a special case of the <code>CASE_WHEN</code> formula, with more constrains on it. Indeed, the values that the calculated variable can take are known in advance and predefined in the <a href="../reference/choices_sheet.html">Choices</a> sheet.</p>
 <p>Columns generated with this control can be used in univariate or bivariate tables, as the number of possible categories is known in advance.</p>
 <p>Read more about writing the formula in the <a href="#sec-var-control-details">Control details</a> column below.</p>
 </section>
@@ -1048,7 +1024,7 @@ Why not using more recent Excel functions?
 <h3 class="anchored" data-anchor-id="sec-var-control-details">Control details</h3>
 <p>This is a free text field, which accepts three types of values:</p>
 <ul>
-<li>the name of a <em>list</em> (defined in the <a href="../setup_reference/choices_sheet.html">Choices</a> sheet),</li>
+<li>the name of a <em>list</em> (defined in the <a href="../reference/choices_sheet.html">Choices</a> sheet),</li>
 <li>the name of a <em>variable</em> (defined in the <em>Dictionary</em> sheet)</li>
 <li>a <a href="#sec-formulas"><em>formula</em></a>.</li>
 </ul>
@@ -1090,7 +1066,7 @@ Why not using more recent Excel functions?
 <section id="defining-dropdown-menu-categories" class="level4">
 <h4 class="anchored" data-anchor-id="defining-dropdown-menu-categories">Defining dropdown menu categories</h4>
 <p>When the controls “choice_manual”, “choice_multiple” (and optionally “choice_custom”) are selected in the <a href="#sec-var-control">Control</a> column, you need to define the values the dropdown menu will contain (<em>i.e.</em> the <em>categories</em>).</p>
-<p>These values are specified in the <a href="../setup_reference/choices_sheet.html">Choices sheet</a>. Categories of a same variable are bundled into named <em>lists</em>. The name of the list is then entered in the “Control details” column of the <em>Dictionary</em> sheet.</p>
+<p>These values are specified in the <a href="../reference/choices_sheet.html">Choices sheet</a>. Categories of a same variable are bundled into named <em>lists</em>. The name of the list is then entered in the “Control details” column of the <em>Dictionary</em> sheet.</p>
 <p><img src="images/im-041-choices.png" class="img-fluid"></p>
 <p>In the case of “list_auto” variables, you only need to provide the <em>name of another variable</em> in the “Control details” column. In the linelist, the values present in the referred variable will be automatically used to populate the dropdown menu. See <a href="../how_to/link_tables.html#sec-ht-list_auto">this How to</a> for an example.</p>
 </section>
@@ -1254,8 +1230,8 @@ Note
 <section id="data-exports" class="level2">
 <h2 class="anchored" data-anchor-id="data-exports">Data exports</h2>
 <p>OutbreakTools linelist have extensive data export functionalities. It is possible to define several personalised exports from the setup.</p>
-<p>To define a specific export, you need to fill both the “Export” section in the <em>Dictionary</em> sheet and the <a href="../setup_reference/exports_sheet/qmd">Exports</a> sheet. The <em>Export</em> sheet contains metadata for each export, while the “Export” columns in the <em>Dictionary</em> sheet allows to decide individually for each variable whether to export it or not in a given export.</p>
-<p>To create a new export, first fill the <a href="../setup_reference/exports_sheet/qmd">Exports</a> sheet, which will add corresponding columns to the <em>Dictionary</em> sheet.</p>
+<p>To define a specific export, you need to fill both the “Export” section in the <em>Dictionary</em> sheet and the <a href="../reference/exports_sheet/qmd">Exports</a> sheet. The <em>Export</em> sheet contains metadata for each export, while the “Export” columns in the <em>Dictionary</em> sheet allows to decide individually for each variable whether to export it or not in a given export.</p>
+<p>To create a new export, first fill the <a href="../reference/exports_sheet/qmd">Exports</a> sheet, which will add corresponding columns to the <em>Dictionary</em> sheet.</p>
 <section id="rules" class="level3">
 <h3 class="anchored" data-anchor-id="rules">Rules</h3>
 <ul>
