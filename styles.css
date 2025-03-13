@@ -37,3 +37,71 @@ code {
   border-radius: 5px;
   padding: 0.2em 0.25em 0.2em 0.25em
 }
+
+
+
+#homepage-text {
+  text-align: center;
+}
+
+
+/* ----- Cards  ----- */
+
+.homepage-card-grid {
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.card.homepage-card {
+  width: 40%;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px;
+  transition: 0.5s;
+}
+
+.card.homepage-card:hover {
+  box-shadow: 5px 5px 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.card.homepage-card .card-img {
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card.homepage-card .card-body {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.card.homepage-card .card-title {
+  color: var(--dark_blue);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.card.homepage-card > p {
+  margin-bottom: 0;
+}
+
+
+.btn {
+  background-color: var(--dark_blue) !important;
+  font-weight: bolder;
+  color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: var(--dark_blue) !important;
+  font-weight: bolder;
+  color: white;
+}
