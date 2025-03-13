@@ -96,7 +96,7 @@ When you import a geobase in a linelist:
 You can fill the variables either by using the cascading dropdown menus, or by using the [GeoHelper button](../reference/ribbons_linelist.qmd#sec-geo-helper) from the OutbreakTools menu.
 
 :::{.callout-note title="Search options in the Geohelper"}
-The first tab of the [GeoHelper popup window](../reference/ribbons.qmd#sec-geo-helper) allows you to pick the location level after level; the second tab allows you to search for a name in the geobase and the third tab displays the past values previously picked in the GeoHelper.
+The first tab of the [GeoHelper popup window](../reference/ribbons_linelist.qmd#sec-geo-helper) allows you to pick the location level after level; the second tab allows you to search for a name in the geobase and the third tab displays the past values previously picked in the GeoHelper.
 :::
 
 
