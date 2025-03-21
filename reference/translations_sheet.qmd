@@ -3,6 +3,7 @@ title: "Translation sheet"
 description: Generate a linelist in several languages
 categories: 
   - Setup
+  - Sheet
 ---
 
 OutbreakTools can create linelists in different languages from the same dictionary, which makes maintenance of a linelist much easier (only one place to make a change, before compiling in all the languages).

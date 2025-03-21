@@ -3,6 +3,7 @@ title: "Setup ribbon"
 description: The special OBT menu
 categories: 
   - Setup
+  - OBT menu
 ---
 
 

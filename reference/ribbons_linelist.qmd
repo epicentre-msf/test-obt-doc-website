@@ -3,6 +3,7 @@ title: "Linelist ribbon"
 description: The special OBT menu
 categories: 
   - Linelist
+  - OBT menu
 ---
 
 Recent version of Excel have a top [ribbon/menu](https://www.ablebits.com/office-addins-blog/excel-ribbon-guide/) that display most buttons and functionalities in several tabs. Outbreaktools files (setup, designer and linelists) each have an extra tab in this menu containing OutbreakTools functionalities.

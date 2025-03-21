@@ -1,8 +1,9 @@
 ---
-title: "Choices sheet:"
+title: "Choices sheet"
 description:  Define variable categories
 categories: 
   - Setup
+  - Sheet
 ---
 
 This sheet is used to define the **dropdown menus categories** to be used for categorical variables, or the possible values for "choice_formula" type variables. 

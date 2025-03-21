@@ -3,6 +3,7 @@ title: "Dictionary sheet"
 description: Define linelist tables and their variables
 categories: 
   - Setup
+  - Sheet
 ---
 
 The metadata about linelist variable, which is commonly called the *variable dictionary* is stored in two of the **setup file** sheets, the *Dictionary* sheet and the [*Choices* sheet](../reference/choices_sheet.qmd). Most of the variable attributes/metadata are stored in the *Dictionary* sheet, while only the categories of categorical variables are stored in the *Choices* sheet.

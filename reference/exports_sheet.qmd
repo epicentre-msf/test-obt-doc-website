@@ -3,6 +3,7 @@ title: "Exports sheet"
 description: Define export buttons and files
 categories: 
   - Setup
+  - Sheet
 ---
 
 ![](../reference/images/im-088-exports-sheet.png){fig-align="center"}

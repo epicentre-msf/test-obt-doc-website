@@ -3,6 +3,7 @@ title: "Analyses sheet"
 description: Define basic analyses
 categories: 
   - Setup
+  - Sheet
 ---
 
 This sheet contains several tables for defining different types of analyses and their corresponding graphs:

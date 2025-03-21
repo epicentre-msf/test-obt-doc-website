@@ -3,6 +3,7 @@ title: "Custom formulas"
 description: List of formulas specific to OBT
 categories: 
   - Setup
+  - Other
 ---
 
 
