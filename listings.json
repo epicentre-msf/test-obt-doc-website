@@ -39,12 +39,12 @@
     "items": [
       "/reference/ribbons_designer.html",
       "/reference/ribbons_linelist.html",
+      "/reference/ribbons_setup.html",
+      "/reference/custom_formulas.html",
       "/reference/analyses_sheet.html",
       "/reference/choices_sheet.html",
-      "/reference/custom_formulas.html",
       "/reference/dictionary_sheet.html",
       "/reference/exports_sheet.html",
-      "/reference/ribbons_setup.html",
       "/reference/translations_sheet.html"
     ]
   }

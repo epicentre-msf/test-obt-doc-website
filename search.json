@@ -177,49 +177,49 @@
   {
     "objectID": "reference/choices_sheet.html",
     "href": "reference/choices_sheet.html",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "",
     "text": "This sheet is used to define the dropdown menus categories to be used for categorical variables, or the possible values for “choice_formula” type variables."
   },
   {
     "objectID": "reference/choices_sheet.html#rules",
     "href": "reference/choices_sheet.html#rules",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "Rules",
     "text": "Rules\n\na list is made of several consecutive lines\n\na line represents one value of a given list, and correspond to one item of the associated dropdown menu\n\ndifferent lists are written one below the other\n\nyou can define as many lists as needed"
   },
   {
     "objectID": "reference/choices_sheet.html#list-name",
     "href": "reference/choices_sheet.html#list-name",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "List Name",
     "text": "List Name\nThis is a free text field used to define a dropdown list. Lines with the same name filled belong to the same list. This name is used in the Dictionary sheet to identify the dropdown list to be used for a given variable, in the Control details column.\n\n\n\n\n\n\n\nNaming lists\n\n\n\nIt is not mandatory, but we advise that you begin all your list names by “list_” to easily separate them from variable names in the dictionary.\nWith the exception of lists used for “choice_custom” type variables, it is recommended not to leave any blanks in the list name. Instead, replace them with “_”, for example."
   },
   {
     "objectID": "reference/choices_sheet.html#ordering-list",
     "href": "reference/choices_sheet.html#ordering-list",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "Ordering list",
     "text": "Ordering list\nThis is a free text field. Fill in integers to define the order in which the options are displayed in the dropdown menu."
   },
   {
     "objectID": "reference/choices_sheet.html#label",
     "href": "reference/choices_sheet.html#label",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "Label",
     "text": "Label\nThis is a free text field used to list the different values to be displayed in the dropdown menus.\n\n\n\n\n\n\nWarning\n\n\n\nCategories names should not begin with a “&lt;” or a “&gt;”."
   },
   {
     "objectID": "reference/choices_sheet.html#short-label",
     "href": "reference/choices_sheet.html#short-label",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "Short label",
     "text": "Short label\nThis is a free text field in which you can enter a shortened version of the label, to be used in the Case Report Form generation tool in the linelist, to make the CRF more condensed."
   },
   {
     "objectID": "reference/choices_sheet.html#example",
     "href": "reference/choices_sheet.html#example",
-    "title": "Choices sheet:",
+    "title": "Choices sheet",
     "section": "Example",
     "text": "Example\nIn the setup file:\n\nIn the linelist, for the age unit column:"
   },
@@ -837,7 +837,7 @@
     "href": "reference/home_reference.html",
     "title": "Reference",
     "section": "",
-    "text": "Designer ribbon\n\n\n\n\n\n\nDesigner\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinelist ribbon\n\n\n\n\n\n\nLinelist\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyses sheet\n\n\n\n\n\n\nSetup\n\n\n\nDefine basic analyses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChoices sheet:\n\n\n\n\n\n\nSetup\n\n\n\nDefine variable categories\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustom formulas\n\n\n\n\n\n\nSetup\n\n\n\nList of formulas specific to OBT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDictionary sheet\n\n\n\n\n\n\nSetup\n\n\n\nDefine linelist tables and their variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExports sheet\n\n\n\n\n\n\nSetup\n\n\n\nDefine export buttons and files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSetup ribbon\n\n\n\n\n\n\nSetup\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTranslation sheet\n\n\n\n\n\n\nSetup\n\n\n\nGenerate a linelist in several languages\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Designer ribbon\n\n\n\n\n\n\nDesigner\n\n\nOBT menu\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinelist ribbon\n\n\n\n\n\n\nLinelist\n\n\nOBT menu\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSetup ribbon\n\n\n\n\n\n\nSetup\n\n\nOBT menu\n\n\n\nThe special OBT menu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustom formulas\n\n\n\n\n\n\nSetup\n\n\nOther\n\n\n\nList of formulas specific to OBT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyses sheet\n\n\n\n\n\n\nSetup\n\n\nSheet\n\n\n\nDefine basic analyses\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChoices sheet\n\n\n\n\n\n\nSetup\n\n\nSheet\n\n\n\nDefine variable categories\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDictionary sheet\n\n\n\n\n\n\nSetup\n\n\nSheet\n\n\n\nDefine linelist tables and their variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExports sheet\n\n\n\n\n\n\nSetup\n\n\nSheet\n\n\n\nDefine export buttons and files\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTranslation sheet\n\n\n\n\n\n\nSetup\n\n\nSheet\n\n\n\nGenerate a linelist in several languages\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "tutorial.html",
